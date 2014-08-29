@@ -2,11 +2,11 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Artiqox Core</source>
+        <source>About Dogecoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&lt;b&gt;Artiqox Core&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -28,7 +28,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Copyright</translation>
     </message>
     <message>
-        <source>The Artiqox Core developers</source>
+        <source>The Dogecoin Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -103,11 +103,11 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>These are your Artiqox addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Disse er dine Artiqox-adresser for at sende betalinger. Tjek altid beløb og modtageradresse, inden du sender artiqoxs.</translation>
+        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Disse er dine Dogecoin-adresser for at sende betalinger. Tjek altid beløb og modtageradresse, inden du sender Dogecoins.</translation>
     </message>
     <message>
-        <source>These are your Artiqox addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -205,8 +205,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Bekræft tegnebogskryptering</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ArtiqoxS&lt;/b&gt;!</source>
-        <translation>Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE ArtiqoxS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DogecoinS&lt;/b&gt;!</source>
+        <translation>Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE DogecoinS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -225,8 +225,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Tegnebog krypteret</translation>
     </message>
     <message>
-        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your artiqoxs from being stolen by malware infecting your computer.</source>
-        <translation>Artiqox vil nu lukke for at gennemføre krypteringsprocessen. Husk på, at kryptering af din tegnebog vil ikke beskytte dine artiqoxs fuldt ud mod at blive stjålet af malware på din computer.</translation>
+        <source>Dogecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dogecoins from being stolen by malware infecting your computer.</source>
+        <translation>Dogecoin vil nu lukke for at gennemføre krypteringsprocessen. Husk på, at kryptering af din tegnebog vil ikke beskytte dine Dogecoins fuldt ud mod at blive stjålet af malware på din computer.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -296,8 +296,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Afslut program</translation>
     </message>
     <message>
-        <source>Show information about Artiqox</source>
-        <translation>Vis informationer om Artiqox</translation>
+        <source>Show information about Dogecoin</source>
+        <translation>Vis informationer om Dogecoin</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -344,12 +344,12 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Genindekserer blokke på disken...</translation>
     </message>
     <message>
-        <source>Send coins to a Artiqox address</source>
-        <translation>Send artiqoxs til en Artiqox-adresse</translation>
+        <source>Send coins to a Dogecoin address</source>
+        <translation>Send Dogecoins til en Dogecoin-adresse</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox Core</source>
-        <translation>Rediger konfigurationsindstillinger af Artiqox</translation>
+        <source>Modify configuration options for Dogecoin Core</source>
+        <translation>Rediger konfigurationsindstillinger af Dogecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -372,8 +372,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Verificér besked...</translation>
     </message>
     <message>
-        <source>Artiqox</source>
-        <translation>Artiqox</translation>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -400,12 +400,12 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Krypter de private nøgler, der hører til din tegnebog</translation>
     </message>
     <message>
-        <source>Sign messages with your Artiqox addresses to prove you own them</source>
-        <translation>Underskriv beskeder med dine Artiqox-adresser for at bevise, at de tilhører dig</translation>
+        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
+        <translation>Underskriv beskeder med dine Dogecoin-adresser for at bevise, at de tilhører dig</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Artiqox addresses</source>
-        <translation>Verificér beskeder for at sikre, at de er underskrevet med de(n) angivne Artiqox-adresse(r)</translation>
+        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
+        <translation>Verificér beskeder for at sikre, at de er underskrevet med de(n) angivne Dogecoin-adresse(r)</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -428,15 +428,15 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>[testnetværk]</translation>
     </message>
     <message>
-        <source>Artiqox Core</source>
-        <translation>Artiqox Core</translation>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <source>Request payments (generates QR codes and Dogecoin: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&amp;About Artiqox Core</source>
+        <source>&amp;About Dogecoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -448,7 +448,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Open a artiqox: URI or payment request</source>
+        <source>Open a Dogecoin: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -456,16 +456,16 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
+        <source>Show the Dogecoin Core help message to get a list with possible command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Artiqox client</source>
-        <translation>Artiqox-klient</translation>
+        <source>Dogecoin client</source>
+        <translation>Dogecoin-klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Artiqox network</source>
-        <translation><numerusform>%n aktiv(e) forbindelse(r) til Artiqox-netværket</numerusform><numerusform>%n aktiv(e) forbindelse(r) til Artiqox-netværket</numerusform></translation>
+        <source>%n active connection(s) to Dogecoin network</source>
+        <translation><numerusform>%n aktiv(e) forbindelse(r) til Dogecoin-netværket</numerusform><numerusform>%n aktiv(e) forbindelse(r) til Dogecoin-netværket</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -560,8 +560,8 @@ Adresse: %4
         <translation>Tegnebog er &lt;b&gt;krypteret&lt;/b&gt; og i øjeblikket &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Artiqox can no longer continue safely and will quit.</source>
-        <translation>Der opstod en fatal fejl. Artiqox kan ikke længere fortsætte sikkert og vil afslutte.</translation>
+        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
+        <translation>Der opstod en fatal fejl. Dogecoin kan ikke længere fortsætte sikkert og vil afslutte.</translation>
     </message>
 </context>
 <context>
@@ -845,8 +845,8 @@ Adresse: %4
         <translation>Den indtastede adresse &quot;%1&quot; er allerede i adressebogen.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Artiqox address.</source>
-        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig Artiqox-adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
+        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig Dogecoin-adresse.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -883,12 +883,12 @@ Adresse: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Artiqox Core - Command-line options</source>
+        <source>Dogecoin Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Artiqox Core</source>
-        <translation>Artiqox Core</translation>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -934,15 +934,15 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Artiqox Core.</source>
+        <source>Welcome to Dogecoin Core.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Artiqox Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Dogecoin Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Artiqox Core will download and store a copy of the Artiqox block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Dogecoin Core will download and store a copy of the Dogecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -954,8 +954,8 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Artiqox</source>
-        <translation>Artiqox</translation>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
@@ -1016,12 +1016,12 @@ Adresse: %4
         <translation>Betal transaktionsgebyr</translation>
     </message>
     <message>
-        <source>Automatically start Artiqox after logging in to the system.</source>
-        <translation>Start Artiqox automatisk, når der logges ind på systemet</translation>
+        <source>Automatically start Dogecoin after logging in to the system.</source>
+        <translation>Start Dogecoin automatisk, når der logges ind på systemet</translation>
     </message>
     <message>
-        <source>&amp;Start Artiqox on system login</source>
-        <translation>Start Artiqox, når systemet startes</translation>
+        <source>&amp;Start Dogecoin on system login</source>
+        <translation>Start Dogecoin, når systemet startes</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1036,7 +1036,7 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Connect to the Artiqox network through a SOCKS proxy.</source>
+        <source>Connect to the Dogecoin network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1088,8 +1088,8 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Automatically open the Artiqox client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn Artiqox-klientens port på routeren automatisk. Dette virker kun, når din router understøtter UPnP og UPnP er aktiveret.</translation>
+        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åbn Dogecoin-klientens port på routeren automatisk. Dette virker kun, når din router understøtter UPnP og UPnP er aktiveret.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1144,8 +1144,8 @@ Adresse: %4
         <translation>Brugergrænsefladesprog:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Artiqox.</source>
-        <translation>Brugergrænsefladesproget kan angives her. Denne indstilling træder først i kraft, når Artiqox genstartes.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin.</source>
+        <translation>Brugergrænsefladesproget kan angives her. Denne indstilling træder først i kraft, når Dogecoin genstartes.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1153,11 +1153,11 @@ Adresse: %4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Vælg den standard underopdelingsenhed, som skal vises i brugergrænsefladen og ved afsendelse af artiqoxs.</translation>
+        <translation>Vælg den standard underopdelingsenhed, som skal vises i brugergrænsefladen og ved afsendelse af Dogecoins.</translation>
     </message>
     <message>
-        <source>Whether to show Artiqox addresses in the transaction list or not.</source>
-        <translation>Afgør hvorvidt Artiqox-adresser skal vises i transaktionslisten eller ej.</translation>
+        <source>Whether to show Dogecoin addresses in the transaction list or not.</source>
+        <translation>Afgør hvorvidt Dogecoin-adresser skal vises i transaktionslisten eller ej.</translation>
     </message>
     <message>
         <source>&amp;Display addresses in transaction list</source>
@@ -1211,8 +1211,8 @@ Adresse: %4
         <translation>Formular</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Artiqox network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med Artiqox-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med Dogecoin-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1266,8 +1266,8 @@ Adresse: %4
         <translation>URI-håndtering</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Artiqox address or malformed URI parameters.</source>
-        <translation>URI kan ikke fortolkes! Dette kan skyldes en ugyldig Artiqox-adresse eller misdannede URI-parametre.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
+        <translation>URI kan ikke fortolkes! Dette kan skyldes en ugyldig Dogecoin-adresse eller misdannede URI-parametre.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1278,8 +1278,8 @@ Adresse: %4
         <translation>Fejl i betalingsforespørgelse</translation>
     </message>
     <message>
-        <source>Cannot start artiqox: click-to-pay handler</source>
-        <translation>Kan ikke starte artiqox: click-to-pay-håndtering</translation>
+        <source>Cannot start Dogecoin: click-to-pay handler</source>
+        <translation>Kan ikke starte Dogecoin: click-to-pay-håndtering</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1333,8 +1333,8 @@ Adresse: %4
 <context>
     <name>QObject</name>
     <message>
-        <source>Artiqox</source>
-        <translation>Artiqox</translation>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
@@ -1349,12 +1349,12 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Artiqox Core did&apos;t yet exit safely...</source>
+        <source>Dogecoin Core did&apos;t yet exit safely...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Enter a Artiqox address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Indtast en Artiqox-adresse (f.eks. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <source>Enter a Dogecoin address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
+        <translation>Indtast en Dogecoin-adresse (f.eks. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
 </context>
 <context>
@@ -1475,16 +1475,16 @@ Adresse: %4
         <translation>Fejlsøgningslogfil</translation>
     </message>
     <message>
-        <source>Open the Artiqox debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Artiqox-fejlsøgningslogfilen fra det nuværende datakatalog. Dette kan tage nogle få sekunder for en store logfiler.</translation>
+        <source>Open the Dogecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn Dogecoin-fejlsøgningslogfilen fra det nuværende datakatalog. Dette kan tage nogle få sekunder for en store logfiler.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Ryd konsol</translation>
     </message>
     <message>
-        <source>Welcome to the Artiqox RPC console.</source>
-        <translation>Velkommen til Artiqox RPC-konsollen</translation>
+        <source>Welcome to the Dogecoin RPC console.</source>
+        <translation>Velkommen til Dogecoin RPC-konsollen</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1546,7 +1546,7 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Artiqox network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1696,7 +1696,7 @@ Adresse: %4
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send artiqoxs</translation>
+        <translation>Send Dogecoins</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1784,7 +1784,7 @@ Adresse: %4
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Bekræft afsendelse af artiqoxs</translation>
+        <translation>Bekræft afsendelse af Dogecoins</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -1859,7 +1859,7 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Warning: Invalid Artiqox address</source>
+        <source>Warning: Invalid Dogecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1899,7 +1899,7 @@ Adresse: %4
     </message>
     <message>
         <source>The address to send the payment to (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Artiqox-adressen som betalingen skal sendes til (f.eks. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <translation>Dogecoin-adressen som betalingen skal sendes til (f.eks. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1946,7 +1946,7 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the Dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1965,7 +1965,7 @@ Adresse: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Artiqox Core is shutting down...</source>
+        <source>Dogecoin Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1985,11 +1985,11 @@ Adresse: %4
     </message>
     <message>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Du kan underskrive beskeder med dine Artiqox-adresser for at bevise, at de tilhører dig. Pas på ikke at underskrive noget vagt, da phisingangreb kan narre dig til at overdrage din identitet. Underskriv kun fuldt detaljerede udsagn, du er enig i.</translation>
+        <translation>Du kan underskrive beskeder med dine Dogecoin-adresser for at bevise, at de tilhører dig. Pas på ikke at underskrive noget vagt, da phisingangreb kan narre dig til at overdrage din identitet. Underskriv kun fuldt detaljerede udsagn, du er enig i.</translation>
     </message>
     <message>
         <source>The address to sign the message with (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Artiqox-adressen som beskeden skal underskrives med (f.eks. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <translation>Dogecoin-adressen som beskeden skal underskrives med (f.eks. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2020,8 +2020,8 @@ Adresse: %4
         <translation>Kopier den nuværende underskrift til systemets udklipsholder</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Artiqox address</source>
-        <translation>Underskriv denne besked for at bevise, at Artiqox-adressen tilhører dig</translation>
+        <source>Sign the message to prove you own this Dogecoin address</source>
+        <translation>Underskriv denne besked for at bevise, at Dogecoin-adressen tilhører dig</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2045,11 +2045,11 @@ Adresse: %4
     </message>
     <message>
         <source>The address the message was signed with (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Artiqox-adressen som beskeden er underskrevet med (f.eks. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <translation>Dogecoin-adressen som beskeden er underskrevet med (f.eks. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Artiqox address</source>
-        <translation>Verificér beskeden for at sikre, at den er underskrevet med den angivne Artiqox-adresse</translation>
+        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
+        <translation>Verificér beskeden for at sikre, at den er underskrevet med den angivne Dogecoin-adresse</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2060,8 +2060,8 @@ Adresse: %4
         <translation>Nulstil alle &quot;verificér besked&quot;-felter</translation>
     </message>
     <message>
-        <source>Enter a Artiqox address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Indtast en Artiqox-adresse (f.eks. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <source>Enter a Dogecoin address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
+        <translation>Indtast en Dogecoin-adresse (f.eks. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
@@ -2119,11 +2119,11 @@ Adresse: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Artiqox Core</source>
-        <translation>Artiqox Core</translation>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Core</translation>
     </message>
     <message>
-        <source>The Artiqox Core developers</source>
+        <source>The Dogecoin Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2545,7 +2545,7 @@ Adresse: %4
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send artiqoxs</translation>
+        <translation>Send Dogecoins</translation>
     </message>
 </context>
 <context>
@@ -2584,7 +2584,7 @@ Adresse: %4
     </message>
 </context>
 <context>
-    <name>artiqox-core</name>
+    <name>Dogecoin-core</name>
     <message>
         <source>Usage:</source>
         <translation>Anvendelse:</translation>
@@ -2602,12 +2602,12 @@ Adresse: %4
         <translation>Indstillinger:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: artiqox.conf)</source>
-        <translation>Angiv konfigurationsfil (standard: artiqox.conf)</translation>
+        <source>Specify configuration file (default: Dogecoin.conf)</source>
+        <translation>Angiv konfigurationsfil (standard: Dogecoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: artiqoxd.pid)</source>
-        <translation>Angiv pid-fil (default: artiqoxd.pid)</translation>
+        <source>Specify pid file (default: Dogecoind.pid)</source>
+        <translation>Angiv pid-fil (default: Dogecoind.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
@@ -2650,7 +2650,7 @@ Adresse: %4
         <translation>Accepter kommandolinje- og JSON-RPC-kommandoer</translation>
     </message>
     <message>
-        <source>Artiqox Core RPC client version</source>
+        <source>Dogecoin Core RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2669,24 +2669,24 @@ Adresse: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=artiqoxrpc
+rpcuser=Dogecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, du skal angive en RPC-adgangskode i konfigurationsfilen:
 %s
 Det anbefales, at du bruger nedenstående, tilfældige adgangskode:
-rpcuser=artiqoxrpc
+rpcuser=Dogecoinrpc
 rpcpassword=%s
 (du behøver ikke huske denne adgangskode)
 Brugernavnet og adgangskode MÅ IKKE være det samme.
 Hvis filen ikke eksisterer, opret den og giv ingen andre end ejeren læserettighed.
 Det anbefales også at angive alertnotify, så du påmindes om problemer;
-f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
+f.eks.: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2719,11 +2719,11 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
     </message>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine artiqoxs i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine artiqoxs er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
+        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine Dogecoins i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine Dogecoins er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
     </message>
     <message>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne artiqoxs!</translation>
+        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne Dogecoins!</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -2758,7 +2758,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
         <translation>Dette er en foreløbig testudgivelse - brug på eget ansvar - brug ikke til udvinding eller handelsprogrammer</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Artiqox Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Dogecoin Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2770,8 +2770,8 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
         <translation>Advarsel: -paytxfee er sat meget højt! Dette er det gebyr du vil betale, hvis du sender en transaktion.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Artiqox will not work properly.</source>
-        <translation>Advarsel: Undersøg venligst, at din computers dato og klokkeslæt er korrekt indstillet! Hvis der er fejl i disse, vil Artiqox ikke fungere korrekt.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin will not work properly.</source>
+        <translation>Advarsel: Undersøg venligst, at din computers dato og klokkeslæt er korrekt indstillet! Hvis der er fejl i disse, vil Dogecoin ikke fungere korrekt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2806,7 +2806,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
         <translation>Forsøg at genskabe private nøgler fra ødelagt wallet.dat</translation>
     </message>
     <message>
-        <source>Artiqox Core Daemon</source>
+        <source>Dogecoin Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2919,7 +2919,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
     </message>
     <message>
         <source>Failed to write to coin database</source>
-        <translation>Skrivning af artiqox-database mislykkedes</translation>
+        <translation>Skrivning af Dogecoin-database mislykkedes</translation>
     </message>
     <message>
         <source>Failed to write transaction index</source>
@@ -2947,7 +2947,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
     </message>
     <message>
         <source>Generate coins (default: 0)</source>
-        <translation>Generer artiqoxs (standard: 0)</translation>
+        <translation>Generer Dogecoins (standard: 0)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: 288, 0 = all)</source>
@@ -3014,7 +3014,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Usage (deprecated, use artiqox-cli):</source>
+        <source>Usage (deprecated, use Dogecoin-cli):</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3050,7 +3050,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
         <translation>Importerer blokke fra ekstern blk000??.dat fil</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Artiqox Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Dogecoin Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3114,7 +3114,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>RPC SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
+        <source>RPC SSL options: (see the Dogecoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3134,11 +3134,11 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
-        <translation>SSL-indstillinger: (se Artiqox Wiki for SSL-opsætningsinstruktioner)</translation>
+        <source>SSL options: (see the Dogecoin Wiki for SSL setup instructions)</source>
+        <translation>SSL-indstillinger: (se Dogecoin Wiki for SSL-opsætningsinstruktioner)</translation>
     </message>
     <message>
-        <source>Send command to Artiqox Core</source>
+        <source>Send command to Dogecoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3174,7 +3174,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
         <translation>Angiv tilslutningstimeout i millisekunder (standard: 5000)</translation>
     </message>
     <message>
-        <source>Start Artiqox Core Daemon</source>
+        <source>Start Dogecoin Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3290,12 +3290,12 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebog ødelagt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Artiqox</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebog kræver en nyere version af Artiqox</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebog kræver en nyere version af Dogecoin</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Artiqox to complete</source>
-        <translation>Det var nødvendigt at genskrive tegnebogen: genstart Artiqox for at gennemføre</translation>
+        <source>Wallet needed to be rewritten: restart Dogecoin to complete</source>
+        <translation>Det var nødvendigt at genskrive tegnebogen: genstart Dogecoin for at gennemføre</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>

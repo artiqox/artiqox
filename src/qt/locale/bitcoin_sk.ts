@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Artiqox Core</source>
-        <translation>O jadre Artiqox</translation>
+        <source>About Dogecoin Core</source>
+        <translation>O jadre Dogecoin</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Artiqox Core&lt;/b&gt; version</source>
-        <translation>Verzia &lt;b&gt;Artiqox jadra&lt;/b&gt;</translation>
+        <source>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</source>
+        <translation>Verzia &lt;b&gt;Dogecoin jadra&lt;/b&gt;</translation>
     </message>
     <message>
         <source>
@@ -23,8 +23,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Autorské práva</translation>
     </message>
     <message>
-        <source>The Artiqox Core developers</source>
-        <translation>Vývojári jadra Artiqox</translation>
+        <source>The Dogecoin Core developers</source>
+        <translation>Vývojári jadra Dogecoin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -98,11 +98,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Adresa prijatia</translation>
     </message>
     <message>
-        <source>These are your Artiqox addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>These are your Artiqox addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -200,8 +200,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ArtiqoxS&lt;/b&gt;!</source>
-        <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE ArtiqoxY&lt;/b&gt;!⏎</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DogecoinS&lt;/b&gt;!</source>
+        <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE DogecoinY&lt;/b&gt;!⏎</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -220,8 +220,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Peňaženka zašifrovaná</translation>
     </message>
     <message>
-        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your artiqoxs from being stolen by malware infecting your computer.</source>
-        <translation>Artiqox sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou artiqoxov pomocou škodlivého software.</translation>
+        <source>Dogecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dogecoins from being stolen by malware infecting your computer.</source>
+        <translation>Dogecoin sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou Dogecoinov pomocou škodlivého software.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -291,8 +291,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Ukončiť program</translation>
     </message>
     <message>
-        <source>Show information about Artiqox</source>
-        <translation>Zobraziť informácie o Artiqox</translation>
+        <source>Show information about Dogecoin</source>
+        <translation>Zobraziť informácie o Dogecoin</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -339,12 +339,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Preindexúvam bloky na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a Artiqox address</source>
-        <translation>Poslať artiqoxs na adresu</translation>
+        <source>Send coins to a Dogecoin address</source>
+        <translation>Poslať Dogecoins na adresu</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox Core</source>
-        <translation>Upraviť možnosti nastavenia pre artiqox</translation>
+        <source>Modify configuration options for Dogecoin Core</source>
+        <translation>Upraviť možnosti nastavenia pre Dogecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -367,8 +367,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Overiť správu</translation>
     </message>
     <message>
-        <source>Artiqox</source>
-        <translation>Artiqox</translation>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -395,11 +395,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Sign messages with your Artiqox addresses to prove you own them</source>
+        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Artiqox addresses</source>
+        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -423,16 +423,16 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>[testovacia sieť]</translation>
     </message>
     <message>
-        <source>Artiqox Core</source>
-        <translation>Jadro Artiqox</translation>
+        <source>Dogecoin Core</source>
+        <translation>Jadro Dogecoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <source>Request payments (generates QR codes and Dogecoin: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&amp;About Artiqox Core</source>
-        <translation>O jadre Artiqox</translation>
+        <source>&amp;About Dogecoin Core</source>
+        <translation>O jadre Dogecoin</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -443,7 +443,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Open a artiqox: URI or payment request</source>
+        <source>Open a Dogecoin: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -451,16 +451,16 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Voľby príkazového riadku</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
+        <source>Show the Dogecoin Core help message to get a list with possible command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Artiqox client</source>
-        <translation>Artiqox klient</translation>
+        <source>Dogecoin client</source>
+        <translation>Dogecoin klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Artiqox network</source>
-        <translation><numerusform>%n aktívne spojenie v Artiqox sieti</numerusform><numerusform>%n aktívne spojenia v Artiqox sieti</numerusform><numerusform>%n aktívnych spojení v Bitconi sieti</numerusform></translation>
+        <source>%n active connection(s) to Dogecoin network</source>
+        <translation><numerusform>%n aktívne spojenie v Dogecoin sieti</numerusform><numerusform>%n aktívne spojenia v Dogecoin sieti</numerusform><numerusform>%n aktívnych spojení v Bitconi sieti</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -554,7 +554,7 @@ Adresa: %4</translation>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;zamknutá&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Artiqox can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -839,8 +839,8 @@ Adresa: %4</translation>
         <translation>Vložená adresa &quot;%1&quot; sa už nachádza v adresári.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Artiqox address.</source>
-        <translation>Vložená adresa &quot;%1&quot; nieje platnou adresou artiqox.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
+        <translation>Vložená adresa &quot;%1&quot; nieje platnou adresou Dogecoin.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -877,12 +877,12 @@ Adresa: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Artiqox Core - Command-line options</source>
+        <source>Dogecoin Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Artiqox Core</source>
-        <translation>Jadro Artiqox</translation>
+        <source>Dogecoin Core</source>
+        <translation>Jadro Dogecoin</translation>
     </message>
     <message>
         <source>version</source>
@@ -928,15 +928,15 @@ Adresa: %4</translation>
         <translation>Vitajte</translation>
     </message>
     <message>
-        <source>Welcome to Artiqox Core.</source>
-        <translation>Vitajte v jadre Artiqox.</translation>
+        <source>Welcome to Dogecoin Core.</source>
+        <translation>Vitajte v jadre Dogecoin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Artiqox Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Dogecoin Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Artiqox Core will download and store a copy of the Artiqox block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Dogecoin Core will download and store a copy of the Dogecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -948,8 +948,8 @@ Adresa: %4</translation>
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>Artiqox</source>
-        <translation>Artiqox</translation>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
@@ -1010,12 +1010,12 @@ Adresa: %4</translation>
         <translation>Zaplatiť transakčné &amp;poplatky</translation>
     </message>
     <message>
-        <source>Automatically start Artiqox after logging in to the system.</source>
-        <translation>Automaticky spustiť Artiqox po zapnutí počítača</translation>
+        <source>Automatically start Dogecoin after logging in to the system.</source>
+        <translation>Automaticky spustiť Dogecoin po zapnutí počítača</translation>
     </message>
     <message>
-        <source>&amp;Start Artiqox on system login</source>
-        <translation>&amp;Spustiť Artiqox pri spustení systému správy okien</translation>
+        <source>&amp;Start Dogecoin on system login</source>
+        <translation>&amp;Spustiť Dogecoin pri spustení systému správy okien</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1030,7 +1030,7 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Connect to the Artiqox network through a SOCKS proxy.</source>
+        <source>Connect to the Dogecoin network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1082,8 +1082,8 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Automatically open the Artiqox client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvorit port pre Artiqox na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
+        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvorit port pre Dogecoin na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1138,7 +1138,7 @@ Adresa: %4</translation>
         <translation>Jazyk užívateľského rozhrania:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Artiqox.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1150,7 +1150,7 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Whether to show Artiqox addresses in the transaction list or not.</source>
+        <source>Whether to show Dogecoin addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1205,7 +1205,7 @@ Adresa: %4</translation>
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Artiqox network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1260,7 +1260,7 @@ Adresa: %4</translation>
         <translation>Spracovanie URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Artiqox address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1272,7 +1272,7 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Cannot start artiqox: click-to-pay handler</source>
+        <source>Cannot start Dogecoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1327,8 +1327,8 @@ Adresa: %4</translation>
 <context>
     <name>QObject</name>
     <message>
-        <source>Artiqox</source>
-        <translation>Artiqox</translation>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
@@ -1343,12 +1343,12 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Artiqox Core did&apos;t yet exit safely...</source>
+        <source>Dogecoin Core did&apos;t yet exit safely...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Enter a Artiqox address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Zadajte Artiqox adresu (napr. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <source>Enter a Dogecoin address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
+        <translation>Zadajte Dogecoin adresu (napr. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
 </context>
 <context>
@@ -1469,7 +1469,7 @@ Adresa: %4</translation>
         <translation>Súbor záznamu ladenia</translation>
     </message>
     <message>
-        <source>Open the Artiqox debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Dogecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1477,7 +1477,7 @@ Adresa: %4</translation>
         <translation>Vymazať konzolu</translation>
     </message>
     <message>
-        <source>Welcome to the Artiqox RPC console.</source>
+        <source>Welcome to the Dogecoin RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1540,7 +1540,7 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Artiqox network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1690,7 +1690,7 @@ Adresa: %4</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Artiqoxs</translation>
+        <translation>Poslať Dogecoins</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1778,7 +1778,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Potvrdiť odoslanie artiqoxs</translation>
+        <translation>Potvrdiť odoslanie Dogecoins</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -1853,7 +1853,7 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Warning: Invalid Artiqox address</source>
+        <source>Warning: Invalid Dogecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1940,7 +1940,7 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the Dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1959,8 +1959,8 @@ Adresa: %4</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Artiqox Core is shutting down...</source>
-        <translation>Jadro Artiqox sa ukončuje...</translation>
+        <source>Dogecoin Core is shutting down...</source>
+        <translation>Jadro Dogecoin sa ukončuje...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1983,7 +1983,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>The address to sign the message with (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Zadajte Artiqox adresu (napr. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <translation>Zadajte Dogecoin adresu (napr. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2014,7 +2014,7 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Sign the message to prove you own this Artiqox address</source>
+        <source>Sign the message to prove you own this Dogecoin address</source>
         <translation>Podpíšte správu aby ste dokázali že vlastníte túto adresu</translation>
     </message>
     <message>
@@ -2039,10 +2039,10 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>The address the message was signed with (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Zadajte Artiqox adresu (napr. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <translation>Zadajte Dogecoin adresu (napr. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Artiqox address</source>
+        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2054,8 +2054,8 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Enter a Artiqox address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Zadajte Artiqox adresu (napr. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <source>Enter a Dogecoin address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
+        <translation>Zadajte Dogecoin adresu (napr. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
@@ -2113,12 +2113,12 @@ Adresa: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Artiqox Core</source>
-        <translation>Jadro Artiqox</translation>
+        <source>Dogecoin Core</source>
+        <translation>Jadro Dogecoin</translation>
     </message>
     <message>
-        <source>The Artiqox Core developers</source>
-        <translation>Vývojári jadra Artiqox</translation>
+        <source>The Dogecoin Core developers</source>
+        <translation>Vývojári jadra Dogecoin</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2539,7 +2539,7 @@ Adresa: %4</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Artiqoxs</translation>
+        <translation>Poslať Dogecoins</translation>
     </message>
 </context>
 <context>
@@ -2578,7 +2578,7 @@ Adresa: %4</translation>
     </message>
 </context>
 <context>
-    <name>artiqox-core</name>
+    <name>Dogecoin-core</name>
     <message>
         <source>Usage:</source>
         <translation>Použitie:</translation>
@@ -2596,12 +2596,12 @@ Adresa: %4</translation>
         <translation>Možnosti:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: artiqox.conf)</source>
-        <translation>Určiť súbor s nastaveniami (predvolené: artiqox.conf)</translation>
+        <source>Specify configuration file (default: Dogecoin.conf)</source>
+        <translation>Určiť súbor s nastaveniami (predvolené: Dogecoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: artiqoxd.pid)</source>
-        <translation>Určiť súbor pid (predvolené: artiqoxd.pid)</translation>
+        <source>Specify pid file (default: Dogecoind.pid)</source>
+        <translation>Určiť súbor pid (predvolené: Dogecoind.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
@@ -2644,7 +2644,7 @@ Adresa: %4</translation>
         <translation>Prijímať príkazy z príkazového riadku a JSON-RPC</translation>
     </message>
     <message>
-        <source>Artiqox Core RPC client version</source>
+        <source>Dogecoin Core RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2663,13 +2663,13 @@ Adresa: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=artiqoxrpc
+rpcuser=Dogecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2742,7 +2742,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Artiqox Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Dogecoin Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2754,7 +2754,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
         <translation>Varovanie: -paytxfee je nastavené veľmi vysoko. Toto sú transakčné poplatky ktoré zaplatíte ak odošlete transakciu.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Artiqox will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2790,7 +2790,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Artiqox Core Daemon</source>
+        <source>Dogecoin Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2998,7 +2998,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Usage (deprecated, use artiqox-cli):</source>
+        <source>Usage (deprecated, use Dogecoin-cli):</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3034,7 +3034,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
         <translation>Importuje bloky z externého súboru blk000??.dat</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Artiqox Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Dogecoin Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3098,7 +3098,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>RPC SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
+        <source>RPC SSL options: (see the Dogecoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3118,11 +3118,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
-        <translation>SSL možnosť: (pozrite Artiqox Wiki pre návod na nastavenie SSL)</translation>
+        <source>SSL options: (see the Dogecoin Wiki for SSL setup instructions)</source>
+        <translation>SSL možnosť: (pozrite Dogecoin Wiki pre návod na nastavenie SSL)</translation>
     </message>
     <message>
-        <source>Send command to Artiqox Core</source>
+        <source>Send command to Dogecoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3158,7 +3158,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
         <translation>Určiť aut spojenia v milisekundách (predvolené: 5000)</translation>
     </message>
     <message>
-        <source>Start Artiqox Core Daemon</source>
+        <source>Start Dogecoin Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3274,12 +3274,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
         <translation>Chyba načítania wallet.dat: Peňaženka je poškodená</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Artiqox</source>
-        <translation>Chyba načítania wallet.dat: Peňaženka vyžaduje novšiu verziu Artiqox</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin</source>
+        <translation>Chyba načítania wallet.dat: Peňaženka vyžaduje novšiu verziu Dogecoin</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Artiqox to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: dokončite reštartovaním Artiqox</translation>
+        <source>Wallet needed to be rewritten: restart Dogecoin to complete</source>
+        <translation>Bolo potrebné prepísať peňaženku: dokončite reštartovaním Dogecoin</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
