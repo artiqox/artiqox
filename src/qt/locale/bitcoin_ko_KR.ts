@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.0" language="ko_KR">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Dogecoin Core</source>
-        <translation>Dogecoin 코어 정보</translation>
+        <source>About Artiqox Core</source>
+        <translation>Artiqox 코어 정보</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Dogecoin 코어&lt;/b&gt; 버전</translation>
+        <source>&lt;b&gt;Artiqox Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Artiqox 코어&lt;/b&gt; 버전</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -24,7 +24,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>
 이 프로그램은 시험용입니다.
 
-MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.txt 파일 또는 http://www.opensource.org/licenses/mit-license.php를 참조하세요. 
+MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING.txt 파일 또는 http://www.opensource.org/licenses/mit-license.php를 참조하세요. 
 
 이 프로그램은 OpenSSL Toolkit (http://www.openssl.org) 사용 목적으로 개발한 OpenSSL 프로젝트를 포함하고 있으며, 암호화 프로그램은 Eric Young (eay@cryptsoft.com)이, UPnP 프로그램은 Thomas Bernard가 작성했습니다.</translation>
     </message>
@@ -35,7 +35,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="+0"/>
-        <source>The Dogecoin Core developers</source>
+        <source>The Artiqox Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -129,13 +129,13 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>여기에 Dogecoin을 보낼 수 있는 주소가 있습니다. 코인을 보내기 전에 항상 보내는 주소와 액수를 확인하세요.</translation>
+        <source>These are your Artiqox addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>여기에 Artiqox을 보낼 수 있는 주소가 있습니다. 코인을 보내기 전에 항상 보내는 주소와 액수를 확인하세요.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>여기에 Dogecoin을 받을 수 있는 주소가 있습니다. 매 거래기록마다 새로운 주소 사용을 권장합니다.</translation>
+        <source>These are your Artiqox addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>여기에 Artiqox을 받을 수 있는 주소가 있습니다. 매 거래기록마다 새로운 주소 사용을 권장합니다.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -255,8 +255,8 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DogecoinS&lt;/b&gt;!</source>
-        <translation>경고: 만약 지갑을 암호화 한 뒤 암호문을 잃어버리면, 모든 Dogecoin을 잃어버리게 됩니다!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ArtiqoxS&lt;/b&gt;!</source>
+        <translation>경고: 만약 지갑을 암호화 한 뒤 암호문을 잃어버리면, 모든 Artiqox을 잃어버리게 됩니다!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -282,8 +282,8 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="-56"/>
-        <source>Dogecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dogecoins from being stolen by malware infecting your computer.</source>
-        <translation>암호화 과정을 끝내기 위해 Dogecoin을 닫습니다. 지갑 암호화는 컴퓨터의 멀웨어 감염으로 인한 Dogecoin 도난을 완전히 막아주지 못함을 기억하세요.</translation>
+        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqoxs from being stolen by malware infecting your computer.</source>
+        <translation>암호화 과정을 끝내기 위해 Artiqox을 닫습니다. 지갑 암호화는 컴퓨터의 멀웨어 감염으로 인한 Artiqox 도난을 완전히 막아주지 못함을 기억하세요.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -376,8 +376,8 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Dogecoin</source>
-        <translation>Dogecoin에 대한 정보를 보여줍니다.</translation>
+        <source>Show information about Artiqox</source>
+        <translation>Artiqox에 대한 정보를 보여줍니다.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -437,13 +437,13 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="-405"/>
-        <source>Send coins to a Dogecoin address</source>
-        <translation>Dogecoin 주소로 코인 전송</translation>
+        <source>Send coins to a Artiqox address</source>
+        <translation>Artiqox 주소로 코인 보내기</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Dogecoin Core Core</source>
-        <translation>Dogecoin 코어의 환경 설정 옵션을 변경합니다</translation>
+        <source>Modify configuration options for Artiqox Core Core</source>
+        <translation>Artiqox 코어의 환경 설정 옵션을 변경합니다</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -472,8 +472,8 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="+440"/>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Artiqox</source>
+        <translation>Artiqox</translation>
     </message>
     <message>
         <location line="-652"/>
@@ -483,18 +483,18 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     <message>
         <location line="+145"/>
         <source>&amp;Send</source>
-        <translation>매우 보내기(&amp;S)</translation>
+        <translation>매우 보냄(&amp;S)</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Receive</source>
-        <translation>많이 받기(&amp;R)</translation>
+        <translation>너무 받음(&amp;R)</translation>
     </message>
     <message>
         <location line="+46"/>
         <location line="+2"/>
         <source>&amp;Show / Hide</source>
-        <translation>보이기/숨기기(&amp;S)</translation>
+        <translation>보기/숨기기(&amp;S)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -508,13 +508,13 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
-        <translation>지갑 주소가 자신 소유의 것인지 증명하기 위해 Dogecoin 주소에 서명할 수 있습니다.</translation>
+        <source>Sign messages with your Artiqox addresses to prove you own them</source>
+        <translation>Artiqox 주소에 메시지를 서명하여 그것을 가지고 있음을 증명하세요.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
-        <translation>메시지를 검증하여 지정된 Dogecoin 주소가 서명되었는지 확인하세요.</translation>
+        <source>Verify messages to ensure they were signed with specified Artiqox addresses</source>
+        <translation>메시지를 검증하여 지정된 Artiqox 주소가 서명되었는지 확인하세요.</translation>
     </message>
     <message>
         <location line="+48"/>
@@ -544,19 +544,19 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="-400"/>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin 코어</translation>
+        <source>Artiqox Core</source>
+        <translation>Artiqox 코어</translation>
     </message>
     <message>
         <location line="+162"/>
-        <source>Request payments (generates QR codes and Dogecoin: URIs)</source>
-        <translation>지불 요청하기 (QR코드와 DogecoinURI 생성)</translation>
+        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
+        <translation>지불 요청하기 (QR코드와 Artiqox URI 생성)</translation>
     </message>
     <message>
         <location line="+29"/>
         <location line="+2"/>
-        <source>&amp;About Dogecoin Core</source>
-        <translation>Dogecoin 코어 정보(&amp;A)</translation>
+        <source>&amp;About Artiqox Core</source>
+        <translation>Artiqox 코어 정보(&amp;A)</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -570,31 +570,31 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a Dogecoin: URI or payment request</source>
-        <translation>DogecoinURI 또는 지불 요청을 엽니다</translation>
+        <source>Open a Artiqox: URI or payment request</source>
+        <translation>Artiqox URI 또는 지불 요청을 엽니다</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Command-line options</source>
-        <translation>명령어-라인 옵션(&amp;C)</translation>
+        <translation>명령-줄 옵션(&amp;C)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the Dogecoin Core help message to get a list with possible command-line options</source>
-        <translation>가능한 명령어-라인 옵션 목록을 Dogecoin 코어 도움말 메시지에서 안내합니다.</translation>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
+        <translation>가능한 명령어-라인 옵션 목록을 Artiqox 코어 도움말 메시지에서 안내합니다.</translation>
     </message>
     <message>
         <location line="+159"/>
         <location line="+5"/>
-        <source>Dogecoin client</source>
-        <translation>Dogecoin 클라이언트</translation>
+        <source>Artiqox client</source>
+        <translation>Artiqox 클라이언트</translation>
     </message>
     <message numerus="yes">
         <location line="+142"/>
-        <source>%n active connection(s) to Dogecoin network</source>
+        <source>%n active connection(s) to Artiqox network</source>
         <translation>
-            <numerusform>Dogecoin 네트워크와 %n개의 연결이 활성화 되었습니다</numerusform>
-            <numerusform>Dogecoin 네트워크와 %n개의 연결들이 활성화 되었습니다</numerusform>
+            <numerusform>Artiqox 네트워크와 %n개의 연결이 활성화 되었습니다</numerusform>
+            <numerusform>Artiqox 네트워크와 %n개의 연결들이 활성화 되었습니다</numerusform>
         </translation>
     </message>
     <message>
@@ -616,8 +616,8 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
         <location line="+27"/>
         <source>%n hour(s)</source>
         <translation>
-            <numerusform>%시간</numerusform>
-            <numerusform>%시간</numerusform>
+            <numerusform>%n시간</numerusform>
+            <numerusform>%n시간</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -724,9 +724,9 @@ Address: %4
         <translation>지갑이 &lt;b&gt;암호화&lt;/b&gt; 되었고 현재 &lt;b&gt;잠겨&lt;/b&gt; 있습니다</translation>
     </message>
     <message>
-        <location filename="../Dogecoin.cpp" line="+447"/>
-        <source>A fatal error occurred. Dogecoin Core can no longer continue safely and will quit.</source>
-        <translation>치명적인 오류가 발생했습니다. Dogecoin 코어를 더 이상 안전하게 진행할 수 없어 끝냅니다.</translation>
+        <location filename="../bitcoin.cpp" line="+447"/>
+        <source>A fatal error occurred. Artiqox Core can no longer continue safely and will quit.</source>
+        <translation>치명적인 오류가 발생했습니다. Artiqox 코어를 더 이상 안전하게 진행할 수 없어 끝냅니다.</translation>
     </message>
 </context>
 <context>
@@ -805,7 +805,12 @@ Address: %4
         <translation>액수</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+5"/>
+        <source>Label</source>
+        <translation>라벨</translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Address</source>
         <translation>주소</translation>
     </message>
@@ -832,12 +837,12 @@ Address: %4
     <message>
         <location filename="../coincontroldialog.cpp" line="+41"/>
         <source>Copy address</source>
-        <translation>주소 복사하기</translation>
+        <translation>주소 복사</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy label</source>
-        <translation>라벨 복사하기</translation>
+        <translation>라벨 복사</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -853,12 +858,12 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Lock unspent</source>
-        <translation>미소비 잠금</translation>
+        <translation>미사용액 잠금</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Unlock unspent</source>
-        <translation>미소비 풀기</translation>
+        <translation>미사용액 해제</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -1083,8 +1088,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
-        <translation>입력한 주소 &quot;%1&quot;은(는) 올바른 Dogecoin 주소가 아닙니다.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Artiqox address.</source>
+        <translation>입력한 주소 &quot;%1&quot;은(는) 올바른 Artiqox 주소가 아닙니다.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1129,13 +1134,13 @@ Address: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
-        <source>Dogecoin Core - Command-line options</source>
-        <translation>Dogecoin 코어 - 명령-줄 옵션</translation>
+        <source>Artiqox Core - Command-line options</source>
+        <translation>Artiqox 코어 - 명령-줄 옵션</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+24"/>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin 코어</translation>
+        <source>Artiqox Core</source>
+        <translation>Artiqox 코어</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1192,18 +1197,18 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Dogecoin Core.</source>
-        <translation>Dogecoin 코어에 오신 것을 환영합니다.</translation>
+        <source>Welcome to Artiqox Core.</source>
+        <translation>Artiqox 코어에 오신 것을 환영합니다.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Dogecoin Core will store its data.</source>
-        <translation>프로그램이 처음으로 실행되었기 때문에, Dogecoin 코어의 데이터를 어느 위치에 저장할지 선택할 수 있습니다.</translation>
+        <source>As this is the first time the program is launched, you can choose where Artiqox Core will store its data.</source>
+        <translation>프로그램이 처음으로 실행되었기 때문에, Artiqox 코어의 데이터를 어느 위치에 저장할지 선택할 수 있습니다.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Dogecoin Core will download and store a copy of the Dogecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Dogecoin 코어는 블록 체인의 복사본을 다운받아 저장할 것입니다. 적어도 %1GB의 데이터가 이 디렉토리에 저장되고, 시간이 흐르면 증가합니다. 사용자의 지갑 또한 이곳에 저장됩니다.</translation>
+        <source>Artiqox Core will download and store a copy of the Artiqox block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Artiqox 코어는 블록 체인의 복사본을 다운받아 저장할 것입니다. 적어도 %1GB의 데이터가 이 디렉토리에 저장되고, 시간이 흐르면 증가합니다. 사용자의 지갑 또한 이곳에 저장됩니다.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1217,8 +1222,8 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+82"/>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Artiqox</source>
+        <translation>Artiqox</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1284,22 +1289,22 @@ Address: %4
     <message>
         <location line="+116"/>
         <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>사용자의 거래기록들이 더욱 빠르게 처리될 수 있도록 돕는 추가적인 kB당 거래기록 수수료입니다. 대부분의 거래기록들은 1kB입니다.</translation>
+        <translation>사용자의 거래기록들이 빠르게 처리될 수 있도록 돕는 추가적인 kB당 거래기록 수수료입니다. 대부분의 거래기록들은 1kB입니다.</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Pay transaction &amp;fee</source>
-        <translation>거래기록 수수료 지불하기(&amp;f)</translation>
+        <translation>거래기록 수수료 지불(&amp;f)</translation>
     </message>
     <message>
         <location line="-125"/>
-        <source>Automatically start Dogecoin Core after logging in to the system.</source>
-        <translation>시스템 로그인 후 자동으로 Dogecoin 코어를 시작합니다.</translation>
+        <source>Automatically start Artiqox Core after logging in to the system.</source>
+        <translation>시스템 로그인 후 자동으로 Artiqox 코어를 시작합니다.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Dogecoin Core on system login</source>
-        <translation>시스템 로그인 시 Dogecoin 코어 시작(&amp;S)</translation>
+        <source>&amp;Start Artiqox Core on system login</source>
+        <translation>시스템 로그인 시 Artiqox 코어 시작(&amp;S)</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1318,24 +1323,24 @@ Address: %4
     </message>
     <message>
         <location line="+160"/>
-        <source>Connect to the Dogecoin network through a SOCKS proxy.</source>
-        <translation>SOCKS 프록시를 통해 Dogecoin 네트워크 연결</translation>
+        <source>Connect to the Artiqox network through a SOCKS proxy.</source>
+        <translation>SOCKS 프록시를 통해 Artiqox 네트워크 연결</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation>SOCKS 프록시를 통해 연결합니다(&amp;C) (프록시 기본값):</translation>
+        <translation>SOCKS 프록시를 통해 연결(&amp;C) (프록시 기본값):</translation>
     </message>
     <message>
         <location line="+34"/>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>프록시 아이피 주소(예: IPv4:127.0.0.1 / IPv6: ::1)</translation>
+        <translation>프록시의 아이피 주소입니다(예: IPv4:127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <location line="+194"/>
         <location line="+13"/>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>바로 가기 메뉴 항목으로 거래기록 탭에 나타나는 서드 파티 URL (예: a block explorer)입니다. URL안의 %s(은)는 거래기록 해쉬로 대체됩니다. 여러 개의 URL들은 수직 바 | 로 구분됩니다.</translation>
+        <translation>거래기록 탭의 바로 가기 메뉴 항목으로 나타나는 서드 파티 URL (예: 블록 탐색기)입니다. URL안의 %s는 거래기록 해쉬로 대체됩니다. 여러 개의 URL들은 수직 바 | 로 구분됩니다.</translation>
     </message>
     <message>
         <location line="-10"/>
@@ -1350,7 +1355,7 @@ Address: %4
     <message>
         <location line="+43"/>
         <source>Reset all client options to default.</source>
-        <translation>모든 클라이언트 옵션을 기본값으로 재설정</translation>
+        <translation>모든 클라이언트 옵션을 기본값으로 재설정합니다.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1375,7 +1380,7 @@ Address: %4
     <message>
         <location line="+65"/>
         <source>Expert</source>
-        <translation>전문가</translation>
+        <translation>전문가용</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1394,8 +1399,8 @@ Address: %4
     </message>
     <message>
         <location line="+17"/>
-        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>라우터의 Dogecoin 클라이언트 포트를 자동으로 엽니다. 라우터에서 UPnP를 지원하고 활성화 했을 경우에만 동작합니다.</translation>
+        <source>Automatically open the Artiqox client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>라우터의 Artiqox 클라이언트 포트를 자동으로 엽니다. 라우터에서 UPnP를 지원하고 활성화 했을 경우에만 동작합니다.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1464,8 +1469,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin Core.</source>
-        <translation>여기서 사용자에게 표시할 언어를 설정할 수 있습니다. 이 설정은 Dogecoin 코어를 다시 시작할 때 적용됩니다.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Artiqox Core.</source>
+        <translation>여기서 사용자에게 표시할 언어를 설정할 수 있습니다. 이 설정은 Artiqox 코어를 다시 시작할 때 적용됩니다.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1479,8 +1484,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Dogecoin addresses in the transaction list or not.</source>
-        <translation>거래기록 목록에 Dogecoin 주소를 표시할 지의 여부입니다.</translation>
+        <source>Whether to show Artiqox addresses in the transaction list or not.</source>
+        <translation>거래기록 목록에 Artiqox 주소를 표시할 지의 여부입니다.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1521,7 +1526,7 @@ Address: %4
         <location line="+1"/>
         <location line="+29"/>
         <source>Client restart required to activate changes.</source>
-        <translation>변경한 내용을 적용하려면 클라이언트를 재 시작 해야 합니다.</translation>
+        <translation>변경한 내용을 적용하려면 클라이언트를 재시작 해야 합니다.</translation>
     </message>
     <message>
         <location line="-29"/>
@@ -1531,7 +1536,7 @@ Address: %4
     <message>
         <location line="+33"/>
         <source>This change would require a client restart.</source>
-        <translation>변경을 위해 클라이언트 재 시작이 필요합니다.</translation>
+        <translation>변경을 위해 클라이언트 재시작이 필요합니다.</translation>
     </message>
     <message>
         <location line="+34"/>
@@ -1549,8 +1554,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>표시된 정보가 오래된 것 같습니다. 연결이 자리를 잡으면 지갑은 자동적으로 Dogecoin 네트워크와 동기화 하지만, 아직 동기화가 끝나지 않았습니다.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Artiqox network after a connection is established, but this process has not completed yet.</source>
+        <translation>표시된 정보가 오래된 것 같습니다. 연결이 자리를 잡으면 지갑은 자동적으로 Artiqox 네트워크와 동기화 하지만, 아직 동기화가 끝나지 않았습니다.</translation>
     </message>
     <message>
         <location line="-238"/>
@@ -1619,8 +1624,8 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
-        <translation>URI를 분석할 수 없습니다! 이것은 유효하지 않은 Dogecoin 주소나 잘못된 형태의 URI 인수로 인해 유발될 수 있습니다.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Artiqox address or malformed URI parameters.</source>
+        <translation>URI를 분석할 수 없습니다! 이것은 유효하지 않은 Artiqox 주소나 잘못된 형태의 URI 인수로 인해 유발될 수 있습니다.</translation>
     </message>
     <message>
         <location line="+96"/>
@@ -1639,8 +1644,8 @@ Address: %4
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start Dogecoin: click-to-pay handler</source>
-        <translation>Dogecoin을 시작할 수 없습니다: click-to-pay handler</translation>
+        <source>Cannot start Artiqox: click-to-pay handler</source>
+        <translation>Artiqox을 시작할 수 없습니다: click-to-pay handler</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -1706,11 +1711,11 @@ Address: %4
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../Dogecoin.cpp" line="+71"/>
+        <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+7"/>
         <location line="+13"/>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Artiqox</source>
+        <translation>Artiqox</translation>
     </message>
     <message>
         <location line="-19"/>
@@ -1729,13 +1734,13 @@ Address: %4
     </message>
     <message>
         <location line="+60"/>
-        <source>Dogecoin Core didn&apos;t yet exit safely...</source>
-        <translation>Dogecoin 코어를 아직 안전하게 끝낼 수 없습니다…</translation>
+        <source>Artiqox Core didn&apos;t yet exit safely...</source>
+        <translation>Artiqox 코어를 아직 안전하게 끝낼 수 없습니다…</translation>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+89"/>
-        <source>Enter a Dogecoin address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Dogecoin 주소를 입력하세요 (예: AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <source>Enter a Artiqox address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
+        <translation>Artiqox 주소를 입력하세요 (예: AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
 </context>
 <context>
@@ -1897,8 +1902,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Dogecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>현재 데이터 디렉토리의 Dogecoin 디버그 로그 파일을 엽니다. 용량이 큰 로그 파일들은 몇 초가 걸릴 수 있습니다.</translation>
+        <source>Open the Artiqox debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>현재 데이터 디렉토리의 Artiqox 디버그 로그 파일을 엽니다. 용량이 큰 로그 파일들은 몇 초가 걸릴 수 있습니다.</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -1907,8 +1912,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-35"/>
-        <source>Welcome to the Dogecoin RPC console.</source>
-        <translation>Dogecoin 코어 RPC 콘솔에 오신걸 환영합니다</translation>
+        <source>Welcome to the Artiqox RPC console.</source>
+        <translation>Artiqox 코어 RPC 콘솔에 오신걸 환영합니다</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1986,8 +1991,8 @@ Address: %4
     <message>
         <location line="+14"/>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
-        <translation>요청이 열릴 때 표시될 지불 요청에 첨부하는 메시지를 추가합니다. 참고: 이 메시지는 지불과 함께 Dogecoin 네트워크를 통해 보내지지는 않을 것입니다.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Artiqox network.</source>
+        <translation>요청이 열릴 때 표시될 지불 요청에 첨부하는 메시지를 추가합니다. 참고: 이 메시지는 지불과 함께 Artiqox 네트워크를 통해 보내지지는 않을 것입니다.</translation>
     </message>
     <message>
         <location line="-7"/>
@@ -2029,7 +2034,7 @@ Address: %4
     <message>
         <location line="+120"/>
         <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>선택된 요청 보이기 (항목 더블클릭)</translation>
+        <translation>선택된 요청 보기 (항목 더블클릭)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2039,17 +2044,17 @@ Address: %4
     <message>
         <location line="+14"/>
         <source>Remove the selected entries from the list</source>
-        <translation>목록에 있는 선택된 항목들을 삭제합니다</translation>
+        <translation>목록에 있는 선택된 항목들을 제거합니다</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Remove</source>
-        <translation>삭제</translation>
+        <translation>제거</translation>
     </message>
     <message>
         <location filename="../receivecoinsdialog.cpp" line="+39"/>
         <source>Copy label</source>
-        <translation>표 복사하기</translation>
+        <translation>라벨 복사</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2112,7 +2117,7 @@ Address: %4
     <message>
         <location line="+2"/>
         <source>Label</source>
-        <translation>표</translation>
+        <translation>라벨</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2160,7 +2165,7 @@ Address: %4
     <message>
         <location line="+9"/>
         <source>(no message)</source>
-        <translation>(메시지가 없습니다)</translation>
+        <translation>(메시지 없음)</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2240,7 +2245,7 @@ Address: %4
     <message>
         <location line="+44"/>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>이것이 활성화 되었을 때, 반환액 주소가 비어있거나 잘못되었더라도, 반환액은 새롭게 생성된 주소로 보내질 것입니다.</translation >
+        <translation>활성화 되면 반환액 주소가 비어있거나 잘못되었더라도, 반환액은 새롭게 생성된 주소로 보내질 것입니다.</translation >
     </message>
     <message>
         <location line="+3"/>
@@ -2255,7 +2260,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Add &amp;Recipient</source>
-        <translation>받는 이 추가하기(&amp;R)</translation>
+        <translation>받는 이 추가(&amp;R)</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2293,7 +2298,7 @@ Address: %4
         <location line="+5"/>
         <location line="+4"/>
         <source>%1 to %2</source>
-        <translation>%1 를 %2 에</translation>
+        <translation>%1를 %2로</translation>
     </message>
     <message>
         <location line="-121"/>
@@ -2382,8 +2387,8 @@ Address: %4
     </message>
     <message>
         <location line="+113"/>
-        <source>Warning: Invalid Dogecoin address</source>
-        <translation>경고: 잘못된 Dogecoin주소입니다</translation>
+        <source>Warning: Invalid Artiqox address</source>
+        <translation>경고: 잘못된 Artiqox주소입니다</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -2403,7 +2408,7 @@ Address: %4
     <message>
         <location line="+9"/>
         <source>added as transaction fee</source>
-        <translation>거래기록 수수료로 추가됩니다</translation>
+        <translation>거래기록 수수료 추가됨</translation>
     </message>
     <message>
         <location line="+171"/>
@@ -2463,7 +2468,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Paste address from clipboard</source>
-        <translation>주소를 클립보드로 복사합니다</translation>
+        <translation>주소를 클립보드에서 붙여넣습니다</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2475,7 +2480,7 @@ Address: %4
         <location line="+524"/>
         <location line="+536"/>
         <source>Remove this entry</source>
-        <translation>항목을 지웁니다</translation>
+        <translation>항목을 제거합니다.</translation>
     </message>
     <message>
         <location line="-1008"/>
@@ -2494,8 +2499,8 @@ Address: %4
     </message>
     <message>
         <location line="+33"/>
-        <source>A message that was attached to the Dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
-        <translation>참고용으로 DogecoinURI에 첨부된 거래기록에 저장될 수 있는 메시지 입니다. 참고: 이 메시지는 Dogecoin 네트워크를 통해 보내지지는 않을 것입니다.</translation>
+        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <translation>참고용으로 Artiqox URI에 첨부된 거래기록에 저장될 수 있는 메시지 입니다. 참고: 이 메시지는 Artiqox 네트워크를 통해 보내지지는 않을 것입니다.</translation>
     </message>
     <message>
         <location line="+426"/>
@@ -2519,8 +2524,8 @@ Address: %4
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+52"/>
-        <source>Dogecoin Core is shutting down...</source>
-        <translation>Dogecoin 코어를 닫고 있습니다...</translation>
+        <source>Artiqox Core is shutting down...</source>
+        <translation>Artiqox 코어를 닫고 있습니다...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2565,7 +2570,7 @@ Address: %4
     <message>
         <location line="-200"/>
         <source>Paste address from clipboard</source>
-        <translation>주소를 클립보드로 복사합니다</translation>
+        <translation>주소를 클립보드에서 붙여넣습니다</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2589,13 +2594,13 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Dogecoin address</source>
-        <translation>메시지를 서명하여 이 Dogecoin 주소를 가지고 있다는 것을 증명하세요</translation>
+        <source>Sign the message to prove you own this Artiqox address</source>
+        <translation>메시지를 서명하여 이 Artiqox 주소를 가지고 있다는 것을 증명하세요</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Sign &amp;Message</source>
-        <translation>메시지 서명하기(&amp;M)</translation>
+        <translation>메시지 서명(&amp;M)</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -2625,13 +2630,13 @@ Address: %4
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
-        <translation>메시지를 검증하여 지정된 Dogecoin 주소로 서명되었는지 확인하세요.</translation>
+        <source>Verify the message to ensure it was signed with the specified Artiqox address</source>
+        <translation>메시지를 검증하여 지정된 Artiqox 주소로 서명되었는지 확인하세요.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Verify &amp;Message</source>
-        <translation>메시지 검증하기(&amp;M)</translation>
+        <translation>메시지 검증(&amp;M)</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -2640,13 +2645,13 @@ Address: %4
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+30"/>
-        <source>Enter a Dogecoin address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Dogecoin 주소를 입력하세요 (예: AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <source>Enter a Artiqox address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
+        <translation>Artiqox 주소를 입력하세요 (예: AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
         <location line="-1"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>서명을 생성하려면 &quot;메시지 서명하기&quot;를 클릭하세요</translation>
+        <translation>서명을 생성하려면 &quot;메시지 서명&quot;을 클릭하세요</translation>
     </message>
     <message>
         <location line="+84"/>
@@ -2719,12 +2724,12 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+32"/>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin 코어</translation>
+        <source>Artiqox Core</source>
+        <translation>Artiqox 코어</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Dogecoin Core developers</source>
+        <source>The Artiqox Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2751,7 +2756,7 @@ Address: %4
     <message>
         <location line="+6"/>
         <source>conflicted</source>
-        <translation>충돌</translation>
+        <translation>미일치</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2777,8 +2782,8 @@ Address: %4
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
         <translation>
-            <numerusform>, %n 노드를 통해 알려짐</numerusform>
-            <numerusform>, %n 노드들을 통해 알려짐</numerusform>
+            <numerusform>, %n개 노드를 통해 알려짐</numerusform>
+            <numerusform>, %n게 노드를 통해 알려짐</numerusform>
         </translation>
     </message>
     <message>
@@ -3021,7 +3026,7 @@ Address: %4
     <message>
         <location line="+6"/>
         <source>Conflicted</source>
-        <translation>충돌</translation>
+        <translation>미일치</translation>
     </message>
     <message>
         <location line="+51"/>
@@ -3175,12 +3180,12 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Edit label</source>
-        <translation>라벨 수정하기</translation>
+        <translation>라벨 수정</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show transaction details</source>
-        <translation>거래기록 내역 보기</translation>
+        <translation>거래기록 정보 보기</translation>
     </message>
     <message>
         <location line="+163"/>
@@ -3318,16 +3323,16 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>Dogecoin-core</name>
+    <name>Artiqox-core</name>
     <message>
-        <location filename="../Dogecoinstrings.cpp" line="+262"/>
+        <location filename="../bitcoinstrings.cpp" line="+262"/>
         <source>Usage:</source>
-        <translation>사용법: (이 항목의 번역은 완전하지 않습니다. 참고용으로만 사용하세요.)</translation>
+        <translation>사용법:</translation>
     </message>
     <message>
         <location line="-66"/>
         <source>List commands</source>
-        <translation>커맨드 목록</translation>
+        <translation>명령 목록</translation>
     </message>
     <message>
         <location line="-15"/>
@@ -3341,13 +3346,13 @@ Address: %4
     </message>
     <message>
         <location line="+32"/>
-        <source>Specify configuration file (default: Dogecoin.conf)</source>
-        <translation>설정파일 지정 (기본값: Dogecoin.conf)</translation>
+        <source>Specify configuration file (default: Artiqox.conf)</source>
+        <translation>설정파일 지정 (기본값: Artiqox.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Dogecoind.pid)</source>
-        <translation>pid 파일 지정 (기본값: Dogecoind.pid)</translation>
+        <source>Specify pid file (default: Artiqoxd.pid)</source>
+        <translation>pid 파일 지정 (기본값: Artiqoxd.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3397,12 +3402,12 @@ Address: %4
     <message>
         <location line="+51"/>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation>명령줄과 JSON-RPC 명령 수락</translation>
+        <translation>명령 줄과 JSON-RPC 명령 수락</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Dogecoin Core RPC client version</source>
-        <translation>Dogecoin 코어 RPC 클라이언트 버전</translation>
+        <source>Artiqox Core RPC client version</source>
+        <translation>Artiqox 코어 RPC 클라이언트 버전</translation>
     </message>
     <message>
         <location line="+88"/>
@@ -3424,24 +3429,24 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Dogecoinrpc
+rpcuser=Artiqoxrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
 </source>
         <translation>%s, 사용자는 반드시 rpcpassword를 환경 설정 파일에 설정해야 합니다:
 %s
 다음과 같은 임의 비밀번호를 사용하는 것을 권장합니다:
-rpcuser=Dogecoinrpc
+rpcuser=Artiqoxrpc
 rpcpassword=%s
 (사용자는 이 비밀번호를 기억할 필요가 없습니다)
 유저이름과 비밀번호는 절대로 같지 않아야 합니다.
 만약 파일이 존재하지 않으면, 사용자-읽기-전용 파일 권한으로 만듭니다.
 또한, alertnotify를 설정하는 것을 권장합니다. 그러면 사용자는 문제를 고지 받게 됩니다.
-예: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com
+예: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3531,8 +3536,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to bind to %s on this computer. Dogecoin Core is probably already running.</source>
-        <translation>이 컴퓨터의 %s에 바인드 할 수 없습니다. Dogecoin 코어가 이미 실행중인 것 같습니다.</translation>
+        <source>Unable to bind to %s on this computer. Artiqox Core is probably already running.</source>
+        <translation>이 컴퓨터의 %s에 바인드 할 수 없습니다. Artiqox 코어가 이미 실행중인 것 같습니다.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3546,8 +3551,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin Core will not work properly.</source>
-        <translation>경고: 컴퓨터의 날짜와 시간이 올바른지 확인하세요! 시간이 잘못되면 Dogecoin 코어는 제대로 동작하지 않습니다.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Artiqox Core will not work properly.</source>
+        <translation>경고: 컴퓨터의 날짜와 시간이 올바른지 확인하세요! 시간이 잘못되면 Artiqox 코어는 제대로 동작하지 않습니다.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3557,7 +3562,7 @@ rpcpassword=%s
     <message>
         <location line="+3"/>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>경고: 현재 Dogecoin 버전이 다른 네트워크 참여자들과 동일하지 않은 것 같습니다. 사용자가 업그레이드가 필요하거나, 다른 노드들이 업그레이드가 필요한 것 같습니다.</translation>
+        <translation>경고: 현재 Artiqox 버전이 다른 네트워크 참여자들과 동일하지 않은 것 같습니다. 사용자가 업그레이드가 필요하거나, 다른 노드들이 업그레이드가 필요한 것 같습니다.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3591,8 +3596,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Dogecoin Core Daemon</source>
-        <translation>Dogecoin 코어 데몬</translation>
+        <source>Artiqox Core Daemon</source>
+        <translation>Artiqox 코어 데몬</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -3667,7 +3672,7 @@ rpcpassword=%s
     <message>
         <location line="+1"/>
         <source>Error loading block database</source>
-        <translation>블록 데이터베이스 불러오는 중 오류</translation>
+        <translation>블록 데이터베이스를 불러오는 중 오류</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -3851,8 +3856,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+10"/>
-        <source>Usage (deprecated, use Dogecoin-cli):</source>
-        <translation>사용법 (오래되었습니다. Dogecoin-cli를 사용하세요):</translation>
+        <source>Usage (deprecated, use Artiqox-cli):</source>
+        <translation>사용법 (오래되었습니다. Artiqox-cli를 사용하세요):</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3896,8 +3901,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="-150"/>
-        <source>Cannot obtain a lock on data directory %s. Dogecoin Core is probably already running.</source>
-        <translation>디렉토리 %s 데이터 락을 얻을 수 없습니다. 아마도 Dogecoin 코어가 실행중인 것 같습니다.</translation>
+        <source>Cannot obtain a lock on data directory %s. Artiqox Core is probably already running.</source>
+        <translation>디렉토리 %s 데이터 락을 얻을 수 없습니다. 아마도 Artiqox 코어가 실행중인 것 같습니다.</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -3976,7 +3981,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>RPC SSL options: (see the Dogecoin Wiki for SSL setup instructions)</source>
+        <source>RPC SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
         <translation>RPC SSL 옵션: (SSL 설정 절차를 보려면 비트코인 위키를 참조하세요) </translation>
     </message>
     <message>
@@ -4001,13 +4006,13 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+2"/>
-        <source>SSL options: (see the Dogecoin Wiki for SSL setup instructions)</source>
-        <translation>SSL 옵션: (SSL 설정 절차를 보려면 Dogecoin 위키를 참조하세요)</translation>
+        <source>SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
+        <translation>SSL 옵션: (SSL 설정 절차를 보려면 Artiqox 위키를 참조하세요)</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Send command to Dogecoin Core</source>
-        <translation>Dogecoin 코어에 명령 보내기</translation>
+        <source>Send command to Artiqox Core</source>
+        <translation>Artiqox 코어에 명령 보내기</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -4051,8 +4056,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+6"/>
-        <source>Start Dogecoin Core Daemon</source>
-        <translation>Dogecoin 코어 데몬 시작</translation>
+        <source>Start Artiqox Core Daemon</source>
+        <translation>Artiqox 코어 데몬 시작</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4196,13 +4201,13 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin Core</source>
-        <translation>wallet.dat 불러오기 오류: 지갑은 상위 버전의 Dogecoin 코어가 필요합니다.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Artiqox Core</source>
+        <translation>wallet.dat 불러오기 오류: 지갑은 상위 버전의 Artiqox 코어가 필요합니다.</translation>
     </message>
     <message>
         <location line="+113"/>
-        <source>Wallet needed to be rewritten: restart Dogecoin Core to complete</source>
-        <translation>지갑을 다시 써야 함: 완료하기 위해 Dogecoin 코어를 다시 시작하세요</translation>
+        <source>Wallet needed to be rewritten: restart Artiqox Core to complete</source>
+        <translation>지갑을 다시 써야 함: 완료하기 위해 Artiqox 코어를 다시 시작하세요</translation>
     </message>
     <message>
         <location line="-115"/>

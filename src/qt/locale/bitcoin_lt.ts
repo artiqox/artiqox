@@ -1,12 +1,12 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="lt" version="2.0">
+﻿<?xml version="1.0" ?><!DOCTYPE TS><TS language="lt" version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Dogecoin Core</source>
+        <source>About Artiqox Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Artiqox Core&lt;/b&gt; version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -27,7 +27,7 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation>Copyright</translation>
     </message>
     <message>
-        <source>The Dogecoin Core developers</source>
+        <source>The Artiqox Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -102,11 +102,11 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Artiqox addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Artiqox addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -204,8 +204,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation>Patvirtinkite piniginės užšifravimą</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DogecoinS&lt;/b&gt;!</source>
-        <translation>Dėmesio: jei užšifruosite savo piniginę ir pamesite slaptafrazę, jūs&lt;b&gt;PRARASITE VISUS SAVO DogecoinUS&lt;/b&gt;! </translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ArtiqoxS&lt;/b&gt;!</source>
+        <translation>Dėmesio: jei užšifruosite savo piniginę ir pamesite slaptafrazę, jūs&lt;b&gt;PRARASITE VISUS SAVO ArtiqoxUS&lt;/b&gt;! </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -224,8 +224,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation>Piniginė užšifruota</translation>
     </message>
     <message>
-        <source>Dogecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dogecoins from being stolen by malware infecting your computer.</source>
-        <translation>Dogecoin dabar užsidarys šifravimo proceso pabaigai. Atminkite, kad piniginės šifravimas negali pilnai apsaugoti Dogecoinų vagysčių kai tinkle esančios kenkėjiškos programos patenka į jūsų kompiuterį.</translation>
+        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqoxs from being stolen by malware infecting your computer.</source>
+        <translation>Artiqox dabar užsidarys šifravimo proceso pabaigai. Atminkite, kad piniginės šifravimas negali pilnai apsaugoti Artiqoxų vagysčių kai tinkle esančios kenkėjiškos programos patenka į jūsų kompiuterį.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -295,8 +295,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation>Išjungti programą</translation>
     </message>
     <message>
-        <source>Show information about Dogecoin</source>
-        <translation>Rodyti informaciją apie Dogecoin</translation>
+        <source>Show information about Artiqox</source>
+        <translation>Rodyti informaciją apie Artiqox</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -343,12 +343,12 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation>Blokai iš naujo indeksuojami...</translation>
     </message>
     <message>
-        <source>Send coins to a Dogecoin address</source>
-        <translation>Siųsti monetas Dogecoin adresui</translation>
+        <source>Send coins to a Artiqox address</source>
+        <translation>Siųsti monetas Artiqox adresui</translation>
     </message>
     <message>
-        <source>Modify configuration options for Dogecoin Core</source>
-        <translation>Keisti Dogecoin konfigūracijos galimybes</translation>
+        <source>Modify configuration options for Artiqox Core</source>
+        <translation>Keisti Artiqox konfigūracijos galimybes</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -371,8 +371,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation>&amp;Tikrinti žinutę...</translation>
     </message>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Artiqox</source>
+        <translation>Artiqox</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -399,11 +399,11 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
+        <source>Sign messages with your Artiqox addresses to prove you own them</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Artiqox addresses</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -427,15 +427,15 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation>[testavimotinklas]</translation>
     </message>
     <message>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin branduolys</translation>
+        <source>Artiqox Core</source>
+        <translation>Artiqox branduolys</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Dogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&amp;About Dogecoin Core</source>
+        <source>&amp;About Artiqox Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -447,7 +447,7 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Open a Dogecoin: URI or payment request</source>
+        <source>Open a Artiqox: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -455,16 +455,16 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Show the Dogecoin Core help message to get a list with possible command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Dogecoin client</source>
-        <translation>Dogecoin klientas</translation>
+        <source>Artiqox client</source>
+        <translation>Artiqox klientas</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dogecoin network</source>
-        <translation><numerusform>%n Dogecoin tinklo aktyvus ryšys</numerusform><numerusform>%n Dogecoin tinklo aktyvūs ryšiai</numerusform><numerusform>%n Dogecoin tinklo aktyvūs ryšiai</numerusform></translation>
+        <source>%n active connection(s) to Artiqox network</source>
+        <translation><numerusform>%n Artiqox tinklo aktyvus ryšys</numerusform><numerusform>%n Artiqox tinklo aktyvūs ryšiai</numerusform><numerusform>%n Artiqox tinklo aktyvūs ryšiai</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -558,7 +558,7 @@ Adresas: %4</translation>
         <translation>Piniginė &lt;b&gt;užšifruota&lt;/b&gt; ir šiuo metu &lt;b&gt;užrakinta&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Artiqox can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -622,6 +622,10 @@ Adresas: %4</translation>
     <message>
         <source>Amount</source>
         <translation>Suma</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Address</source>
@@ -843,8 +847,8 @@ Adresas: %4</translation>
         <translation>Įvestas adresas „%1“ jau yra adresų knygelėje.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
-        <translation>Įvestas adresas „%1“ nėra galiojantis Dogecoin adresas.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Artiqox address.</source>
+        <translation>Įvestas adresas „%1“ nėra galiojantis Artiqox adresas.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -881,12 +885,12 @@ Adresas: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Dogecoin Core - Command-line options</source>
+        <source>Artiqox Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin branduolys</translation>
+        <source>Artiqox Core</source>
+        <translation>Artiqox branduolys</translation>
     </message>
     <message>
         <source>version</source>
@@ -932,15 +936,15 @@ Adresas: %4</translation>
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to Dogecoin Core.</source>
+        <source>Welcome to Artiqox Core.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Dogecoin Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Artiqox Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Dogecoin Core will download and store a copy of the Dogecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Artiqox Core will download and store a copy of the Artiqox block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -952,8 +956,8 @@ Adresas: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Artiqox</source>
+        <translation>Artiqox</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
@@ -1014,12 +1018,12 @@ Adresas: %4</translation>
         <translation>&amp;Mokėti sandorio mokestį</translation>
     </message>
     <message>
-        <source>Automatically start Dogecoin after logging in to the system.</source>
-        <translation>Automatiškai paleisti Dogecoin programą įjungus sistemą.</translation>
+        <source>Automatically start Artiqox Core after logging in to the system.</source>
+        <translation>Automatiškai paleisti Artiqox programą įjungus sistemą.</translation>
     </message>
     <message>
-        <source>&amp;Start Dogecoin on system login</source>
-        <translation>&amp;Paleisti Dogecoin programą su window sistemos paleidimu</translation>
+        <source>&amp;Start Artiqox Core on system login</source>
+        <translation>&amp;Paleisti Artiqox programą su window sistemos paleidimu</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1034,7 +1038,7 @@ Adresas: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Connect to the Dogecoin network through a SOCKS proxy.</source>
+        <source>Connect to the Artiqox network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1086,8 +1090,8 @@ Adresas: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti Dogecoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
+        <source>Automatically open the Artiqox client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatiškai atidaryti Artiqox kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1142,8 +1146,8 @@ Adresas: %4</translation>
         <translation>Naudotojo sąsajos &amp;kalba:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin.</source>
-        <translation>Čia gali būti nustatyta naudotojo sąsajos kalba. Šis nustatymas įsigalios iš naujo paleidus Dogecoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Artiqox Core.</source>
+        <translation>Čia gali būti nustatyta naudotojo sąsajos kalba. Šis nustatymas įsigalios iš naujo paleidus Artiqox.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1154,7 +1158,7 @@ Adresas: %4</translation>
         <translation>Rodomų ir siunčiamų monetų kiekio matavimo vienetai</translation>
     </message>
     <message>
-        <source>Whether to show Dogecoin addresses in the transaction list or not.</source>
+        <source>Whether to show Artiqox addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1209,7 +1213,7 @@ Adresas: %4</translation>
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Artiqox network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1264,7 +1268,7 @@ Adresas: %4</translation>
         <translation>URI apdorojimas</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Artiqox address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1276,7 +1280,7 @@ Adresas: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Cannot start Dogecoin: click-to-pay handler</source>
+        <source>Cannot start Artiqox: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1331,8 +1335,8 @@ Adresas: %4</translation>
 <context>
     <name>QObject</name>
     <message>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Artiqox</source>
+        <translation>Artiqox</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
@@ -1347,12 +1351,12 @@ Adresas: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Dogecoin Core did&apos;t yet exit safely...</source>
+        <source>Artiqox Core did&apos;t yet exit safely...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Enter a Dogecoin address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Įveskite Dogecoinų adresą (pvz. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <source>Enter a Artiqox address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
+        <translation>Įveskite Artiqoxų adresą (pvz. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
 </context>
 <context>
@@ -1473,7 +1477,7 @@ Adresas: %4</translation>
         <translation>Derinimo žurnalo failas</translation>
     </message>
     <message>
-        <source>Open the Dogecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Artiqox debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1481,7 +1485,7 @@ Adresas: %4</translation>
         <translation>Išvalyti konsolę</translation>
     </message>
     <message>
-        <source>Welcome to the Dogecoin RPC console.</source>
+        <source>Welcome to the Artiqox RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1544,7 +1548,7 @@ Adresas: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Artiqox network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1857,7 +1861,7 @@ Adresas: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Warning: Invalid Dogecoin address</source>
+        <source>Warning: Invalid Artiqox address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1944,7 +1948,7 @@ Adresas: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>A message that was attached to the Dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
+        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1963,7 +1967,7 @@ Adresas: %4</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Dogecoin Core is shutting down...</source>
+        <source>Artiqox Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1987,7 +1991,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <source>The address to sign the message with (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Įveskite Dogecoinų adresą (pvz. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <translation>Įveskite Artiqoxų adresą (pvz. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2018,7 +2022,7 @@ Adresas: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dogecoin address</source>
+        <source>Sign the message to prove you own this Artiqox address</source>
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     </message>
     <message>
@@ -2043,11 +2047,11 @@ Adresas: %4</translation>
     </message>
     <message>
         <source>The address the message was signed with (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Įveskite Dogecoinų adresą (pvz. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <translation>Įveskite Artiqoxų adresą (pvz. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Dogecoin adresas</translation>
+        <source>Verify the message to ensure it was signed with the specified Artiqox address</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Artiqox adresas</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2058,8 +2062,8 @@ Adresas: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Enter a Dogecoin address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
-        <translation>Įveskite Dogecoinų adresą (pvz. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
+        <source>Enter a Artiqox address (e.g. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</source>
+        <translation>Įveskite Artiqoxų adresą (pvz. AU4vf6nATjW73KV5rcqP154kn5XTP7rwku)</translation>
     </message>
     <message>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
@@ -2117,11 +2121,11 @@ Adresas: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Dogecoin Core</source>
-        <translation>Dogecoin branduolys</translation>
+        <source>Artiqox Core</source>
+        <translation>Artiqox branduolys</translation>
     </message>
     <message>
-        <source>The Dogecoin Core developers</source>
+        <source>The Artiqox Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2582,7 +2586,7 @@ Adresas: %4</translation>
     </message>
 </context>
 <context>
-    <name>Dogecoin-core</name>
+    <name>Artiqox-core</name>
     <message>
         <source>Usage:</source>
         <translation>Naudojimas:</translation>
@@ -2600,12 +2604,12 @@ Adresas: %4</translation>
         <translation>Parinktys:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: Dogecoin.conf)</source>
-        <translation>Nurodyti konfigūracijos failą (pagal nutylėjimąt: Dogecoin.conf)</translation>
+        <source>Specify configuration file (default: Artiqox.conf)</source>
+        <translation>Nurodyti konfigūracijos failą (pagal nutylėjimąt: Artiqox.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: Dogecoind.pid)</source>
-        <translation>Nurodyti pid failą (pagal nutylėjimą: Dogecoind.pid)</translation>
+        <source>Specify pid file (default: Artiqoxd.pid)</source>
+        <translation>Nurodyti pid failą (pagal nutylėjimą: Artiqoxd.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
@@ -2648,7 +2652,7 @@ Adresas: %4</translation>
         <translation>Priimti komandinę eilutę ir JSON-RPC komandas</translation>
     </message>
     <message>
-        <source>Dogecoin Core RPC client version</source>
+        <source>Artiqox Core RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2667,13 +2671,13 @@ Adresas: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Dogecoinrpc
+rpcuser=Artiqoxrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2746,7 +2750,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Dogecoin Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Artiqox Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2758,8 +2762,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo
         <translation>Įspėjimas: -paytxfee yra nustatytas per didelis. Tai sandorio mokestis, kurį turėsite mokėti, jei siųsite sandorį.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin will not work properly.</source>
-        <translation>Įspėjimas: Patikrinkite, kad kompiuterio data ir laikas yra teisingi.Jei Jūsų laikrodis neteisingai nustatytas Dogecoin, veiks netinkamai.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Artiqox will not work properly.</source>
+        <translation>Įspėjimas: Patikrinkite, kad kompiuterio data ir laikas yra teisingi.Jei Jūsų laikrodis neteisingai nustatytas Artiqox, veiks netinkamai.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2794,7 +2798,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Dogecoin Core Daemon</source>
+        <source>Artiqox Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3002,7 +3006,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Usage (deprecated, use Dogecoin-cli):</source>
+        <source>Usage (deprecated, use Artiqox-cli):</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3038,7 +3042,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Dogecoin Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Artiqox Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3102,7 +3106,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>RPC SSL options: (see the Dogecoin Wiki for SSL setup instructions)</source>
+        <source>RPC SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3122,11 +3126,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>SSL options: (see the Dogecoin Wiki for SSL setup instructions)</source>
-        <translation>SSL opcijos (žr.e Dogecoin Wiki for SSL setup instructions)</translation>
+        <source>SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
+        <translation>SSL opcijos (žr.e Artiqox Wiki for SSL setup instructions)</translation>
     </message>
     <message>
-        <source>Send command to Dogecoin Core</source>
+        <source>Send command to Artiqox Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3162,7 +3166,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo
         <translation>Nustatyti sujungimo trukmę milisekundėmis (pagal nutylėjimą: 5000)</translation>
     </message>
     <message>
-        <source>Start Dogecoin Core Daemon</source>
+        <source>Start Artiqox Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3278,12 +3282,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo
         <translation> wallet.dat pakrovimo klaida,  wallet.dat sugadintas</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin</source>
-        <translation> wallet.dat pakrovimo klaida,  wallet.dat reikalauja naujasnės Dogecoin versijos</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Artiqox</source>
+        <translation> wallet.dat pakrovimo klaida,  wallet.dat reikalauja naujasnės Artiqox versijos</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Dogecoin to complete</source>
-        <translation>Piniginė turi būti prrašyta: įvykdymui perkraukite Dogecoin</translation>
+        <source>Wallet needed to be rewritten: restart Artiqox to complete</source>
+        <translation>Piniginė turi būti prrašyta: įvykdymui perkraukite Artiqox</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
