@@ -739,7 +739,7 @@ Adresa: %4
     </message>
     <message>
         <source>(%1 locked)</source>
-        <translation>(1% blocat)</translation>
+        <translation>(%1 blocat)</translation>
     </message>
     <message>
         <source>none</source>
@@ -763,7 +763,7 @@ Adresa: %4
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
-        <translation>Aceasta înseamnă o taxă de cel puţin 1% pe kB necesar.</translation>
+        <translation>Aceasta înseamnă o taxă de cel puţin %1 pe kB necesar.</translation>
     </message>
     <message>
         <source>Can vary +/- 1 byte per input.</source>
@@ -779,11 +779,11 @@ Adresa: %4
     </message>
     <message>
         <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Această etichetă devine roşie, dacă orice beneficiar primeşte o sumă mai mică decât 1. </translation>
+        <translation>Această etichetă devine roşie, dacă orice beneficiar primeşte o sumă mai mică decât %1. </translation>
     </message>
     <message>
         <source>This means a fee of at least %1 is required.</source>
-        <translation>Aceasta înseamnă că o taxă de cel puţin 1% este necesară. </translation>
+        <translation>Aceasta înseamnă că o taxă de cel puţin %1 este necesară. </translation>
     </message>
     <message>
         <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
@@ -791,7 +791,7 @@ Adresa: %4
     </message>
     <message>
         <source>This label turns red, if the change is smaller than %1.</source>
-        <translation>Această etichetă devine roşie, dacă schimbul e mai mic de 1%.</translation>
+        <translation>Această etichetă devine roşie, dacă schimbul e mai mic de %1.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2274,7 +2274,7 @@ Adresa: %4
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Deschis pentru încă %1 bloc</numerusform><numerusform>Deschis pentru încă %1 blocuri</numerusform><numerusform>Deschis pentru încă %1 de blocuri</numerusform></translation>
+        <translation><numerusform>Deschis pentru încă %n bloc</numerusform><numerusform>Deschis pentru încă %n blocuri</numerusform><numerusform>Deschis pentru încă %n de blocuri</numerusform></translation>
     </message>
     <message>
         <source>unknown</source>
@@ -2316,7 +2316,7 @@ Adresa: %4
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Deschis pentru încă %1 bloc</numerusform><numerusform>Deschis pentru încă %1 blocuri</numerusform><numerusform>Deschis pentru încă %1 de blocuri</numerusform></translation>
+        <translation><numerusform>Deschis pentru încă %n bloc</numerusform><numerusform>Deschis pentru încă %n blocuri</numerusform><numerusform>Deschis pentru încă %n de blocuri</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>

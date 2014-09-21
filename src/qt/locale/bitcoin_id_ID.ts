@@ -313,7 +313,7 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>%Enkripsi Dompet...</translation>
+        <translation>&amp;Enkripsi Dompet...</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
@@ -1772,7 +1772,7 @@ Alamat: %4
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>Hapus %Semua</translation>
+        <translation>Hapus &amp;Semua</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2037,7 +2037,7 @@ Alamat: %4
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>Hapus %Semua</translation>
+        <translation>Hapus &amp;Semua</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -2681,8 +2681,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
 </source>
-        <translation>
-</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>

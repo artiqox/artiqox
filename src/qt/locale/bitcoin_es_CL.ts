@@ -2319,7 +2319,7 @@ Dirección: %4</translation>
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Abierto para &amp;n bloque más</numerusform><numerusform>Abierto para &amp;n bloques más</numerusform></translation>
+        <translation><numerusform>Abierto para %n bloque más</numerusform><numerusform>Abierto para %n bloques más</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>

@@ -840,7 +840,7 @@ Address: %4
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>حساب وارد شده «1%» از پیش در دفترچه حساب ها موجود است.</translation>
+        <translation>حساب وارد شده &quot;%1&quot; از پیش در دفترچه حساب ها موجود است.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is not a valid Artiqox address.</source>

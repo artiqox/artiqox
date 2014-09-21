@@ -1848,7 +1848,7 @@ Address: %4
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>საკომისიო 1%-ის დამატების შემდეგ თანხა აჭარბებს თქვენს ბალანსს</translation>
+        <translation>საკომისიო %1-ის დამატების შემდეგ თანხა აჭარბებს თქვენს ბალანსს</translation>
     </message>
     <message>
         <source>Duplicate address found, can only send to each address once per send operation.</source>
