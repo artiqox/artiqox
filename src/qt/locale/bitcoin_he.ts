@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" ?><!DOCTYPE TS><TS language="he" version="2.0">
+<TS language="he" version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -464,13 +464,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>תוכנת ביטקוין</translation>
     </message>
     <message numerus="yes">
-<<<<<<< HEAD
         <source>%n active connection(s) to Artiqox network</source>
         <translation><numerusform>חיבור פעיל אחד לרשת הביטקוין</numerusform><numerusform>%n חיבורים פעילים לרשת הביטקוין</numerusform></translation>
-=======
-        <source>%n active connection(s) to Dogecoin network</source>
-        <translation><numerusform>%n חיבור פעיל אחד לרשת הביטקוין</numerusform><numerusform>%n חיבורים פעילים לרשת הביטקוין</numerusform></translation>
->>>>>>> d00af20df... Fix translation sprintf and qt string formats
     </message>
     <message>
         <source>No block source available...</source>
@@ -502,7 +497,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation type="unfinished"><numerusform/><numerusform/></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -743,11 +738,7 @@ Address: %4
     </message>
     <message>
         <source>(%1 locked)</source>
-<<<<<<< HEAD
         <translation type="unfinished"/>
-=======
-        <translation>(%1 נעול)</translation>
->>>>>>> d00af20df... Fix translation sprintf and qt string formats
     </message>
     <message>
         <source>none</source>
@@ -799,11 +790,7 @@ Address: %4
     </message>
     <message>
         <source>This label turns red, if the change is smaller than %1.</source>
-<<<<<<< HEAD
         <translation type="unfinished"/>
-=======
-        <translation>התווית הופכת אדומה, אם השינוי קטן מ %1.</translation>
->>>>>>> d00af20df... Fix translation sprintf and qt string formats
     </message>
     <message>
         <source>(no label)</source>

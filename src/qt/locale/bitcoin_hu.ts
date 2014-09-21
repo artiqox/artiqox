@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" ?><!DOCTYPE TS><TS language="hu" version="2.0">
+<TS language="hu" version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -2171,7 +2171,7 @@ Cím: %4
     </message>
     <message numerus="yes">
         <source>, broadcast through %n node(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation type="unfinished"><numerusform/><numerusform/></translation>
     </message>
     <message>
         <source>Date</source>

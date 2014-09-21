@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
+<TS language="uk" version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -2170,7 +2170,7 @@ Address: %4
     </message>
     <message numerus="yes">
         <source>, broadcast through %n node(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation type="unfinished"><numerusform/><numerusform/><numerusform/></translation>
     </message>
     <message>
         <source>Date</source>
@@ -2206,7 +2206,7 @@ Address: %4
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation type="unfinished"><numerusform/><numerusform/><numerusform/></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2274,7 +2274,7 @@ Address: %4
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation type="unfinished"><numerusform/><numerusform/><numerusform/></translation>
     </message>
     <message>
         <source>unknown</source>
@@ -2316,7 +2316,7 @@ Address: %4
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation type="unfinished"><numerusform/><numerusform/><numerusform/></translation>
     </message>
     <message>
         <source>Open until %1</source>
