@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2013-2014 The Dogecoin developers
-// Copyright (c)      2014 The Indocoin developers
+// Copyright (c)      2014 The Artiqox developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -68,7 +68,7 @@ public:
         assert(hashGenesisBlock == uint256("0x0ad6280cff3cc68b209ef97d4414a9adb976a9afefcb2829c5fceb37e7a83584"));
         assert(genesis.hashMerkleRoot == uint256("0x06920c237bccedeea4ffb3f5f67ee24e1600d49797ee723e78c6f8fd35ef9b06"));
 
-        vSeeds.push_back(CDNSSeedData("indocoin.xyz", "seed.indocoin.xyz"));
+        vSeeds.push_back(CDNSSeedData("artiqox.xyz", "seed.artiqox.xyz"));
         vSeeds.push_back(CDNSSeedData("kranzworthmedia.com", "config2.kranzworthmedia.com")); 
 
         // Workaround for Boost not being quite compatible with C++11;
@@ -142,7 +142,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("testindo.indocoin.xyz", "testindo-seed.indocoin.xyz"));
+        vSeeds.push_back(CDNSSeedData("testindo.artiqox.xyz", "testindo-seed.artiqox.xyz"));
 
         // Boost sucks, and should not be used. Workaround for Boost not being compatible with C++11;
         

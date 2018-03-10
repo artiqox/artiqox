@@ -123,7 +123,7 @@ OverviewPage::OverviewPage(QWidget *parent) :
 
     // Customized branding image.
     boost::filesystem::path indopath = GetDataDir(false);
-    indopath /= "indocoin.png";
+    indopath /= "artiqox.png";
     QPixmap shibecoin(indopath.string().c_str());
 
     if ( !shibecoin.isNull() ) {

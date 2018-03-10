@@ -37,7 +37,7 @@ string HTTPPost(const string& strMsg, const map<string,string>& mapRequestHeader
 {
     ostringstream s;
     s << "POST / HTTP/1.1\r\n"
-      << "User-Agent: indocoin-json-rpc/" << FormatFullVersion() << "\r\n"
+      << "User-Agent: artiqox-json-rpc/" << FormatFullVersion() << "\r\n"
       << "Host: 127.0.0.1\r\n"
       << "Content-Type: application/json\r\n"
       << "Content-Length: " << strMsg.size() << "\r\n"
@@ -68,7 +68,7 @@ string HTTPReply(int nStatus, const string& strMsg, bool keepalive)
     if (nStatus == HTTP_UNAUTHORIZED)
         return strprintf("HTTP/1.0 401 Authorization Required\r\n"
             "Date: %s\r\n"
-            "Server: indocoin-json-rpc/%s\r\n"
+            "Server: artiqox-json-rpc/%s\r\n"
             "WWW-Authenticate: Basic realm=\"jsonrpc\"\r\n"
             "Content-Type: text/html\r\n"
             "Content-Length: 296\r\n"
@@ -95,7 +95,7 @@ string HTTPReply(int nStatus, const string& strMsg, bool keepalive)
             "Connection: %s\r\n"
             "Content-Length: %" PRIszu"\r\n"
             "Content-Type: application/json\r\n"
-            "Server: indocoin-json-rpc/%s\r\n"
+            "Server: artiqox-json-rpc/%s\r\n"
             "\r\n"
             "%s",
         nStatus,
@@ -217,7 +217,7 @@ int ReadHTTPMessage(std::basic_istream<char>& stream, map<string,
 }
 
 //
-// JSON-RPC protocol.  Indocoin speaks version 1.0 for maximum compatibility,
+// JSON-RPC protocol.  Artiqox speaks version 1.0 for maximum compatibility,
 // but uses JSON-RPC 1.1/2.0 standards for parts of the 1.0 standard that were
 // unspecified (HTTP errors and contents of 'error').
 //

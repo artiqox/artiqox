@@ -1,33 +1,33 @@
 #!/usr/bin/make -f
 # -*- mode: makefile; coding: utf-8 -*-
 
-#DEB_MAKE_CHECK_TARGET = test_indocoin
-#build/indocoind::
-#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_indocoin)
+#DEB_MAKE_CHECK_TARGET = test_artiqox
+#build/artiqoxd::
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_artiqox)
 
-DEB_INSTALL_EXAMPLES_indocoind += debian/examples/*
-DEB_INSTALL_MANPAGES_indocoind += debian/manpages/*
+DEB_INSTALL_EXAMPLES_artiqoxd += debian/examples/*
+DEB_INSTALL_MANPAGES_artiqoxd += debian/manpages/*
 
 %:
 	dh --with bash-completion $@
 
 override_dh_auto_build:
-	cd src; $(MAKE) -f makefile.unix indocoind
+	cd src; $(MAKE) -f makefile.unix artiqoxd
 	$(MAKE)
 
 override_dh_auto_clean:
-	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f indocoin-qt; fi
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f artiqox-qt; fi
 	cd src; $(MAKE) -f makefile.unix clean
 
 override_dh_auto_configure:
-	qmake indocoin-qt.pro USE_QRCODE=1
+	qmake artiqox-qt.pro USE_QRCODE=1
 
 override_dh_auto_test:
-	cd src; $(MAKE) -f makefile.unix test_indocoin
-	src/test_indocoin
+	cd src; $(MAKE) -f makefile.unix test_artiqox
+	src/test_artiqox
 
 # Ensure wrapper is set executable
-binary-post-install/indocoind:
-	chmod +x $(cdbs_curdestdir)usr/bin/indocoind
-binary-post-install/indocoin-qt:
-	chmod +x $(cdbs_curdestdir)usr/bin/indocoin-qt
+binary-post-install/artiqoxd:
+	chmod +x $(cdbs_curdestdir)usr/bin/artiqoxd
+binary-post-install/artiqox-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/artiqox-qt

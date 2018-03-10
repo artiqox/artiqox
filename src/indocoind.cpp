@@ -20,8 +20,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Indocoin (http://www.indocoin.xyz/),
- * which enables instant payments to anyone, anywhere in the world. Indocoin uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called Artiqox (http://www.artiqox.xyz/),
+ * which enables instant payments to anyone, anywhere in the world. Artiqox uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -63,7 +63,7 @@ bool AppInit(int argc, char* argv[])
         //
         // Parameters
         //
-        // If Qt is used, parameters/indocoin.conf are parsed in qt/indocoin.cpp's main()
+        // If Qt is used, parameters/artiqox.conf are parsed in qt/artiqox.cpp's main()
         ParseParameters(argc, argv);
         if (!boost::filesystem::is_directory(GetDataDir(false)))
         {
@@ -79,14 +79,14 @@ bool AppInit(int argc, char* argv[])
 
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
-            // First part of help message is specific to indocoind / RPC client
-            std::string strUsage = _("Indocoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n\n" +
+            // First part of help message is specific to artiqoxd / RPC client
+            std::string strUsage = _("Artiqox Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  indocoind [options]                     " + _("Start Indocoin server") + "\n" +
-                _("Usage (deprecated, use indocoin-cli):") + "\n" +
-                  "  indocoind [options] <command> [params]  " + _("Send command to Indocoin server") + "\n" +
-                  "  indocoind [options] help                " + _("List commands") + "\n" +
-                  "  indocoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  artiqoxd [options]                     " + _("Start Artiqox server") + "\n" +
+                _("Usage (deprecated, use artiqox-cli):") + "\n" +
+                  "  artiqoxd [options] <command> [params]  " + _("Send command to Artiqox server") + "\n" +
+                  "  artiqoxd [options] help                " + _("List commands") + "\n" +
+                  "  artiqoxd [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
             strUsage += "\n" + HelpMessageCli(false);
@@ -98,7 +98,7 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "indocoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "artiqox:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -110,7 +110,7 @@ bool AppInit(int argc, char* argv[])
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon)
         {
-            fprintf(stdout, "Indocoin server starting\n");
+            fprintf(stdout, "Artiqox server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -168,7 +168,7 @@ int main(int argc, char* argv[])
 {
     bool fRet = false;
 
-    // Connect indocoind signal handlers
+    // Connect artiqoxd signal handlers
     noui_connect();
 
     fRet = AppInit(argc, argv);

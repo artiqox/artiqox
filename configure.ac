@@ -6,7 +6,7 @@ define(_CLIENT_VERSION_REVISION, 0)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2014)
-AC_INIT([Indocoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[info@indocoin.xyz],[indocoin])
+AC_INIT([Artiqox Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[info@artiqox.xyz],[artiqox])
 AC_CONFIG_AUX_DIR([src/build-aux])
 AC_CONFIG_MACRO_DIR([src/m4])
 AC_CANONICAL_HOST
@@ -476,8 +476,8 @@ AC_ARG_WITH([cli],
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
   [with daemon (default is yes)])],
-  [build_indocoind=$withval],
-  [build_indocoind=yes])
+  [build_artiqoxd=$withval],
+  [build_artiqoxd=yes])
 
 BITCOIN_QT_INIT
 
@@ -515,9 +515,9 @@ fi
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build indocoind])
-AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_indocoind = xyes])
-AC_MSG_RESULT($build_indocoind)
+AC_MSG_CHECKING([whether to build artiqoxd])
+AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_artiqoxd = xyes])
+AC_MSG_RESULT($build_artiqoxd)
 
 AC_MSG_CHECKING([whether to build bitcoin-cli])
 AM_CONDITIONAL([BUILD_BITCOIN_CLI], [test x$build_bitcoin_cli = xyes])
@@ -666,7 +666,7 @@ else
   AC_MSG_RESULT([no])
 fi
 
-if test "x$use_tests$build_indocoind$use_qt" = "xnonono"; then
+if test "x$use_tests$build_artiqoxd$use_qt" = "xnonono"; then
   AC_MSG_ERROR([No targets! Please specify at least one of: --enable-cli --enable-daemon --enable-gui or --enable-tests])
 fi
 

@@ -5,7 +5,7 @@
 #define VER_PRODUCTVERSION_STR STRINGIZE(CLIENT_VERSION_MAJOR) "." STRINGIZE(CLIENT_VERSION_MINOR) "." STRINGIZE(CLIENT_VERSION_REVISION) "." STRINGIZE(CLIENT_VERSION_BUILD)
 #define VER_FILEVERSION        VER_PRODUCTVERSION
 #define VER_FILEVERSION_STR    VER_PRODUCTVERSION_STR
-#define COPYRIGHT_STR          "Indocoin developers 2013-" STRINGIZE(COPYRIGHT_YEAR) ", The Bitcoin developers 2009-" STRINGIZE(COPYRIGHT_YEAR)
+#define COPYRIGHT_STR          "Artiqox developers 2013-" STRINGIZE(COPYRIGHT_YEAR) ", The Bitcoin developers 2009-" STRINGIZE(COPYRIGHT_YEAR)
 
 VS_VERSION_INFO VERSIONINFO
 FILEVERSION     VER_FILEVERSION
@@ -17,14 +17,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Indocoin"
-            VALUE "FileDescription",    "Indocoin-cli (OSS RPC client for Indocoin)"
+            VALUE "CompanyName",        "Artiqox"
+            VALUE "FileDescription",    "Artiqox-cli (OSS RPC client for Artiqox)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "indocoin-cli"
+            VALUE "InternalName",       "artiqox-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "indocoin-cli.exe"
-            VALUE "ProductName",        "Indocoin-cli"
+            VALUE "OriginalFilename",   "artiqox-cli.exe"
+            VALUE "ProductName",        "Artiqox-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

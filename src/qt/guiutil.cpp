@@ -79,7 +79,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 
     widget->setFont(bitcoinAddressFont());
 #if QT_VERSION >= 0x040700
-    widget->setPlaceholderText(QObject::tr("Enter a Indocoin address (e.g. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)"));
+    widget->setPlaceholderText(QObject::tr("Enter a Artiqox address (e.g. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -96,8 +96,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no indocoin: URI
-    if(!uri.isValid() || uri.scheme() != QString("indocoin"))
+    // return if URI is not valid or is no artiqox: URI
+    if(!uri.isValid() || uri.scheme() != QString("artiqox"))
         return false;
 
     SendCoinsRecipient rv;
@@ -156,13 +156,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert indocoin:// to indocoin:
+    // Convert artiqox:// to artiqox:
     //
-    //    Cannot handle this later, because indocoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because artiqox:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("indocoin://", Qt::CaseInsensitive))
+    if(uri.startsWith("artiqox://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 11, "indocoin:");
+        uri.replace(0, 11, "artiqox:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -170,7 +170,7 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("indocoin:%1").arg(info.address);
+    QString ret = QString("artiqox:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -387,12 +387,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Indocoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Artiqox.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Indocoin.lnk
+    // check for Artiqox.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -469,7 +469,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "indocoin.desktop";
+    return GetAutostartDir() / "artiqox.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -510,7 +510,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a bitcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Indocoin\n";
+        optionFile << "Name=Artiqox\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

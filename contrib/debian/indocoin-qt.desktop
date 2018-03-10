@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Indocoin
-Comment=Indocoin P2P Cryptocurrency
-Comment[fr]=Indocoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Indocoin, eşten eşe kriptografik sanal para birimi
-Exec=indocoin-qt %u
+Name=Artiqox
+Comment=Artiqox P2P Cryptocurrency
+Comment[fr]=Artiqox, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Artiqox, eşten eşe kriptografik sanal para birimi
+Exec=artiqox-qt %u
 Terminal=false
 Type=Application
-Icon=indocoin128
-MimeType=x-scheme-handler/indocoin;
+Icon=artiqox128
+MimeType=x-scheme-handler/artiqox;
 Categories=Office;Finance;

@@ -50,9 +50,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case jtINDO: return QString("Mega-Indocoin (1,000,000 INDO)");
-    case rbINDO: return QString("Kilo-Indocoin (1000 INDO)");
-    case INDO: return QString("Indocoin");
+    case jtINDO: return QString("Mega-Artiqox (1,000,000 INDO)");
+    case rbINDO: return QString("Kilo-Artiqox (1000 INDO)");
+    case INDO: return QString("Artiqox");
     default: return QString("???");
     }
 }

@@ -1,50 +1,50 @@
-Indocoin 1.7
+Artiqox 1.7
 =====================
 
 * Copyright (c) 2009-2014 Bitcoin Developers
 * Copyright (c) 2011-2013 Litecoin Developers
-* Copyright (c) 2013-2014 Indocoin Developers
+* Copyright (c) 2013-2014 Artiqox Developers
 
 
 Setup
 ---------------------
-[Indocoin Core](http://indocoin.xyz/en/download) is the original Indocoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Indocoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Artiqox Core](http://artiqox.xyz/en/download) is the original Artiqox client and it builds the backbone of the network. However, it downloads and stores the entire history of Artiqox transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Indocoin on your native platform. 
+The following are some helpful notes on how to run Artiqox on your native platform. 
 
 ### Unix
 
-You need the Qt4 run-time libraries to run Indocoin-Qt. On Debian or Ubuntu:
+You need the Qt4 run-time libraries to run Artiqox-Qt. On Debian or Ubuntu:
 
 	sudo apt-get install libqtgui4
 
 Unpack the files into a directory and run:
 
-- bin/32/indocoin-qt (GUI, 32-bit) or bin/32/indocoind (headless, 32-bit)
-- bin/64/indocoin-qt (GUI, 64-bit) or bin/64/indocoind (headless, 64-bit)
+- bin/32/artiqox-qt (GUI, 32-bit) or bin/32/artiqoxd (headless, 32-bit)
+- bin/64/artiqox-qt (GUI, 64-bit) or bin/64/artiqoxd (headless, 64-bit)
 
 
 
 ### Windows
 
-Unpack the files into a directory, and then run indocoin-qt.exe.
+Unpack the files into a directory, and then run artiqox-qt.exe.
 
 ### OSX
 
-Drag Indocoin-Qt to your applications folder, and then run Indocoin-Qt.
+Drag Artiqox-Qt to your applications folder, and then run Artiqox-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Indocoin Wiki](http://indocoin.xyz/)
+* See the documentation at the [Artiqox Wiki](http://artiqox.xyz/)
 for help and more information.
-* Ask for help on [#indocoin](http://webchat.freenode.net?channels=indocoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=indocoin).
+* Ask for help on [#artiqox](http://webchat.freenode.net?channels=artiqox) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=artiqox).
 * Ask for help on the [/r/indoducation subreddit](http://reddit.com/r/indoducation).
 
 Building
 ---------------------
-The following are developer notes on how to build Indocoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Artiqox on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -52,7 +52,7 @@ The following are developer notes on how to build Indocoin on your native platfo
 
 Development
 ---------------------
-The Indocoin repo's [root README](https://github.com/indocoin/indocoin/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Artiqox repo's [root README](https://github.com/artiqox/artiqox/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Coding Guidelines](coding.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -63,8 +63,8 @@ The Indocoin repo's [root README](https://github.com/indocoin/indocoin/blob/mast
 - [Unit Tests](unit-tests.md)
 
 ### Resources
-* Discuss on the [/r/indocoindev](http://www.reddit.com/r/indocoindev) subreddit.
-* Discuss on [#indocoin-dev](http://webchat.freenode.net/?channels=indocoin-dev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=indocoin-dev).
+* Discuss on the [/r/artiqoxdev](http://www.reddit.com/r/artiqoxdev) subreddit.
+* Discuss on [#artiqox-dev](http://webchat.freenode.net/?channels=artiqox-dev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=artiqox-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

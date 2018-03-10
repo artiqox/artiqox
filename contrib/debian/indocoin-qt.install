@@ -1,6 +1,6 @@
-indocoin-qt usr/bin
-share/pixmaps/indocoin32.xpm usr/share/pixmaps
-share/pixmaps/indocoin16.xpm usr/share/pixmaps
-share/pixmaps/indocoin128.png usr/share/pixmaps
-debian/indocoin-qt.desktop usr/share/applications
-debian/indocoin-qt.protocol usr/share/kde4/services/
+artiqox-qt usr/bin
+share/pixmaps/artiqox32.xpm usr/share/pixmaps
+share/pixmaps/artiqox16.xpm usr/share/pixmaps
+share/pixmaps/artiqox128.png usr/share/pixmaps
+debian/artiqox-qt.desktop usr/share/applications
+debian/artiqox-qt.protocol usr/share/kde4/services/

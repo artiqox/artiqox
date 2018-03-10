@@ -178,7 +178,7 @@ void Intro::pickDataDirectory()
                 fs::create_directory(dataDir.toStdString());
                 break;
             } catch(fs::filesystem_error &e) {
-                QMessageBox::critical(0, tr("Indocoin"),
+                QMessageBox::critical(0, tr("Artiqox"),
                     tr("Error: Specified data directory \"%1\" can not be created.").arg(dataDir));
                 /* fall through, back to choosing screen */
             }

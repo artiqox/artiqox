@@ -74,7 +74,7 @@ void BitcoinUnitsTests::parseTests()
     QVERIFY(!BitcoinUnits::parse(BitcoinUnits::INDO, "1,000.00", &value, locale4));
     // Fail: too many decimals
     QVERIFY(!BitcoinUnits::parse(BitcoinUnits::INDO, "1000.000000000", &value, locale4));
-    //no overflow because Indocoin has unlimited money supply
+    //no overflow because Artiqox has unlimited money supply
     /*// Fail: overflow
     QVERIFY(!BitcoinUnits::parse(BitcoinUnits::INDO, "10000000000.1", &value, locale4));
     QVERIFY(!BitcoinUnits::parse(BitcoinUnits::INDO, "92233720368547758090.0", &value, locale4));*/

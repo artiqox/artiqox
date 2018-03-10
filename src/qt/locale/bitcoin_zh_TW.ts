@@ -3,12 +3,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Indocoin Core</source>
+        <source>About Artiqox Core</source>
         <translation>關於狗狗幣核心</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Indocoin Core&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Artiqox Core&lt;/b&gt; version</source>
         <translation>&lt;b&gt;狗狗幣&lt;/b&gt;版本</translation>
     </message>
     <message>
@@ -33,7 +33,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Indocoin Core developers</source>
+        <source>The Artiqox Core developers</source>
         <translation>狗狗幣開發人員</translation>
     </message>
 </context>
@@ -121,12 +121,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Indocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Artiqox addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>這是你用來付款的狗狗幣地址. 在付錢之前, 務必要檢查金額和收款地址是否正確.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Indocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Artiqox addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>這些是你用來收款的狗狗幣位址。建議在每次交易時，都使用一個新的收款位址。</translation>
     </message>
     <message>
@@ -274,7 +274,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Indocoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Indocoins from being stolen by malware infecting your computer.</source>
+        <source>Artiqox Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqoxs from being stolen by malware infecting your computer.</source>
         <translation>狗狗幣現在要關閉以完成加密程序. 請記住, 加密錢包無法完全防止入侵電腦的惡意程式偷取你的狗狗幣.</translation>
     </message>
     <message>
@@ -368,7 +368,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Indocoin</source>
+        <source>Show information about Artiqox</source>
         <translation>顯示狗狗幣相關資訊</translation>
     </message>
     <message>
@@ -429,12 +429,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-405"/>
-        <source>Send coins to a Indocoin address</source>
+        <source>Send coins to a Artiqox address</source>
         <translation>付錢到狗狗幣地址</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Indocoin</source>
+        <source>Modify configuration options for Artiqox</source>
         <translation>修改狗狗幣的設定選項</translation>
     </message>
     <message>
@@ -464,7 +464,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+430"/>
-        <source>Indocoin</source>
+        <source>Artiqox</source>
         <translation>狗狗幣</translation>
     </message>
     <message>
@@ -500,12 +500,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Indocoin addresses to prove you own them</source>
+        <source>Sign messages with your Artiqox addresses to prove you own them</source>
         <translation>用狗狗幣地址簽署訊息來證明那是你的</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Indocoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Artiqox addresses</source>
         <translation>驗證訊息來確認是用指定的狗狗幣地址簽署的</translation>
     </message>
     <message>
@@ -536,18 +536,18 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-401"/>
-        <source>Indocoin Core</source>
+        <source>Artiqox Core</source>
         <translation>狗狗幣核心</translation>
     </message>
     <message>
         <location line="+163"/>
-        <source>Request payments (generates QR codes and indocoin: URIs)</source>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
         <translation>要求付款(產生 QR Code 和狗狗幣付款協議的 URI)</translation>
     </message>
     <message>
         <location line="+29"/>
         <location line="+2"/>
-        <source>&amp;About Indocoin Core</source>
+        <source>&amp;About Artiqox Core</source>
         <translation>關於狗狗幣核心</translation>
     </message>
     <message>
@@ -562,8 +562,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a indocoin: URI or payment request</source>
-        <translation>開啓 indocoin 協議的 URI 或付款要求</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>開啓 artiqox 協議的 URI 或付款要求</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -572,18 +572,18 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the Indocoin Core help message to get a list with possible Indocoin command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
         <translation>顯示狗狗幣核心的說明訊息，來取得可用命令列選項的列表</translation>
     </message>
     <message>
         <location line="+159"/>
         <location line="+5"/>
-        <source>Indocoin client</source>
+        <source>Artiqox client</source>
         <translation>狗狗幣客戶端軟體</translation>
     </message>
     <message numerus="yes">
         <location line="+142"/>
-        <source>%n active connection(s) to Indocoin network</source>
+        <source>%n active connection(s) to Artiqox network</source>
         <translation><numerusform>與狗狗幣網路有 %n 個連線在使用中</numerusform></translation>
     </message>
     <message>
@@ -691,7 +691,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+438"/>
-        <source>A fatal error occurred. Indocoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Artiqox can no longer continue safely and will quit.</source>
         <translation>發生了致命的錯誤. 狗狗幣程式無法再繼續安全執行, 只好結束.</translation>
     </message>
 </context>
@@ -1049,7 +1049,7 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Indocoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Artiqox address.</source>
         <translation>輸入的位址 %1 並不是有效的狗狗幣位址。</translation>
     </message>
     <message>
@@ -1095,12 +1095,12 @@ Address: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
-        <source>Indocoin Core - Command-line options</source>
+        <source>Artiqox Core - Command-line options</source>
         <translation>狗狗幣核心 - 命令列選項</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+38"/>
-        <source>Indocoin Core</source>
+        <source>Artiqox Core</source>
         <translation>狗狗幣核心</translation>
     </message>
     <message>
@@ -1153,17 +1153,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Indocoin Core.</source>
+        <source>Welcome to Artiqox Core.</source>
         <translation>歡迎使用狗狗幣核心</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Indocoin Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Artiqox Core will store its data.</source>
         <translation>因為這是程式第一次啓動，你可以選擇狗狗幣核心儲存資料的地方。</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Indocoin Core will download and store a copy of the Indocoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Artiqox Core will download and store a copy of the Artiqox block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>狗狗幣核心會下載並儲存一份狗狗幣區塊鏈的拷貝。至少有 %1GB 的資料會儲存到這個目錄中，並且還會持續增長。另外錢包資料也會儲存在這個目錄。</translation>
     </message>
     <message>
@@ -1178,7 +1178,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+85"/>
-        <source>Indocoin</source>
+        <source>Artiqox</source>
         <translation>狗狗幣</translation>
     </message>
     <message>
@@ -1254,12 +1254,12 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Indocoin after logging in to the system.</source>
+        <source>Automatically start Artiqox after logging in to the system.</source>
         <translation>在登入系統後自動啓動狗狗幣軟體。</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Indocoin on system login</source>
+        <source>&amp;Start Artiqox on system login</source>
         <translation>系統登入時啟動狗狗幣</translation>
     </message>
     <message>
@@ -1289,7 +1289,7 @@ Address: %4
     </message>
     <message>
         <location line="+58"/>
-        <source>Connect to the Indocoin network through a SOCKS proxy.</source>
+        <source>Connect to the Artiqox network through a SOCKS proxy.</source>
         <translation>透過 SOCKS 代理伺服器連線至狗狗幣網路.</translation>
     </message>
     <message>
@@ -1324,7 +1324,7 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Indocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Artiqox client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自動在路由器上開放狗狗幣的客戶端通訊埠。只有在你的路由器支援且開啓通用即插即用(UPnP)協定時才有作用。</translation>
     </message>
     <message>
@@ -1394,7 +1394,7 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Indocoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Artiqox.</source>
         <translation>可以在這裡設定使用者介面的語言。這個設定在重啓狗狗幣軟體後才會生效。</translation>
     </message>
     <message>
@@ -1409,7 +1409,7 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Indocoin addresses in the transaction list or not.</source>
+        <source>Whether to show Artiqox addresses in the transaction list or not.</source>
         <translation>是否要在交易列表中顯示狗狗幣位址。</translation>
     </message>
     <message>
@@ -1484,7 +1484,7 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Indocoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Artiqox network after a connection is established, but this process has not completed yet.</source>
         <translation>顯示的資訊可能是過期的. 與狗狗幣網路的連線建立後, 你的錢包會自動和網路同步, 但這個步驟還沒完成.</translation>
     </message>
     <message>
@@ -1554,7 +1554,7 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Indocoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Artiqox address or malformed URI parameters.</source>
         <translation>沒辦法解析 URI 位址！可能是因為狗狗幣位址無效，或是 URI 參數格式錯誤。</translation>
     </message>
     <message>
@@ -1574,8 +1574,8 @@ Address: %4
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start indocoin: click-to-pay handler</source>
-        <translation>沒辦法啟動 indocoin 協議的按就付處理器</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>沒辦法啟動 artiqox 協議的按就付處理器</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -1643,7 +1643,7 @@ Address: %4
     <message>
         <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+11"/>
-        <source>Indocoin</source>
+        <source>Artiqox</source>
         <translation>狗狗幣</translation>
     </message>
     <message>
@@ -1658,7 +1658,7 @@ Address: %4
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+82"/>
-        <source>Enter a Indocoin address (e.g. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</source>
+        <source>Enter a Artiqox address (e.g. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</source>
         <translation>輸入狗狗幣地址 (比如說 GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</translation>
     </message>
 </context>
@@ -1819,7 +1819,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Indocoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Artiqox debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>從目前的資料目錄下開啓狗狗幣的除錯紀錄檔. 當紀錄檔很大時可能要花好幾秒的時間.</translation>
     </message>
     <message>
@@ -1829,7 +1829,7 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Indocoin RPC console.</source>
+        <source>Welcome to the Artiqox RPC console.</source>
         <translation>歡迎使用狗狗幣 RPC 主控台.</translation>
     </message>
     <message>
@@ -1908,7 +1908,7 @@ Address: %4
     <message>
         <location line="+14"/>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Indocoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Artiqox network.</source>
         <translation>附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。注意: 這個訊息不會隨著付款送到狗狗幣網路上。</translation>
     </message>
     <message>
@@ -2304,7 +2304,7 @@ Address: %4
     </message>
     <message>
         <location line="+113"/>
-        <source>Warning: Invalid Indocoin address</source>
+        <source>Warning: Invalid Artiqox address</source>
         <translation>警告: 狗狗幣位址無效</translation>
     </message>
     <message>
@@ -2416,7 +2416,7 @@ Address: %4
     </message>
     <message>
         <location line="+33"/>
-        <source>A message that was attached to the indocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Indocoin network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation>附加在狗狗幣付款協議 URI 中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到狗狗幣網路上。</translation>
     </message>
     <message>
@@ -2441,7 +2441,7 @@ Address: %4
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+48"/>
-        <source>Indocoin Core is shutting down...</source>
+        <source>Artiqox Core is shutting down...</source>
         <translation>狗狗幣核心正在關閉中...</translation>
     </message>
     <message>
@@ -2511,7 +2511,7 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Indocoin address</source>
+        <source>Sign the message to prove you own this Artiqox address</source>
         <translation>簽署訊息是用來證明這個狗狗幣地址是你的</translation>
     </message>
     <message>
@@ -2547,7 +2547,7 @@ Address: %4
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Indocoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Artiqox address</source>
         <translation>驗證訊息是用來確認訊息是用指定的狗狗幣地址簽署的</translation>
     </message>
     <message>
@@ -2562,7 +2562,7 @@ Address: %4
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+30"/>
-        <source>Enter a Indocoin address (e.g. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</source>
+        <source>Enter a Artiqox address (e.g. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</source>
         <translation>輸入狗狗幣地址 (比如說 GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</translation>
     </message>
     <message>
@@ -2641,12 +2641,12 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+28"/>
-        <source>Indocoin Core</source>
+        <source>Artiqox Core</source>
         <translation>狗狗幣核心</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Indocoin Core developers</source>
+        <source>The Artiqox Core developers</source>
         <translation>狗狗幣開發人員</translation>
     </message>
     <message>
@@ -3214,7 +3214,7 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>indocoin-core</name>
+    <name>artiqox-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+221"/>
         <source>Usage:</source>
@@ -3237,13 +3237,13 @@ Address: %4
     </message>
     <message>
         <location line="+22"/>
-        <source>Specify configuration file (default: indocoin.conf)</source>
-        <translation>指定設定檔(預設值: indocoin.conf)</translation>
+        <source>Specify configuration file (default: artiqox.conf)</source>
+        <translation>指定設定檔(預設值: artiqox.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: indocoind.pid)</source>
-        <translation>指定行程識別碼(PID)檔(預設值:  indocoind.pid)</translation>
+        <source>Specify pid file (default: artiqoxd.pid)</source>
+        <translation>指定行程識別碼(PID)檔(預設值:  artiqoxd.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3321,25 +3321,25 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=indocoinrpc
+rpcuser=artiqoxrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
 </source>
         <translation>%s, 你必須要在以下設定檔中設定 RPC 密碼(rpcpassword):
 %s
 建議你使用以下隨機產生的密碼:
-rpcuser=indocoinrpc
+rpcuser=artiqoxrpc
 rpcpassword=%s
 (你不用記住這個密碼)
 使用者名稱(rpcuser)和密碼(rpcpassword)不可以相同！
 如果還沒有這個設定檔，請在造出來的時候，設定檔案權限成「只有主人才能讀取」。
 也建議你設定警示通知，發生問題時你才會被通知到；
 比如說設定成:
-alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com</translation>
+alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -3358,7 +3358,7 @@ alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Indocoin Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Artiqox Core is probably already running.</source>
         <translation>無法鎖定資料目錄 %s. 也許狗狗幣已經在執行了.</translation>
     </message>
     <message>
@@ -3403,7 +3403,7 @@ alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Indocoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Artiqox will not work properly.</source>
         <translation>警告: 請檢查電腦時間與日期是否正確! 狗狗幣無法在時鐘不準的情況下正常運作.</translation>
     </message>
     <message>
@@ -3438,12 +3438,12 @@ alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+1"/>
-        <source>Indocoin Core Daemon</source>
+        <source>Artiqox Core Daemon</source>
         <translation>狗狗幣核心護靈</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Indocoin RPC client version</source>
+        <source>Artiqox RPC client version</source>
         <translation>狗狗幣 RPC 客戶端軟體版本</translation>
     </message>
     <message>
@@ -3643,7 +3643,7 @@ alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Indocoin server</source>
+        <source>Send command to Artiqox server</source>
         <translation>傳送指令給狗狗幣伺服器</translation>
     </message>
     <message>
@@ -3663,7 +3663,7 @@ alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Indocoin server</source>
+        <source>Start Artiqox server</source>
         <translation>啟動狗狗幣伺服器</translation>
     </message>
     <message>
@@ -3673,8 +3673,8 @@ alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+10"/>
-        <source>Usage (deprecated, use indocoin-cli):</source>
-        <translation>用法(已過時，請改用 indocoin-cli):</translation>
+        <source>Usage (deprecated, use artiqox-cli):</source>
+        <translation>用法(已過時，請改用 artiqox-cli):</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3938,12 +3938,12 @@ alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Indocoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Artiqox</source>
         <translation>載入 wallet.dat 檔案時發生錯誤: 這個錢包需要新版的狗狗幣軟體</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Indocoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Artiqox to complete</source>
         <translation>錢包需要重寫: 請重啟狗狗幣來完成</translation>
     </message>
     <message>
@@ -4003,7 +4003,7 @@ alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="-32"/>
-        <source>Unable to bind to %s on this computer. Indocoin Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Artiqox Core is probably already running.</source>
         <translation>無法和這台電腦上的 %s 繫結. 也許狗狗幣已經在執行了.</translation>
     </message>
     <message>

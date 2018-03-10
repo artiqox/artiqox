@@ -23,6 +23,6 @@ script:
 notifications:
   irc:
     channels:
-      - "chat.freenode.net#indocoin-dev"
+      - "chat.freenode.net#artiqox-dev"
     template:
       - "%{repository}/%{branch} (%{commit} - %{author}): %{message}"

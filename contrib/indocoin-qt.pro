@@ -18,7 +18,7 @@ FORMS += \
     ../src/qt/forms/transactiondescdialog.ui \
 
 RESOURCES += \
-    ../src/qt/indocoin.qrc
+    ../src/qt/artiqox.qrc
 
 HEADERS += \
     ../src/json/json_spirit.h \
@@ -346,7 +346,7 @@ SOURCES += \
     ../src/qt/paymentrequest.pb.cc \
     ../src/qt/paymentrequestplus.cpp \
     ../src/qt/paymentserver.cpp \
-    ../src/qt/qrc_indocoin.cpp \
+    ../src/qt/qrc_artiqox.cpp \
     ../src/qt/qvalidatedlineedit.cpp \
     ../src/qt/qvaluecombobox.cpp \
     ../src/qt/receivecoinsdialog.cpp \
@@ -401,7 +401,7 @@ SOURCES += \
     ../src/test/serialize_tests.cpp \
     ../src/test/sighash_tests.cpp \
     ../src/test/sigopcount_tests.cpp \
-    ../src/test/test_indocoin.cpp \
+    ../src/test/test_artiqox.cpp \
     ../src/test/transaction_tests.cpp \
     ../src/test/uint256_tests.cpp \
     ../src/test/util_tests.cpp \
@@ -416,8 +416,8 @@ SOURCES += \
     ../src/core.cpp \
     ../src/crypter.cpp \
     ../src/db.cpp \
-    ../src/indocoin-cli.cpp \
-    ../src/indocoind.cpp \
+    ../src/artiqox-cli.cpp \
+    ../src/artiqoxd.cpp \
     ../src/hash.cpp \
     ../src/init.cpp \
     ../src/key.cpp \

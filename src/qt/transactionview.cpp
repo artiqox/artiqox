@@ -398,7 +398,7 @@ void TransactionView::viewOnIndochain()
     QModelIndexList selection = transactionView->selectionModel()->selectedRows();
     if(!selection.isEmpty())
     {
-        QString format("http://explorer.indocoin.cash:2750/tx/");
+        QString format("http://explorer.artiqox.cash:2750/tx/");
         QString munged = selection.at(0).data(TransactionTableModel::TxIDRole).toString();
         format += munged.left(munged.lastIndexOf("-"));
         

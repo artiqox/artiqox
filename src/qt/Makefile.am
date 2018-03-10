@@ -5,12 +5,12 @@ AM_CPPFLAGS += -I$(top_srcdir)/src \
   -I$(top_builddir)/src/qt/forms \
   $(PROTOBUF_CFLAGS) \
   $(QR_CFLAGS)
-bin_PROGRAMS = indocoin-qt
+bin_PROGRAMS = artiqox-qt
 noinst_LIBRARIES = libbitcoinqt.a
 SUBDIRS = $(BUILD_TEST_QT)
 DIST_SUBDIRS = test
 
-# indocoin qt core #
+# artiqox qt core #
 QT_TS = \
   locale/bitcoin_ach.ts \
   locale/bitcoin_af_ZA.ts \
@@ -158,8 +158,8 @@ QT_MOC = \
   overviewpage.moc \
   rpcconsole.moc
 
-QT_QRC_CPP = qrc_indocoin.cpp
-QT_QRC = indocoin.qrc
+QT_QRC_CPP = qrc_artiqox.cpp
+QT_QRC = artiqox.qrc
 
 PROTOBUF_CC = paymentrequest.pb.cc
 PROTOBUF_H = paymentrequest.pb.h
@@ -318,7 +318,7 @@ RES_IMAGES = \
 
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-INDOCOIN_RC = res/indocoin-qt-res.rc
+INDOCOIN_RC = res/artiqox-qt-res.rc
 
 libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
@@ -335,23 +335,23 @@ BUILT_SOURCES = $(nodist_libbitcoinqt_a_SOURCES)
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# indocoin-qt binary #
-indocoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
+# artiqox-qt binary #
+artiqox_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
-indocoin_qt_SOURCES = bitcoin.cpp
+artiqox_qt_SOURCES = bitcoin.cpp
 if TARGET_DARWIN
-  indocoin_qt_SOURCES += $(INDOCOIN_MM)
+  artiqox_qt_SOURCES += $(INDOCOIN_MM)
 endif
 if TARGET_WINDOWS
-  indocoin_qt_SOURCES += $(INDOCOIN_RC)
+  artiqox_qt_SOURCES += $(INDOCOIN_RC)
 endif
-indocoin_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
+artiqox_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-indocoin_qt_LDADD += $(LIBBITCOIN_WALLET) $(LIBBITCOIN_SERVER_WALLET)
+artiqox_qt_LDADD += $(LIBBITCOIN_WALLET) $(LIBBITCOIN_SERVER_WALLET)
 endif
-indocoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
+artiqox_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS)
-indocoin_qt_LDFLAGS = $(QT_LDFLAGS)
+artiqox_qt_LDFLAGS = $(QT_LDFLAGS)
 
 # forms/foo.h -> forms/ui_foo.h
 QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))

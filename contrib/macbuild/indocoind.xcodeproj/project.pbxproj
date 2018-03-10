@@ -58,7 +58,7 @@
 		E7F601FC18EA877600ACD3FA /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7F601EE18EA877600ACD3FA /* util.cpp */; };
 		E7F601FD18EA877600ACD3FA /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7F601F018EA877600ACD3FA /* version.cpp */; };
 		E7F6020018EA87C700ACD3FA /* rpcclient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7F601FE18EA87C700ACD3FA /* rpcclient.cpp */; };
-		E7F6020218EA884500ACD3FA /* indocoind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7F6020118EA884500ACD3FA /* indocoind.cpp */; };
+		E7F6020218EA884500ACD3FA /* artiqoxd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7F6020118EA884500ACD3FA /* artiqoxd.cpp */; };
 		E7F6020718EA88C500ACD3FA /* rpcserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7F6020418EA88C500ACD3FA /* rpcserver.cpp */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +87,7 @@
 		E7AA607318EFD4560068AD4A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = lib/libssl.a; sourceTree = "<group>"; };
 		E7AA607518EFD58E0068AD4A /* libboost_program_options-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_program_options-mt.a"; path = "lib/libboost_program_options-mt.a"; sourceTree = "<group>"; };
 		E7AA607818EFD71D0068AD4A /* libboost_system-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_system-mt.a"; path = "lib/libboost_system-mt.a"; sourceTree = "<group>"; };
-		E7F6017A18EA7FB200ACD3FA /* indocoind */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = indocoind; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F6017A18EA7FB200ACD3FA /* artiqoxd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = artiqoxd; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F6018C18EA85A300ACD3FA /* addrman.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = addrman.cpp; path = ../../src/addrman.cpp; sourceTree = "<group>"; };
 		E7F6018D18EA85A300ACD3FA /* addrman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addrman.h; path = ../../src/addrman.h; sourceTree = "<group>"; };
 		E7F6019018EA85BD00ACD3FA /* alert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = alert.cpp; path = ../../src/alert.cpp; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		E7F601F118EA877600ACD3FA /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = ../../src/version.h; sourceTree = "<group>"; };
 		E7F601FE18EA87C700ACD3FA /* rpcclient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcclient.cpp; path = ../../src/rpcclient.cpp; sourceTree = "<group>"; };
 		E7F601FF18EA87C700ACD3FA /* rpcclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rpcclient.h; path = ../../src/rpcclient.h; sourceTree = "<group>"; };
-		E7F6020118EA884500ACD3FA /* indocoind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = indocoind.cpp; path = ../../src/indocoind.cpp; sourceTree = "<group>"; };
+		E7F6020118EA884500ACD3FA /* artiqoxd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = artiqoxd.cpp; path = ../../src/artiqoxd.cpp; sourceTree = "<group>"; };
 		E7F6020418EA88C500ACD3FA /* rpcserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcserver.cpp; path = ../../src/rpcserver.cpp; sourceTree = "<group>"; };
 		E7F6020518EA88C500ACD3FA /* rpcserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rpcserver.h; path = ../../src/rpcserver.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,7 +218,7 @@
 		E7F6017B18EA7FB200ACD3FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E7F6017A18EA7FB200ACD3FA /* indocoind */,
+				E7F6017A18EA7FB200ACD3FA /* artiqoxd */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -329,7 +329,7 @@
 			children = (
 				E7F6020418EA88C500ACD3FA /* rpcserver.cpp */,
 				E7F6020518EA88C500ACD3FA /* rpcserver.h */,
-				E7F6020118EA884500ACD3FA /* indocoind.cpp */,
+				E7F6020118EA884500ACD3FA /* artiqoxd.cpp */,
 				E7F601FE18EA87C700ACD3FA /* rpcclient.cpp */,
 				E7F601FF18EA87C700ACD3FA /* rpcclient.h */,
 			);
@@ -339,9 +339,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E7F6017918EA7FB200ACD3FA /* indocoind */ = {
+		E7F6017918EA7FB200ACD3FA /* artiqoxd */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7F6018318EA7FB200ACD3FA /* Build configuration list for PBXNativeTarget "indocoind" */;
+			buildConfigurationList = E7F6018318EA7FB200ACD3FA /* Build configuration list for PBXNativeTarget "artiqoxd" */;
 			buildPhases = (
 				E7F6017618EA7FB200ACD3FA /* Sources */,
 				E7F6017718EA7FB200ACD3FA /* Frameworks */,
@@ -351,9 +351,9 @@
 			);
 			dependencies = (
 			);
-			name = indocoind;
-			productName = indocoind;
-			productReference = E7F6017A18EA7FB200ACD3FA /* indocoind */;
+			name = artiqoxd;
+			productName = artiqoxd;
+			productReference = E7F6017A18EA7FB200ACD3FA /* artiqoxd */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -363,9 +363,9 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Team Indocoin";
+				ORGANIZATIONNAME = "Team Artiqox";
 			};
-			buildConfigurationList = E7F6017518EA7FB200ACD3FA /* Build configuration list for PBXProject "indocoind" */;
+			buildConfigurationList = E7F6017518EA7FB200ACD3FA /* Build configuration list for PBXProject "artiqoxd" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -377,7 +377,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E7F6017918EA7FB200ACD3FA /* indocoind */,
+				E7F6017918EA7FB200ACD3FA /* artiqoxd */,
 			);
 		};
 /* End PBXProject section */
@@ -424,7 +424,7 @@
 				E7F6020718EA88C500ACD3FA /* rpcserver.cpp in Sources */,
 				E7F601F518EA877600ACD3FA /* hash.cpp in Sources */,
 				E7F601F818EA877600ACD3FA /* protocol.cpp in Sources */,
-				E7F6020218EA884500ACD3FA /* indocoind.cpp in Sources */,
+				E7F6020218EA884500ACD3FA /* artiqoxd.cpp in Sources */,
 				E7F601F918EA877600ACD3FA /* rpcprotocol.cpp in Sources */,
 				E7F601C618EA868B00ACD3FA /* txmempool.cpp in Sources */,
 				E7F601D518EA86FA00ACD3FA /* rpcdump.cpp in Sources */,
@@ -519,7 +519,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
-					/Users/alan/src/indocoin/src/leveldb,
+					/Users/alan/src/artiqox/src/leveldb,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CFLAGS = (
@@ -549,7 +549,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
-					/Users/alan/src/indocoin/src/leveldb,
+					/Users/alan/src/artiqox/src/leveldb,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CFLAGS = (
@@ -567,7 +567,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E7F6017518EA7FB200ACD3FA /* Build configuration list for PBXProject "indocoind" */ = {
+		E7F6017518EA7FB200ACD3FA /* Build configuration list for PBXProject "artiqoxd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7F6018118EA7FB200ACD3FA /* Debug */,
@@ -576,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7F6018318EA7FB200ACD3FA /* Build configuration list for PBXNativeTarget "indocoind" */ = {
+		E7F6018318EA7FB200ACD3FA /* Build configuration list for PBXNativeTarget "artiqoxd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7F6018418EA7FB200ACD3FA /* Debug */,

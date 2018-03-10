@@ -1,5 +1,5 @@
 ---
-name: "indocoin-deps"
+name: "artiqox-deps"
 suites:
 - "trusty"
 architectures:
@@ -126,5 +126,5 @@ script: |
     done
     #
     cd $INSTALLPREFIX
-    find include lib | sort | zip -X@ $OUTDIR/indocoin-deps-win$BITS-gitian-r11a.zip
+    find include lib | sort | zip -X@ $OUTDIR/artiqox-deps-win$BITS-gitian-r11a.zip
   done # for BITS in

@@ -14,11 +14,11 @@ int CommandLineRPC(int argc, char *argv[]);
 
 json_spirit::Array RPCConvertValues(const std::string &strMethod, const std::vector<std::string> &strParams);
 
-/** Show help message for indocoin-cli.
+/** Show help message for artiqox-cli.
  * The mainProgram argument is used to determine whether to show this message as main program
  * (and include some common options) or as sub-header of another help message.
  *
- * @note the argument can be removed once indocoin-cli functionality is removed from bitcoind
+ * @note the argument can be removed once artiqox-cli functionality is removed from bitcoind
  */
 std::string HelpMessageCli(bool mainProgram);
 

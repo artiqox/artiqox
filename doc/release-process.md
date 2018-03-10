@@ -9,7 +9,7 @@ Release Process
 ###update (commit) version in sources
 
 
-	indocoin-qt.pro
+	artiqox-qt.pro
 	contrib/verifysfbinaries/verify.sh
 	doc/README*
 	share/setup.nsi
@@ -27,11 +27,11 @@ Release Process
 
 ##perform gitian builds
 
- From a directory containing the indocoin source, gitian-builder and gitian.sigs
+ From a directory containing the artiqox source, gitian-builder and gitian.sigs
   
 	export SIGNER=(your gitian key, ie bluematt, sipa, etc)
 	export VERSION=(new version, e.g. 0.8.0)
-	pushd ./indocoin
+	pushd ./artiqox
 	git checkout v${VERSION}
 	popd
 	pushd ./gitian-builder
@@ -51,55 +51,55 @@ Release Process
 	wget 'https://download.qt-project.org/official_releases/qt/5.2/5.2.0/single/qt-everywhere-opensource-src-5.2.0.tar.gz'
 	wget 'https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.bz2'
 	cd ..
-	./bin/gbuild ../indocoin/contrib/gitian-descriptors/boost-linux.yml
+	./bin/gbuild ../artiqox/contrib/gitian-descriptors/boost-linux.yml
 	mv build/out/boost-*.zip inputs/
-	./bin/gbuild ../indocoin/contrib/gitian-descriptors/deps-linux.yml
-	mv build/out/indocoin-deps-*.zip inputs/
-	./bin/gbuild ../indocoin/contrib/gitian-descriptors/boost-win.yml
+	./bin/gbuild ../artiqox/contrib/gitian-descriptors/deps-linux.yml
+	mv build/out/artiqox-deps-*.zip inputs/
+	./bin/gbuild ../artiqox/contrib/gitian-descriptors/boost-win.yml
 	mv build/out/boost-*.zip inputs/
-	./bin/gbuild ../indocoin/contrib/gitian-descriptors/deps-win.yml
-	mv build/out/indocoin-deps-*.zip inputs/
-	./bin/gbuild ../indocoin/contrib/gitian-descriptors/qt-win.yml
+	./bin/gbuild ../artiqox/contrib/gitian-descriptors/deps-win.yml
+	mv build/out/artiqox-deps-*.zip inputs/
+	./bin/gbuild ../artiqox/contrib/gitian-descriptors/qt-win.yml
 	mv build/out/qt-*.zip inputs/
-	./bin/gbuild ../indocoin/contrib/gitian-descriptors/protobuf-win.yml
+	./bin/gbuild ../artiqox/contrib/gitian-descriptors/protobuf-win.yml
 	mv build/out/protobuf-*.zip inputs/
 
- Build indocoind and indocoin-qt on Linux32, Linux64, and Win32:
+ Build artiqoxd and artiqox-qt on Linux32, Linux64, and Win32:
   
-	./bin/gbuild --commit indocoin=v${VERSION} ../indocoin/contrib/gitian-descriptors/gitian-linux.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../indocoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gbuild --commit artiqox=v${VERSION} ../artiqox/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../artiqox/contrib/gitian-descriptors/gitian-linux.yml
 	pushd build/out
-	zip -r indocoin-${VERSION}-linux-gitian.zip *
-	mv indocoin-${VERSION}-linux-gitian.zip ../../../
+	zip -r artiqox-${VERSION}-linux-gitian.zip *
+	mv artiqox-${VERSION}-linux-gitian.zip ../../../
 	popd
-	./bin/gbuild --commit indocoin=v${VERSION} ../indocoin/contrib/gitian-descriptors/gitian-win.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs/ ../indocoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gbuild --commit artiqox=v${VERSION} ../artiqox/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs/ ../artiqox/contrib/gitian-descriptors/gitian-win.yml
 	pushd build/out
-	zip -r indocoin-${VERSION}-win-gitian.zip *
-	mv indocoin-${VERSION}-win-gitian.zip ../../../
+	zip -r artiqox-${VERSION}-win-gitian.zip *
+	mv artiqox-${VERSION}-win-gitian.zip ../../../
 	popd
 	popd
 
   Build output expected:
 
-  1. linux 32-bit and 64-bit binaries + source (indocoin-${VERSION}-linux-gitian.zip)
-  2. windows 32-bit and 64-bit binaries + installer + source (indocoin-${VERSION}-win-gitian.zip)
+  1. linux 32-bit and 64-bit binaries + source (artiqox-${VERSION}-linux-gitian.zip)
+  2. windows 32-bit and 64-bit binaries + installer + source (artiqox-${VERSION}-win-gitian.zip)
   3. Gitian signatures (in gitian.sigs/${VERSION}[-win]/(your gitian key)/
 
 repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 **Linux .tar.gz:**
 
-	unzip indocoin-${VERSION}-linux-gitian.zip -d indocoin-${VERSION}-linux
-	tar czvf indocoin-${VERSION}-linux.tar.gz indocoin-${VERSION}-linux
-	rm -rf indocoin-${VERSION}-linux
+	unzip artiqox-${VERSION}-linux-gitian.zip -d artiqox-${VERSION}-linux
+	tar czvf artiqox-${VERSION}-linux.tar.gz artiqox-${VERSION}-linux
+	rm -rf artiqox-${VERSION}-linux
 
 **Windows .zip and setup.exe:**
 
-	unzip indocoin-${VERSION}-win-gitian.zip -d indocoin-${VERSION}-win
-	mv indocoin-${VERSION}-win/indocoin-*-setup.exe .
-	zip -r indocoin-${VERSION}-win.zip indocoin-${VERSION}-win
-	rm -rf indocoin-${VERSION}-win
+	unzip artiqox-${VERSION}-win-gitian.zip -d artiqox-${VERSION}-win
+	mv artiqox-${VERSION}-win/artiqox-*-setup.exe .
+	zip -r artiqox-${VERSION}-win.zip artiqox-${VERSION}-win
+	rm -rf artiqox-${VERSION}-win
 
 **Perform Mac build:**
 
@@ -112,9 +112,9 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 	export QTDIR=/opt/local/share/qt4  # needed to find translations/qt_*.qm files
 	T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
         export CODESIGNARGS='--keychain ...path_to_keychain --sign "Developer ID Application: INDOCOIN FOUNDATION, INC., THE"'
-	python2.7 contrib/macdeploy/macdeployqtplus Indocoin-Qt.app -sign -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
+	python2.7 contrib/macdeploy/macdeployqtplus Artiqox-Qt.app -sign -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
 
- Build output expected: Indocoin-Qt.dmg
+ Build output expected: Artiqox-Qt.dmg
 
 ###Next steps:
 
@@ -125,7 +125,7 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 * create SHA256SUMS for builds, and PGP-sign it
 
-* update indocoin.xyz version
+* update artiqox.xyz version
   make sure all OS download links go to the right versions
   
 * update forum version
@@ -147,42 +147,42 @@ Commit your signature to gitian.sigs:
 
 ### After 3 or more people have gitian-built, repackage gitian-signed zips:
 
-From a directory containing indocoin source, gitian.sigs and gitian zips
+From a directory containing artiqox source, gitian.sigs and gitian zips
 
 	export VERSION=(new version, e.g. 0.8.0)
-	mkdir indocoin-${VERSION}-linux-gitian
-	pushd indocoin-${VERSION}-linux-gitian
-	unzip ../indocoin-${VERSION}-linux-gitian.zip
+	mkdir artiqox-${VERSION}-linux-gitian
+	pushd artiqox-${VERSION}-linux-gitian
+	unzip ../artiqox-${VERSION}-linux-gitian.zip
 	mkdir gitian
-	cp ../indocoin/contrib/gitian-downloader/*.pgp ./gitian/
+	cp ../artiqox/contrib/gitian-downloader/*.pgp ./gitian/
 	for signer in $(ls ../gitian.sigs/${VERSION}/); do
-	 cp ../gitian.sigs/${VERSION}/${signer}/indocoin-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}/${signer}/indocoin-build.assert.sig ./gitian/${signer}-build.assert.sig
+	 cp ../gitian.sigs/${VERSION}/${signer}/artiqox-build.assert ./gitian/${signer}-build.assert
+	 cp ../gitian.sigs/${VERSION}/${signer}/artiqox-build.assert.sig ./gitian/${signer}-build.assert.sig
 	done
-	zip -r indocoin-${VERSION}-linux-gitian.zip *
-	cp indocoin-${VERSION}-linux-gitian.zip ../
+	zip -r artiqox-${VERSION}-linux-gitian.zip *
+	cp artiqox-${VERSION}-linux-gitian.zip ../
 	popd
-	mkdir indocoin-${VERSION}-win-gitian
-	pushd indocoin-${VERSION}-win-gitian
-	unzip ../indocoin-${VERSION}-win-gitian.zip
+	mkdir artiqox-${VERSION}-win-gitian
+	pushd artiqox-${VERSION}-win-gitian
+	unzip ../artiqox-${VERSION}-win-gitian.zip
 	mkdir gitian
-	cp ../indocoin/contrib/gitian-downloader/*.pgp ./gitian/
+	cp ../artiqox/contrib/gitian-downloader/*.pgp ./gitian/
 	for signer in $(ls ../gitian.sigs/${VERSION}-win/); do
-	 cp ../gitian.sigs/${VERSION}-win/${signer}/indocoin-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}-win/${signer}/indocoin-build.assert.sig ./gitian/${signer}-build.assert.sig
+	 cp ../gitian.sigs/${VERSION}-win/${signer}/artiqox-build.assert ./gitian/${signer}-build.assert
+	 cp ../gitian.sigs/${VERSION}-win/${signer}/artiqox-build.assert.sig ./gitian/${signer}-build.assert.sig
 	done
-	zip -r indocoin-${VERSION}-win-gitian.zip *
-	cp indocoin-${VERSION}-win-gitian.zip ../
+	zip -r artiqox-${VERSION}-win-gitian.zip *
+	cp artiqox-${VERSION}-win-gitian.zip ../
 	popd
 
 - Upload gitian zips to SourceForge
 
 - Announce the release:
 
-  - Add the release to indocoin.xyz
+  - Add the release to artiqox.xyz
 
-  - Announce on reddit /r/indocoin, /r/indocoindev
+  - Announce on reddit /r/artiqox, /r/artiqoxdev
 
-  - Release sticky on discuss indocoin: https://discuss.indocoin.xyz/categories/announcements
+  - Release sticky on discuss artiqox: https://discuss.artiqox.xyz/categories/announcements
 
 - Celebrate 

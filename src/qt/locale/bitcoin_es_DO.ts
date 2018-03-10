@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Indocoin Core</source>
-        <translation>Acerca del Núcleo de Indocoin</translation>
+        <source>About Artiqox Core</source>
+        <translation>Acerca del Núcleo de Artiqox</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Indocoin Core&lt;/b&gt; version</source>
-        <translation>Versión del &lt;b&gt;Núcleo de Indocoin&lt;b&gt;</translation>
+        <source>&lt;b&gt;Artiqox Core&lt;/b&gt; version</source>
+        <translation>Versión del &lt;b&gt;Núcleo de Artiqox&lt;b&gt;</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -36,8 +36,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+0"/>
-        <source>The Indocoin Core developers</source>
-        <translation>Los desarrolladores del Núcleo de Indocoin</translation>
+        <source>The Artiqox Core developers</source>
+        <translation>Los desarrolladores del Núcleo de Artiqox</translation>
     </message>
 </context>
 <context>
@@ -124,13 +124,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Indocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones Indocoin para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de transferir monedas.</translation>
+        <source>These are your Artiqox addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones Artiqox para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de transferir monedas.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Indocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones de Indocoin para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción.</translation>
+        <source>These are your Artiqox addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son sus direcciones de Artiqox para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -277,8 +277,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-56"/>
-        <source>Indocoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Indocoins from being stolen by malware infecting your computer.</source>
-        <translation>Indocoin se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus indocoins de robo por malware que infecte su sistema.</translation>
+        <source>Artiqox Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqoxs from being stolen by malware infecting your computer.</source>
+        <translation>Artiqox se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus artiqoxs de robo por malware que infecte su sistema.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -371,8 +371,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Indocoin Core</source>
-        <translation>Mostrar información acerca de Indocoin</translation>
+        <source>Show information about Artiqox Core</source>
+        <translation>Mostrar información acerca de Artiqox</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -432,13 +432,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-405"/>
-        <source>Send coins to a Indocoin address</source>
-        <translation>Enviar monedas a una dirección Indocoin</translation>
+        <source>Send coins to a Artiqox address</source>
+        <translation>Enviar monedas a una dirección Artiqox</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Indocoin Core</source>
-        <translation>Modificar las opciones de configuración de Indocoin</translation>
+        <source>Modify configuration options for Artiqox Core</source>
+        <translation>Modificar las opciones de configuración de Artiqox</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -467,8 +467,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+430"/>
-        <source>Indocoin</source>
-        <translation>Indocoin</translation>
+        <source>Artiqox</source>
+        <translation>Artiqox</translation>
     </message>
     <message>
         <location line="-643"/>
@@ -503,13 +503,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Indocoin addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Indocoin para demostrar la propiedad</translation>
+        <source>Sign messages with your Artiqox addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones Artiqox para demostrar la propiedad</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Indocoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Indocoin concretas</translation>
+        <source>Verify messages to ensure they were signed with specified Artiqox addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones Artiqox concretas</translation>
     </message>
     <message>
         <location line="+48"/>
@@ -539,19 +539,19 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-401"/>
-        <source>Indocoin Core</source>
-        <translation>Núcleo de Indocoin</translation>
+        <source>Artiqox Core</source>
+        <translation>Núcleo de Artiqox</translation>
     </message>
     <message>
         <location line="+163"/>
-        <source>Request payments (generates QR codes and indocoin: URIs)</source>
-        <translation>Solicitar pagos (genera codigo QR y URL&apos;s de Indocoin)</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>Solicitar pagos (genera codigo QR y URL&apos;s de Artiqox)</translation>
     </message>
     <message>
         <location line="+29"/>
         <location line="+2"/>
-        <source>&amp;About Indocoin Core</source>
-        <translation>&amp;Acerca del Núcleo de Indocoin</translation>
+        <source>&amp;About Artiqox Core</source>
+        <translation>&amp;Acerca del Núcleo de Artiqox</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -565,8 +565,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a indocoin: URI or payment request</source>
-        <translation>Abrir un indocoin: URI o petición de pago</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Abrir un artiqox: URI o petición de pago</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -575,19 +575,19 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the Indocoin Core help message to get a list with possible Indocoin Core command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible Artiqox Core command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+159"/>
         <location line="+5"/>
-        <source>Indocoin client</source>
-        <translation>Cliente Indocoin</translation>
+        <source>Artiqox client</source>
+        <translation>Cliente Artiqox</translation>
     </message>
     <message numerus="yes">
         <location line="+142"/>
-        <source>%n active connection(s) to Indocoin network</source>
-        <translation><numerusform>%n conexión activa hacia la red Indocoin</numerusform><numerusform>%n conexiones activas hacia la red Indocoin</numerusform></translation>
+        <source>%n active connection(s) to Artiqox network</source>
+        <translation><numerusform>%n conexión activa hacia la red Artiqox</numerusform><numerusform>%n conexiones activas hacia la red Artiqox</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -694,8 +694,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+438"/>
-        <source>A fatal error occurred. Indocoin Core can no longer continue safely and will quit.</source>
-        <translation>Ha ocurrido un error crítico. Indocoin ya no puede continuar con seguridad y se cerrará.</translation>
+        <source>A fatal error occurred. Artiqox Core can no longer continue safely and will quit.</source>
+        <translation>Ha ocurrido un error crítico. Artiqox ya no puede continuar con seguridad y se cerrará.</translation>
     </message>
 </context>
 <context>
@@ -1052,8 +1052,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Indocoin address.</source>
-        <translation>La dirección introducida &quot;%1&quot; no es una dirección Indocoin válida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Artiqox address.</source>
+        <translation>La dirección introducida &quot;%1&quot; no es una dirección Artiqox válida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1098,13 +1098,13 @@ Dirección: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
-        <source>Indocoin Core - Command-line options</source>
+        <source>Artiqox Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+38"/>
-        <source>Indocoin Core</source>
-        <translation>Núcleo de Indocoin</translation>
+        <source>Artiqox Core</source>
+        <translation>Núcleo de Artiqox</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1156,18 +1156,18 @@ Dirección: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Indocoin Core.</source>
-        <translation>Bienvenido al Núcleo de Indocoin</translation>
+        <source>Welcome to Artiqox Core.</source>
+        <translation>Bienvenido al Núcleo de Artiqox</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Indocoin Core will store its data.</source>
-        <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos Indocoin-Qt.</translation>
+        <source>As this is the first time the program is launched, you can choose where Artiqox Core will store its data.</source>
+        <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos Artiqox-Qt.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Indocoin Core will download and store a copy of the Indocoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Indocoin-Qt va a descargar y guardar una copia de la cadena de bloques de Indocoin. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
+        <source>Artiqox Core will download and store a copy of the Artiqox block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Artiqox-Qt va a descargar y guardar una copia de la cadena de bloques de Artiqox. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1181,8 +1181,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+85"/>
-        <source>Indocoin</source>
-        <translation>Indocoin</translation>
+        <source>Artiqox</source>
+        <translation>Artiqox</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1257,13 +1257,13 @@ Dirección: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Indocoin Core after logging in to the system.</source>
-        <translation>Iniciar Indocoin automáticamente al encender el sistema.</translation>
+        <source>Automatically start Artiqox Core after logging in to the system.</source>
+        <translation>Iniciar Artiqox automáticamente al encender el sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Indocoin Core on system login</source>
-        <translation>&amp;Iniciar Indocoin al iniciar el sistema</translation>
+        <source>&amp;Start Artiqox Core on system login</source>
+        <translation>&amp;Iniciar Artiqox al iniciar el sistema</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1292,7 +1292,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+58"/>
-        <source>Connect to the Indocoin network through a SOCKS proxy.</source>
+        <source>Connect to the Artiqox network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1327,8 +1327,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Indocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Indocoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the Artiqox client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente Artiqox en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1397,8 +1397,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Indocoin Core.</source>
-        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará cuando se reinicie Indocoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Artiqox Core.</source>
+        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará cuando se reinicie Artiqox.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1412,8 +1412,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Indocoin addresses in the transaction list or not.</source>
-        <translation>Mostrar o no las direcciones Indocoin en la lista de transacciones.</translation>
+        <source>Whether to show Artiqox addresses in the transaction list or not.</source>
+        <translation>Mostrar o no las direcciones Artiqox en la lista de transacciones.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1487,8 +1487,8 @@ Dirección: %4
     <message>
         <location line="+50"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Indocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Indocoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Artiqox network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Artiqox después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <location line="-155"/>
@@ -1557,8 +1557,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Indocoin address or malformed URI parameters.</source>
-        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección Indocoin inválida o a parámetros de URI mal formados.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Artiqox address or malformed URI parameters.</source>
+        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección Artiqox inválida o a parámetros de URI mal formados.</translation>
     </message>
     <message>
         <location line="+96"/>
@@ -1577,8 +1577,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start indocoin: click-to-pay handler</source>
-        <translation>No se pudo iniciar indocoin: manejador de pago-al-clic</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>No se pudo iniciar artiqox: manejador de pago-al-clic</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -1646,8 +1646,8 @@ Dirección: %4
     <message>
         <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+11"/>
-        <source>Indocoin</source>
-        <translation>Indocoin</translation>
+        <source>Artiqox</source>
+        <translation>Artiqox</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1661,8 +1661,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+82"/>
-        <source>Enter a Indocoin address (e.g. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</source>
-        <translation>Introduzca una dirección Indocoin (ej. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</translation>
+        <source>Enter a Artiqox address (e.g. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</source>
+        <translation>Introduzca una dirección Artiqox (ej. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</translation>
     </message>
 </context>
 <context>
@@ -1822,7 +1822,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Indocoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Artiqox Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir el archivo de registro de depuración en el directorio actual de datos. Esto puede llevar varios segundos para archivos de registro grandes.</translation>
     </message>
     <message>
@@ -1832,8 +1832,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Indocoin Core RPC console.</source>
-        <translation>Bienvenido a la consola RPC de Indocoin</translation>
+        <source>Welcome to the Artiqox Core RPC console.</source>
+        <translation>Bienvenido a la consola RPC de Artiqox</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1911,7 +1911,7 @@ Dirección: %4
     <message>
         <location line="+14"/>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Indocoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Artiqox network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2307,8 +2307,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+113"/>
-        <source>Warning: Invalid Indocoin address</source>
-        <translation>Alerta: Dirección de Indocoin inválida</translation>
+        <source>Warning: Invalid Artiqox address</source>
+        <translation>Alerta: Dirección de Artiqox inválida</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -2318,7 +2318,7 @@ Dirección: %4
     <message>
         <location line="-11"/>
         <source>Warning: Unknown change address</source>
-        <translation>Alerta: Dirección de Indocoin inválida</translation>
+        <translation>Alerta: Dirección de Artiqox inválida</translation>
     </message>
     <message>
         <location line="-367"/>
@@ -2419,7 +2419,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+33"/>
-        <source>A message that was attached to the indocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Indocoin network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2444,7 +2444,7 @@ Dirección: %4
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+48"/>
-        <source>Indocoin Core is shutting down...</source>
+        <source>Artiqox Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2514,8 +2514,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Indocoin address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Indocoin</translation>
+        <source>Sign the message to prove you own this Artiqox address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección Artiqox</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2550,8 +2550,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Indocoin address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Indocoin indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified Artiqox address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Artiqox indicada</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2565,8 +2565,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+30"/>
-        <source>Enter a Indocoin address (e.g. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</source>
-        <translation>Introduzca una dirección Indocoin (ej. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</translation>
+        <source>Enter a Artiqox address (e.g. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</source>
+        <translation>Introduzca una dirección Artiqox (ej. GM5RxyuyWw5wUCnkUXteFuMpu6jieCkVSt)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2644,13 +2644,13 @@ Dirección: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+28"/>
-        <source>Indocoin Core</source>
-        <translation>Núcleo de Indocoin</translation>
+        <source>Artiqox Core</source>
+        <translation>Núcleo de Artiqox</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Indocoin Core developers</source>
-        <translation>Los desarrolladores del Núcleo de Indocoin</translation>
+        <source>The Artiqox Core developers</source>
+        <translation>Los desarrolladores del Núcleo de Artiqox</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3217,7 +3217,7 @@ Dirección: %4
     </message>
 </context>
 <context>
-    <name>indocoin-core</name>
+    <name>artiqox-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+221"/>
         <source>Usage:</source>
@@ -3243,14 +3243,14 @@ Dirección: %4
     </message>
     <message>
         <location line="+22"/>
-        <source>Specify configuration file (default: indocoin.conf)</source>
-        <translation>Especificar archivo de configuración (predeterminado: indocoin.conf)
+        <source>Specify configuration file (default: artiqox.conf)</source>
+        <translation>Especificar archivo de configuración (predeterminado: artiqox.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: indocoind.pid)</source>
-        <translation>Especificar archivo pid (predeterminado: indocoind.pid)
+        <source>Specify pid file (default: artiqoxd.pid)</source>
+        <translation>Especificar archivo pid (predeterminado: artiqoxd.pid)
 </translation>
     </message>
     <message>
@@ -3331,24 +3331,24 @@ Dirección: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=indocoinrpc
+rpcuser=artiqoxrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
 </source>
         <translation>%s, debe establecer un valor rpcpassword en el archivo de configuración:
 %s
 Se recomienda utilizar la siguiente contraseña aleatoria:
-rpcuser=indocoinrpc
+rpcuser=artiqoxrpc
 rpcpassword=%s
 (no es necesario recordar esta contraseña)
 El nombre de usuario y la contraseña DEBEN NO ser iguales.
 Si el archivo no existe, créelo con permisos de archivo de solo lectura.
 Se recomienda también establecer alertnotify para recibir notificaciones de problemas.
-Por ejemplo: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo.com
+Por ejemplo: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3368,8 +3368,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Indocoin Core is probably already running.</source>
-        <translation>No se puede bloquear el directorio de datos %s. Probablemente Indocoin ya se está ejecutando.</translation>
+        <source>Cannot obtain a lock on data directory %s. Artiqox Core is probably already running.</source>
+        <translation>No se puede bloquear el directorio de datos %s. Probablemente Artiqox ya se está ejecutando.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3413,8 +3413,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Indocoin Core will not work properly.</source>
-        <translation>Precaución: Por favor, ¡revise que la fecha y hora de su ordenador son correctas! Si su reloj está mal, Indocoin no funcionará correctamente.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Artiqox Core will not work properly.</source>
+        <translation>Precaución: Por favor, ¡revise que la fecha y hora de su ordenador son correctas! Si su reloj está mal, Artiqox no funcionará correctamente.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3448,13 +3448,13 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Indocoin Core Daemon</source>
-        <translation>Proceso Indocoin-QT</translation>
+        <source>Artiqox Core Daemon</source>
+        <translation>Proceso Artiqox-QT</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Indocoin Core RPC client version</source>
-        <translation>Versión de cliente IndocoinROC</translation>
+        <source>Artiqox Core RPC client version</source>
+        <translation>Versión de cliente ArtiqoxROC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3653,8 +3653,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Indocoin Core server</source>
-        <translation>Enviar comando a servidor Indocoin</translation>
+        <source>Send command to Artiqox Core server</source>
+        <translation>Enviar comando a servidor Artiqox</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3673,8 +3673,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Indocoin Core server</source>
-        <translation>Iniciar servidor Indocoin</translation>
+        <source>Start Artiqox Core server</source>
+        <translation>Iniciar servidor Artiqox</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3683,8 +3683,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+10"/>
-        <source>Usage (deprecated, use indocoin-cli):</source>
-        <translation>Uso (desaconsejado, usar indocoin-cli)</translation>
+        <source>Usage (deprecated, use artiqox-cli):</source>
+        <translation>Uso (desaconsejado, usar artiqox-cli)</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3957,13 +3957,13 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Indocoin Core</source>
-        <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de Indocoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Artiqox Core</source>
+        <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de Artiqox</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Indocoin Core to complete</source>
-        <translation>El monedero ha necesitado ser reescrito. Reinicie Indocoin para completar el proceso</translation>
+        <source>Wallet needed to be rewritten: restart Artiqox Core to complete</source>
+        <translation>El monedero ha necesitado ser reescrito. Reinicie Artiqox para completar el proceso</translation>
     </message>
     <message>
         <location line="-100"/>
@@ -4022,8 +4022,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Indocoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="-32"/>
-        <source>Unable to bind to %s on this computer. Indocoin Core is probably already running.</source>
-        <translation>No es posible conectar con %s en este sistema. Probablemente Indocoin ya está ejecutándose.</translation>
+        <source>Unable to bind to %s on this computer. Artiqox Core is probably already running.</source>
+        <translation>No es posible conectar con %s en este sistema. Probablemente Artiqox ya está ejecutándose.</translation>
     </message>
     <message>
         <location line="+95"/>

@@ -15,11 +15,11 @@ endif
 bin_PROGRAMS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += indocoind
+  bin_PROGRAMS += artiqoxd
 endif
 
 if BUILD_BITCOIN_CLI
-  bin_PROGRAMS += indocoin-cli
+  bin_PROGRAMS += artiqox-cli
 endif
 
 SUBDIRS = . $(BUILD_QT) $(BUILD_TEST)
@@ -150,36 +150,36 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
-# indocoind binary #
-indocoind_LDADD = \
+# artiqoxd binary #
+artiqoxd_LDADD = \
   libbitcoin_server.a \
   libbitcoin_cli.a \
   libbitcoin_common.a \
   $(LIBLEVELDB) \
   $(LIBMEMENV)
 if ENABLE_WALLET
-indocoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a
+artiqoxd_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a
 endif
-indocoind_SOURCES = indocoind.cpp
+artiqoxd_SOURCES = artiqoxd.cpp
 #
 
 if TARGET_WINDOWS
-indocoind_SOURCES += indocoind-res.rc
+artiqoxd_SOURCES += artiqoxd-res.rc
 endif
 
 AM_CPPFLAGS += $(BDB_CPPFLAGS)
-indocoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
+artiqoxd_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
 
-# indocoin-cli binary #
-indocoin_cli_LDADD = \
+# artiqox-cli binary #
+artiqox_cli_LDADD = \
   libbitcoin_cli.a \
   libbitcoin_common.a \
   $(BOOST_LIBS)
-indocoin_cli_SOURCES = indocoin-cli.cpp
+artiqox_cli_SOURCES = artiqox-cli.cpp
 #
 
 if TARGET_WINDOWS
-indocoin_cli_SOURCES += indocoin-cli-res.rc
+artiqox_cli_SOURCES += artiqox-cli-res.rc
 endif
 
 # NOTE: This dependency is not strictly necessary, but without it make may try to build both in parallel, which breaks the LevelDB build system in a race

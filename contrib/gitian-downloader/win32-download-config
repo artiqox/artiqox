@@ -1,11 +1,11 @@
 --- 
-name: indocoin
+name: artiqox
 urls:
-- http://example.org/indocoin-latest-win32-gitian.zip
+- http://example.org/artiqox-latest-win32-gitian.zip
 rss:
 - url: http://sourceforge.net/api/file/index/project-id/244765/mtime/desc/limit/100/rss
   xpath: //item/link/text()
-  pattern: indocoin-\d+.\d+.\d+-win32-gitian.zip
+  pattern: artiqox-\d+.\d+.\d+-win32-gitian.zip
 signers:
   90DC2AC256201AD9377E15049142E5F7E533CE3B:
     weight: 40

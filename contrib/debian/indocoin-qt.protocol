@@ -1,6 +1,6 @@
 [Protocol]
-exec=indocoin-qt '%u'
-protocol=indocoin
+exec=artiqox-qt '%u'
+protocol=artiqox
 input=none
 output=none
 helper=true

@@ -97,8 +97,8 @@ Jonas Schnelli
 * License: MIT
 
 ### Assets Used
-	src/qt/res/icons/indocoin.icns, src/qt/res/src/indocoin.svg,
-	src/qt/res/src/indocoin.ico, src/qt/res/src/indocoin.png,
-	src/qt/res/src/indocoin_testnet.png, docs/indocoin_logo_doxygen.png,
+	src/qt/res/icons/artiqox.icns, src/qt/res/src/artiqox.svg,
+	src/qt/res/src/artiqox.ico, src/qt/res/src/artiqox.png,
+	src/qt/res/src/artiqox_testnet.png, docs/artiqox_logo_doxygen.png,
 	src/qt/res/icons/toolbar.png, src/qt/res/icons/toolbar_testnet.png,
 	src/qt/res/images/splash.png, src/qt/res/images/splash_testnet.png

@@ -1126,7 +1126,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "Indocoin " + FormatFullVersion();
+        string strDesc = "Artiqox " + FormatFullVersion();
 
         try {
             while (true) {
@@ -1657,7 +1657,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Indocoin Core Daemon is probably already running."), addrBind.ToString());
+            strError = strprintf(_("Unable to bind to %s on this computer. Artiqox Core Daemon is probably already running."), addrBind.ToString());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString(), nErr, strerror(nErr));
         LogPrintf("%s\n", strError);

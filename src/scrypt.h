@@ -1,4 +1,4 @@
-// Copyright (c) 2013-2014 Indocoin Developers
+// Copyright (c) 2013-2014 Artiqox Developers
 
 #ifndef SCRYPT_H
 #define SCRYPT_H

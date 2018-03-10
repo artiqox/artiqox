@@ -41,9 +41,9 @@ static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "Indocoin"
-#define QAPP_ORG_DOMAIN "indocoin.xyz"
-#define QAPP_APP_NAME_DEFAULT "Indocoin-Qt"
-#define QAPP_APP_NAME_TESTNET "Indocoin-Qt-testnet"
+#define QAPP_ORG_NAME "Artiqox"
+#define QAPP_ORG_DOMAIN "artiqox.xyz"
+#define QAPP_APP_NAME_DEFAULT "Artiqox-Qt"
+#define QAPP_APP_NAME_TESTNET "Artiqox-Qt-testnet"
 
 #endif // GUICONSTANTS_H

@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build indocoind(headless client) for OSX.
+This guide will show you how to build artiqoxd(headless client) for OSX.
 
 Notes
 -----
@@ -52,14 +52,14 @@ Optional: install Qt4
 
     sudo port install qt4-mac qrencode protobuf-cpp
 
-### Building `indocoind`
+### Building `artiqoxd`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:indocoin/indocoin.git indocoin
-        cd indocoin
+        git clone git@github.com:artiqox/artiqox.git artiqox
+        cd artiqox
 
-2.  Build indocoind (and Indocoin-Qt, if configured):
+2.  Build artiqoxd (and Artiqox-Qt, if configured):
 
         ./autogen.sh
         ./configure
@@ -88,14 +88,14 @@ If not, you can ensure that the Homebrew OpenSSL is correctly linked by running
 
 Rerunning "openssl version" should now return the correct version.
 
-### Building `indocoind`
+### Building `artiqoxd`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/indocoin/indocoin.git
-        cd indocoin
+        git clone https://github.com/artiqox/artiqox.git
+        cd artiqox
 
-2.  Build indocoind:
+2.  Build artiqoxd:
 
         ./autogen.sh
         ./configure
@@ -107,11 +107,11 @@ Rerunning "openssl version" should now return the correct version.
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `indocoind` for your own use.
+You can ignore this section if you are building `artiqoxd` for your own use.
 
-indocoind/indocoin-cli binaries are not included in the Indocoin-Qt.app bundle.
+artiqoxd/artiqox-cli binaries are not included in the Artiqox-Qt.app bundle.
 
-If you are building `indocoind` or `Indocoin-Qt` for others, your build machine should be set up
+If you are building `artiqoxd` or `Artiqox-Qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -132,29 +132,29 @@ As of December 2012, the `boost` port does not obey `macosx_deployment_target`.
 Download `http://gavinandresen-bitcoin.s3.amazonaws.com/boost_macports_fix.zip`
 for a fix.
 
-Once dependencies are compiled, see release-process.md for how the Indocoin-Qt.app
+Once dependencies are compiled, see release-process.md for how the Artiqox-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
 -------
 
-It's now available at `./indocoind`, provided that you are still in the `src`
+It's now available at `./artiqoxd`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./indocoind` to get the filename where it should be put, or just try these
+Run `./artiqoxd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=indocoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Indocoin/indocoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Indocoin/indocoin.conf"
+    echo -e "rpcuser=artiqoxrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Artiqox/artiqox.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Artiqox/artiqox.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/Indocoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Artiqox/debug.log
 
 Other commands:
 
-    ./indocoind -daemon # to start the indocoin daemon.
-    ./indocoin-cli --help  # for a list of command-line options.
-    ./indocoin-cli help    # When the daemon is running, to get a list of RPC commands
+    ./artiqoxd -daemon # to start the artiqox daemon.
+    ./artiqox-cli --help  # for a list of command-line options.
+    ./artiqox-cli help    # When the daemon is running, to get a list of RPC commands

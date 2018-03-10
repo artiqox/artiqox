@@ -1,12 +1,12 @@
-# bash programmable completion for indocoind(1) and indocoin-cli(1)
+# bash programmable completion for artiqoxd(1) and artiqox-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have indocoind && {
+have artiqoxd && {
 
-# call $indocoind for RPC
-_indocoin_rpc() {
+# call $artiqoxd for RPC
+_artiqox_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -16,23 +16,23 @@ _indocoin_rpc() {
                 ;;
         esac
     done
-    $indocoind "${rpcargs[@]}" "$@"
+    $artiqoxd "${rpcargs[@]}" "$@"
 }
 
-# Add indocoin accounts to COMPREPLY
-_indocoin_accounts() {
+# Add artiqox accounts to COMPREPLY
+_artiqox_accounts() {
     local accounts
-    accounts=$(_indocoin_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_artiqox_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_indocoind() {
+_artiqoxd() {
     local cur prev words=() cword
-    local indocoind
+    local artiqoxd
 
-    # save and use original argument to invoke indocoind
-    # indocoind might not be in $PATH
-    indocoind="$1"
+    # save and use original argument to invoke artiqoxd
+    # artiqoxd might not be in $PATH
+    artiqoxd="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -70,7 +70,7 @@ _indocoind() {
                 return 0
                 ;;
             move|setaccount)
-                _indocoin_accounts
+                _artiqox_accounts
                 return 0
                 ;;
         esac
@@ -86,7 +86,7 @@ _indocoind() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _indocoin_accounts
+            _artiqox_accounts
             return 0
             ;;
     esac
@@ -110,12 +110,12 @@ _indocoind() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($indocoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($artiqoxd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_indocoin_rpc help 2>/dev/null | awk '{ print $1; }')
+                commands=$(_artiqox_rpc help 2>/dev/null | awk '{ print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -129,7 +129,7 @@ _indocoind() {
     esac
 }
 
-complete -F _indocoind indocoind indocoin-cli
+complete -F _artiqoxd artiqoxd artiqox-cli
 }
 
 # Local variables:

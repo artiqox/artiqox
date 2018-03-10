@@ -561,7 +561,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Indocoin address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Artiqox address"));
         }
         else // Valid address
         {
