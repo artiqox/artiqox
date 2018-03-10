@@ -1,0 +1,11 @@
+[Protocol]
+exec=indocoin-qt '%u'
+protocol=indocoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
