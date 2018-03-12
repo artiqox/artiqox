@@ -247,7 +247,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR INDOCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOXS&lt;/b&gt;!</source>
         <translation>Uyarı: Eğer cüzdanınızı şifrelerseniz ve parolanızı kaybederseniz, &lt;b&gt;TÜM BİTCOİNLERİNİZİ KAYBEDERSİNİZ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -3245,8 +3245,8 @@ Adres: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 19457 or testnet: 19459)</source>
-        <translation>Bağlantılar için dinlenecek &lt;port&gt; (varsayılan: 19457 ya da testnet: 19459)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</source>
+        <translation>Bağlantılar için dinlenecek &lt;port&gt; (varsayılan: 19427 ya da testnet: 19459)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3280,8 +3280,8 @@ Adres: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>JSON-RPC bağlantılarını &lt;port&gt; üzerinde dinle (varsayılan: 19451 veya tesnet: 19458)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>JSON-RPC bağlantılarını &lt;port&gt; üzerinde dinle (varsayılan: 19421 veya tesnet: 19458)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3450,8 +3450,8 @@ mesela: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>&lt;port&gt; numarasında JSON-RPC&apos;ye bağlan (varsayılan: 19451 veya testnet: 19458)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>&lt;port&gt; numarasında JSON-RPC&apos;ye bağlan (varsayılan: 19421 veya testnet: 19458)</translation>
     </message>
     <message>
         <location line="+2"/>

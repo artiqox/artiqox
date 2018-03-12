@@ -256,8 +256,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR INDOCOINS&lt;/b&gt;!</source>
-        <translation>Atencion: ¡Si cifra su monedero y pierde la contraseña perderá &lt;b&gt;TODOS SUS INDOCOINS&lt;/b&gt;!&quot;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOXS&lt;/b&gt;!</source>
+        <translation>Atencion: ¡Si cifra su monedero y pierde la contraseña perderá &lt;b&gt;TODOS SUS ARTIQOXS&lt;/b&gt;!&quot;</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -3296,8 +3296,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 19457 or testnet: 19459)</source>
-        <translation>Escuchar conexiones en &lt;puerto&gt; (predeterminado: 19457 o testnet: 19459)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</source>
+        <translation>Escuchar conexiones en &lt;puerto&gt; (predeterminado: 19427 o testnet: 19459)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3331,8 +3331,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>Escuchar conexiones JSON-RPC en &lt;puerto&gt; (predeterminado: 19451 o testnet:19458)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>Escuchar conexiones JSON-RPC en &lt;puerto&gt; (predeterminado: 19421 o testnet:19458)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3509,8 +3509,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>Conectar a JSON-RPC en &lt;puerto&gt; (predeterminado: 19451 o testnet: 19458)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>Conectar a JSON-RPC en &lt;puerto&gt; (predeterminado: 19421 o testnet: 19458)</translation>
     </message>
     <message>
         <location line="+2"/>

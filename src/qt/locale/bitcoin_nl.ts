@@ -247,8 +247,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR INDOCOINS&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW INDOCOINS KWIJT RAKEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOXS&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW ARTIQOXS KWIJT RAKEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -3279,8 +3279,8 @@ Adres: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 19457 or testnet: 19459)</source>
-        <translation>Luister voor verbindingen op &lt;poort&gt; (standaard: 19457 of testnet: 19459)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</source>
+        <translation>Luister voor verbindingen op &lt;poort&gt; (standaard: 19427 of testnet: 19459)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3314,8 +3314,8 @@ Adres: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>Wacht op JSON-RPC-connecties op poort &lt;port&gt; (standaard: 19451 of testnet: 19458)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>Wacht op JSON-RPC-connecties op poort &lt;port&gt; (standaard: 19421 of testnet: 19458)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3482,8 +3482,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>Verbinden met JSON-RPC op &lt;poort&gt; (standaard: 19451 of testnet: 19458)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>Verbinden met JSON-RPC op &lt;poort&gt; (standaard: 19421 of testnet: 19458)</translation>
     </message>
     <message>
         <location line="+2"/>

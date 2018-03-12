@@ -247,8 +247,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR INDOCOINS&lt;/b&gt;!</source>
-        <translation>Precaución: Se encriptas o teu moedeiro e perdes o teu contrasinal, ti &lt;b&gt;PERDERÁS TÓDOLOS TEUS INDOCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOXS&lt;/b&gt;!</source>
+        <translation>Precaución: Se encriptas o teu moedeiro e perdes o teu contrasinal, ti &lt;b&gt;PERDERÁS TÓDOLOS TEUS ARTIQOXS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -3257,8 +3257,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 19457 or testnet: 19459)</source>
-        <translation>Escoitar conexións no &lt;porto&gt; (por defecto: 19457 ou testnet: 19459)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</source>
+        <translation>Escoitar conexións no &lt;porto&gt; (por defecto: 19427 ou testnet: 19459)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3292,8 +3292,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>Escoitar conexións JSON-RPC no &lt;porto&gt; (por defecto: 19451 ou testnet: 19458)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>Escoitar conexións JSON-RPC no &lt;porto&gt; (por defecto: 19421 ou testnet: 19458)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3462,8 +3462,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>Conectar a JSON-RPC no &lt;porto&gt; (por defecto: 19451 ou testnet: 19458)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>Conectar a JSON-RPC no &lt;porto&gt; (por defecto: 19421 ou testnet: 19458)</translation>
     </message>
     <message>
         <location line="+2"/>

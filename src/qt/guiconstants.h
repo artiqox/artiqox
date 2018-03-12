@@ -42,7 +42,7 @@ static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "Artiqox"
-#define QAPP_ORG_DOMAIN "artiqox.xyz"
+#define QAPP_ORG_DOMAIN "artiqox.com"
 #define QAPP_APP_NAME_DEFAULT "Artiqox-Qt"
 #define QAPP_APP_NAME_TESTNET "Artiqox-Qt-testnet"
 

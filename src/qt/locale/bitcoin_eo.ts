@@ -247,7 +247,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR INDOCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOXS&lt;/b&gt;!</source>
         <translation>Atentu! Se vi ĉifras vian monujon kaj perdas la pasfrazon, vi &lt;b&gt;PERDOS LA TUTON DE VIA BITMONO&lt;b&gt;!</translation>
     </message>
     <message>
@@ -3245,8 +3245,8 @@ Adreso: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 19457 or testnet: 19459)</source>
-        <translation>Aŭskulti al &lt;port&gt; por konektoj (defaŭlte: 19457 aŭ testnet: 19459)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</source>
+        <translation>Aŭskulti al &lt;port&gt; por konektoj (defaŭlte: 19427 aŭ testnet: 19459)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3280,8 +3280,8 @@ Adreso: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>Aŭskulti al &lt;port&gt; por JSON-RPC-konektoj (defaŭlte: 19451 aŭ testnet: 19458)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>Aŭskulti al &lt;port&gt; por JSON-RPC-konektoj (defaŭlte: 19421 aŭ testnet: 19458)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3450,8 +3450,8 @@ ekzemple: alertnotify=echo %%s | mail -s &quot;Averto de Bitmono&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>Konekti al la JSON-RPC per &lt;port&gt; (defaŭlte: 19451 aŭ testnet: 19458)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>Konekti al la JSON-RPC per &lt;port&gt; (defaŭlte: 19421 aŭ testnet: 19458)</translation>
     </message>
     <message>
         <location line="+2"/>

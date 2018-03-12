@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2013-2014 The Dogecoin developers
-// Copyright (c)      2014 The Artiqox developers
+// Copyright (c)      2018 The Artiqox developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -41,14 +41,14 @@ namespace Checkpoints
     // + Contains no strange transactions
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (     0, uint256("0x0ad6280cff3cc68b209ef97d4414a9adb976a9afefcb2829c5fceb37e7a83584"))
+        (     0, uint256("0x"))
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
-        1388890893, // * UNIX timestamp of last checkpoint block
-        2982687,    // * total number of transactions between genesis and last checkpoint
+        0, // * UNIX timestamp of last checkpoint block
+        0,    // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
-        8000.0      // * estimated number of transactions per day after checkpoint
+        0      // * estimated number of transactions per day after checkpoint
     };
 
     static MapCheckpoints mapCheckpointsTestnet =
@@ -57,14 +57,14 @@ namespace Checkpoints
         ;
     static const CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
-        1369685559,
-        37581,
-        300
+        0,
+        0,
+        0
     };
 
     static MapCheckpoints mapCheckpointsRegtest =
         boost::assign::map_list_of
-        ( 0, uint256("3d2160a3b5dc4a9d62e7e66a295f70313ac808440ef7400d6c0772171ce973a5"))
+        ( 0, uint256("0x"))
         ;
     static const CCheckpointData dataRegtest = {
         &mapCheckpointsRegtest,

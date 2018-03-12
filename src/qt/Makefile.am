@@ -148,7 +148,7 @@ QT_MOC_CPP = \
   moc_walletmodel.cpp \
   moc_walletview.cpp
 
-INDOCOIN_MM = \
+ARTIQOX_MM = \
   macdockiconhandler.mm \
   macnotificationhandler.mm
 
@@ -318,7 +318,7 @@ RES_IMAGES = \
 
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-INDOCOIN_RC = res/artiqox-qt-res.rc
+ARTIQOX_RC = res/artiqox-qt-res.rc
 
 libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
@@ -340,10 +340,10 @@ artiqox_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
 artiqox_qt_SOURCES = bitcoin.cpp
 if TARGET_DARWIN
-  artiqox_qt_SOURCES += $(INDOCOIN_MM)
+  artiqox_qt_SOURCES += $(ARTIQOX_MM)
 endif
 if TARGET_WINDOWS
-  artiqox_qt_SOURCES += $(INDOCOIN_RC)
+  artiqox_qt_SOURCES += $(ARTIQOX_RC)
 endif
 artiqox_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
@@ -365,7 +365,7 @@ QT_QM=$(QT_TS:.ts=.qm)
 bitcoinstrings.cpp: FORCE
 	$(MAKE) -C $(top_srcdir)/src qt/bitcoinstrings.cpp
 
-translate: bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(INDOCOIN_MM)
+translate: bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(ARTIQOX_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
 	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/bitcoin_en.ts
 

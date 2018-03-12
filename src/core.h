@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2013 The Bitcoin developers
 // Copyright (c) 2011-2013 The Litecoin developers
 // Copyright (c) 2013-2014 The Dogecoin developers
-// Copyright (c)      2014 The Artiqox developers
+// Copyright (c)      2018 The Artiqox developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,7 +19,7 @@
 class CTransaction;
 
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 19450000000 * COIN; // Artiqox: maximum of 194.5B coins (given some randomness)
+static const int64_t MAX_MONEY = 900000000 * COIN; // Artiqox: maximum of 194.5B coins (given some randomness)
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
 /** An outpoint - a combination of a transaction hash and an index n into its vout */

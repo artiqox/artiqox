@@ -40,8 +40,8 @@ void BitcoinUnitsTests::parseTests()
     QVERIFY(BitcoinUnits::parse(BitcoinUnits::INDO, "1000.0", &value, locale1));
     QCOMPARE(value, 100000000000LL);
     //MAX_MONEY
-    QVERIFY(BitcoinUnits::parse(BitcoinUnits::INDO, "19450000000", &value, locale1));
-    QCOMPARE(value, 1945000000000000000LL);
+    QVERIFY(BitcoinUnits::parse(BitcoinUnits::INDO, "900000000", &value, locale1));
+    QCOMPARE(value, 90000000000000000LL);
     // Fail: group separator in wrong place
     QVERIFY(!BitcoinUnits::parse(BitcoinUnits::INDO, "0,00", &value, locale1));
     // Fail: group separator in decimals

@@ -247,7 +247,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR INDOCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOXS&lt;/b&gt;!</source>
         <translation>Warnung: Wenn Sie ihre Brieftasche verschlüsseln und ihr Passwort verlieren, werden Sie &lt;b&gt;alle ihre Artiqoxs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -3256,8 +3256,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 19457 or testnet: 19459)</source>
-        <translation>&lt;port&gt; nach Verbindungen abhören (Standard: 19457 oder Testnetz: 19459)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</source>
+        <translation>&lt;port&gt; nach Verbindungen abhören (Standard: 19427 oder Testnetz: 19459)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3291,8 +3291,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>&lt;port&gt; nach JSON-RPC-Verbindungen abhören (Standard: 19451 oder Testnetz: 19458)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>&lt;port&gt; nach JSON-RPC-Verbindungen abhören (Standard: 19421 oder Testnetz: 19458)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3461,8 +3461,8 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Artiqox Alert\&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>Mit JSON-RPC über &lt;port&gt; verbinden (Standard: 19451 oder Testnetz: 19458)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>Mit JSON-RPC über &lt;port&gt; verbinden (Standard: 19421 oder Testnetz: 19458)</translation>
     </message>
     <message>
         <location line="+2"/>

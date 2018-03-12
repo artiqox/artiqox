@@ -12,7 +12,7 @@ extern void SHA256Transform(void* pstate, void* pinput, const void* pinit);
 BOOST_AUTO_TEST_SUITE(miner_tests)
 
 // this array of extranonce/nonce combinations has been generated
-// to be replayed on top of the INDOCOIN genesis block.
+// to be replayed on top of the ARTIQOX genesis block.
 static
 struct {
     unsigned char extranonce;
@@ -49,7 +49,7 @@ struct {
 BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
 {
     // changed this to artiqox genesis pubkey script
-    CScript scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+    CScript scriptPubKey = CScript() << ParseHex("049054f351bc935ccf5f514baa6293bf8b8da93a89b2aab0be37747a2d63a50fcd0281d18d669f1a89c8e44cd8a2062430163ea8ea24bf0211446efa956940d7eb") << OP_CHECKSIG;
     CBlockTemplate *pblocktemplate;
     CTransaction tx,tx2;
     CScript script;

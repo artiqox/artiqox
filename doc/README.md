@@ -8,7 +8,7 @@ Artiqox 1.7
 
 Setup
 ---------------------
-[Artiqox Core](http://artiqox.xyz/en/download) is the original Artiqox client and it builds the backbone of the network. However, it downloads and stores the entire history of Artiqox transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Artiqox Core](http://artiqox.com/en/download) is the original Artiqox client and it builds the backbone of the network. However, it downloads and stores the entire history of Artiqox transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -37,7 +37,7 @@ Drag Artiqox-Qt to your applications folder, and then run Artiqox-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Artiqox Wiki](http://artiqox.xyz/)
+* See the documentation at the [Artiqox Wiki](http://artiqox.com/)
 for help and more information.
 * Ask for help on [#artiqox](http://webchat.freenode.net?channels=artiqox) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=artiqox).
 * Ask for help on the [/r/indoducation subreddit](http://reddit.com/r/indoducation).

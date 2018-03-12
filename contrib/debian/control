@@ -19,7 +19,7 @@ Build-Depends: debhelper,
  libqt4-dev,
  libqrencode-dev
 Standards-Version: 3.9.2
-Homepage: http://www.artiqox.xyz/
+Homepage: http://www.artiqox.com/
 Vcs-Git: git://github.com/artiqox/artiqox.git
 Vcs-Browser: http://github.com/artiqox/artiqox
 

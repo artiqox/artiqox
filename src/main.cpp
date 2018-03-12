@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2011-2013 The Litecoin developers
 // Copyright (c) 2013-2014 The Dogecoin developers
-// Copyright (c)      2014 The Artiqox developers
+// Copyright (c)      2018 The Artiqox developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1105,31 +1105,35 @@ int static generateMTRandom(unsigned int s, int range)
 
 int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 {
-    int64_t nSubsidy = 20000 * COIN;
+    int64_t nSubsidy = 2000 * COIN;
 
-    if(nHeight < 500000)
+    if(nHeight < 200000)
     {
-        nSubsidy = 20000 * COIN;
+        nSubsidy = 2000 * COIN;
     }
-    else if(nHeight < 1000000)
+    else if(nHeight < 400000)
     {
-        nSubsidy = 10000 * COIN;
+        nSubsidy = 1000 * COIN;
     }
-    else if(nHeight < 1500000)
+    else if(nHeight < 600000)
     {
-        nSubsidy = 5000 * COIN;
+        nSubsidy = 500 * COIN;
     }
-	else if(nHeight < 2000000)
+	else if(nHeight < 800000)
     {
-        nSubsidy = 2500 * COIN;
+        nSubsidy = 250 * COIN;
     }
-	else if(nHeight < 2500000)
+	else if(nHeight < 900000)
     {
-        nSubsidy = 1400 * COIN;
+        nSubsidy = 125 * COIN;
+    }
+	else if(nHeight < 1000000)
+    {
+        nSubsidy = 75 * COIN;
     }
     else
     {
-        nSubsidy = 500 * COIN;
+        nSubsidy = 42 * COIN;
     }
     return nSubsidy + nFees;
 }

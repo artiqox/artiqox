@@ -247,7 +247,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR INDOCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOXS&lt;/b&gt;!</source>
         <translation>警告：如果您加密了您的钱包，但是忘记了密码，你将会&lt;b&gt;丢失所有的狗狗币&lt;/b&gt;！</translation>
     </message>
     <message>
@@ -3262,8 +3262,8 @@ Address: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 19457 or testnet: 19459)</source>
-        <translation>监听端口连接 &lt;port&gt;（缺省: 19457 或测试网络: 19459）</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</source>
+        <translation>监听端口连接 &lt;port&gt;（缺省: 19427 或测试网络: 19459）</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3297,8 +3297,8 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>JSON-RPC连接监听端口&lt;port&gt; (缺省：19451　testnet：19458)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>JSON-RPC连接监听端口&lt;port&gt; (缺省：19421　testnet：19458)</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -3471,8 +3471,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19451 or testnet: 19458)</source>
-        <translation>连接到 JSON-RPC 于 &lt;port&gt;（默认: 19451，或测试网络: 19458）</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>连接到 JSON-RPC 于 &lt;port&gt;（默认: 19421，或测试网络: 19458）</translation>
     </message>
     <message>
         <location line="+2"/>

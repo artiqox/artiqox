@@ -111,7 +111,7 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 	make
 	export QTDIR=/opt/local/share/qt4  # needed to find translations/qt_*.qm files
 	T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
-        export CODESIGNARGS='--keychain ...path_to_keychain --sign "Developer ID Application: INDOCOIN FOUNDATION, INC., THE"'
+        export CODESIGNARGS='--keychain ...path_to_keychain --sign "Developer ID Application: ARTIQOX FOUNDATION, INC., THE"'
 	python2.7 contrib/macdeploy/macdeployqtplus Artiqox-Qt.app -sign -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
 
  Build output expected: Artiqox-Qt.dmg
@@ -125,7 +125,7 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 * create SHA256SUMS for builds, and PGP-sign it
 
-* update artiqox.xyz version
+* update artiqox.com version
   make sure all OS download links go to the right versions
   
 * update forum version
@@ -179,10 +179,10 @@ From a directory containing artiqox source, gitian.sigs and gitian zips
 
 - Announce the release:
 
-  - Add the release to artiqox.xyz
+  - Add the release to artiqox.com
 
   - Announce on reddit /r/artiqox, /r/artiqoxdev
 
-  - Release sticky on discuss artiqox: https://discuss.artiqox.xyz/categories/announcements
+  - Release sticky on discuss artiqox: https://discuss.artiqox.com/categories/announcements
 
 - Celebrate 
