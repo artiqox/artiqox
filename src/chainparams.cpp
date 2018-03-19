@@ -44,11 +44,11 @@ public:
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
         //
-        // CBlock(hash=000000000019d6, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=4a5e1e, nTime=1231006505, nBits=1d00ffff, nNonce=2083236893, vtx=1)
-        //   CTransaction(hash=4a5e1e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        //     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73)
-        //     CTxOut(nValue=50.00000000, scriptPubKey=0x5F1DF16B2B704C8A578D0B)
-        //   vMerkleTree: 4a5e1e
+        // CBlock(hash=fb0f6b30ccc9852b01c153a6b95d65f22f9b2f46d6874453e70d27671d5cd6c3, input=01000000000000000000000000000000000000000000000000000000000000000000000048c95128675271283f2262ff02baa81688aad0b60e7bed57598e87f3b8cc156ff9a5a55af0ff0f1e24d21300, PoW=00000cb72b569a4493ba1af1b487b45a579594325a340be816e60b951af5702d, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=6f15ccb8f3878e5957ed7b0eb6d0aa8816a8ba02ff62223f287152672851c948, nTime=1520805369, nBits=1e0ffff0, nNonce=1298980, vtx=1)
+        //   CTransaction(hash=6f15ccb8f3878e5957ed7b0eb6d0aa8816a8ba02ff62223f287152672851c948, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+        //     CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d0104454c6561726e696e6720657870657269656e63653a20596f75206b6e6f772074686174207468696e6720796f75206a757374206469643f20446f6e277420646f20746861742e)
+        //     CTxOut(nValue=88.00000000, scriptPubKey=049054f351bc935ccf5f514baa6293)
+        //   vMerkleTree: 6f15ccb8f3878e5957ed7b0eb6d0aa8816a8ba02ff62223f287152672851c948 
         const char* pszTimestamp = "Learning experience: You know that thing you just did? Don't do that.";
         CTransaction txNew;
         txNew.vin.resize(1);
@@ -62,11 +62,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = 1520805369;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 37402;
+        genesis.nNonce   = 1298980;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0xa5fcdae5c5a5cdb1b9347830085342f0a229bd4d937c770a8d92d6f81f039015"));
-        assert(genesis.hashMerkleRoot == uint256("0x5e46a2ec91e17eab05604365bf447f321f54a5c42264e0dc069fb1d897a7b1f3"));
+        assert(hashGenesisBlock == uint256("0xfb0f6b30ccc9852b01c153a6b95d65f22f9b2f46d6874453e70d27671d5cd6c3"));
+        assert(genesis.hashMerkleRoot == uint256("0x6f15ccb8f3878e5957ed7b0eb6d0aa8816a8ba02ff62223f287152672851c948"));
 
         vSeeds.push_back(CDNSSeedData("artiqox.com", "seed.artiqox.com"));
 
@@ -135,9 +135,9 @@ public:
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1520806619;
-        genesis.nNonce = 838983;
+        genesis.nNonce = 1651712;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x5d1eee3d4fd87831961ec313ef8b57a2a7a6a426b8c4e1f430936e5cb21cd8a8"));
+        assert(hashGenesisBlock == uint256("0x4f3d4c0b5f1d3e8e8b3945861b91ce118ad34ef14113b439fab0d53a068d224a"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -174,11 +174,11 @@ public:
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
         genesis.nTime = 1520807336;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 1838270;
+        genesis.nNonce = 1973092;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18444;
         strDataDir = "regtest";
-        assert(hashGenesisBlock == uint256("0x8a94f3999cf3f73c1e4b9c01b6c843b60818adfde9a802e0df51a91c3442d64a"));
+        assert(hashGenesisBlock == uint256("0xe31c23c98de390242c6fbd5aa303b766d783cb48babd963fad53981da7e4c49c"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
