@@ -16,9 +16,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(AIQ);
-    unitlist.append(mAIQ);
-    unitlist.append(uAIQ);
+    unitlist.append(jtINDO);
+    unitlist.append(rbINDO);
+    unitlist.append(INDO);
     return unitlist;
 }
 
@@ -26,23 +26,12 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case AIQ:
-    case mAIQ:
-    case uAIQ:
+    case jtINDO:
+    case rbINDO:
+    case INDO:
         return true;
     default:
         return false;
-    }
-}
-
-QString BitcoinUnits::id(int unit)
-{
-    switch(unit)
-    {
-    case AIQ: return QString("aiq");
-    case mAIQ: return QString("maiq");
-    case uAIQ: return QString("uaiq");
-    default: return QString("???");
     }
 }
 
@@ -50,9 +39,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case AIQ: return QString("AIQ");
-    case mAIQ: return QString("mAIQ");
-    case uAIQ: return QString::fromUtf8("μAIQ");
+    case jtINDO: return QString("jtINDO");
+    case rbINDO: return QString("rbINDO");
+    case INDO: return QString("INDO");
     default: return QString("???");
     }
 }
@@ -61,9 +50,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case AIQ: return QString("Artiqox");
-    case mAIQ: return QString("Milli-Artiqox (1 / 1" THIN_SP_UTF8 "000)");
-    case uAIQ: return QString("Micro-Artiqox (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case jtINDO: return QString("Mega-Artiqox (1,000,000 INDO)");
+    case rbINDO: return QString("Kilo-Artiqox (1000 INDO)");
+    case INDO: return QString("Artiqox");
     default: return QString("???");
     }
 }
@@ -72,21 +61,21 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case AIQ:  return 100000000;
-    case mAIQ: return 100000;
-    case uAIQ: return 100;
-    default:   return 100000000;
+    case jtINDO: return Q_INT64_C(100000000000000);
+    case rbINDO: return Q_INT64_C(100000000000);
+    case INDO:  return Q_INT64_C(100000000);
+    default:    return Q_INT64_C(100000000);
     }
 }
 
-int BitcoinUnits::decimals(int unit)
+qint64 BitcoinUnits::maxAmount(int unit)
 {
     switch(unit)
     {
-    case AIQ: return 8;
-    case mAIQ: return 5;
-    case uAIQ: return 2;
-    default: return 0;
+    case jtINDO: return Q_INT64_C(900000);
+    case rbINDO: return Q_INT64_C(900000000);
+    case INDO:  return Q_INT64_C(900000000000);    //less than the coin supply until the year 2170
+    default:   return 0;
     }
 }
 
@@ -94,9 +83,20 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case AIQ: return 8; // 21,000,000 (# digits, without commas)
-    case mAIQ: return 11; // 21,000,000,000
-    case uAIQ: return 14; // 21,000,000,000,000
+    case jtINDO: return 6;  // 900,000 (# digits, without commas)
+    case rbINDO: return 9;  // 900,000,000
+    case INDO:  return 12; // 900,000,000,000
+    default: return 0;
+    }
+}
+
+int BitcoinUnits::decimals(int unit)
+{
+    switch(unit)
+    {
+    case jtINDO: return 14;
+    case rbINDO: return 11;
+    case INDO: return 8;
     default: return 0;
     }
 }
