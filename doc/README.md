@@ -1,9 +1,9 @@
-Artiqox 1.7
+Artiqox 1.0.0
 =====================
 
 * Copyright (c) 2009-2014 Bitcoin Developers
 * Copyright (c) 2011-2013 Litecoin Developers
-* Copyright (c) 2013-2014 Artiqox Developers
+* Copyright (c) 2018 Artiqox Developers
 
 
 Setup
