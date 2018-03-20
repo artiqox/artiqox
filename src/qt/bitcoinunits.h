@@ -22,13 +22,11 @@ public:
     /** Bitcoin units.
       @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
      */
-    enum Unit   //Note: preserve positions in order to preserve existing settings
+    enum Unit
     {
-        INDO,
-        //formerly mINDO
-        //formerly uINDO
-        jtINDO = 3,
-        rbINDO = 4
+        AUQ,
+        mAIQ,
+        uAIQ
     };
 
     //! @name Static API

@@ -25,7 +25,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::INDO)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::AIQ)
     {
 
     }
@@ -198,7 +198,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     }
 
-    // update the display unit, to not use the default ("INDO")
+    // update the display unit, to not use the default ("AIQ")
     updateDisplayUnit();
 }
 

@@ -102,16 +102,9 @@ void BitcoinAmountField::clear()
 
 bool BitcoinAmountField::validate()
 {
-    bool valid = true;
-    if (amount->value() == 0.0)
-        valid = false;
-    else if (!BitcoinUnits::parse(currentUnit, text(), 0))
-        valid = false;
-    else if (amount->value() > BitcoinUnits::maxAmount(currentUnit))
-        valid = false;
-
+    bool valid = false;
+    value(&valid);
     setValid(valid);
-
     return valid;
 }
 
