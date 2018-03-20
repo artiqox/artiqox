@@ -24,7 +24,7 @@ public:
      */
     enum Unit
     {
-        AUQ,
+        AIQ,
         mAIQ,
         uAIQ
     };
