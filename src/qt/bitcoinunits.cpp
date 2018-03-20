@@ -35,17 +35,6 @@ bool BitcoinUnits::valid(int unit)
     }
 }
 
-QString BitcoinUnits::id(int unit)
-{
-    switch(unit)
-    {
-    case AIQ: return QString("aiq");
-    case mAIQ: return QString("maiq");
-    case uAIQ: return QString("uaiq");
-    default: return QString("???");
-    }
-}
-
 QString BitcoinUnits::name(int unit)
 {
     switch(unit)
@@ -72,10 +61,10 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case AIQ:  return 100000000;
-    case mAIQ: return 100000;
-    case uAIQ: return 100;
-    default:   return 100000000;
+    case AIQ:  return Q_INT64_C(100000000);
+    case mAIQ: return Q_INT64_C(100000);
+    case uAIQ: return Q_INT64_C(100);
+    default:   return Q_INT64_C(100000000);
     }
 }
 
