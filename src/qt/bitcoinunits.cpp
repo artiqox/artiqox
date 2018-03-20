@@ -68,6 +68,17 @@ qint64 BitcoinUnits::factor(int unit)
     }
 }
 
+qint64 BitcoinUnits::maxAmount(int unit)
+ {
+    switch(unit)
+    {
+    case AIQ: return Q_INT64_C(900000000000);
+    case mAIQ: return Q_INT64_C(900000000000000);
+    case uAIQ:  return Q_INT64_C(900000000000000000);    //less than the coin supply until the year 2170
+    default:   return 0;
+    }
+ }
+
 int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
