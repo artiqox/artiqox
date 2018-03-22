@@ -34,14 +34,14 @@ Enable bridging interface for networking:
 
 Once you've got the right hardware and software:
 
-    git clone git://github.com/artiqox/artiqox.git
+    git clone git://github.com/dogecoin/dogecoin.git
     git clone git://github.com/devrandom/gitian-builder.git
 
 Prepare the builder VMs:
 
     cd gitian-builder
-    bin/make-base-vm --lxc --suite trusty --arch i386
-    bin/make-base-vm --lxc --suite trusty --arch amd64
+    bin/make-base-vm --lxc --suite precise --arch i386
+    bin/make-base-vm --lxc --suite precise --arch amd64
     cd ..
 
 Now follow the build process under doc/release-process to first build the dependecies

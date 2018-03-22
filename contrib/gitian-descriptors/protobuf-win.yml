@@ -1,7 +1,7 @@
 ---
 name: "protobuf-win32"
 suites:
-- "trusty"
+- "precise"
 architectures:
 - "amd64"
 packages:
@@ -21,7 +21,6 @@ script: |
   OPTFLAGS="-O2"
   # Integrity Check
   echo "13bfc5ae543cf3aa180ac2485c0bc89495e3ae711fc6fab4f8ffe90dfb4bb677  protobuf-2.5.0.tar.bz2" | sha256sum -c
-
   for BITS in 32 64; do # for architectures
     #
     INSTALLPREFIX=$HOME/staging${BITS}

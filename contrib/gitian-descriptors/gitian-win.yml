@@ -1,7 +1,7 @@
 ---
 name: "artiqox"
 suites:
-- "trusty"
+- "precise"
 architectures:
 - "amd64"
 packages:
@@ -87,11 +87,9 @@ script: |
     unset LD_PRELOAD
     unset FAKETIME
   done # for BITS in
-
   # sort distribution tar file and normalize user/group/mtime information for deterministic output
   mkdir -p $OUTDIR/src
   rm -rf $TEMPDIR
   mkdir -p $TEMPDIR
   cd $TEMPDIR
   tar -xvf $HOME/build/artiqox/$DISTNAME | sort | tar --no-recursion -cT /dev/stdin --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 --mtime="$REFERENCE_DATETIME" | gzip -n > $OUTDIR/src/$DISTNAME
-

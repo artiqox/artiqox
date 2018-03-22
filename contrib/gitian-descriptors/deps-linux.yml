@@ -1,7 +1,7 @@
 ---
 name: "artiqox"
 suites:
-- "trusty"
+- "precise"
 architectures:
 - "i386"
 - "amd64"
@@ -35,7 +35,6 @@ script: |
   echo "dfd71487513c871bad485806bfd1fdb304dedc84d2b01a8fb8e0940b50597a98  qrencode-3.4.3.tar.bz2" | sha256sum -c
   echo "13bfc5ae543cf3aa180ac2485c0bc89495e3ae711fc6fab4f8ffe90dfb4bb677  protobuf-2.5.0.tar.bz2" | sha256sum -c
   echo "08238e59736d1aacdd47cfb8e68684c695516c37f4fbe1b8267dde58dc3a576c  db-5.1.29.NC.tar.gz"    | sha256sum -c
-
   #
   tar xzf openssl-1.0.1h.tar.gz
   cd openssl-1.0.1h

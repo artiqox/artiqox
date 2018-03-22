@@ -1,7 +1,7 @@
 ---
 name: "artiqox"
 suites:
-- "trusty"
+- "precise"
 architectures:
 - "i386"
 - "amd64"
@@ -39,7 +39,6 @@ script: |
   unzip ../build/artiqox-deps-linux${GBUILD_BITS}-gitian-r4a.zip
   unzip ../build/boost-linux${GBUILD_BITS}-1.55.0-gitian-r1.zip
   cd ../build
-
   function do_configure {
     ./configure "$@" --enable-upnp-default --prefix=$STAGING --with-protoc-bindir=$STAGING/host/bin --with-boost=$STAGING --disable-maintainer-mode --disable-dependency-tracking PKG_CONFIG_PATH="$STAGING/lib/pkgconfig" CPPFLAGS="-I$STAGING/include ${OPTFLAGS}" LDFLAGS="-L$STAGING/lib ${OPTFLAGS}" CXXFLAGS="-frandom-seed=artiqox ${OPTFLAGS}" BOOST_CHRONO_EXTRALIBS="-lrt"
   }
@@ -49,7 +48,6 @@ script: |
   do_configure
   make dist
   DISTNAME=`echo artiqox-*.tar.gz`
-
   # Build dynamic versions of everything
   # (with static linking to boost and openssl as well a some non-OS deps)
   mkdir -p distsrc
@@ -59,7 +57,6 @@ script: |
   make $MAKEOPTS
   make $MAKEOPTS install-strip
   make $MAKEOPTS clean
-
   # Build fully static versions of artiqoxd and artiqox-cli for older Linux distros
   STATIC_BINDIR="$HOME/bindir.static"
   mkdir -p $STATIC_BINDIR

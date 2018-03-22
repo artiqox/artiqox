@@ -1,7 +1,7 @@
 ---
 name: "artiqox-deps"
 suites:
-- "trusty"
+- "precise"
 architectures:
 - "amd64"
 packages:
@@ -34,7 +34,6 @@ script: |
   echo "36658cb768a54c1d4dec43c3116c27ed893e88b02ecfcb44f2166f9c0b7f2a0d  zlib-1.2.8.tar.gz"      | sha256sum -c
   echo "32c7acf1608b9c8b71b743b9780adb7a7b347563dbfb4a5263761056da44cc96  libpng-1.6.8.tar.gz"    | sha256sum -c
   echo "dfd71487513c871bad485806bfd1fdb304dedc84d2b01a8fb8e0940b50597a98  qrencode-3.4.3.tar.bz2" | sha256sum -c
-
   for BITS in 32 64; do # for architectures
     #
     INSTALLPREFIX=$HOME/staging${BITS}
