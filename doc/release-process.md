@@ -40,16 +40,16 @@ Release Process
 
 	mkdir -p inputs; cd inputs/
 	wget 'http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.8.tar.gz' -O miniupnpc-1.8.tar.gz
-	wget 'https://www.openssl.org/source/openssl-1.0.1h.tar.gz'
+	wget --no-check-certificate  'https://www.openssl.org/source/openssl-1.0.1h.tar.gz'
 	wget 'http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz'
-	wget 'http://zlib.net/zlib-1.2.8.tar.gz'
+	wget 'http://zlib.net/fossils/zlib-1.2.8.tar.gz'
 	wget 'ftp://ftp.simplesystems.org/pub/png/src/history/libpng16/libpng-1.6.8.tar.gz'
-	wget 'https://fukuchi.org/works/qrencode/qrencode-3.4.3.tar.bz2'
-	wget 'https://downloads.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.tar.bz2'
-	wget 'https://svn.boost.org/trac/boost/raw-attachment/ticket/7262/boost-mingw.patch' -O \
+	wget --no-check-certificate 'https://fukuchi.org/works/qrencode/qrencode-3.4.3.tar.bz2'  
+	wget --no-check-certificate 'https://downloads.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.tar.bz2'
+	wget --no-check-certificate 'https://svn.boost.org/trac/boost/raw-attachment/ticket/7262/boost-mingw.patch' -O \
 	     boost-mingw-gas-cross-compile-2013-03-03.patch
-	wget 'https://download.qt-project.org/official_releases/qt/5.2/5.2.0/single/qt-everywhere-opensource-src-5.2.0.tar.gz'
-	wget 'https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.bz2'
+	wget --no-check-certificate 'https://download.qt.io/archive/qt/5.2/5.2.0/single/qt-everywhere-opensource-src-5.2.0.tar.gz'
+	wget --no-check-certificate 'https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.bz2'
 	cd ..
 	./bin/gbuild ../artiqox/contrib/gitian-descriptors/boost-linux.yml
 	mv build/out/boost-*.zip inputs/
