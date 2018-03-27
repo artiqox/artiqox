@@ -4,7 +4,7 @@
 ![Artiqox](https://avatars2.githubusercontent.com/u/37213767)
 
 ## What is Artiqox?
-Artiqox is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Artiqox, Tenebrix and Litecoin, Artiqox currently employs a simplified variant of scrypt.
+Artiqox is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Dogecoin, Tenebrix and Litecoin, Artiqox currently employs a simplified variant of scrypt.
 
 http://artiqox.com/
 
@@ -48,8 +48,8 @@ The current block reward schedule:
   - [Windows Build Notes](doc/build-msw.md)
 
 ### Ports
-RPC 22555
-P2P 22556
+RPC 19421
+P2P 19427
 
 Translations
 ------------
