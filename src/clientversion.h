@@ -10,7 +10,7 @@
 
 // These need to be macros, as version.cpp's and artiqox-qt.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR       1
-#define CLIENT_VERSION_MINOR       9
+#define CLIENT_VERSION_MINOR       0
 #define CLIENT_VERSION_REVISION    0
 #define CLIENT_VERSION_BUILD       0
 
@@ -19,7 +19,7 @@
 
 // Copyright year (2009-this)
 // Todo: update this when changing our copyright comments in the source
-#define COPYRIGHT_YEAR 2014
+#define COPYRIGHT_YEAR 2018
 
 #endif //HAVE_CONFIG_H
 
