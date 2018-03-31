@@ -1,7 +1,7 @@
 # Artiqox Core [AIQ, ₳]
 ==========================
 
-![Artiqox](https://avatars2.githubusercontent.com/u/37213767)
+![Artiqox](https://avatars2.githubusercontent.com/u/37213767?s=250&v=4)
 
 ## What is Artiqox?
 Artiqox is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Dogecoin, Tenebrix and Litecoin, Artiqox currently employs a simplified variant of scrypt.
