@@ -38,8 +38,8 @@ const std::string CLIENT_NAME("ArtiqoxCore");
 // git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#    define GIT_COMMIT_ID "81b0683"
-#    define GIT_COMMIT_DATE "Tue, 20 Mar 2018 19:50:33 +1030"
+#    define GIT_COMMIT_ID "3e3f394"
+#    define GIT_COMMIT_DATE "Sun, 1 Apr 2018 06:00:35 +0930"
 #endif
 
 #define BUILD_DESC_FROM_COMMIT(maj,min,rev,build,commit) \
