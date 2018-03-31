@@ -131,7 +131,7 @@ TransactionView::TransactionView(QWidget *parent) :
     QAction *copyTxIDAction = new QAction(tr("Copy transaction ID"), this);
     QAction *editLabelAction = new QAction(tr("Edit label"), this);
     QAction *showDetailsAction = new QAction(tr("Show transaction details"), this);
-    QAction *viewOnIndochain = new QAction(tr("Show transaction on Indochain"), this);
+    QAction *viewOnBlockchain = new QAction(tr("Show transaction on Blockchain"), this);
 
     contextMenu = new QMenu();
     contextMenu->addAction(copyAddressAction);
@@ -142,7 +142,7 @@ TransactionView::TransactionView(QWidget *parent) :
     contextMenu->addAction(editLabelAction);
     contextMenu->addAction(showDetailsAction);
     contextMenu->addSeparator();
-    contextMenu->addAction(viewOnIndochain);
+    contextMenu->addAction(viewOnBlockchain);
 
     // Connect actions
     connect(dateWidget, SIGNAL(activated(int)), this, SLOT(chooseDate(int)));
@@ -159,7 +159,7 @@ TransactionView::TransactionView(QWidget *parent) :
     connect(copyTxIDAction, SIGNAL(triggered()), this, SLOT(copyTxID()));
     connect(editLabelAction, SIGNAL(triggered()), this, SLOT(editLabel()));
     connect(showDetailsAction, SIGNAL(triggered()), this, SLOT(showDetails()));
-    connect(viewOnIndochain, SIGNAL(triggered()), this, SLOT(viewOnIndochain()));
+    connect(viewOnBlockchain, SIGNAL(triggered()), this, SLOT(viewOnBlockchain()));
 }
 
 void TransactionView::setModel(WalletModel *model)
@@ -393,12 +393,12 @@ void TransactionView::showDetails()
 }
 
 
-void TransactionView::viewOnIndochain()
+void TransactionView::viewOnBlockchain()
 {
     QModelIndexList selection = transactionView->selectionModel()->selectedRows();
     if(!selection.isEmpty())
     {
-        QString format("http://explorer.artiqox.cash:2750/tx/");
+        QString format("http://explorer.artiqox.com:2750/tx/");
         QString munged = selection.at(0).data(TransactionTableModel::TxIDRole).toString();
         format += munged.left(munged.lastIndexOf("-"));
         

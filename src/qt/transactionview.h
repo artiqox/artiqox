@@ -71,7 +71,7 @@ private slots:
     void copyLabel();
     void copyAmount();
     void copyTxID();
-    void viewOnIndochain();
+    void viewOnBlockchain();
 
 signals:
     void doubleClicked(const QModelIndex&);
