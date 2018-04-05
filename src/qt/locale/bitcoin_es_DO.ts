@@ -936,7 +936,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
+        <source>This label turns red, if the transaction size is greater than 5000 bytes.</source>
         <translation>Esta etiqueta se torna roja si el tamaño de la transación es mayor a 1000 bytes.</translation>
     </message>
     <message>
