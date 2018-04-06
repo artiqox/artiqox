@@ -53,7 +53,7 @@ public:
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
-        txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+        txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 88 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("049054f351bc935ccf5f514baa6293bf8b8da93a89b2aab0be37747a2d63a50fcd0281d18d669f1a89c8e44cd8a2062430163ea8ea24bf0211446efa956940d7eb") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
@@ -184,6 +184,7 @@ public:
     }
 
     virtual bool RequireRPCPassword() const { return false; }
+    virtual bool SimplifiedRewards() const { return true; }
     virtual Network NetworkID() const { return CChainParams::REGTEST; }
 };
 static CRegTestParams regTestParams;

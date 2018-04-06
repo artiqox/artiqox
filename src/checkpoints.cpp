@@ -23,7 +23,7 @@ namespace Checkpoints
     // every system. When reindexing from a fast disk with a slow CPU, it
     // can be up to 20, while when downloading from a slow network with a
     // fast multicore CPU, it won't be much higher than 1.
-    static const double fSigcheckVerificationFactor = 5.0;
+    static const double SIGCHECK_VERIFICATION_FACTOR = 5.0;
 
     struct CCheckpointData {
         const MapCheckpoints *mapCheckpoints;
@@ -41,14 +41,16 @@ namespace Checkpoints
     // + Contains no strange transactions
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (     0, uint256("0x"))
+        (     0, uint256("0xfb0f6b30ccc9852b01c153a6b95d65f22f9b2f46d6874453e70d27671d5cd6c3"))
+        (    42, uint256("0xcdc9d364b2d785ab5377793004b93c1ccfb17de1bfa56c52cfecfb6e4c60b65d"))
+        ( 18276, uint256("0x98baf57606163cfe5f7939c7b60d4f3301d4d96fec551879c3ac4c8ea096c56c"))
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
-        0, // * UNIX timestamp of last checkpoint block
-        0,    // * total number of transactions between genesis and last checkpoint
+        1523027339, // * UNIX timestamp of last checkpoint block
+        18324,      // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
-        0      // * estimated number of transactions per day after checkpoint
+        1500        // * estimated number of transactions per day after checkpoint
     };
 
     static MapCheckpoints mapCheckpointsTestnet =
@@ -95,12 +97,13 @@ namespace Checkpoints
     }
 
     // Guess how far we are in the verification process at the given block index
-    double GuessVerificationProgress(CBlockIndex *pindex) {
+    double GuessVerificationProgress(CBlockIndex *pindex, bool fSigchecks) {
         if (pindex==NULL)
             return 0.0;
 
         int64_t nNow = time(NULL);
 
+        double fSigcheckVerificationFactor = fSigchecks ? SIGCHECK_VERIFICATION_FACTOR : 1.0;
         double fWorkBefore = 0.0; // Amount of work done before pindex
         double fWorkAfter = 0.0;  // Amount of work left after pindex (estimated)
         // Work is defined as: 1.0 per transaction before the last checkpoint, and

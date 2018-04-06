@@ -70,7 +70,13 @@ bool AppInit(int argc, char* argv[])
             fprintf(stderr, "Error: Specified data directory \"%s\" does not exist.\n", mapArgs["-datadir"].c_str());
             return false;
         }
-        ReadConfigFile(mapArgs, mapMultiArgs);
+        try
+        {
+            ReadConfigFile(mapArgs, mapMultiArgs);
+        } catch(std::exception &e) {
+            fprintf(stderr,"Error reading configuration file: %s\n", e.what());
+            return false;
+        }
         // Check for -testnet or -regtest parameter (TestNet() calls are only valid after this clause)
         if (!SelectParamsFromCommandLine()) {
             fprintf(stderr, "Error: Invalid combination of -regtest and -testnet.\n");
@@ -82,9 +88,9 @@ bool AppInit(int argc, char* argv[])
             // First part of help message is specific to artiqoxd / RPC client
             std::string strUsage = _("Artiqox Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  artiqoxd [options]                     " + _("Start Artiqox server") + "\n" +
+                  "  artiqoxd [options]                     " + _("Start Artiqox Core Daemon") + "\n" +
                 _("Usage (deprecated, use artiqox-cli):") + "\n" +
-                  "  artiqoxd [options] <command> [params]  " + _("Send command to Artiqox server") + "\n" +
+                  "  artiqoxd [options] <command> [params]  " + _("Send command to Artiqox Core") + "\n" +
                   "  artiqoxd [options] help                " + _("List commands") + "\n" +
                   "  artiqoxd [options] help <command>      " + _("Get help for a command") + "\n";
 
@@ -166,6 +172,8 @@ bool AppInit(int argc, char* argv[])
 
 int main(int argc, char* argv[])
 {
+    SetupEnvironment();
+
     bool fRet = false;
 
     // Connect artiqoxd signal handlers
