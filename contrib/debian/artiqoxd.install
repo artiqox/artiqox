@@ -1,1 +1,2 @@
-src/artiqoxd usr/bin
+usr/local/bin/artiqoxd usr/bin
+usr/local/bin/artiqox-cli usr/bin
