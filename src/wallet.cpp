@@ -8,9 +8,9 @@
 #include "wallet.h"
 
 #include "base58.h"
+#include "checkpoints.h"
 #include "coincontrol.h"
 #include "net.h"
-#include "checkpoints.h"
 
 #include <boost/algorithm/string/replace.hpp>
 #include <openssl/rand.h>
@@ -18,7 +18,7 @@
 using namespace std;
 
 // Settings
-int64_t nTransactionFee = 0;
+int64_t nTransactionFee = DEFAULT_TRANSACTION_FEE;
 bool bSpendZeroConfChange = true;
 static std::vector<CKeyID> vChangeAddresses;
 
@@ -474,6 +474,7 @@ bool CWallet::AddToWallet(const CWalletTx& wtxIn, bool fFromLoadWallet)
     if (fFromLoadWallet)
     {
         mapWallet[hash] = wtxIn;
+        mapWallet[hash].BindWallet(this);
         AddToSpends(hash);
     }
     else
@@ -609,7 +610,7 @@ bool CWallet::AddToWalletIfInvolvingMe(const uint256 &hash, const CTransaction& 
 
 void CWallet::SyncTransaction(const uint256 &hash, const CTransaction& tx, const CBlock* pblock)
 {
-    LOCK(cs_wallet);
+    LOCK2(cs_main, cs_wallet);
     if (!AddToWalletIfInvolvingMe(hash, tx, pblock, true))
         return; // Not one of ours
 
@@ -947,15 +948,20 @@ int CWallet::ScanForWalletTransactions(CBlockIndex* pindexStart, bool fUpdate)
 
     CBlockIndex* pindex = pindexStart;
     {
-        LOCK(cs_wallet);
+        LOCK2(cs_main, cs_wallet);
+
+        // no need to read and scan block, if block was created before
+        // our wallet birthday (as adjusted for block time variability)
+        while (pindex && nTimeFirstKey && (pindex->nTime < (nTimeFirstKey - 7200)))
+            pindex = chainActive.Next(pindex);
+
+        ShowProgress(_("Rescanning..."), 0); // show rescan progress in GUI as dialog or on splashscreen, if -rescan on startup
+        double dProgressStart = Checkpoints::GuessVerificationProgress(pindex, false);
+        double dProgressTip = Checkpoints::GuessVerificationProgress(chainActive.Tip(), false);
         while (pindex)
         {
-            // no need to read and scan block, if block was created before
-            // our wallet birthday (as adjusted for block time variability)
-            if (nTimeFirstKey && (pindex->nTime < (nTimeFirstKey - 7200))) {
-                pindex = chainActive.Next(pindex);
-                continue;
-            }
+            if (pindex->nHeight % 100 == 0 && dProgressTip - dProgressStart > 0.0)
+                ShowProgress(_("Rescanning..."), std::max(1, std::min(99, (int)((Checkpoints::GuessVerificationProgress(pindex, false) - dProgressStart) / (dProgressTip - dProgressStart) * 100))));
 
             CBlock block;
             ReadBlockFromDisk(block, pindex);
@@ -970,13 +976,14 @@ int CWallet::ScanForWalletTransactions(CBlockIndex* pindexStart, bool fUpdate)
                 LogPrintf("Still rescanning. At block %d. Progress=%f\n", pindex->nHeight, Checkpoints::GuessVerificationProgress(pindex));
             }
         }
+        ShowProgress(_("Rescanning..."), 100); // hide progress dialog in GUI
     }
     return ret;
 }
 
 void CWallet::ReacceptWalletTransactions()
 {
-    LOCK(cs_wallet);
+    LOCK2(cs_main, cs_wallet);
     BOOST_FOREACH(PAIRTYPE(const uint256, CWalletTx)& item, mapWallet)
     {
         const uint256& wtxid = item.first;
@@ -1071,7 +1078,7 @@ int64_t CWallet::GetBalance() const
 {
     int64_t nTotal = 0;
     {
-        LOCK(cs_wallet);
+        LOCK2(cs_main, cs_wallet);
         for (map<uint256, CWalletTx>::const_iterator it = mapWallet.begin(); it != mapWallet.end(); ++it)
         {
             const CWalletTx* pcoin = &(*it).second;
@@ -1087,7 +1094,7 @@ int64_t CWallet::GetUnconfirmedBalance() const
 {
     int64_t nTotal = 0;
     {
-        LOCK(cs_wallet);
+        LOCK2(cs_main, cs_wallet);
         for (map<uint256, CWalletTx>::const_iterator it = mapWallet.begin(); it != mapWallet.end(); ++it)
         {
             const CWalletTx* pcoin = &(*it).second;
@@ -1102,7 +1109,7 @@ int64_t CWallet::GetImmatureBalance() const
 {
     int64_t nTotal = 0;
     {
-        LOCK(cs_wallet);
+        LOCK2(cs_main, cs_wallet);
         for (map<uint256, CWalletTx>::const_iterator it = mapWallet.begin(); it != mapWallet.end(); ++it)
         {
             const CWalletTx* pcoin = &(*it).second;
@@ -1617,6 +1624,8 @@ DBErrors CWallet::LoadWallet(bool& fFirstRunRet)
     if (nLoadWalletRet != DB_LOAD_OK)
         return nLoadWalletRet;
     fFirstRunRet = !vchDefaultKey.IsValid();
+
+    uiInterface.LoadWallet(this);
 
     return DB_LOAD_OK;
 }

@@ -69,18 +69,18 @@ Value getinfo(const Array& params, bool fHelp)
     }
 #endif
     obj.push_back(Pair("blocks",        (int)chainActive.Height()));
-    obj.push_back(Pair("timeoffset",    (boost::int64_t)GetTimeOffset()));
+    obj.push_back(Pair("timeoffset",    GetTimeOffset()));
     obj.push_back(Pair("connections",   (int)vNodes.size()));
     obj.push_back(Pair("proxy",         (proxy.first.IsValid() ? proxy.first.ToStringIPPort() : string())));
     obj.push_back(Pair("difficulty",    (double)GetDifficulty()));
     obj.push_back(Pair("testnet",       TestNet()));
 #ifdef ENABLE_WALLET
     if (pwalletMain) {
-        obj.push_back(Pair("keypoololdest", (boost::int64_t)pwalletMain->GetOldestKeyPoolTime()));
+        obj.push_back(Pair("keypoololdest", pwalletMain->GetOldestKeyPoolTime()));
         obj.push_back(Pair("keypoolsize",   (int)pwalletMain->GetKeyPoolSize()));
     }
     if (pwalletMain && pwalletMain->IsCrypted())
-        obj.push_back(Pair("unlocked_until", (boost::int64_t)nWalletUnlockTime));
+        obj.push_back(Pair("unlocked_until", nWalletUnlockTime));
     obj.push_back(Pair("paytxfee",      ValueFromAmount(nTransactionFee)));
 #endif
     obj.push_back(Pair("relayfee",      ValueFromAmount(CTransaction::nMinRelayTxFee)));
@@ -176,7 +176,7 @@ Value validateaddress(const Array& params, bool fHelp)
 //
 // Used by addmultisigaddress / createmultisig:
 //
-CScript _createmultisig(const Array& params)
+CScript _createmultisig_redeemScript(const Array& params)
 {
     int nRequired = params[0].get_int();
     const Array& keys = params[1].get_array();
@@ -228,6 +228,11 @@ CScript _createmultisig(const Array& params)
     }
     CScript result;
     result.SetMultisig(nRequired, pubkeys);
+
+    if (result.size() > MAX_SCRIPT_ELEMENT_SIZE)
+        throw runtime_error(
+                strprintf("redeemScript exceeds size limit: %d > %d", result.size(), MAX_SCRIPT_ELEMENT_SIZE));
+
     return result;
 }
 
@@ -255,15 +260,15 @@ Value createmultisig(const Array& params, bool fHelp)
 
             "\nExamples:\n"
             "\nCreate a multisig address from 2 addresses\n"
-            + HelpExampleCli("createmultisig", "2 \"[\\\"16sSauSf5pF2UkUwvKGq4qjNRzBZYqgEL5\\\",\\\"171sgjn4YtPu27adkKGrdDwzRTxnRkBfKV\\\"]\"") +
+            + HelpExampleCli("createmultisig", "2 \"[\\\"D9fLaux2pNqp9w4BnU6Rj51PovyzbUaBpk\\\",\\\"DSYgpp3zaDj5wq5Tz1CYEif1QB98zbC2V3\\\"]\"") +
             "\nAs a json rpc call\n"
-            + HelpExampleRpc("icreatemultisig", "2, \"[\\\"16sSauSf5pF2UkUwvKGq4qjNRzBZYqgEL5\\\",\\\"171sgjn4YtPu27adkKGrdDwzRTxnRkBfKV\\\"]\"")
+            + HelpExampleRpc("createmultisig", "2, \"[\\\"D9fLaux2pNqp9w4BnU6Rj51PovyzbUaBpk\\\",\\\"DSYgpp3zaDj5wq5Tz1CYEif1QB98zbC2V3\\\"]\"")
         ;
         throw runtime_error(msg);
     }
 
     // Construct using pay-to-script-hash:
-    CScript inner = _createmultisig(params);
+    CScript inner = _createmultisig_redeemScript(params);
     CScriptID innerID = inner.GetID();
     CBitcoinAddress address(innerID);
 

@@ -5,9 +5,12 @@
 #include "intro.h"
 #include "ui_intro.h"
 
+#include "guiutil.h"
+
 #include "util.h"
 
 #include <boost/filesystem.hpp>
+
 #include <QFileDialog>
 #include <QSettings>
 #include <QMessageBox>
@@ -17,11 +20,9 @@ static const uint64_t GB_BYTES = 1000000000LL;
 static const uint64_t BLOCK_CHAIN_SIZE = 5LL * GB_BYTES;
 
 /* Check free space asynchronously to prevent hanging the UI thread.
-
    Up to one request to check a path is in flight to this thread; when the check()
    function runs, the current path is requested from the associated Intro object.
    The reply is sent back through a signal.
-
    This ensures that no queue of checking requests is built up while the user is
    still entering the path, and that always the most recently entered path is checked as
    soon as the thread becomes available.
@@ -59,7 +60,7 @@ void FreespaceChecker::check()
 {
     namespace fs = boost::filesystem;
     QString dataDirStr = intro->getPathToCheck();
-    fs::path dataDir = fs::path(dataDirStr.toStdString());
+    fs::path dataDir = GUIUtil::qstringToBoostPath(dataDirStr);
     uint64_t freeBytesAvailable = 0;
     int replyStatus = ST_OK;
     QString replyMessage = tr("A new data directory will be created.");
@@ -143,7 +144,7 @@ void Intro::setDataDirectory(const QString &dataDir)
 
 QString Intro::getDefaultDataDirectory()
 {
-    return QString::fromStdString(GetDefaultDataDir().string());
+    return GUIUtil::boostPathToQString(GetDefaultDataDir());
 }
 
 void Intro::pickDataDirectory()
@@ -159,7 +160,7 @@ void Intro::pickDataDirectory()
     /* 2) Allow QSettings to override default dir */
     dataDir = settings.value("strDataDir", dataDir).toString();
 
-    if(!fs::exists(dataDir.toStdString()) || GetBoolArg("-choosedatadir", false))
+    if(!fs::exists(GUIUtil::qstringToBoostPath(dataDir)) || GetBoolArg("-choosedatadir", false))
     {
         /* If current default data directory does not exist, let the user choose one */
         Intro intro;
@@ -175,7 +176,7 @@ void Intro::pickDataDirectory()
             }
             dataDir = intro.getDataDirectory();
             try {
-                fs::create_directory(dataDir.toStdString());
+                TryCreateDirectory(GUIUtil::qstringToBoostPath(dataDir));
                 break;
             } catch(fs::filesystem_error &e) {
                 QMessageBox::critical(0, tr("Artiqox"),
@@ -186,7 +187,12 @@ void Intro::pickDataDirectory()
 
         settings.setValue("strDataDir", dataDir);
     }
-    SoftSetArg("-datadir", dataDir.toStdString());
+    /* Only override -datadir if different from the default, to make it possible to
+     * override -datadir in the artiqox.conf file in the default data directory
+     * (to be consistent with artiqoxd behavior)
+     */
+    if(dataDir != getDefaultDataDirectory())
+        SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting
 }
 
 void Intro::setStatus(int status, const QString &message, quint64 bytesAvailable)

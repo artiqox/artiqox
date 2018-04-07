@@ -72,6 +72,13 @@ static const int COINBASE_MATURITY_SWITCH = 145000;
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 /** Maximum number of script-checking threads allowed */
 static const int MAX_SCRIPTCHECK_THREADS = 16;
+/** -par default (number of script-checking threads, 0 = auto) */
+static const int DEFAULT_SCRIPTCHECK_THREADS = 0;
+/** Number of blocks that can be requested at any given time from a single peer. */
+static const int MAX_BLOCKS_IN_TRANSIT_PER_PEER = 128;
+/** Timeout in seconds before considering a block download peer unresponsive. */
+static const unsigned int BLOCK_DOWNLOAD_TIMEOUT = 60;
+
 #ifdef USE_UPNP
 static const int fHaveUPnP = true;
 #else
@@ -165,8 +172,6 @@ void ThreadScriptCheck();
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 /** Calculate the minimum amount of work a received block needs, without knowing its direct parent */
 unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime);
-/** Get the number of active peers */
-int GetNumBlocksOfPeers();
 /** Check whether we are doing an initial block download (synchronizing from disk or network) */
 bool IsInitialBlockDownload();
 /** Format a string that describes several potential problems detected by the core */
@@ -188,6 +193,9 @@ bool VerifySignature(const CCoins& txFrom, const CTransaction& txTo, unsigned in
 bool AbortNode(const std::string &msg);
 /** Get statistics from node state */
 bool GetNodeStateStats(NodeId nodeid, CNodeStateStats &stats);
+/** Increase a node's misbehavior score. */
+void Misbehaving(NodeId nodeid, int howmuch);
+
 
 /** (try to) add transaction to memory pool **/
 bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState &state, const CTransaction &tx, bool fLimitFree,
@@ -318,7 +326,7 @@ int GetRequiredMaturityDepth(int nHeight);
 // This does not modify the UTXO set. If pvChecks is not NULL, script checks are pushed onto it
 // instead of being performed inline.
 bool CheckInputs(const CTransaction& tx, CValidationState &state, CCoinsViewCache &view, bool fScriptChecks = true,
-                 unsigned int flags = SCRIPT_VERIFY_P2SH | SCRIPT_VERIFY_STRICTENC,
+                 unsigned int flags = STANDARD_SCRIPT_VERIFY_FLAGS,
                  std::vector<CScriptCheck> *pvChecks = NULL);
 
 // Apply the effects of this transaction on the UTXO set represented by view
@@ -390,7 +398,7 @@ public:
             filein >> hashChecksum;
         }
         catch (std::exception &e) {
-            return error("%s : Deserialize or I/O error - %s", __PRETTY_FUNCTION__, e.what());
+            return error("%s : Deserialize or I/O error - %s", __func__, e.what());
         }
 
         // Verify checksum
@@ -614,11 +622,13 @@ bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, C
 bool AddToBlockIndex(CBlock& block, CValidationState& state, const CDiskBlockPos& pos);
 
 // Context-independent validity checks
+bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool fCheckPOW = true);
 bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW = true, bool fCheckMerkleRoot = true);
 
 // Store block on disk
 // if dbp is provided, the file is known to already reside on disk
-bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp = NULL);
+bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex **pindex, CDiskBlockPos* dbp = NULL);
+bool AcceptBlockHeader(CBlockHeader& block, CValidationState& state, CBlockIndex **ppindex= NULL);
 
 
 
@@ -877,6 +887,29 @@ public:
     void print() const
     {
         LogPrintf("%s\n", ToString().c_str());
+    }
+
+    // Check whether this block index entry is valid up to the passed validity level.
+    bool IsValid(enum BlockStatus nUpTo = BLOCK_VALID_TRANSACTIONS) const
+    {
+        assert(!(nUpTo & ~BLOCK_VALID_MASK)); // Only validity flags allowed.
+        if (nStatus & BLOCK_FAILED_MASK)
+            return false;
+        return ((nStatus & BLOCK_VALID_MASK) >= nUpTo);
+    }
+
+    // Raise the validity level of this block index entry.
+    // Returns true if the validity was changed.
+    bool RaiseValidity(enum BlockStatus nUpTo)
+    {
+        assert(!(nUpTo & ~BLOCK_VALID_MASK)); // Only validity flags allowed.
+        if (nStatus & BLOCK_FAILED_MASK)
+            return false;
+        if ((nStatus & BLOCK_VALID_MASK) < nUpTo) {
+            nStatus = (nStatus & ~BLOCK_VALID_MASK) | nUpTo;
+            return true;
+        }
+        return false;
     }
 };
 

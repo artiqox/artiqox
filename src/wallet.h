@@ -28,6 +28,11 @@
 extern int64_t nTransactionFee;
 extern bool bSpendZeroConfChange;
 
+// -paytxfee default
+static const int64_t DEFAULT_TRANSACTION_FEE = 0;
+// -paytxfee will warn if called with a higher fee than this amount (in satoshis) per KB
+static const int nHighTransactionFeeWarning = 25 * COIN;
+
 class CAccountingEntry;
 class CCoinControl;
 class COutput;
@@ -325,26 +330,26 @@ public:
 
     CWallet()
     {
-        nWalletVersion = FEATURE_BASE;
-        nWalletMaxVersion = FEATURE_BASE;
-        fFileBacked = false;
-        nMasterKeyMaxID = 0;
-        pwalletdbEncryption = NULL;
-        nOrderPosNext = 0;
-        nNextResend = 0;
-        nLastResend = 0;
+        SetNull();
     }
     CWallet(std::string strWalletFileIn)
     {
-        nWalletVersion = FEATURE_BASE;
-        nWalletMaxVersion = FEATURE_BASE;
+        SetNull();
+
         strWalletFile = strWalletFileIn;
         fFileBacked = true;
+    }
+    void SetNull()
+    {
+        nWalletVersion = FEATURE_BASE;
+        nWalletMaxVersion = FEATURE_BASE;
+        fFileBacked = false;        
         nMasterKeyMaxID = 0;
         pwalletdbEncryption = NULL;
         nOrderPosNext = 0;
         nNextResend = 0;
         nLastResend = 0;
+        nTimeFirstKey = 0;
     }
 
     std::map<uint256, CWalletTx> mapWallet;
@@ -575,6 +580,9 @@ public:
      */
     boost::signals2::signal<void (CWallet *wallet, const uint256 &hashTx,
             ChangeType status)> NotifyTransactionChanged;
+
+    /** Show progress e.g. for rescan */
+    boost::signals2::signal<void (const std::string &title, int nProgress)> ShowProgress;
 };
 
 /** A key allocated from the key pool. */

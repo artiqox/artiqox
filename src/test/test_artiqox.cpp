@@ -84,3 +84,7 @@ void StartShutdown()
   exit(0);
 }
 
+bool ShutdownRequested()
+{
+  return false;
+}

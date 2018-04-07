@@ -280,8 +280,11 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn)
             if (nBlockSigOps + nTxSigOps >= MAX_BLOCK_SIGOPS)
                 continue;
 
+            // Note that flags: we don't want to set mempool/IsStandard()
+            // policy here, but we still have to ensure that the block we
+            // create only contains transactions that are valid in new blocks.
             CValidationState state;
-            if (!CheckInputs(tx, state, view, true, SCRIPT_VERIFY_P2SH))
+            if (!CheckInputs(tx, state, view, true, MANDATORY_SCRIPT_VERIFY_FLAGS))
                 continue;
 
             CTxUndo txundo;
@@ -359,7 +362,7 @@ void IncrementExtraNonce(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& 
     }
     ++nExtraNonce;
     unsigned int nHeight = pindexPrev->nHeight+1; // Height first in coinbase required for block.version=2
-    pblock->vtx[0].vin[0].scriptSig = (CScript() << nHeight << CBigNum(nExtraNonce)) + COINBASE_FLAGS;
+    pblock->vtx[0].vin[0].scriptSig = (CScript() << nHeight << CScriptNum(nExtraNonce)) + COINBASE_FLAGS;
     assert(pblock->vtx[0].vin[0].scriptSig.size() <= 100);
 
     pblock->hashMerkleRoot = pblock->BuildMerkleTree();
@@ -473,10 +476,10 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("ArtiqoxMiner:\n");
-    printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
+    LogPrintf("ArtiqoxMiner:\n");
+    LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
-    printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
+    LogPrintf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
 
     // Found a solution
     {
@@ -504,7 +507,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
 void static ArtiqoxMiner(CWallet *pwallet)
 {
-    printf("ArtiqoxMiner started\n");
+    LogPrintf("ArtiqoxMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("artiqox-miner");
 
@@ -532,7 +535,7 @@ void static ArtiqoxMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running ArtiqoxMiner with %" PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running ArtiqoxMiner with %" PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -571,6 +574,12 @@ void static ArtiqoxMiner(CWallet *pwallet)
                     SetThreadPriority(THREAD_PRIORITY_NORMAL);
                     CheckWork(pblock, *pwallet, reservekey);
                     SetThreadPriority(THREAD_PRIORITY_LOWEST);
+                    
+                    // In regression test mode, stop mining after a block is found. This
+                    // allows developers to controllably generate a block on demand.
+                    if (Params().NetworkID() == CChainParams::REGTEST)
+                        throw boost::thread_interrupted();
+                    
                     break;
                 }
                 pblock->nNonce += 1;
@@ -632,7 +641,7 @@ void static ArtiqoxMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        printf("ArtiqoxMiner terminated\n");
+        LogPrintf("ArtiqoxMiner terminated\n");
         throw;
     }
 }
@@ -664,4 +673,3 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet, int nThreads)
 }
 
 #endif
-

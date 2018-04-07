@@ -26,7 +26,7 @@ AboutDialog::AboutDialog(QWidget *parent) :
     ui->setupUi(this);
 
     // Set current copyright year
-    ui->copyrightLabel->setText(tr("Copyright") + QString(" &copy; 2009-%1 ").arg(COPYRIGHT_YEAR) + tr("The Bitcoin Core developers") + QString("<br>") + tr("Copyright") + QString(" &copy; 2013-%1 ").arg(COPYRIGHT_YEAR) + tr("The Artiqox developers"));
+    ui->copyrightLabel->setText(tr("Copyright") + QString(" &copy; 2009-%1 ").arg(COPYRIGHT_YEAR) + tr("The Bitcoin Core developers") + QString("<br>") + tr("Copyright") + QString(" &copy; %1 ").arg(COPYRIGHT_YEAR) + tr("The Artiqox Core developers"));
 }
 
 void AboutDialog::setModel(ClientModel *model)
@@ -72,10 +72,11 @@ HelpMessageDialog::HelpMessageDialog(QWidget *parent) :
     coreOptions = QString::fromStdString(HelpMessage(HMM_BITCOIN_QT));
 
     uiOptions = tr("UI options") + ":\n" +
-        "  -lang=<lang>           " + tr("Set language, for example \"de_DE\" (default: system locale)") + "\n" +
-        "  -min                   " + tr("Start minimized") + "\n" +
-        "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n" +
-        "  -choosedatadir         " + tr("Choose data directory on startup (default: 0)");
+        "  -choosedatadir            " + tr("Choose data directory on startup (default: 0)") + "\n" +
+        "  -lang=<lang>              " + tr("Set language, for example \"de_DE\" (default: system locale)") + "\n" +
+        "  -min                      " + tr("Start minimized") + "\n" +
+        "  -rootcertificates=<file>  " + tr("Set SSL root certificates for payment request (default: -system-)") + "\n" +
+        "  -splash                   " + tr("Show splash screen on startup (default: 1)");
 
     ui->helpMessageLabel->setFont(GUIUtil::bitcoinAddressFont());
 

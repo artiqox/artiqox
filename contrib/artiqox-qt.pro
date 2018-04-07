@@ -18,7 +18,7 @@ FORMS += \
     ../src/qt/forms/transactiondescdialog.ui \
 
 RESOURCES += \
-    ../src/qt/artiqox.qrc
+    ../src/qt/bitcoin.qrc
 
 HEADERS += \
     ../src/json/json_spirit.h \

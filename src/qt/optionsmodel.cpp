@@ -65,6 +65,10 @@ void OptionsModel::Init()
         settings.setValue("bDisplayAddresses", false);
     bDisplayAddresses = settings.value("bDisplayAddresses", false).toBool();
 
+    if (!settings.contains("strThirdPartyTxUrls"))
+        settings.setValue("strThirdPartyTxUrls", "http://dogechain.info/tx/%s|https://chain.so/tx/DOGE/%s");
+    strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
+
     if (!settings.contains("fCoinControlFeatures"))
         settings.setValue("fCoinControlFeatures", false);
     fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();
@@ -78,9 +82,20 @@ void OptionsModel::Init()
     // by command-line and show this in the UI.
 
     // Main
+    if (!settings.contains("nDatabaseCache"))
+        settings.setValue("nDatabaseCache", (qint64)nDefaultDbCache);
+    if (!SoftSetArg("-dbcache", settings.value("nDatabaseCache").toString().toStdString()))
+        addOverriddenOption("-dbcache");
+
+    if (!settings.contains("nThreadsScriptVerif"))
+        settings.setValue("nThreadsScriptVerif", DEFAULT_SCRIPTCHECK_THREADS);
+    if (!SoftSetArg("-par", settings.value("nThreadsScriptVerif").toString().toStdString()))
+        addOverriddenOption("-par");
+
+    // Wallet
 #ifdef ENABLE_WALLET
     if (!settings.contains("nTransactionFee"))
-        settings.setValue("nTransactionFee", 0);
+        settings.setValue("nTransactionFee", (qint64)DEFAULT_TRANSACTION_FEE);
     nTransactionFee = settings.value("nTransactionFee").toLongLong(); // if -paytxfee is set, this will be overridden later in init.cpp
     if (mapArgs.count("-paytxfee"))
         addOverriddenOption("-paytxfee");
@@ -90,16 +105,6 @@ void OptionsModel::Init()
     if (!SoftSetBoolArg("-spendzeroconfchange", settings.value("bSpendZeroConfChange").toBool()))
         addOverriddenOption("-spendzeroconfchange");
 #endif
-
-    if (!settings.contains("nDatabaseCache"))
-        settings.setValue("nDatabaseCache", (qint64)nDefaultDbCache);
-    if (!SoftSetArg("-dbcache", settings.value("nDatabaseCache").toString().toStdString()))
-        addOverriddenOption("-dbcache");
-
-    if (!settings.contains("nThreadsScriptVerif"))
-        settings.setValue("nThreadsScriptVerif", 0);
-    if (!SoftSetArg("-par", settings.value("nThreadsScriptVerif").toString().toStdString()))
-        addOverriddenOption("-par");
 
     // Network
     if (!settings.contains("fUseUPnP"))
@@ -204,6 +209,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return nDisplayUnit;
         case DisplayAddresses:
             return bDisplayAddresses;
+        case ThirdPartyTxUrls:
+            return strThirdPartyTxUrls;
         case Language:
             return settings.value("language");
         case CoinControlFeatures:
@@ -304,6 +311,13 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
         case DisplayAddresses:
             bDisplayAddresses = value.toBool();
             settings.setValue("bDisplayAddresses", bDisplayAddresses);
+            break;
+        case ThirdPartyTxUrls:
+            if (strThirdPartyTxUrls != value.toString()) {
+                strThirdPartyTxUrls = value.toString();
+                settings.setValue("strThirdPartyTxUrls", strThirdPartyTxUrls);
+                setRestartRequired(true);
+            }
             break;
         case Language:
             if (settings.value("language") != value) {

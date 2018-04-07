@@ -18,6 +18,7 @@ class WalletModel;
 
 QT_BEGIN_NAMESPACE
 class QModelIndex;
+class QProgressDialog;
 QT_END_NAMESPACE
 
 /*
@@ -60,6 +61,8 @@ private:
 
     TransactionView *transactionView;
 
+    QProgressDialog *progressDialog;
+
 public slots:
     /** Switch to overview (home) page */
     void gotoOverviewPage();
@@ -76,7 +79,6 @@ public slots:
     void gotoVerifyMessageTab(QString addr = "");
 
     /** Show incoming transaction notification for new transactions.
-
         The new items are those between start and end inclusive, under the given parent item.
     */
     void processNewTransaction(const QModelIndex& parent, int start, int /*end*/);
@@ -96,6 +98,9 @@ public slots:
 
     /** Re-emit encryption status signal */
     void updateEncryptionStatus();
+
+    /** Show progress dialog e.g. for rescan */
+    void showProgress(const QString &title, int nProgress);
 
 signals:
     /** Signal that we want to show the main window */

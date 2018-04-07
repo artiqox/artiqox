@@ -159,7 +159,7 @@ QT_MOC = \
   rpcconsole.moc
 
 QT_QRC_CPP = qrc_artiqox.cpp
-QT_QRC = artiqox.qrc
+QT_QRC = bitcoin.qrc
 
 PROTOBUF_CC = paymentrequest.pb.cc
 PROTOBUF_H = paymentrequest.pb.h
@@ -212,7 +212,8 @@ BITCOIN_QT_H = \
   walletframe.h \
   walletmodel.h \
   walletmodeltransaction.h \
-  walletview.h
+  walletview.h \
+  winshutdownmonitor.h
 
 RES_ICONS = \
   res/icons/add.png \
@@ -259,6 +260,14 @@ RES_ICONS = \
   res/icons/tx_output.png \
   res/icons/tx_mined.png
 
+# Normally RES_FONTS live here
+# At the moment Artiqox does not package any specialist
+# fonts in with the client.  This might be something
+# to consider in the future, as we look at the overall
+# branding.  Currently the logo is a placeholder for
+# the Future as we build this thing. No doubt font will
+# play a part in this as well.  expowdleviers
+
 BITCOIN_QT_CPP = \
   bitcoin.cpp \
   bitcoinaddressvalidator.cpp \
@@ -276,10 +285,10 @@ BITCOIN_QT_CPP = \
   qvalidatedlineedit.cpp \
   qvaluecombobox.cpp \
   rpcconsole.cpp \
-  signverifymessagedialog.cpp \
   splashscreen.cpp \
   trafficgraphwidget.cpp \
-  utilitydialog.cpp
+  utilitydialog.cpp \
+  winshutdownmonitor.cpp
 
 if ENABLE_WALLET
 BITCOIN_QT_CPP += \
@@ -298,6 +307,7 @@ BITCOIN_QT_CPP += \
   recentrequeststablemodel.cpp \
   sendcoinsdialog.cpp \
   sendcoinsentry.cpp \
+  signverifymessagedialog.cpp \
   transactiondesc.cpp \
   transactiondescdialog.cpp \
   transactionfilterproxy.cpp \
@@ -372,7 +382,7 @@ translate: bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(
 $(QT_QRC_CPP): $(QT_QRC) $(QT_QM) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
 	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin -o $(abs_builddir)/$@ $< || \
 	  echo error: could not build $@
-	$(SED) -i.bak -e '/^\*\*.*Created:/d' $@ && rm -f $@.bak
-	$(SED) -i.bak -e '/^\*\*.*by:/d' $@ && rm -f $@.bak
+	$(SED) -e '/^\*\*.*Created:/d' $@ > $@.n && mv $@{.n,}
+	$(SED) -e '/^\*\*.*by:/d' $@  > $@.n && mv $@{.n,}
 
 CLEANFILES = $(BUILT_SOURCES) $(QT_QM) $(QT_FORMS_H) *.gcda *.gcno
