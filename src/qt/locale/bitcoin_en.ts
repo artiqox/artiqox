@@ -119,12 +119,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+6"/>
-        <source>Very sending addresses</source>
+        <source>Sending addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Much receiving addresses</source>
+        <source>Receiving addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -342,7 +342,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-407"/>
         <source>&amp;Overview</source>
-        <translation>&amp;Wow</translation>
+        <translation>&amp;Overview</translation>
     </message>
     <message>
         <location line="-136"/>
@@ -357,7 +357,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+20"/>
         <source>&amp;Transactions</source>
-        <translation>&amp;Many History</translation>
+        <translation>&amp;Transactions</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -412,12 +412,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+10"/>
-        <source>Very &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -483,12 +483,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+145"/>
         <source>&amp;Send</source>
-        <translation>&amp;Pls Send</translation>
+        <translation>&amp;Send</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Receive</source>
-        <translation>&amp;Much Receive</translation>
+        <translation>&amp;Receive</translation>
     </message>
     <message>
         <location line="+46"/>
