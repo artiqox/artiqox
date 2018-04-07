@@ -3,11 +3,11 @@
     <name>AboutDialog</name>
     <message>
         <source>About Artiqox Core</source>
-        <translation>关于比特币核心</translation>
+        <translation>关于Artiqox核心</translation>
     </message>
     <message>
         <source>&lt;b&gt;Artiqox Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;比特币核心&lt;/b&gt; 版本</translation>
+        <translation>&lt;b&gt;Artiqox核心&lt;/b&gt; 版本</translation>
     </message>
     <message>
         <source>
@@ -29,7 +29,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>The Artiqox Core developers</source>
-        <translation>Artiqox Core 的开发者</translation>
+        <translation>Artiqox Core 开发团队</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -104,11 +104,11 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>These are your Artiqox addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这是您用来付款的比特币地址。在付款前，请总是核实付款金额和收款地址。</translation>
+        <translation>这是您用来付款的Artiqox地址。 付款之前，请务必核实付款金额和收款地址。</translation>
     </message>
     <message>
         <source>These are your Artiqox addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>这些都是您的比特币地址，可用于收款。建议对每笔交易都使用一个新的地址。</translation>
+        <translation>这些是您的Artiqox地址，可用于收款。 建议为每个事务使用一个新地址。</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -206,7 +206,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ArtiqoxS&lt;/b&gt;!</source>
-        <translation>警告：如果您加密了您的钱包，但是忘记了密码，你将会&lt;b&gt;丢失所有的比特币&lt;/b&gt;！</translation>
+        <translation>警告：如果您已经加密了您的钱包但忘记了密码，那么您将失去所有Artiqox！</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -226,7 +226,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>比特币客户端将关闭软件以完成加密过程。请您谨记：钱包加密并不是万能的，电脑中毒等原因仍可能导致您的比特币意外丢失。</translation>
+        <translation>Artiqox客户端将关闭软件以完成加密过程。 请记住，钱包加密不是万能的。 计算机中毒和其他原因可能仍然会导致Artiqox意外丢失。</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -297,7 +297,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Show information about Artiqox</source>
-        <translation>显示比特币的相关信息</translation>
+        <translation>显示Artiqox币的相关信息</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -345,7 +345,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Send coins to a Artiqox address</source>
-        <translation>向一个比特币地址发送比特币</translation>
+        <translation>向一个Artiqox币地址发送Artiqox</translation>
     </message>
     <message>
         <source>Modify configuration options for Artiqox</source>
@@ -373,7 +373,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Artiqox</source>
-        <translation>比特币</translation>
+        <translation>Artiqox</translation>
     </message>
     <message>
         <source>Wallet</source>
