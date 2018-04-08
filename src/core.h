@@ -36,7 +36,7 @@ static const int BLOCK_VERSION_CHAIN_END = (1 << 30);
 
 // Artiqox aux chain ID = 0x002A (42)
 static const int AUXPOW_CHAIN_ID = 0x002A;
-static const int AUXPOW_START_MAINNET = 30000;
+static const int AUXPOW_START_MAINNET = 42000;
 static const int AUXPOW_START_TESTNET = 100;
 
 /** No amount larger than this (in satoshi) is valid */
