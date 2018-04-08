@@ -3356,8 +3356,8 @@ Address: %4
     </message>
     <message>
         <location line="-46"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>&lt;port&gt; 연결에서 대기 중 (기본값: 22556  or testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</source>
+        <translation>&lt;port&gt; 연결에서 대기 중 (기본값: 19427  or testnet: 19459)</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -3391,8 +3391,8 @@ Address: %4
     </message>
     <message>
         <location line="+50"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>&lt;포트&gt;의 JSON-RPC 연결에서 대기 중 (기본값: 22555 or testnet: 44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>&lt;포트&gt;의 JSON-RPC 연결에서 대기 중 (기본값: 19421 or testnet: 19458)</translation>
     </message>
     <message>
         <location line="+51"/>
@@ -3616,8 +3616,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>JSON-RPC에 연결 &lt;포트&gt; (기본값: 22555 or testnet: 44555)</translation>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>JSON-RPC에 연결 &lt;포트&gt; (기본값: 19421 or testnet: 19458)</translation>
     </message>
     <message>
         <location line="+2"/>

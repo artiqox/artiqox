@@ -76,7 +76,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "In this mode -genproclimit controls how many blocks are generated "
 "immediately."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
-"Listen for JSON-RPC connections on <port> (default: 22555 or testnet: 44555)"),
+"Listen for JSON-RPC connections on <port> (default: 19421 or testnet: 19458)"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Number of seconds to keep misbehaving peers from reconnecting (default: "
 "86400)"),

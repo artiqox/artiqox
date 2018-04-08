@@ -3292,8 +3292,8 @@ Wohin: %4
     </message>
     <message>
         <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>Auf Vabindungen am &lt;port&gt; lauschn (sunsta: 22556 bzw. testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</source>
+        <translation>Auf Vabindungen am &lt;port&gt; lauschn (sunsta: 19427 bzw. testnet: 19459)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3327,7 +3327,7 @@ Wohin: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3492,7 +3492,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
         <translation type="unfinished"/>
     </message>
     <message>

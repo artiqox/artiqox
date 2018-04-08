@@ -3356,8 +3356,8 @@ Address: %4
     </message>
     <message>
         <location line="-46"/>
-        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
-        <translation>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</source>
+        <translation>Listen for connections on &lt;port&gt; (default: 19427 or testnet: 19459)</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -3391,8 +3391,8 @@ Address: %4
     </message>
     <message>
         <location line="+50"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
-        <translation>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
+        <translation>Listen for JSON-RPC connections on &lt;port&gt; (default: 19421 or testnet: 19458)</translation>
     </message>
     <message>
         <location line="+51"/>
@@ -3616,7 +3616,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 19421 or testnet: 19458)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
