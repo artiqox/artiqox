@@ -66,7 +66,7 @@ void OptionsModel::Init()
     bDisplayAddresses = settings.value("bDisplayAddresses", false).toBool();
 
     if (!settings.contains("strThirdPartyTxUrls"))
-        settings.setValue("strThirdPartyTxUrls", "http://dogechain.info/tx/%s|https://chain.so/tx/DOGE/%s");
+        settings.setValue("strThirdPartyTxUrls", "http://explorer.artiqox.de:2750/tx/%s");
     strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
 
     if (!settings.contains("fCoinControlFeatures"))
