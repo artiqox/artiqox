@@ -1708,10 +1708,10 @@ void static Discover(boost::thread_group& threadGroup)
                 if (AddLocal(addr, LOCAL_IF))
                     LogPrintf("IPv6 %s: %s\n", ifa->ifa_name, addr.ToString());
             }
-#endif
         }
         freeifaddrs(myaddrs);
     }
+#endif
 
     // Don't use external IPv4 discovery, when -onlynet="IPv6"
     if (!IsLimited(NET_IPV4))
