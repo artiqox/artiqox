@@ -225,7 +225,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>Brieftasche verschlüsselt</translation>
     </message>
     <message>
-        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your artiqoxs from being stolen by malware infecting your computer.</source>
         <translation>Artiqox wird jetzt beendet, um den Verschlüsselungsprozess abzuschließen. Bitte beachten Sie, dass die Verschlüsselung der Brieftasche nicht vollständig vor Diebstahl ihrer Artiqoxs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
@@ -2583,7 +2583,7 @@ Adresse: %4</translation>
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>artiqox-core</name>
     <message>
         <source>Usage:</source>
         <translation>Benutzung:</translation>
@@ -2605,8 +2605,8 @@ Adresse: %4</translation>
         <translation>Konfigurationsdatei festlegen (Standard: artiqox.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>PID-Datei festlegen (Standard: bitcoind.pid)</translation>
+        <source>Specify pid file (default: artiqoxd.pid)</source>
+        <translation>PID-Datei festlegen (Standard: artiqoxd.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
@@ -2668,7 +2668,7 @@ Adresse: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=bitcoinrpc
+rpcuser=artiqoxrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2679,7 +2679,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
         <translation>%s, Sie müssen den Wert rpcpasswort in dieser Konfigurationsdatei angeben:
 %s
 Es wird empfohlen das folgende Zufallspasswort zu verwenden:
-rpcuser=bitcoinrpc
+rpcuser=artiqoxrpc
 rpcpassword=%s
 (Sie müssen sich dieses Passwort nicht merken!)
 Der Benutzername und das Passwort dürfen NICHT identisch sein.
@@ -3113,8 +3113,8 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Artiqox Alert\&quot; admin@f
         <translation>Blockbaum beim Starten ausgeben (Standard: 0)</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC-SSL-Optionen (siehe Bitcoin-Wiki für SSL-Einrichtung):</translation>
+        <source>RPC SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
+        <translation>RPC-SSL-Optionen (siehe Artiqox-Wiki für SSL-Einrichtung):</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -3133,8 +3133,8 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Artiqox Alert\&quot; admin@f
         <translation>Einen Thread starten, der periodisch die Brieftasche sicher auf den Datenträger schreibt (Standard: 1)</translation>
     </message>
     <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL-Optionen (siehe Bitcoin-Wiki für SSL-Einrichtungssanweisungen):</translation>
+        <source>SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
+        <translation>SSL-Optionen (siehe Artiqox-Wiki für SSL-Einrichtungssanweisungen):</translation>
     </message>
     <message>
         <source>Send command to Artiqox Core</source>

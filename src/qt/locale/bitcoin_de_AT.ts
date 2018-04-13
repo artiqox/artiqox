@@ -701,7 +701,7 @@ Wohin: %4
         <translation>&apos;s Beasl is &lt;b&gt;vaschlisslt&lt;/b&gt; und deazeit grod &lt;b&gt;zuagschpeat&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+435"/>
+        <location filename="../artiqox.cpp" line="+435"/>
         <source>A fatal error occurred. Artiqox Core can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
@@ -1662,7 +1662,7 @@ Wohin: %4
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bitcoin.cpp" line="+71"/>
+        <location filename="../artiqox.cpp" line="+71"/>
         <location line="+11"/>
         <source>Artiqox</source>
         <translation>Artiqox</translation>
@@ -3251,7 +3251,7 @@ Wohin: %4
 <context>
     <name>artiqox-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+223"/>
+        <location filename="../artiqoxstrings.cpp" line="+223"/>
         <source>Usage:</source>
         <translation>Vawendung:</translation>
     </message>
@@ -3812,7 +3812,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+9"/>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <source>SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
         <translation type="unfinished"/>
     </message>
     <message>

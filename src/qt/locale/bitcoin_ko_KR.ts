@@ -724,7 +724,7 @@ Address: %4
         <translation>지갑이 &lt;b&gt;암호화&lt;/b&gt; 되었고 현재 &lt;b&gt;잠겨&lt;/b&gt; 있습니다</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+447"/>
+        <location filename="../artiqox.cpp" line="+447"/>
         <source>A fatal error occurred. Artiqox Core can no longer continue safely and will quit.</source>
         <translation>치명적인 오류가 발생했습니다. Artiqox 코어를 더 이상 안전하게 진행할 수 없어 끝냅니다.</translation>
     </message>
@@ -1706,7 +1706,7 @@ Address: %4
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bitcoin.cpp" line="+71"/>
+        <location filename="../artiqox.cpp" line="+71"/>
         <location line="+7"/>
         <location line="+13"/>
         <source>Artiqox</source>
@@ -3320,7 +3320,7 @@ Address: %4
 <context>
     <name>artiqox-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+262"/>
+        <location filename="../artiqoxstrings.cpp" line="+262"/>
         <source>Usage:</source>
         <translation>사용법: (이 항목의 번역은 완전하지 않습니다. 참고용으로만 사용하세요.)</translation>
     </message>
@@ -3976,7 +3976,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <source>RPC SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
         <translation>RPC SSL 옵션: (SSL 설정 절차를 보려면 비트코인 위키를 참조하세요) </translation>
     </message>
     <message>
@@ -4001,7 +4001,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+2"/>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <source>SSL options: (see the Artiqox Wiki for SSL setup instructions)</source>
         <translation>SSL 옵션: (SSL 설정 절차를 보려면 Artiqox 위키를 참조하세요)</translation>
     </message>
     <message>
