@@ -348,7 +348,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Bir Artiqox adresine Artiqox yolla</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Artiqox seçeneklerinin yapılandırmasını değiştir</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Komut satırı seçenekleri</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation>Artiqox komut satırı seçeneklerinin listesini elde etmek için Artiqox Çekirdeği yardım mesajını göster</translation>
     </message>
     <message>

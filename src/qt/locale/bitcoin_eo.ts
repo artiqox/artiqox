@@ -348,7 +348,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
         <translation>Sendi monon al Bitmon-adreso</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Modifi agordaĵojn por Bitmono</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
         <translation>&amp;Komandliniaj agordaĵoj</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>

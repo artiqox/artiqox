@@ -435,7 +435,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Artiqox Core</source>
+        <source>Modify configuration options for Artiqox Core Core</source>
         <translation>Ända de Eistöllungen fia Artiqox</translation>
     </message>
     <message>

@@ -348,7 +348,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>Artiqoxs an eine Artiqox-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Die Konfiguration des Clients bearbeiten</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>&amp;Kommandozeilenoptionen</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation>Zeige den &quot;Artiqox Core&quot;-Hilfetext, um eine Liste mit möglichen Kommandozeilenoptionen zu erhalten</translation>
     </message>
     <message>

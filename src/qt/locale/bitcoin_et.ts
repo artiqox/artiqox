@@ -348,7 +348,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
         <translation>Saada münte Artiqoxi aadressile</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Muuda Artiqoxi seadeid</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>

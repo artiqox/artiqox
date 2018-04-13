@@ -348,7 +348,7 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
         <translation>Pošli mince na Artiqoxovou adresu</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Uprav nastavení Artiqoxu</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
         <translation>Ar&amp;gumenty z příkazové řádky</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation>Seznam argumentů Artiqoxu pro příkazovou řádku získáš v nápovědě Artiqoxu Core.</translation>
     </message>
     <message>

@@ -348,7 +348,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>向一个Artiqox币地址发送Artiqox</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>设置选项</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;命令行 选项</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation>显示比特币核心 程序帮助信息，获取可用的命令行选项 </translation>
     </message>
     <message>

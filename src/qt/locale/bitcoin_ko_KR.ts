@@ -442,7 +442,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. 동봉된 COPYING.t
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Artiqox Core</source>
+        <source>Modify configuration options for Artiqox Core Core</source>
         <translation>Artiqox 코어의 환경 설정 옵션을 변경합니다</translation>
     </message>
     <message>

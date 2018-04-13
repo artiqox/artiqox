@@ -348,7 +348,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>მონეტების გაგზავნა Artiqox-მისამართზე</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Artiqox-ის საკონფიგურაციო პარამეტრების ცვლილება</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>საკომანდო სტრიქონის ოპ&amp;ციები</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation>Artiqox Core-ს დახმარების ჩვენება Artiqox-ის საკომანდო სტრიქონის დასაშვები ოპციების სანახავად</translation>
     </message>
     <message>

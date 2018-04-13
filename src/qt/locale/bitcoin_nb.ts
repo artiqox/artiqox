@@ -348,7 +348,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>Send til en Artiqox-adresse</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Endre oppsett for Artiqox</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>&amp;Kommandolinjevalg</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation>Vis Artiqox Core hjelpemeldingen for å få en liste med mulige kommandolinjevalg</translation>
     </message>
     <message>

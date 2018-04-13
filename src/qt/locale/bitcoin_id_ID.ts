@@ -348,7 +348,7 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Kirim koin ke alamat Artiqox</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Ubah pilihan konfigurasi untuk Artiqox</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>&amp;pilihan Perintah-baris</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation>Tampilkan pesan bantuan Artiqox Core untuk memberikan daftar pilihan perintah-baris yang memungkinkan dalam aplikasi Artiqox</translation>
     </message>
     <message>

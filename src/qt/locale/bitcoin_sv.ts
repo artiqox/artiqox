@@ -349,7 +349,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Skicka mynt till en Artiqox-adress</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Ändra konfigurationsalternativ för Artiqox</translation>
     </message>
     <message>
@@ -457,7 +457,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>&amp;Kommandoradsalternativ</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation>Visa Artiqox Core hjälpmeddelande för att få en lista med möjliga Artiqox kommandoradsalternativ.</translation>
     </message>
     <message>

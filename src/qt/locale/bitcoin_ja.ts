@@ -348,7 +348,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>Artiqox アドレスにコインを送る</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Artiqox の設定を変更する</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>

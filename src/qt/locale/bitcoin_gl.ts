@@ -348,7 +348,7 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation>Enviar moedas a unha dirección Artiqox</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Modificar opcións de configuración para Artiqox</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>

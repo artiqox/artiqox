@@ -348,7 +348,7 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
         <translation>Trimite monede către o adresă Artiqox</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Modifică opțiunile de configurare pentru Artiqox</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
         <translation>Command-line setări</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>

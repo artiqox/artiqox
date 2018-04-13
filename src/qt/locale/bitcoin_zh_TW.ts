@@ -350,7 +350,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>付錢給一個位元幣位址</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>修改位元幣軟體的設定選項</translation>
     </message>
     <message>
@@ -458,7 +458,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>命令列選項</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation>顯示位元幣核心的說明訊息，來取得可用命令列選項的列表</translation>
     </message>
     <message>

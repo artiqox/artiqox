@@ -349,7 +349,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>Lähetä kolikoita Artiqox-osoitteeseen</translation>
     </message>
     <message>
-        <source>Modify configuration options for Artiqox</source>
+        <source>Modify configuration options for Artiqox Core</source>
         <translation>Muuta Artiqoxin konfiguraatioasetuksia</translation>
     </message>
     <message>
@@ -457,7 +457,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>&amp;Komentorivin valinnat</translation>
     </message>
     <message>
-        <source>Show the Artiqox Core help message to get a list with possible Artiqox command-line options</source>
+        <source>Show the Artiqox Core help message to get a list with possible command-line options</source>
         <translation>Näytä Artiqox Core ohjeet saadaksesi listan mahdollisista Artiqoxin komentorivivalinnoista</translation>
     </message>
     <message>

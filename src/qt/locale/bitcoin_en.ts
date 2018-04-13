@@ -442,8 +442,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Artiqox Core</source>
-        <translation>Modify configuration options for Artiqox Core</translation>
+        <source>Modify configuration options for Artiqox Core Core</source>
+        <translation>Modify configuration options for Artiqox Core Core</translation>
     </message>
     <message>
         <location line="+12"/>
