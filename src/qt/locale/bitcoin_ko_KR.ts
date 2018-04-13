@@ -255,7 +255,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING.txt 파일 
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ArtiqoxS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOX&lt;/b&gt;!</source>
         <translation>경고: 만약 지갑을 암호화 한 뒤 암호문을 잃어버리면, 모든 Artiqox을 잃어버리게 됩니다!</translation>
     </message>
     <message>
@@ -282,7 +282,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING.txt 파일 
     </message>
     <message>
         <location line="-56"/>
-        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqoxs from being stolen by malware infecting your computer.</source>
+        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqox from being stolen by malware infecting your computer.</source>
         <translation>암호화 과정을 끝내기 위해 Artiqox을 닫습니다. 지갑 암호화는 컴퓨터의 멀웨어 감염으로 인한 Artiqox 도난을 완전히 막아주지 못함을 기억하세요.</translation>
     </message>
     <message>

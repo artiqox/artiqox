@@ -104,7 +104,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <source>These are your Artiqox addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Disse er dine Artiqox-adresser for at sende betalinger. Tjek altid beløb og modtageradresse, inden du sender Artiqoxs.</translation>
+        <translation>Disse er dine Artiqox-adresser for at sende betalinger. Tjek altid beløb og modtageradresse, inden du sender Artiqox.</translation>
     </message>
     <message>
         <source>These are your Artiqox addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -205,8 +205,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Bekræft tegnebogskryptering</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ArtiqoxS&lt;/b&gt;!</source>
-        <translation>Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE ArtiqoxS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOX&lt;/b&gt;!</source>
+        <translation>Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE ARTIQOX&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -225,8 +225,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Tegnebog krypteret</translation>
     </message>
     <message>
-        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqoxs from being stolen by malware infecting your computer.</source>
-        <translation>Artiqox vil nu lukke for at gennemføre krypteringsprocessen. Husk på, at kryptering af din tegnebog vil ikke beskytte dine Artiqoxs fuldt ud mod at blive stjålet af malware på din computer.</translation>
+        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqox from being stolen by malware infecting your computer.</source>
+        <translation>Artiqox vil nu lukke for at gennemføre krypteringsprocessen. Husk på, at kryptering af din tegnebog vil ikke beskytte dine Artiqox fuldt ud mod at blive stjålet af malware på din computer.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -345,7 +345,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <source>Send coins to a Artiqox address</source>
-        <translation>Send Artiqoxs til en Artiqox-adresse</translation>
+        <translation>Send Artiqox til en Artiqox-adresse</translation>
     </message>
     <message>
         <source>Modify configuration options for Artiqox Core</source>
@@ -1157,7 +1157,7 @@ Adresse: %4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Vælg den standard underopdelingsenhed, som skal vises i brugergrænsefladen og ved afsendelse af Artiqoxs.</translation>
+        <translation>Vælg den standard underopdelingsenhed, som skal vises i brugergrænsefladen og ved afsendelse af Artiqox.</translation>
     </message>
     <message>
         <source>Whether to show Artiqox addresses in the transaction list or not.</source>
@@ -1700,7 +1700,7 @@ Adresse: %4
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Artiqoxs</translation>
+        <translation>Send Artiqox</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1788,7 +1788,7 @@ Adresse: %4
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Bekræft afsendelse af Artiqoxs</translation>
+        <translation>Bekræft afsendelse af Artiqox</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2549,7 +2549,7 @@ Adresse: %4
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Artiqoxs</translation>
+        <translation>Send Artiqox</translation>
     </message>
 </context>
 <context>
@@ -2723,11 +2723,11 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
     </message>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine Artiqoxs i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine Artiqoxs er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
+        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine Artiqox i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine Artiqox er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
     </message>
     <message>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne Artiqoxs!</translation>
+        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne Artiqox!</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -2951,7 +2951,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.com
     </message>
     <message>
         <source>Generate coins (default: 0)</source>
-        <translation>Generer Artiqoxs (standard: 0)</translation>
+        <translation>Generer Artiqox (standard: 0)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: 288, 0 = all)</source>

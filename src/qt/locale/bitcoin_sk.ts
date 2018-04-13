@@ -200,7 +200,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ArtiqoxS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOX&lt;/b&gt;!</source>
         <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE ArtiqoxY&lt;/b&gt;!⏎</translation>
     </message>
     <message>
@@ -220,7 +220,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Peňaženka zašifrovaná</translation>
     </message>
     <message>
-        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqoxs from being stolen by malware infecting your computer.</source>
+        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqox from being stolen by malware infecting your computer.</source>
         <translation>Artiqox sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou Artiqoxov pomocou škodlivého software.</translation>
     </message>
     <message>
@@ -340,7 +340,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Send coins to a Artiqox address</source>
-        <translation>Poslať Artiqoxs na adresu</translation>
+        <translation>Poslať Artiqox na adresu</translation>
     </message>
     <message>
         <source>Modify configuration options for Artiqox Core</source>
@@ -1694,7 +1694,7 @@ Adresa: %4</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Artiqoxs</translation>
+        <translation>Poslať Artiqox</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1782,7 +1782,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Potvrdiť odoslanie Artiqoxs</translation>
+        <translation>Potvrdiť odoslanie Artiqox</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2543,7 +2543,7 @@ Adresa: %4</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Artiqoxs</translation>
+        <translation>Poslať Artiqox</translation>
     </message>
 </context>
 <context>

@@ -1410,7 +1410,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend,
                 // The following if statement should be removed once enough miners
                 // have upgraded to the 0.9 GetMinFee() rules. Until then, this avoids
                 // creating free transactions that have change outputs less than
-                // COIN artiqoxs.
+                // COIN artiqox.
                 if (nFeeRet < CTransaction::nMinTxFee && nChange > 0 && nChange < COIN)
                 {
                     int64_t nMoveToFee = min(nChange, CTransaction::nMinTxFee - nFeeRet);

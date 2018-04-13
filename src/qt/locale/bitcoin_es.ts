@@ -87,11 +87,11 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Escoja la dirección a la que enviar Artiqoxs</translation>
+        <translation>Escoja la dirección a la que enviar Artiqox</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Escoja la dirección de la que recibir Artiqoxs</translation>
+        <translation>Escoja la dirección de la que recibir Artiqox</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -107,7 +107,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <source>These are your Artiqox addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones Artiqox para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de enviar Artiqoxs.</translation>
+        <translation>Estas son sus direcciones Artiqox para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de enviar Artiqox.</translation>
     </message>
     <message>
         <source>These are your Artiqox addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -208,8 +208,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Confirmar cifrado del monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ArtiqoxS&lt;/b&gt;!</source>
-        <translation>Atencion: ¡Si cifra su monedero y pierde la contraseña perderá &lt;b&gt;TODOS SUS ArtiqoxS&lt;/b&gt;!&quot;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOX&lt;/b&gt;!</source>
+        <translation>Atencion: ¡Si cifra su monedero y pierde la contraseña perderá &lt;b&gt;TODOS SUS ARTIQOX&lt;/b&gt;!&quot;</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -228,8 +228,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Monedero cifrado</translation>
     </message>
     <message>
-        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqoxs from being stolen by malware infecting your computer.</source>
-        <translation>Artiqox se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus Artiqoxs de robo por malware que infecte su sistema.</translation>
+        <source>Artiqox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Artiqox from being stolen by malware infecting your computer.</source>
+        <translation>Artiqox se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus Artiqox de robo por malware que infecte su sistema.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -348,7 +348,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <source>Send coins to a Artiqox address</source>
-        <translation>Enviar Artiqoxs a una dirección Artiqox</translation>
+        <translation>Enviar Artiqox a una dirección Artiqox</translation>
     </message>
     <message>
         <source>Modify configuration options for Artiqox Core</source>
@@ -1160,7 +1160,7 @@ Dirección: %4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Elegir la subdivisión predeterminada para mostrar cantidades en la interfaz y cuando se envían Artiqoxs.</translation>
+        <translation>Elegir la subdivisión predeterminada para mostrar cantidades en la interfaz y cuando se envían Artiqox.</translation>
     </message>
     <message>
         <source>Whether to show Artiqox addresses in the transaction list or not.</source>
@@ -1703,7 +1703,7 @@ Dirección: %4
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Enviar Artiqoxs</translation>
+        <translation>Enviar Artiqox</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1791,7 +1791,7 @@ Dirección: %4
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Confirmar el envío de Artiqoxs</translation>
+        <translation>Confirmar el envío de Artiqox</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -1863,7 +1863,7 @@ Dirección: %4
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>¡La transacción fue rechazada! Esto puede haber ocurrido si alguno de los Artiqoxs de su monedero ya estaba gastado o si ha usado una copia de wallet.dat y los Artiqoxs estaban gastados en la copia pero no se habían marcado como gastados aqui.</translation>
+        <translation>¡La transacción fue rechazada! Esto puede haber ocurrido si alguno de los Artiqox de su monedero ya estaba gastado o si ha usado una copia de wallet.dat y los Artiqox estaban gastados en la copia pero no se habían marcado como gastados aqui.</translation>
     </message>
     <message>
         <source>Warning: Invalid Artiqox address</source>
@@ -2246,7 +2246,7 @@ Dirección: %4
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Los Artiqoxs generados deben madurar %1 bloques antes de que puedan gastarse. Cuando generó este bloque, se transmitió a la red para que se añadiera a la cadena de bloques. Si no consigue entrar en la cadena, su estado cambiará a &quot;no aceptado&quot; y ya no se podrá gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del suyo.</translation>
+        <translation>Los Artiqox generados deben madurar %1 bloques antes de que puedan gastarse. Cuando generó este bloque, se transmitió a la red para que se añadiera a la cadena de bloques. Si no consigue entrar en la cadena, su estado cambiará a &quot;no aceptado&quot; y ya no se podrá gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del suyo.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2553,7 +2553,7 @@ Dirección: %4
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Enviar Artiqoxs</translation>
+        <translation>Enviar Artiqox</translation>
     </message>
 </context>
 <context>
@@ -2735,7 +2735,7 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
     </message>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>¡Error: se ha rechazado la transacción! Esto puede ocurrir si ya se han gastado algunos de los Artiqoxs del monedero, como ocurriría si hubiera hecho una copia de wallet.dat y se hubieran gastado Artiqoxs a partir de la copia, con lo que no se habrían marcado aquí como gastados.</translation>
+        <translation>¡Error: se ha rechazado la transacción! Esto puede ocurrir si ya se han gastado algunos de los Artiqox del monedero, como ocurriría si hubiera hecho una copia de wallet.dat y se hubieran gastado Artiqox a partir de la copia, con lo que no se habrían marcado aquí como gastados.</translation>
     </message>
     <message>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
@@ -2935,7 +2935,7 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
     </message>
     <message>
         <source>Failed to write to coin database</source>
-        <translation>No se ha podido escribir en la base de datos de Artiqoxs</translation>
+        <translation>No se ha podido escribir en la base de datos de Artiqox</translation>
     </message>
     <message>
         <source>Failed to write transaction index</source>
@@ -2963,7 +2963,7 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Artiqox Alert&quot; admin@foo.
     </message>
     <message>
         <source>Generate coins (default: 0)</source>
-        <translation>Generar Artiqoxs (predeterminado: 0)</translation>
+        <translation>Generar Artiqox (predeterminado: 0)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: 288, 0 = all)</source>
