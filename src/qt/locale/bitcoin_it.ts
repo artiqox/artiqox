@@ -432,8 +432,8 @@ Questo prodotto include software sviluppato dal progetto OpenSSL per l&apos;uso 
         <translation>Artiqox Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e Artiqox: URI)</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e artiqox: URI)</translation>
     </message>
     <message>
         <source>&amp;About Artiqox Core</source>
@@ -448,7 +448,7 @@ Questo prodotto include software sviluppato dal progetto OpenSSL per l&apos;uso 
         <translation>Mostra la lista degli indirizzi di ricezione utilizzati</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
+        <source>Open a artiqox: URI or payment request</source>
         <translation>Apri un URI o una richiesta di pagamento</translation>
     </message>
     <message>
@@ -1283,8 +1283,8 @@ Indirizzo: %4
         <translation>Errore di richiesta di pagamento</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Impossibile avviare Artiqox: gestore click-to-pay</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Impossibile avviare artiqox: gestore click-to-pay</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1951,7 +1951,7 @@ Indirizzo: %4
         <translation>Inserisci un&apos;etichetta per questo indirizzo per aggiungerlo alla lista degli indirizzi utilizzati</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation>Messaggio incluso nel Artiqox URI e che sarà memorizzato con la transazione per vostro riferimento. Nota: Questo messaggio non sarà inviato attraverso la rete Artiqox.</translation>
     </message>
     <message>

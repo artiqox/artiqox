@@ -427,7 +427,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Jedro Artiqoxa</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -443,8 +443,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Prikaži seznam uporabljenih sprejemnih naslovov in oznak</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Odpri Artiqox: URI ali zahteva o plačilu</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Odpri artiqox: URI ali zahteva o plačilu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1277,7 +1277,7 @@ Naslov: %4
         <translation>Napaka pri zahtevi plačila</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
+        <source>Cannot start artiqox: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1945,7 +1945,7 @@ Naslov: %4
         <translation>Vnesite oznako za ta naslov, ki bo shranjena v seznam uporabljenih naslovov</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation type="unfinished"/>
     </message>
     <message>

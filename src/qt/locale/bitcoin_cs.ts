@@ -432,7 +432,7 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
         <translation>Jádro Artiqoxu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -448,7 +448,7 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
+        <source>Open a artiqox: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1282,8 +1282,8 @@ Adresa: %4
         <translation>Chyba platebního požadavku</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Nemůžu spustit Artiqox: obsluha click-to-pay</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Nemůžu spustit artiqox: obsluha click-to-pay</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1950,7 +1950,7 @@ Adresa: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation type="unfinished"/>
     </message>
     <message>

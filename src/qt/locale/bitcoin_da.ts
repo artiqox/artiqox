@@ -432,7 +432,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation>Artiqox Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -448,7 +448,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
+        <source>Open a artiqox: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1282,8 +1282,8 @@ Adresse: %4
         <translation>Fejl i betalingsforespørgelse</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Kan ikke starte Artiqox: click-to-pay-håndtering</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Kan ikke starte artiqox: click-to-pay-håndtering</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1950,7 +1950,7 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation type="unfinished"/>
     </message>
     <message>

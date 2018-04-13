@@ -432,8 +432,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
         <translation>Artiqox Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
-        <translation>Solicitar pagamentos (gera códigos QR e URIs Artiqox:)</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>Solicitar pagamentos (gera códigos QR e URIs artiqox:)</translation>
     </message>
     <message>
         <source>&amp;About Artiqox Core</source>
@@ -448,8 +448,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
         <translation>Mostrar a lista de rótulos e endereços de receção usados</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Abrir URI Artiqox: ou pedido de pagamento</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Abrir URI artiqox: ou pedido de pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1281,8 +1281,8 @@ Endereço: %4</translation>
         <translation>Erro de pedido de pagamento</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Impossível iniciar o controlador de Artiqox: click-to-pay</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Impossível iniciar o controlador de artiqox: click-to-pay</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1949,8 +1949,8 @@ Endereço: %4</translation>
         <translation>Introduza um rótulo para este endereço para o adicionar à sua lista de endereços usados</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
-        <translation>Uma mensagem que estava anexada ao URI Artiqox: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Artiqox.</translation>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <translation>Uma mensagem que estava anexada ao URI artiqox: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Artiqox.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>

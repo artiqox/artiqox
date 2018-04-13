@@ -433,7 +433,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Artiqox Kärna</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
         <translation>Begär betalning (genererar QR-koder och Artiqox-URI)</translation>
     </message>
     <message>
@@ -449,8 +449,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Visa listan av använda mottagningsadresser och etiketter</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Öppna en Artiqox: URI eller betalningsbegäran</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Öppna en artiqox: URI eller betalningsbegäran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1283,8 +1283,8 @@ Adress: %4
         <translation>Fel vid betalningsbegäran</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Kan inte starta Artiqox: klicka-och-betala handhavare</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Kan inte starta artiqox: klicka-och-betala handhavare</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1951,7 +1951,7 @@ Adress: %4
         <translation>Ange en etikett för denna adress att adderas till listan över använda adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation>Ett meddelande som bifogades Artiqox-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Artiqoxnätverket.</translation>
     </message>
     <message>

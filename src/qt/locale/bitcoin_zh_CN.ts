@@ -432,8 +432,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>比特币核心</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
-        <translation>请求支付（生成二维码和 Artiqox: URI）</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>请求支付（生成二维码和 artiqox: URI）</translation>
     </message>
     <message>
         <source>&amp;About Artiqox Core</source>
@@ -448,7 +448,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>显示用过的接收地址和标签的列表</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
+        <source>Open a artiqox: URI or payment request</source>
         <translation>打开一个比特币：URI 或支付请求</translation>
     </message>
     <message>
@@ -1283,7 +1283,7 @@ Address: %4
         <translation>支付请求出错</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
+        <source>Cannot start artiqox: click-to-pay handler</source>
         <translation>暂时无法启动比特币：点击支付功能</translation>
     </message>
     <message>
@@ -1951,8 +1951,8 @@ Address: %4
         <translation>请为此地址输入一个标签以将它加入用过的地址列表</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
-        <translation>Artiqox:URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过比特币网络传输。</translation>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <translation>artiqox:URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过比特币网络传输。</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>

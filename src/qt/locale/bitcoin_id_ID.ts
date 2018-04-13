@@ -432,7 +432,7 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Artiqox Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -448,8 +448,8 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Tampilkan daftar alamat dan label yang diterima</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Buka URI Artiqox: atau permintaan pembayaran</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Buka URI artiqox: atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1282,7 +1282,7 @@ Alamat: %4
         <translation>Gagalan permintaan pembayaran</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
+        <source>Cannot start artiqox: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1950,7 +1950,7 @@ Alamat: %4
         <translation>Masukkan label untuk alamat ini untuk dimasukan dalam daftar alamat yang pernah digunakan</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation type="unfinished"/>
     </message>
     <message>

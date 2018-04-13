@@ -432,7 +432,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Artiqox Çekirdeği</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
         <translation>Ödeme talep et (QR kodu ve Artiqox URI&apos;si oluşturur)</translation>
     </message>
     <message>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Kullanılmış alım adresleri ve etiketlerin listesini göster</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Bir Artiqox: bağlantısı ya da ödeme talebi aç</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Bir artiqox: bağlantısı ya da ödeme talebi aç</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1282,7 +1282,7 @@ Adres: %4
         <translation>Ödeme talebi hatası</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
+        <source>Cannot start artiqox: click-to-pay handler</source>
         <translation>Artiqox başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
@@ -1950,8 +1950,8 @@ Adres: %4
         <translation>Kullanılmış adres listesine eklemek için bu adrese bir etiket girin</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
-        <translation>Artiqox: URI&apos;siyle ilişkili ve bilginiz için muameleyle saklanacak bir mesaj. Not: Bu mesaj Artiqox şebekesi üzerinden gönderilmeyecektir.</translation>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <translation>artiqox: URI&apos;siyle ilişkili ve bilginiz için muameleyle saklanacak bir mesaj. Not: Bu mesaj Artiqox şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>

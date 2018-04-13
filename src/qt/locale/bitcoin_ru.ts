@@ -432,8 +432,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Artiqox Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
-        <translation>Запросить платежи (создаёт QR-коды и Artiqox: ссылки)</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>Запросить платежи (создаёт QR-коды и artiqox: ссылки)</translation>
     </message>
     <message>
         <source>&amp;About Artiqox Core</source>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Показать список использованных адресов и меток получения</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Открыть Artiqox: URI или запрос платежа</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Открыть artiqox: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1282,8 +1282,8 @@ Address: %4
         <translation>Ошибка запроса платежа</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Не удаётся запустить Artiqox: обработчик click-to-pay</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Не удаётся запустить artiqox: обработчик click-to-pay</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1950,8 +1950,8 @@ Address: %4
         <translation>Введите метку для этого адреса, чтобы добавить его в список использованных</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
-        <translation>К Artiqox: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Заметьте: сообщение не будет отправлено через сеть Artiqox.</translation>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <translation>К artiqox: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Заметьте: сообщение не будет отправлено через сеть Artiqox.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>

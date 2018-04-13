@@ -432,7 +432,7 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
         <translation>Artiqox Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
         <translation>Cereti plati (genereaza coduri QR si Artiqox-uri: URls)</translation>
     </message>
     <message>
@@ -448,8 +448,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
         <translation>Aratati lista de adrese pentru primire si etichete </translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Deschideti un Artiqox: o adresa URI sau o cerere de plata</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Deschideti un artiqox: o adresa URI sau o cerere de plata</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1282,8 +1282,8 @@ Adresa: %4
         <translation>Eroare la cererea de plată</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Nu poate porni Artiqox: regula clic-pentru-plata</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Nu poate porni artiqox: regula clic-pentru-plata</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1950,7 +1950,7 @@ Adresa: %4
         <translation>Introduceti eticheta pentru ca aceasta adresa sa fie introdusa in lista de adrese folosite</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation type="unfinished"/>
     </message>
     <message>

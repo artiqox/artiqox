@@ -432,8 +432,8 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
         <translation>Núcleo Artiqox</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
-        <translation>Solicitações de pagamentos (gera códigos QR e Artiqox: URIs)</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>Solicitações de pagamentos (gera códigos QR e artiqox: URIs)</translation>
     </message>
     <message>
         <source>&amp;About Artiqox Core</source>
@@ -448,8 +448,8 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
         <translation>Mostrar a lista de endereços de recebimento usados ​​e rótulos</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Abrir um Artiqox: URI ou cobrança</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Abrir um artiqox: URI ou cobrança</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -946,7 +946,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <source>Artiqox Core will download and store a copy of the Artiqox block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Artiqox Core vai fazer download e guardar uma cópia da longa e única cadeia de blocos do Artiqox: Blockchain. Pelo menos %1 GB de dados serão armazenados nesse diretório e isso aumentará ao longo do tempo. Sua carteira também será armazenada nesse diretório.</translation>
+        <translation>Artiqox Core vai fazer download e guardar uma cópia da longa e única cadeia de blocos do artiqox: Blockchain. Pelo menos %1 GB de dados serão armazenados nesse diretório e isso aumentará ao longo do tempo. Sua carteira também será armazenada nesse diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1281,8 +1281,8 @@ Endereço: %4</translation>
         <translation>Erro no pedido de pagamento</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Não foi possível iniciar Artiqox: manipulador clique-para-pagar</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Não foi possível iniciar artiqox: manipulador clique-para-pagar</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1949,8 +1949,8 @@ Endereço: %4</translation>
         <translation>Digite um rótulo para este endereço para adicioná-lo no catálogo</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
-        <translation>A mensagem que foi anexada ao Artiqox: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Artiqox.</translation>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <translation>A mensagem que foi anexada ao artiqox: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Artiqox.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>

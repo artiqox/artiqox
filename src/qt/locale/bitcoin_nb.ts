@@ -432,8 +432,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>Artiqox Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
-        <translation>Forespør betalinger (genererer QR-koder og Artiqox: URIer)</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>Forespør betalinger (genererer QR-koder og artiqox: URIer)</translation>
     </message>
     <message>
         <source>&amp;About Artiqox Core</source>
@@ -448,8 +448,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>Vis listen over bruke mottaksadresser og merkelapper</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Åpne en Artiqox: URI eller betalingsetterspørring</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Åpne en artiqox: URI eller betalingsetterspørring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1282,8 +1282,8 @@ Adresse: %4
         <translation>Betalingsforespørsel feil</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Kan ikke starte Artiqox: klikk-og-betal håndterer</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Kan ikke starte artiqox: klikk-og-betal håndterer</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1950,7 +1950,7 @@ Adresse: %4
         <translation>Skriv inn en merkelapp for denne adressen for å legge den til listen av brukte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation>En melding som var tilknyttet Artiqoxen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Artiqox-nettverket.</translation>
     </message>
     <message>

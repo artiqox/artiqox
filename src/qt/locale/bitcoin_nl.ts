@@ -432,8 +432,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
         <translation>Artiqox Kern</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR codes en Artiqox: URIs)</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR codes en artiqox: URIs)</translation>
     </message>
     <message>
         <source>&amp;About Artiqox Core</source>
@@ -448,8 +448,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
         <translation>Toon de lijst met gebruikte ontvangst adressen en labels</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Open een Artiqox: URI of betalingsverzoek</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Open een artiqox: URI of betalingsverzoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1282,7 +1282,7 @@ Adres: %4
         <translation>Fout bij betalingsverzoek</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
+        <source>Cannot start artiqox: click-to-pay handler</source>
         <translation>Kan Artiqox niet starten: click-to-pay handler</translation>
     </message>
     <message>
@@ -1950,8 +1950,8 @@ Adres: %4
         <translation>Vul een label voor dit adres in om het aan de lijst met gebruikte adressen toe te voegen</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
-        <translation>Een bericht dat werd toegevoegd aan de Artiqox: URI dewelke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Artiqox netwerk.</translation>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <translation>Een bericht dat werd toegevoegd aan de artiqox: URI dewelke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Artiqox netwerk.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>

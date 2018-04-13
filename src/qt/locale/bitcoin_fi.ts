@@ -433,8 +433,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>Artiqox-ydin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
-        <translation>Pyydä maksuja (Luo QR koodit ja Artiqox: URIt)</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>Pyydä maksuja (Luo QR koodit ja artiqox: URIt)</translation>
     </message>
     <message>
         <source>&amp;About Artiqox Core</source>
@@ -449,8 +449,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
         <translation>Näytä vastaanottamiseen käytettyjen osoitteiden ja nimien lista</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Avaa Artiqox: URI tai maksupyyntö</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Avaa artiqox: URI tai maksupyyntö</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1282,8 +1282,8 @@ Osoite: %4</translation>
         <translation>Maksupyyntövirhe</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Ei voida käynnistää Artiqox: klikkaa-maksu käsittelijää</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Ei voida käynnistää artiqox: klikkaa-maksu käsittelijää</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1950,8 +1950,8 @@ Osoite: %4</translation>
         <translation>Aseta nimi tälle osoitteelle lisätäksesi sen käytettyjen osoitteiden listalle.</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
-        <translation>Viesti joka liitettiin Artiqox: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Artiqox-verkkoon.</translation>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <translation>Viesti joka liitettiin artiqox: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Artiqox-verkkoon.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>

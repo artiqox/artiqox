@@ -432,8 +432,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Artiqox Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
-        <translation>Demander des paiements (génère des codes QR et des URIs Artiqox:)</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>Demander des paiements (génère des codes QR et des URIs artiqox:)</translation>
     </message>
     <message>
         <source>&amp;About Artiqox Core</source>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Afficher la liste d&apos;adresses de réception et d&apos;étiquettes utilisées</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
-        <translation>Ouvrir un URI Artiqox: ou une demande de paiement</translation>
+        <source>Open a artiqox: URI or payment request</source>
+        <translation>Ouvrir un URI artiqox: ou une demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1282,7 +1282,7 @@ Adresse : %4
         <translation>Erreur de demande de paiement</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
+        <source>Cannot start artiqox: click-to-pay handler</source>
         <translation>Impossible de démarrer le gestionnaire de cliquer-pour-payer Artiqox :</translation>
     </message>
     <message>
@@ -1950,7 +1950,7 @@ Adresse : %4
         <translation>Saisir une étiquette pour cette adresse afin de l&apos;ajouter à la liste d&apos;adresses utilisées</translation>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation>Un message qui était joint à l&apos;URI Artiqox et qui sera stocké avec la transaction pour référence. Note : ce message ne sera pas envoyé par le réseau Artiqox.</translation>
     </message>
     <message>

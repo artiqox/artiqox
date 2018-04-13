@@ -433,8 +433,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Artiqox Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
-        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις Artiqox: )</translation>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
+        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις artiqox: )</translation>
     </message>
     <message>
         <source>&amp;About Artiqox Core</source>
@@ -449,7 +449,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψεως</translation>
     </message>
     <message>
-        <source>Open a Artiqox: URI or payment request</source>
+        <source>Open a artiqox: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1283,8 +1283,8 @@ Address: %4
         <translation>Σφάλμα αιτήματος πληρωμής</translation>
     </message>
     <message>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
-        <translation>Δεν είναι δυνατή η εκκίνηση του Artiqox: click-to-pay handler</translation>
+        <source>Cannot start artiqox: click-to-pay handler</source>
+        <translation>Δεν είναι δυνατή η εκκίνηση του artiqox: click-to-pay handler</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1951,7 +1951,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation type="unfinished"/>
     </message>
     <message>

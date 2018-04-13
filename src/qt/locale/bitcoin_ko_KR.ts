@@ -549,7 +549,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING.txt 파일 
     </message>
     <message>
         <location line="+162"/>
-        <source>Request payments (generates QR codes and Artiqox: URIs)</source>
+        <source>Request payments (generates QR codes and artiqox: URIs)</source>
         <translation>지불 요청하기 (QR코드와 Artiqox URI 생성)</translation>
     </message>
     <message>
@@ -570,7 +570,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING.txt 파일 
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a Artiqox: URI or payment request</source>
+        <source>Open a artiqox: URI or payment request</source>
         <translation>Artiqox URI 또는 지불 요청을 엽니다</translation>
     </message>
     <message>
@@ -1644,7 +1644,7 @@ Address: %4
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start Artiqox: click-to-pay handler</source>
+        <source>Cannot start artiqox: click-to-pay handler</source>
         <translation>Artiqox을 시작할 수 없습니다: click-to-pay handler</translation>
     </message>
     <message>
@@ -2499,7 +2499,7 @@ Address: %4
     </message>
     <message>
         <location line="+33"/>
-        <source>A message that was attached to the Artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
+        <source>A message that was attached to the artiqox: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Artiqox network.</source>
         <translation>참고용으로 Artiqox URI에 첨부된 거래기록에 저장될 수 있는 메시지 입니다. 참고: 이 메시지는 Artiqox 네트워크를 통해 보내지지는 않을 것입니다.</translation>
     </message>
     <message>
