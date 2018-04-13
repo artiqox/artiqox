@@ -331,6 +331,12 @@ bool GetNodeStateStats(NodeId nodeid, CNodeStateStats &stats) {
     if (state == NULL)
         return false;
     stats.nMisbehavior = state->nMisbehavior;
+    stats.nSyncHeight = state->pindexBestKnownBlock ? state->pindexBestKnownBlock->nHeight : -1;
+    stats.nCommonHeight = state->pindexLastCommonBlock ? state->pindexLastCommonBlock->nHeight : -1;
+    BOOST_FOREACH(const QueuedBlock& queue, state->vBlocksInFlight) {
+        if (queue.pindex)
+            stats.vHeightInFlight.push_back(queue.pindex->nHeight);
+    }
     return true;
 }
 

@@ -133,7 +133,12 @@ Value getpeerinfo(const Array& params, bool fHelp)
         obj.push_back(Pair("startingheight", stats.nStartingHeight));
         if (fStateStats) {
             obj.push_back(Pair("banscore", statestats.nMisbehavior));
-        }
+            obj.push_back(Pair("synced_headers", statestats.nSyncHeight));
+            obj.push_back(Pair("synced_blocks", statestats.nCommonHeight));
+            Array heights;
+            BOOST_FOREACH(int height, statestats.vHeightInFlight) {
+                heights.push_back(height);
+            }
         if (stats.fSyncNode)
             obj.push_back(Pair("syncnode", true));
 
