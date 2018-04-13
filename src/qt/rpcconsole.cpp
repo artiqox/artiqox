@@ -608,7 +608,7 @@ void RPCConsole::updateNodeDetail(const CNodeCombinedStats *stats)
 //    } else {
 //        ui->peerBanScore->setText(tr("Fetching..."));
 //        ui->peerSyncHeight->setText(tr("Fetching..."));
-//    }
+    }
 
     ui->detailWidget->show();
 }
