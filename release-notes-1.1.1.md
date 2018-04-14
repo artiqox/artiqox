@@ -1,9 +1,9 @@
-# Artiqox Core 1.8.1
+# Artiqox Core 1.1.1
 
-Artiqox Core 1.8.1 is primarily a bugfix release, bringing Artiqox Core in
+Artiqox Core 1.1.1 is primarily a bugfix release, bringing Artiqox Core in
 line with Bitcoin 0.9.3. It updates OpenSSL to 1.0.1l, mainly fixing security
-issues. Artiqox Core 1.8.1 also adds in support for printing paper wallets, and
-disables connections to pre-1.8 clients. This is a RECOMMENDED upgrade due to the
+issues. Artiqox Core 1.1.1 also adds in support for printing paper wallets, and
+disables connections to pre-1.1 clients. This is a RECOMMENDED upgrade due to the
 large number of bug fixes, but is not a required one.
 
 Paper wallet support has been developed by AndyMeows (IRC username), and 
@@ -20,11 +20,12 @@ or similar capturing the key from memory or interfering with its generation.
 
 * Translation improvements and corrections
 * Disable Transifex based translation process (not used by Artiqox Core)
-* Disable connections from pre-1.8 Artiqox Core clients
+* Disable connections from pre-1.1 Artiqox Core clients
 * Remove unreachable code introduced with AuxPoW support
 * "blocknotify" option now supports %i as a format parameter, which is replaced by block height
 * New option "maxoutconnections" to set the maximum number of outbound peer connections. Defaults to 8, minimum is 2, maximum is whatever "maxconnections" is set to (default 125).
 * Update to OpenSSL 1.0.1l
+* Added Peer Tab to Debug Window
 
 ## Bitcoin Core Release Notes
 
