@@ -429,7 +429,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <source>Artiqox Core</source>
-        <translation>Rdzeń BitCoin</translation>
+        <translation>Rdzeń Artiqox</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and artiqox: URIs)</source>
@@ -892,7 +892,7 @@ Adres: %4
     </message>
     <message>
         <source>Artiqox Core</source>
-        <translation>Rdzeń BitCoin</translation>
+        <translation>Rdzeń Artiqox</translation>
     </message>
     <message>
         <source>version</source>
@@ -2124,7 +2124,7 @@ Adres: %4
     <name>SplashScreen</name>
     <message>
         <source>Artiqox Core</source>
-        <translation>Rdzeń BitCoin</translation>
+        <translation>Rdzeń Artiqox</translation>
     </message>
     <message>
         <source>The Artiqox Core developers</source>
