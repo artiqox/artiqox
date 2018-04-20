@@ -2719,7 +2719,6 @@ bool AcceptBlockHeader(CBlockHeader& block, CValidationState& state, CBlockIndex
                 (TestNet() && CBlockIndex::IsSuperMajority(3, pindexPrev, 750, 1000)))
                 return state.Invalid(error("AcceptBlock() : rejected nVersion<3 block"),
                                      REJECT_OBSOLETE, "bad-version");
-            }
         }
     }
 
@@ -4450,6 +4449,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
     {
         // Ignore unknown commands for extensibility
     }
+
 
 
     return true;
