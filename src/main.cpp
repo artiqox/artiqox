@@ -57,9 +57,9 @@ bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-int64_t CTransaction::nMinTxFee = 100000000;  // Override with -mintxfee
+int64_t CTransaction::nMinTxFee = 5000000;  // Override with -mintxfee
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
-int64_t CTransaction::nMinRelayTxFee = 100000000;
+int64_t CTransaction::nMinRelayTxFee = 5000000;
 
 struct COrphanBlock {
     uint256 hashBlock;
@@ -207,9 +207,13 @@ struct CBlockReject {
 // processing of incoming data is done after the ProcessMessage call returns,
 // and we're no longer holding the node's locks.
 struct CNodeState {
+    //! The peer's address
+    CService address;
+    //! Whether we have a fully established connection.
+    bool fCurrentlyConnected;
     // Accumulated misbehaviour score for this peer.
     int nMisbehavior;
-    // Whether this peer should be disconnected and banned.
+    // Whether this peer should be disconnected and banned (unless whitelisted).
     bool fShouldBan;
     // String name of this peer (debugging/logging purposes).
     std::string name;
@@ -223,6 +227,7 @@ struct CNodeState {
     int64_t nLastBlockProcess;
 
     CNodeState() {
+        fCurrentlyConnected = false;
         nMisbehavior = 0;
         fShouldBan = false;
         nBlocksToDownload = 0;
@@ -253,12 +258,16 @@ void InitializeNode(NodeId nodeid, const CNode *pnode) {
     LOCK(cs_main);
     CNodeState &state = mapNodeState.insert(std::make_pair(nodeid, CNodeState())).first->second;
     state.name = pnode->addrName;
+    state.address = pnode->addr;
 }
 
 void FinalizeNode(NodeId nodeid) {
     LOCK(cs_main);
     CNodeState *state = State(nodeid);
 
+    if (state->nMisbehavior == 0 && state->fCurrentlyConnected) {
+        AddressCurrentlyConnected(state->address);
+    }
     BOOST_FOREACH(const QueuedBlock& entry, state->vBlocksInFlight)
         mapBlocksInFlight.erase(entry.hash);
     BOOST_FOREACH(const uint256& hash, state->vBlocksToDownload)
@@ -1571,7 +1580,8 @@ void Misbehaving(NodeId pnode, int howmuch)
         return;
 
     state->nMisbehavior += howmuch;
-    if (state->nMisbehavior >= GetArg("-banscore", 100))
+    int banscore = GetArg("-banscore", 100);
+    if (state->nMisbehavior >= banscore && state->nMisbehavior - howmuch < banscore)
     {
         LogPrintf("Misbehaving: %s (%d -> %d) BAN THRESHOLD EXCEEDED\n", state->name, state->nMisbehavior-howmuch, state->nMisbehavior);
         state->fShouldBan = true;
@@ -1955,6 +1965,12 @@ bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, C
     unsigned int flags = SCRIPT_VERIFY_NOCACHE |
                          (fStrictPayToScriptHash ? SCRIPT_VERIFY_P2SH : SCRIPT_VERIFY_NONE);
 
+    if (block.GetBaseVersion() >= 3 &&
+        ((!TestNet() && CBlockIndex::IsSuperMajority(3, pindex->pprev, 1500, 2000)) ||
+            (TestNet() && CBlockIndex::IsSuperMajority(3, pindex->pprev, 501, 1000)))) {
+        flags |= SCRIPT_VERIFY_DERSIG;
+    }
+
     CBlockUndo blockundo;
 
     CCheckQueueControl<CScriptCheck> control(fScriptChecks && nScriptCheckThreads ? &scriptcheckqueue : NULL);
@@ -2120,7 +2136,7 @@ void static UpdateTip(CBlockIndex *pindexNew) {
         const CBlockIndex* pindex = chainActive.Tip();
         for (int i = 0; i < 100 && pindex != NULL; i++)
         {
-            if (pindex->nVersion > CBlock::CURRENT_VERSION && !IsAuxPowVersion(pindex->nVersion))
+            if (pindex->GetBaseVersion() > CBlock::CURRENT_VERSION)
                 ++nUpgraded;
             pindex = pindex->pprev;
         }
@@ -2696,13 +2712,12 @@ bool AcceptBlockHeader(CBlockHeader& block, CValidationState& state, CBlockIndex
         if (pcheckpoint && nHeight < pcheckpoint->nHeight)
             return state.DoS(100, error("AcceptBlock() : forked chain older than last checkpoint (height %d)", nHeight));
 
-        // Reject block.nVersion=1 blocks when 95% (75% on testnet) of the network has upgraded:
-        if (block.nVersion < 2)
-        {
-            if ((!TestNet() && CBlockIndex::IsSuperMajority(2, pindexPrev, 950, 1000)) ||
-                (TestNet() && CBlockIndex::IsSuperMajority(2, pindexPrev, 75, 100)))
-            {
-                return state.Invalid(error("AcceptBlock() : rejected nVersion=1 block"),
+        // Reject block.nVersion<3 blocks when 95% (75% on testnet) of the network has upgraded
+        // Artiqox: reject v2 and v1 blocks at the same time, only check once
+        if (block.GetBaseVersion() < 3) {
+            if ((!TestNet() && CBlockIndex::IsSuperMajority(3, pindexPrev, 1900, 2000)) ||
+                (TestNet() && CBlockIndex::IsSuperMajority(3, pindexPrev, 750, 1000)))
+                return state.Invalid(error("AcceptBlock() : rejected nVersion<3 block"),
                                      REJECT_OBSOLETE, "bad-version");
             }
         }
@@ -2746,11 +2761,13 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         }
 
     // Enforce block.nVersion=2 rule that the coinbase starts with serialized block height
-    if (block.nVersion >= 2)
+    // Artiqox: reject ONLY if block.nVersion=3 has a supermajority because CBlockIndex::IsSuperMajority
+    //          was hard-disabled until now
+    if (block.GetBaseVersion() >= 2)
     {
         // if 750 of the last 1,000 blocks are version 2 or greater (51/100 if testnet):
-        if ((!TestNet() && CBlockIndex::IsSuperMajority(2, pindex->pprev, 750, 1000)) ||
-            (TestNet() && CBlockIndex::IsSuperMajority(2, pindex->pprev, 51, 100)))        
+        if ((!TestNet() && CBlockIndex::IsSuperMajority(3, pindex->pprev, 1500, 2000)) ||
+            (TestNet() && CBlockIndex::IsSuperMajority(3, pindex->pprev, 501, 1000)))      
         {
             CScript expect = CScript() << nHeight;
             if (block.vtx[0].vin[0].scriptSig.size() < expect.size() ||
@@ -2794,13 +2811,11 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired, unsigned int nToCheck)
 {
-    // Artiqox: temporarily disable v2 block lockin until we are ready for v2 transition
-    return false;
 
     unsigned int nFound = 0;
     for (unsigned int i = 0; i < nToCheck && nFound < nRequired && pstart != NULL; i++)
     {
-        if (pstart->nVersion >= minVersion)
+        if (pstart->GetBaseVersion() >= minVersion)
             ++nFound;
         pstart = pstart->pprev;
     }
@@ -3737,7 +3752,7 @@ void static ProcessGetData(CNode* pfrom)
     }
 }
 
-bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
+bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, int64_t nTimeReceived)
 {
     RandAddSeedPerfmon();
     LogPrint("net", "received: %s (%" PRIszu" bytes)\n", strCommand, vRecv.size());
@@ -3822,7 +3837,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
         if (!pfrom->fInbound)
         {
             // Advertise our address
-            if (!fNoListen && !IsInitialBlockDownload())
+            if (fListen && !IsInitialBlockDownload())
             {
                 CAddress addr = GetLocalAddress(&pfrom->addr);
                 if (addr.IsRoutable())
@@ -3870,6 +3885,12 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
     else if (strCommand == "verack")
     {
         pfrom->SetRecvVersion(min(pfrom->nVersion, PROTOCOL_VERSION));
+
+        // Mark this node as currently connected, so we update its timestamp later.
+        if (pfrom->fNetworkNode) {
+            LOCK(cs_main);
+            State(pfrom->GetId())->fCurrentlyConnected = true;
+        }
     }
 
 
@@ -4163,6 +4184,11 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
             unsigned int nEvicted = LimitOrphanTxSize(nMaxOrphanTx);
             if (nEvicted > 0)
                 LogPrint("mempool", "mapOrphan overflow, removed %u tx\n", nEvicted);
+        } else if (pfrom->fWhitelisted) {
+            // Always relay transactions received from whitelisted peers, even
+            // if they are already in the mempool (allowing the node to function
+            // as a gateway for nodes hidden behind it).
+            RelayTransaction(tx, tx.GetHash());
         }
         int nDoS = 0;
         if (state.IsInvalid(nDoS))
@@ -4257,7 +4283,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 
     else if (strCommand == "pong")
     {
-        int64_t pingUsecEnd = GetTimeMicros();
+        int64_t pingUsecEnd = nTimeReceived;
         uint64_t nonce = 0;
         size_t nAvail = vRecv.in_avail();
         bool bPingFinished = false;
@@ -4426,12 +4452,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
     }
 
 
-    // Update the last seen time for this node's address
-    if (pfrom->fNetworkNode)
-        if (strCommand == "version" || strCommand == "addr" || strCommand == "inv" || strCommand == "getdata" || strCommand == "ping")
-            AddressCurrentlyConnected(pfrom->addr);
-
-
     return true;
 }
 
@@ -4513,7 +4533,7 @@ bool ProcessMessages(CNode* pfrom)
         bool fRet = false;
         try
         {
-            fRet = ProcessMessage(pfrom, strCommand, vRecv);
+            fRet = ProcessMessage(pfrom, strCommand, vRecv, msg.nTime);
             boost::this_thread::interruption_point();
         }
         catch (std::ios_base::failure& e)
@@ -4572,8 +4592,8 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
             // RPC ping request by user
             pingSend = true;
         }
-        if (pto->nLastSend && GetTime() - pto->nLastSend > 30 * 60 && pto->vSendMsg.empty()) {
-            // Ping automatically sent as a keepalive
+        if (pto->nPingNonceSent == 0 && pto->nPingUsecStart + PING_INTERVAL * 1000000 < GetTimeMicros()) {
+            // Ping automatically sent as a latency probe & keepalive.
             pingSend = true;
         }
         if (pingSend) {
@@ -4581,15 +4601,14 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
             while (nonce == 0) {
                 RAND_bytes((unsigned char*)&nonce, sizeof(nonce));
             }
-            pto->nPingNonceSent = nonce;
             pto->fPingQueued = false;
+            pto->nPingUsecStart = GetTimeMicros();
             if (pto->nVersion > BIP0031_VERSION) {
-                // Take timestamp as close as possible before transmitting ping
-                pto->nPingUsecStart = GetTimeMicros();
+                pto->nPingNonceSent = nonce;
                 pto->PushMessage("ping", nonce);
             } else {
-                // Peer is too old to support ping command with nonce, pong will never arrive, disable timing
-                pto->nPingUsecStart = 0;
+                // Peer is too old to support ping command with nonce, pong will never arrive.
+                pto->nPingNonceSent = 0;
                 pto->PushMessage("ping");
             }
         }
@@ -4611,7 +4630,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
                         pnode->setAddrKnown.clear();
 
                     // Rebroadcast our address
-                    if (!fNoListen)
+                    if (fListen)
                     {
                         CAddress addr = GetLocalAddress(&pnode->addr);
                         if (addr.IsRoutable())
@@ -4650,11 +4669,14 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
         CNodeState &state = *State(pto->GetId());
         if (state.fShouldBan) {
-            if (pto->addr.IsLocal())
-                LogPrintf("Warning: not banning local node %s!\n", pto->addr.ToString());
+            if (pto->fWhitelisted)
+                LogPrintf("Warning: not punishing whitelisted peer %s!\n", pto->addr.ToString());
             else {
                 pto->fDisconnect = true;
-                CNode::Ban(pto->addr);
+                if (pto->addr.IsLocal())
+                    LogPrintf("Warning: not banning local peer %s!\n", pto->addr.ToString());
+                else
+                    CNode::Ban(pto->addr);
             }
             state.fShouldBan = false;
         }

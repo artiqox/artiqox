@@ -22,7 +22,7 @@ using namespace boost::assign;
 
 unsigned int pnSeed[] =
 {
-    0x6ad3d655,
+    0x6ad3d655, 0x9f363f2d,
 };
 
 class CMainParams : public CChainParams {
