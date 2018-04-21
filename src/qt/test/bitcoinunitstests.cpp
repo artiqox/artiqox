@@ -55,8 +55,6 @@ void BitcoinUnitsTests::parseTests()
     QCOMPARE(value, 100000000LL);
     QVERIFY(BitcoinUnits::parse(BitcoinUnits::AIQ, "1,0", &value, locale2));
     QCOMPARE(value, 100000000LL);
-    QVERIFY(BitcoinUnits::parse(BitcoinUnits::Koinu, "1.000.000", &value, locale2));
-    QCOMPARE(value, 1000000LL);
     // Fail: multiple decimal separators
     QVERIFY(!BitcoinUnits::parse(BitcoinUnits::AIQ, "0,000,000", &value, locale2));
 
