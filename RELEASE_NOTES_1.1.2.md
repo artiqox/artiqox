@@ -7,9 +7,8 @@ If your installation is not open to incoming connections this update is not mand
 ## Artiqox Core Release Notes
 
 * Reduce Transaction Fees in line with value proposition
+* New Logo for Artiqox implemented in Wallet and other Assets
 * Pull in patches from usptream to mitigate the risk of a DoS attack.
-* Update the DNS seeds for more reliable bootstrapping of the initial peer discovery.
-* Update the list of fixed nodes, in case all other means of peer discovery fail.
 
 ## Credits
 
@@ -18,6 +17,7 @@ includes those whose contributions to Bitcoin Core have been merged
 into this Artiqox Core release:
 
 * Alan Cramer
+* Makrochain
 * P. Kaufmann
 * Max K.
 * Ross Nicoll
