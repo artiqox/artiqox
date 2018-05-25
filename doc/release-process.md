@@ -33,10 +33,16 @@ Release Process
 	git checkout v${VERSION}
 	popd
 	pushd ./gitian-builder
+        mkdir -p inputs; cd inputs/
+
+ Register and download the Apple SDK (see OSX Readme for details)
+	visit https://developer.apple.com/downloads/download.action?path=Developer_Tools/xcode_4.6.3/xcode4630916281a.dmg
+ 
+ Using a Mac, create a tarball for the 10.7 SDK
+	tar -C /Volumes/Xcode/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/ -czf MacOSX10.7.sdk.tar.gz MacOSX10.7.sdk
 
  Fetch and build inputs: (first time, or when dependency versions change)
 
-	mkdir -p inputs; cd inputs/
 	wget 'http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20151008.tar.gz' -O miniupnpc-1.9.20151008.tar.gz
 	wget --no-check-certificate 'https://www.openssl.org/source/openssl-1.0.1l.tar.gz'
 	wget 'http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz'
@@ -49,6 +55,16 @@ Release Process
 	wget --no-check-certificate 'https://download.qt.io/archive/qt/5.2/5.2.0/single/qt-everywhere-opensource-src-5.2.0.tar.gz'
 	wget --no-check-certificate 'https://download.qt.io/archive/qt/4.6/qt-everywhere-opensource-src-4.6.4.tar.gz'
 	wget --no-check-certificate 'https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.bz2'
+	wget 'https://github.com/mingwandroid/toolchain4/archive/10cc648683617cca8bcbeae507888099b41b530c.tar.gz'
+	wget 'http://www.opensource.apple.com/tarballs/cctools/cctools-809.tar.gz'
+	wget 'http://www.opensource.apple.com/tarballs/dyld/dyld-195.5.tar.gz'
+	wget 'http://www.opensource.apple.com/tarballs/ld64/ld64-127.2.tar.gz'
+	wget 'http://cdrkit.org/releases/cdrkit-1.1.11.tar.gz'
+	wget 'https://github.com/theuni/libdmg-hfsplus/archive/libdmg-hfsplus-v0.1.tar.gz'
+	wget 'http://llvm.org/releases/3.2/clang+llvm-3.2-x86-linux-ubuntu-12.04.tar.gz' -O \
+	     clang-llvm-3.2-x86-linux-ubuntu-12.04.tar.gz
+    wget 'https://raw.githubusercontent.com/theuni/osx-cross-depends/master/patches/cdrtools/genisoimage.diff' -O \
+     cdrkit-deterministic.patch
 	cd ..
 	./bin/gbuild ../artiqox/contrib/gitian-descriptors/boost-linux.yml
 	mv build/out/boost-*.zip inputs/
@@ -64,6 +80,12 @@ Release Process
 	mv build/out/qt-*.zip inputs/
 	./bin/gbuild ../artiqox/contrib/gitian-descriptors/protobuf-win.yml
 	mv build/out/protobuf-*.zip inputs/
+	./bin/gbuild ../bitcoin/contrib/gitian-descriptors/gitian-osx-native.yml
+	mv build/out/osx-*.tar.gz inputs/
+	./bin/gbuild ../bitcoin/contrib/gitian-descriptors/gitian-osx-depends.yml
+	mv build/out/osx-*.tar.gz inputs/
+	./bin/gbuild ../bitcoin/contrib/gitian-descriptors/gitian-osx-qt.yml
+	mv build/out/osx-*.tar.gz inputs/
 
  The expected SHA256 hashes of the intermediate inputs are:
 
@@ -96,13 +118,19 @@ Release Process
 	zip -r artiqox-${VERSION}-win-gitian.zip *
 	mv artiqox-${VERSION}-win-gitian.zip ../../../
 	popd
+        ./bin/gbuild --commit bitcoin=v${VERSION} ../bitcoin/contrib/gitian-descriptors/gitian-osx-bitcoin.yml
+        ./bin/gsign --signer $SIGNER --release ${VERSION}-osx --destination ../gitian.sigs/ ../bitcoin/contrib/gitian-descriptors/gitian-osx-bitcoin.yml
+	pushd build/out
+	mv Bitcoin-Qt.dmg ../../../
+	popd
 	popd
 
   Build output expected:
 
   1. linux 32-bit and 64-bit binaries + source (artiqox-${VERSION}-linux-gitian.zip)
   2. windows 32-bit and 64-bit binaries + installer + source (artiqox-${VERSION}-win-gitian.zip)
-  3. Gitian signatures (in gitian.sigs/${VERSION}[-win]/(your gitian key)/
+  3. OSX installer (Bitcoin-Qt.dmg)
+  4. Gitian signatures (in gitian.sigs/${VERSION}[-win|-osx]/(your gitian key)/
 
 repackage gitian builds for release as stand-alone zip/tar/installer exe
 
@@ -118,21 +146,6 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 	mv artiqox-${VERSION}-win/artiqox-*-setup.exe .
 	zip -r artiqox-${VERSION}-win.zip artiqox-${VERSION}-win
 	rm -rf artiqox-${VERSION}-win
-
-**Perform Mac build:**
-
-  OSX binaries are created by Gavin Andresen on a 64-bit, OSX 10.6 machine.
-
-	./autogen.sh
-        SDK=$(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk
-        CXXFLAGS="-mmacosx-version-min=10.6 -isysroot $SDK" ./configure --enable-upnp-default
-	make
-	export QTDIR=/opt/local/share/qt4  # needed to find translations/qt_*.qm files
-	T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
-        export CODESIGNARGS='--keychain ...path_to_keychain --sign "Developer ID Application: ARTIQOX FOUNDATION, INC., THE"'
-	python2.7 contrib/macdeploy/macdeployqtplus Artiqox-Qt.app -sign -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
-
- Build output expected: Artiqox-Qt.dmg
 
 ###Next steps:
 
