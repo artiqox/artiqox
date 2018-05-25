@@ -33,7 +33,7 @@ Release Process
 	git checkout v${VERSION}
 	popd
 	pushd ./gitian-builder
-        mkdir -p inputs; cd inputs/
+    mkdir -p inputs; cd inputs/
 
  Register and download the Apple SDK (see OSX Readme for details)
 	visit https://developer.apple.com/downloads/download.action?path=Developer_Tools/xcode_4.6.3/xcode4630916281a.dmg
@@ -59,7 +59,7 @@ Release Process
 	wget 'http://www.opensource.apple.com/tarballs/cctools/cctools-809.tar.gz'
 	wget 'http://www.opensource.apple.com/tarballs/dyld/dyld-195.5.tar.gz'
 	wget 'http://www.opensource.apple.com/tarballs/ld64/ld64-127.2.tar.gz'
-	wget 'http://cdrkit.org/releases/cdrkit-1.1.11.tar.gz'
+	wget 'http://ponce.cc/slackware/sources/repo/cdrkit-1.1.11.tar.gz'
 	wget 'https://github.com/theuni/libdmg-hfsplus/archive/libdmg-hfsplus-v0.1.tar.gz'
 	wget 'http://llvm.org/releases/3.2/clang+llvm-3.2-x86-linux-ubuntu-12.04.tar.gz' -O \
 	     clang-llvm-3.2-x86-linux-ubuntu-12.04.tar.gz
@@ -80,11 +80,11 @@ Release Process
 	mv build/out/qt-*.zip inputs/
 	./bin/gbuild ../artiqox/contrib/gitian-descriptors/protobuf-win.yml
 	mv build/out/protobuf-*.zip inputs/
-	./bin/gbuild ../bitcoin/contrib/gitian-descriptors/gitian-osx-native.yml
+	./bin/gbuild ../artiqox/contrib/gitian-descriptors/gitian-osx-native.yml
 	mv build/out/osx-*.tar.gz inputs/
-	./bin/gbuild ../bitcoin/contrib/gitian-descriptors/gitian-osx-depends.yml
+	./bin/gbuild ../artiqox/contrib/gitian-descriptors/gitian-osx-depends.yml
 	mv build/out/osx-*.tar.gz inputs/
-	./bin/gbuild ../bitcoin/contrib/gitian-descriptors/gitian-osx-qt.yml
+	./bin/gbuild ../artiqox/contrib/gitian-descriptors/gitian-osx-qt.yml
 	mv build/out/osx-*.tar.gz inputs/
 
  The expected SHA256 hashes of the intermediate inputs are:
