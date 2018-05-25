@@ -79,7 +79,7 @@ script: |
   BUILD_DIR=${BUILD_BASE}/db-5.1.29.NC
 
   tar -C ${BUILD_BASE} -xf ${SOURCE_FILE}
-  sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' ${BUILD_DIR}/dbinc/atomic.h
+  # sed -i 's/__atomic_compare_exchange/__atomic_compare_exchange_db/g' ${BUILD_DIR}/dbinc/atomic.h
   pushd ${BUILD_DIR}
   cd build_unix;
   ../dist/configure --host=${HOST} --prefix="${PREFIX}" --disable-shared --enable-cxx CC="${INT_CC}" CXX="${INT_CXX}" AR="${INT_AR}" RANLIB="${INT_RANLIB}" OBJC="${INT_OBJC}" OBJCXX="${INT_OBJCXX}" CFLAGS="${INT_CFLAGS}" CXXFLAGS="${INT_CXXFLAGS}" LDFLAGS="${INT_CLANG_LDFLAGS} ${INT_LDFLAGS}" CPPFLAGS="${INT_CPPFLAGS}"
