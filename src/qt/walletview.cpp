@@ -1,5 +1,5 @@
-// Copyright (c) 2011-2013 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "walletview.h"
@@ -11,6 +11,7 @@
 #include "guiutil.h"
 #include "optionsmodel.h"
 #include "overviewpage.h"
+#include "platformstyle.h"
 #include "receivecoinsdialog.h"
 #include "sendcoinsdialog.h"
 #include "signverifymessagedialog.h"
@@ -29,31 +30,32 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
-WalletView::WalletView(QWidget *parent):
+WalletView::WalletView(const PlatformStyle *platformStyle, QWidget *parent):
     QStackedWidget(parent),
     clientModel(0),
-    walletModel(0)
+    walletModel(0),
+    platformStyle(platformStyle)
 {
     // Create tabs
-    overviewPage = new OverviewPage();
+    overviewPage = new OverviewPage(platformStyle);
 
     transactionsPage = new QWidget(this);
     QVBoxLayout *vbox = new QVBoxLayout();
     QHBoxLayout *hbox_buttons = new QHBoxLayout();
-    transactionView = new TransactionView(this);
+    transactionView = new TransactionView(platformStyle, this);
     vbox->addWidget(transactionView);
     QPushButton *exportButton = new QPushButton(tr("&Export"), this);
     exportButton->setToolTip(tr("Export the data in the current tab to a file"));
-#ifndef Q_OS_MAC // Icons on push buttons are very uncommon on Mac
-    exportButton->setIcon(QIcon(":/icons/export"));
-#endif
+    if (platformStyle->getImagesOnButtons()) {
+        exportButton->setIcon(platformStyle->SingleColorIcon(":/icons/export"));
+    }
     hbox_buttons->addStretch();
     hbox_buttons->addWidget(exportButton);
     vbox->addLayout(hbox_buttons);
     transactionsPage->setLayout(vbox);
 
-    receiveCoinsPage = new ReceiveCoinsDialog();
-    sendCoinsPage = new SendCoinsDialog();
+    receiveCoinsPage = new ReceiveCoinsDialog(platformStyle);
+    sendCoinsPage = new SendCoinsDialog(platformStyle);
 
     addWidget(overviewPage);
     addWidget(transactionsPage);
@@ -93,7 +95,7 @@ void WalletView::setBitcoinGUI(BitcoinGUI *gui)
         connect(this, SIGNAL(encryptionStatusChanged(int)), gui, SLOT(setEncryptionStatus(int)));
 
         // Pass through transaction notifications
-        connect(this, SIGNAL(incomingTransaction(QString,int,qint64,QString,QString)), gui, SLOT(incomingTransaction(QString,int,qint64,QString,QString)));
+        connect(this, SIGNAL(incomingTransaction(QString,int,CAmount,QString,QString,QString)), gui, SLOT(incomingTransaction(QString,int,CAmount,QString,QString,QString)));
     }
 }
 
@@ -102,6 +104,7 @@ void WalletView::setClientModel(ClientModel *clientModel)
     this->clientModel = clientModel;
 
     overviewPage->setClientModel(clientModel);
+    sendCoinsPage->setClientModel(clientModel);
 }
 
 void WalletView::setWalletModel(WalletModel *walletModel)
@@ -142,13 +145,17 @@ void WalletView::processNewTransaction(const QModelIndex& parent, int start, int
         return;
 
     TransactionTableModel *ttm = walletModel->getTransactionTableModel();
+    if (!ttm || ttm->processingQueuedTransactions())
+        return;
 
     QString date = ttm->index(start, TransactionTableModel::Date, parent).data().toString();
     qint64 amount = ttm->index(start, TransactionTableModel::Amount, parent).data(Qt::EditRole).toULongLong();
     QString type = ttm->index(start, TransactionTableModel::Type, parent).data().toString();
-    QString address = ttm->index(start, TransactionTableModel::ToAddress, parent).data().toString();
+    QModelIndex index = ttm->index(start, 0, parent);
+    QString address = ttm->data(index, TransactionTableModel::AddressRole).toString();
+    QString label = ttm->data(index, TransactionTableModel::LabelRole).toString();
 
-    emit incomingTransaction(date, walletModel->getOptionsModel()->getDisplayUnit(), amount, type, address);
+    emit incomingTransaction(date, walletModel->getOptionsModel()->getDisplayUnit(), amount, type, address, label);
 }
 
 void WalletView::gotoOverviewPage()
@@ -177,7 +184,7 @@ void WalletView::gotoSendCoinsPage(QString addr)
 void WalletView::gotoSignMessageTab(QString addr)
 {
     // calls show() in showTab_SM()
-    SignVerifyMessageDialog *signVerifyMessageDialog = new SignVerifyMessageDialog(this);
+    SignVerifyMessageDialog *signVerifyMessageDialog = new SignVerifyMessageDialog(platformStyle, this);
     signVerifyMessageDialog->setAttribute(Qt::WA_DeleteOnClose);
     signVerifyMessageDialog->setModel(walletModel);
     signVerifyMessageDialog->showTab_SM(true);
@@ -189,7 +196,7 @@ void WalletView::gotoSignMessageTab(QString addr)
 void WalletView::gotoVerifyMessageTab(QString addr)
 {
     // calls show() in showTab_VM()
-    SignVerifyMessageDialog *signVerifyMessageDialog = new SignVerifyMessageDialog(this);
+    SignVerifyMessageDialog *signVerifyMessageDialog = new SignVerifyMessageDialog(platformStyle, this);
     signVerifyMessageDialog->setAttribute(Qt::WA_DeleteOnClose);
     signVerifyMessageDialog->setModel(walletModel);
     signVerifyMessageDialog->showTab_VM(true);
@@ -267,7 +274,7 @@ void WalletView::usedSendingAddresses()
 {
     if(!walletModel)
         return;
-    AddressBookPage *dlg = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::SendingTab, this);
+    AddressBookPage *dlg = new AddressBookPage(platformStyle, AddressBookPage::ForEditing, AddressBookPage::SendingTab, this);
     dlg->setAttribute(Qt::WA_DeleteOnClose);
     dlg->setModel(walletModel->getAddressTableModel());
     dlg->show();
@@ -277,7 +284,7 @@ void WalletView::usedReceivingAddresses()
 {
     if(!walletModel)
         return;
-    AddressBookPage *dlg = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::ReceivingTab, this);
+    AddressBookPage *dlg = new AddressBookPage(platformStyle, AddressBookPage::ForEditing, AddressBookPage::ReceivingTab, this);
     dlg->setAttribute(Qt::WA_DeleteOnClose);
     dlg->setModel(walletModel->getAddressTableModel());
     dlg->show();

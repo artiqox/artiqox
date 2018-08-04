@@ -1,0 +1,88 @@
+#!/sbin/runscript
+
+# backward compatibility for existing gentoo layout 
+#
+if [ -d "/var/lib/artiqox/.artiqox" ]; then
+	ARTIQOXD_DEFAULT_DATADIR="/var/lib/artiqox/.artiqox"
+else
+	ARTIQOXD_DEFAULT_DATADIR="/var/lib/artiqoxd"
+fi
+
+ARTIQOXD_CONFIGFILE=${ARTIQOXD_CONFIGFILE:-/etc/artiqox/artiqox.conf}
+ARTIQOXD_PIDDIR=${ARTIQOXD_PIDDIR:-/var/run/artiqoxd}
+ARTIQOXD_PIDFILE=${ARTIQOXD_PIDFILE:-${ARTIQOXD_PIDDIR}/artiqoxd.pid}
+ARTIQOXD_DATADIR=${ARTIQOXD_DATADIR:-${ARTIQOXD_DEFAULT_DATADIR}}
+ARTIQOXD_USER=${ARTIQOXD_USER:-${ARTIQOX_USER:-artiqox}}
+ARTIQOXD_GROUP=${ARTIQOXD_GROUP:-artiqox}
+ARTIQOXD_BIN=${ARTIQOXD_BIN:-/usr/bin/artiqoxd}
+ARTIQOXD_NICE=${ARTIQOXD_NICE:-${NICELEVEL:-0}}
+ARTIQOXD_OPTS="${ARTIQOXD_OPTS:-${ARTIQOX_OPTS}}"
+
+name="Artiqox Core Daemon"
+description="Artiqox cryptocurrency P2P network daemon"
+
+command="/usr/bin/artiqoxd"
+command_args="-pid=\"${ARTIQOXD_PIDFILE}\" \
+		-conf=\"${ARTIQOXD_CONFIGFILE}\" \
+		-datadir=\"${ARTIQOXD_DATADIR}\" \
+		-daemon \
+		${ARTIQOXD_OPTS}"
+
+required_files="${ARTIQOXD_CONFIGFILE}"
+start_stop_daemon_args="-u ${ARTIQOXD_USER} \
+			-N ${ARTIQOXD_NICE} -w 2000"
+pidfile="${ARTIQOXD_PIDFILE}"
+retry=60
+
+depend() {
+	need localmount net
+}
+
+# verify
+# 1) that the datadir exists and is writable (or create it)
+# 2) that a directory for the pid exists and is writable
+# 3) ownership and permissions on the config file
+start_pre() {
+	checkpath \
+	-d \
+	--mode 0750 \
+	--owner "${ARTIQOXD_USER}:${ARTIQOXD_GROUP}" \
+	"${ARTIQOXD_DATADIR}"
+
+	checkpath \
+	-d \
+	--mode 0755 \
+	--owner "${ARTIQOXD_USER}:${ARTIQOXD_GROUP}" \
+	"${ARTIQOXD_PIDDIR}"
+
+	checkpath -f \
+	-o ${ARTIQOXD_USER}:${ARTIQOXD_GROUP} \
+	-m 0660 \
+	${ARTIQOXD_CONFIGFILE}
+
+	checkconfig || return 1
+}
+
+checkconfig()
+{
+	if ! grep -qs '^rpcpassword=' "${ARTIQOXD_CONFIGFILE}" ; then
+		eerror ""
+		eerror "ERROR: You must set a secure rpcpassword to run artiqoxd."
+		eerror "The setting must appear in ${ARTIQOXD_CONFIGFILE}"
+		eerror ""
+		eerror "This password is security critical to securing wallets "
+		eerror "and must not be the same as the rpcuser setting."
+		eerror "You can generate a suitable random password using the following"
+		eerror "command from the shell:"
+		eerror ""
+		eerror "bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'"
+		eerror ""
+		eerror "It is also recommended that you also set alertnotify so you are "
+		eerror "notified of problems:"
+		eerror ""
+		eerror "ie: alertnotify=echo %%s | mail -s \"Artiqox Alert\"" \
+			"admin@foo.com"
+		eerror ""
+		return 1
+	fi
+}

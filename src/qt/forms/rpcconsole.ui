@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>RPCConsole</class>
- <widget class="QDialog" name="RPCConsole">
+ <widget class="QWidget" name="RPCConsole">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -113,14 +113,17 @@
         </widget>
        </item>
        <item row="4" column="0">
-        <widget class="QLabel" name="label_12">
+        <widget class="QLabel" name="label_berkeleyDBVersion">
          <property name="text">
-          <string>Build date</string>
+          <string>Using BerkeleyDB version</string>
+         </property>
+         <property name="indent">
+          <number>10</number>
          </property>
         </widget>
        </item>
        <item row="4" column="1">
-        <widget class="QLabel" name="buildDate">
+        <widget class="QLabel" name="berkeleyDBVersion">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -136,14 +139,14 @@
         </widget>
        </item>
        <item row="5" column="0">
-        <widget class="QLabel" name="label_13">
+        <widget class="QLabel" name="label_12">
          <property name="text">
-          <string>Startup time</string>
+          <string>Build date</string>
          </property>
         </widget>
        </item>
        <item row="5" column="1">
-        <widget class="QLabel" name="startupTime">
+        <widget class="QLabel" name="buildDate">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -159,6 +162,29 @@
         </widget>
        </item>
        <item row="6" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>Startup time</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="startupTime">
+         <property name="cursor">
+          <cursorShape>IBeamCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
         <widget class="QLabel" name="label_11">
          <property name="font">
           <font>
@@ -171,14 +197,14 @@
          </property>
         </widget>
        </item>
-       <item row="7" column="0">
+       <item row="8" column="0">
         <widget class="QLabel" name="label_8">
          <property name="text">
           <string>Name</string>
          </property>
         </widget>
        </item>
-       <item row="7" column="1">
+       <item row="8" column="1">
         <widget class="QLabel" name="networkName">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
@@ -194,14 +220,14 @@
          </property>
         </widget>
        </item>
-       <item row="8" column="0">
+       <item row="9" column="0">
         <widget class="QLabel" name="label_7">
          <property name="text">
           <string>Number of connections</string>
          </property>
         </widget>
        </item>
-       <item row="8" column="1">
+       <item row="9" column="1">
         <widget class="QLabel" name="numberOfConnections">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
@@ -217,7 +243,7 @@
          </property>
         </widget>
        </item>
-       <item row="9" column="0">
+       <item row="10" column="0">
         <widget class="QLabel" name="label_10">
          <property name="font">
           <font>
@@ -230,14 +256,14 @@
          </property>
         </widget>
        </item>
-       <item row="10" column="0">
+       <item row="11" column="0">
         <widget class="QLabel" name="label_3">
          <property name="text">
           <string>Current number of blocks</string>
          </property>
         </widget>
        </item>
-       <item row="10" column="1">
+       <item row="11" column="1">
         <widget class="QLabel" name="numberOfBlocks">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
@@ -253,14 +279,14 @@
          </property>
         </widget>
        </item>
-       <item row="11" column="0">
+       <item row="12" column="0">
         <widget class="QLabel" name="label_2">
          <property name="text">
           <string>Last block time</string>
          </property>
         </widget>
        </item>
-       <item row="11" column="1">
+       <item row="12" column="1">
         <widget class="QLabel" name="lastBlockTime">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
@@ -276,7 +302,7 @@
          </property>
         </widget>
        </item>
-       <item row="12" column="0">
+       <item row="13" column="0">
         <spacer name="verticalSpacer_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -289,7 +315,7 @@
          </property>
         </spacer>
        </item>
-       <item row="13" column="0">
+       <item row="14" column="0">
         <widget class="QLabel" name="labelDebugLogfile">
          <property name="font">
           <font>
@@ -302,10 +328,10 @@
          </property>
         </widget>
        </item>
-       <item row="14" column="0">
+       <item row="15" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-          <string>Open the Artiqox debug log file from the current data directory. This can take a few seconds for large log files.</string>
+          <string>Open the Bitcoin Core debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
          <property name="text">
           <string>&amp;Open</string>
@@ -315,7 +341,7 @@
          </property>
         </widget>
        </item>
-       <item row="15" column="0">
+       <item row="16" column="0">
         <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -458,6 +484,9 @@
              <property name="text">
               <string>&amp;Clear</string>
              </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
             </widget>
            </item>
           </layout>
@@ -533,7 +562,7 @@
               <item>
                <widget class="QLabel" name="label_16">
                 <property name="text">
-                 <string>In:</string>
+                 <string>Received</string>
                 </property>
                </widget>
               </item>
@@ -613,7 +642,7 @@
               <item>
                <widget class="QLabel" name="label_17">
                 <property name="text">
-                 <string>Out:</string>
+                 <string>Sent</string>
                 </property>
                </widget>
               </item>
@@ -660,7 +689,7 @@
        <item row="0" column="0" rowspan="2">
         <widget class="QTableView" name="peerWidget">
          <property name="horizontalScrollBarPolicy">
-          <enum>Qt::ScrollBarAlwaysOff</enum>
+          <enum>Qt::ScrollBarAsNeeded</enum>
          </property>
          <property name="sortingEnabled">
           <bool>true</bool>
@@ -793,29 +822,6 @@
           </item>
           <item row="3" column="2">
            <widget class="QLabel" name="peerServices">
-            <property name="cursor">
-             <cursorShape>IBeamCursor</cursorShape>
-            </property>
-            <property name="text">
-             <string>N/A</string>
-            </property>
-            <property name="textFormat">
-             <enum>Qt::PlainText</enum>
-            </property>
-            <property name="textInteractionFlags">
-             <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="label_25">
-            <property name="text">
-             <string>Sync Node</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="2">
-           <widget class="QLabel" name="peerSyncNode">
             <property name="cursor">
              <cursorShape>IBeamCursor</cursorShape>
             </property>
@@ -1037,7 +1043,30 @@
             </property>
            </widget>
           </item>
-          <item row="14" column="1">
+          <item row="14" column="0">
+           <widget class="QLabel" name="label_timeoffset">
+            <property name="text">
+             <string>Time Offset</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="2">
+           <widget class="QLabel" name="timeoffset">
+            <property name="cursor">
+             <cursorShape>IBeamCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>N/A</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::PlainText</enum>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="1">
            <spacer name="verticalSpacer_3">
             <property name="orientation">
              <enum>Qt::Vertical</enum>

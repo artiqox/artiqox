@@ -1,13 +1,17 @@
-// Copyright (c) 2011-2013 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GUIUTIL_H
-#define GUIUTIL_H
+#ifndef BITCOIN_QT_GUIUTIL_H
+#define BITCOIN_QT_GUIUTIL_H
 
+#include "amount.h"
+
+#include <QEvent>
 #include <QHeaderView>
 #include <QMessageBox>
 #include <QObject>
+#include <QProgressBar>
 #include <QString>
 #include <QTableView>
 
@@ -34,19 +38,19 @@ namespace GUIUtil
     QString dateTimeStr(qint64 nTime);
 
     // Render Bitcoin addresses in monospace font
-    QFont bitcoinAddressFont();
+    QFont fixedPitchFont();
 
     // Set up widgets for address and amounts
     void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent);
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
-    // Parse "artiqox:" URI into recipient object, return true on successful parsing
+    // Parse "bitcoin:" URI into recipient object, return true on successful parsing
     bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
     QString formatBitcoinURI(const SendCoinsRecipient &info);
 
     // Returns true if given address+amount meets "dust" definition
-    bool isDust(const QString& address, qint64 amount);
+    bool isDust(const QString& address, const CAmount& amount);
 
     // HTML escaping for rich text controls
     QString HtmlEscape(const QString& str, bool fMultiLine=false);
@@ -64,6 +68,7 @@ namespace GUIUtil
 
     /** Get save filename, mimics QFileDialog::getSaveFileName, except that it appends a default suffix
         when no suffix is provided by the user.
+
       @param[in] parent  Parent window (or 0)
       @param[in] caption Window caption (or empty, for default)
       @param[in] dir     Starting directory (or empty, to default to documents directory)
@@ -76,6 +81,7 @@ namespace GUIUtil
         QString *selectedSuffixOut);
 
     /** Get open filename, convenience wrapper for QFileDialog::getOpenFileName.
+
       @param[in] parent  Parent window (or 0)
       @param[in] caption Window caption (or empty, for default)
       @param[in] dir     Starting directory (or empty, to default to documents directory)
@@ -88,6 +94,7 @@ namespace GUIUtil
         QString *selectedSuffixOut);
 
     /** Get connection type to call object slot in GUI thread with invokeMethod. The call will be blocking.
+
        @returns If called from the GUI thread, return a Qt::DirectConnection.
                 If called from another thread, return a Qt::BlockingQueuedConnection.
     */
@@ -98,6 +105,9 @@ namespace GUIUtil
 
     // Open debug.log
     void openDebugLogfile();
+
+    // Replace invalid default fonts with known good ones
+    void SubstituteFonts(const QString& language);
 
     /** Qt event filter that intercepts ToolTipChange events, and replaces the tooltip with a rich text
       representation if needed. This assures that Qt can word-wrap long tooltip messages.
@@ -174,10 +184,28 @@ namespace GUIUtil
     QString formatDurationStr(int secs);
 
     /* Format CNodeStats.nServices bitmask into a user-readable string */
-    QString formatServicesStr(uint64_t mask);
+    QString formatServicesStr(quint64 mask);
 
     /* Format a CNodeCombinedStats.dPingTime into a user-readable string or display N/A, if 0*/
     QString formatPingTime(double dPingTime);
+
+    /* Format a CNodeCombinedStats.nTimeOffset into a user-readable string. */
+    QString formatTimeOffset(int64_t nTimeOffset);
+
+#if defined(Q_OS_MAC) && QT_VERSION >= 0x050000
+    // workaround for Qt OSX Bug:
+    // https://bugreports.qt-project.org/browse/QTBUG-15631
+    // QProgressBar uses around 10% CPU even when app is in background
+    class ProgressBar : public QProgressBar
+    {
+        bool event(QEvent *e) {
+            return (e->type() != QEvent::StyleAnimationUpdate) ? QProgressBar::event(e) : false;
+        }
+    };
+#else
+    typedef QProgressBar ProgressBar;
+#endif
+    
 } // namespace GUIUtil
 
-#endif // GUIUTIL_H
+#endif // BITCOIN_QT_GUIUTIL_H

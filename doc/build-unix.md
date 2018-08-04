@@ -2,76 +2,66 @@ UNIX BUILD NOTES
 ====================
 Some notes on how to build Artiqox in Unix. 
 
+Note
+---------------------
+Always use absolute paths to configure and compile artiqox and the dependencies,
+for example, when specifying the the path of the dependency:
+
+	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
+
+Here BDB_PREFIX must absolute path - it is defined using $(pwd) which ensures
+the usage of the absolute path.
+
 To Build
 ---------------------
 
-	./autogen.sh
-	./configure
-	make
+```bash
+./autogen.sh
+./configure
+make
+make install # optional
+```
 
 This will build artiqox-qt as well if the dependencies are met.
 
 Dependencies
 ---------------------
 
+These dependencies are required:
+
  Library     | Purpose          | Description
  ------------|------------------|----------------------
  libssl      | SSL Support      | Secure communications
- libdb5.1    | Berkeley DB      | Wallet storage
  libboost    | Boost            | C++ Library
- miniupnpc   | UPnP Support     | Optional firewall-jumping support
- qt          | GUI              | GUI toolkit
- protobuf    | Payments in GUI  | Data interchange format used for payment protocol
- libqrencode | QR codes in GUI  | Optional for generating QR codes
- 
- Suggested versions of these libraries are as follows:
-      openssl-1.0.1l
-      db-5.1.29
-      boost 1.55
-      miniupnpc-1.9.20140701
-      qt 4.6.4
-      protobuf-2.5.0
-      qrencode-3.4.3
 
-[miniupnpc](http://miniupnp.free.fr/) may be used for UPnP port mapping.  It can be downloaded from [here](
-http://miniupnp.tuxfamily.org/files/).  UPnP support is compiled in and
-turned off by default.  See the configure options for upnp behavior desired:
+Optional dependencies:
 
-	--without-miniupnpc      No UPnP support miniupnp not required
-	--disable-upnp-default   (the default) UPnP support turned off by default at runtime
-	--enable-upnp-default    UPnP support turned on by default at runtime
+ Library     | Purpose          | Description
+ ------------|------------------|----------------------
+ miniupnpc   | UPnP Support     | Firewall-jumping support
+ libdb5.1    | Berkeley DB      | Wallet storage (only needed when wallet enabled)
+ qt          | GUI              | GUI toolkit (only needed when GUI enabled)
+ protobuf    | Payments in GUI  | Data interchange format used for payment protocol (only needed when GUI enabled)
+ libqrencode | QR codes in GUI  | Optional for generating QR codes (only needed when GUI enabled)
 
-Licenses of statically linked libraries:
- Berkeley DB   New BSD license with additional requirement that linked
-               software must be free open source
- Boost         MIT-like license
- miniupnpc     New (3-clause) BSD license
-
-- For the versions used in the release, see doc/release-process.md under *Fetch and build inputs*.
+For the versions used in the release, see [release-process.md](release-process.md) under *Fetch and build inputs*.
 
 System requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1 GB of
-memory available when compiling Dogecoin Core. With 512MB of memory or less
+memory available when compiling Artiqox Core. With 512MB of memory or less
 compilation will take much longer due to swap thrashing.
 
 Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
 Build requirements:
 
-	sudo apt-get install build-essential pkg-config
-	sudo apt-get install libtool autotools-dev autoconf
-	sudo apt-get install libssl-dev
-
-for Ubuntu 12.04 and later:
+	sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
+	
+for Ubuntu 12.04 and later or Debian 7 and later libboost-all-dev has to be installed:
 
 	sudo apt-get install libboost-all-dev libdb5.1-dev libdb5.1++-dev
-
-for Debian 7 (Wheezy) and later:
-
-	sudo apt-get install libdb5.1-dev
-        sudo apt-get install libdb5.1++-dev
 
 	Note that if you have Berkeley DB 4.8 packages installed (i.e. for other
 	wallet software), they are incompatible with the packages for 5.1. You
@@ -98,7 +88,7 @@ To build with Qt 4 you need the following:
 
 For Qt 5 you need the following:
 
-    sudo apt-get install libqt5gui5 libqt5core5 libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev
+    sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
 libqrencode (optional) can be installed with:
 
@@ -115,6 +105,17 @@ symbols, which reduces the executable size by about 90%.
 
 miniupnpc
 ---------
+
+[miniupnpc](http://miniupnp.free.fr/) may be used for UPnP port mapping.  It can be downloaded from [here](
+http://miniupnp.tuxfamily.org/files/).  UPnP support is compiled in and
+turned off by default.  See the configure options for upnp behavior desired:
+
+	--without-miniupnpc      No UPnP support miniupnp not required
+	--disable-upnp-default   (the default) UPnP support turned off by default at runtime
+	--enable-upnp-default    UPnP support turned on by default at runtime
+
+To build:
+
 	tar -xzvf miniupnpc-1.6.tar.gz
 	cd miniupnpc-1.6
 	make
@@ -135,13 +136,13 @@ mkdir -p $BDB_PREFIX
 
 # Fetch the source and verify that it is not tampered with
 wget 'http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz'
-echo '08238e59736d1aacdd47cfb8e68684c695516c37f4fbe1b8267dde58dc3a576c  db-5.1.29.NC.tar.gz' | sha256sum -c
+echo '08238e59736d1aacdd47cfb8e68684c695516c37f4fbe1b8267dde58dc3a576c db-5.1.29.NC.tar.gz' | sha256sum -c
 # -> db-5.1.29.NC.tar.gz: OK
 tar -xzvf db-5.1.29.NC.tar.gz
 
 # Build the library and install to our prefix
 cd db-5.1.29.NC/build_unix/
-#  Note: Do a static build so that it can be embedded into the exectuable, instead of having to find a .so at runtime
+#  Note: Do a static build so that it can be embedded into the executable, instead of having to find a .so at runtime
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 make install
 
@@ -149,7 +150,7 @@ make install
 cd $BITCOIN_ROOT
 ./configure (other args...) LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
 ```
- 
+
 **Note**: You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
 
 Boost
@@ -159,31 +160,6 @@ If you need to build Boost yourself:
 	sudo su
 	./bootstrap.sh
 	./bjam install
-
-
-Dependency Build Instructions: Fedora
--------------------------------------
-
-Fedora ships with a version of OpenSSL which does not include elliptic curve
-cryptography functions, and therefore cannot be used for Dogecoin (or other
-cryptocurrencies based on the Bitcoin design). Further details are available
-on the Bitcoin Wiki: https://en.bitcoin.it/wiki/OpenSSL_and_EC_Libraries
-
-Recommended solution is to compile your own OpenSSL libraries.
-
-Tested on Fedora 20:
-
-	sudo yum install autoconf automake make gcc-c++
-	sudo yum install miniupnpc-devel
-	sudo yum install boost-devel
-	sudo yum install libdb-cxx-devel
-	sudo yum install libss-devel
-	sudo yum install qrencode
-
-Optional:
-
-	sudo yum install miniupnpc-devel (see USE_UPNP compile flag)
-
 
 
 Security
@@ -202,12 +178,12 @@ Hardening enables the following features:
 
 * Position Independent Executable
     Build position independent code to take advantage of Address Space Layout Randomization
-    offered by some kernels. An attacker who is able to cause execution of code at an arbitrary
-    memory location is thwarted if he doesn't know where anything useful is located.
+    offered by some kernels. Attackers who can cause execution of code at an arbitrary memory
+    location are thwarted if they don't know where anything useful is located.
     The stack and heap are randomly located by default but this allows the code section to be
     randomly located as well.
 
-    On an Amd64 processor where a library was not compiled with -fPIC, this will cause an error
+    On an AMD64 processor where a library was not compiled with -fPIC, this will cause an error
     such as: "relocation R_X86_64_32 against `......' can not be used when making a shared object;"
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
@@ -241,7 +217,7 @@ disable-wallet mode with:
 
     ./configure --disable-wallet
 
-In this case there is no dependency on Berkeley DB 5.1.
+In this case there is no dependency on Berkeley DB 4.8.
 
 Mining is also possible in disable-wallet mode, but only using the `getblocktemplate` RPC
 call not `getwork`.

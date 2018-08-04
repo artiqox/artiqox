@@ -1,0 +1,27 @@
+# /etc/conf.d/artiqoxd: config file for /etc/init.d/artiqoxd
+
+# Config file location
+#ARTIQOXD_CONFIGFILE="/etc/artiqox/artiqox.conf"
+
+# What directory to write pidfile to?  (created and owned by $ARTIQOXD_USER)
+#ARTIQOXD_PIDDIR="/var/run/artiqoxd"
+
+# What filename to give the pidfile
+#ARTIQOXD_PIDFILE="${ARTIQOXD_PIDDIR}/artiqoxd.pid"
+
+# Where to write artiqoxd data (be mindful that the blockchain is large)
+#ARTIQOXD_DATADIR="/var/lib/artiqoxd"
+
+# User and group to own artiqoxd process
+#ARTIQOXD_USER="artiqox"
+#ARTIQOXD_GROUP="artiqox"
+
+# Path to artiqoxd executable
+#ARTIQOXD_BIN="/usr/bin/artiqoxd"
+
+# Nice value to run artiqoxd under
+#ARTIQOXD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+ARTIQOXD_OPTS="-disablewallet"
+

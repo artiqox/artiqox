@@ -1,19 +1,13 @@
-Artiqox 1.1.1
-=====================
-
-* Copyright (c) 2009-2014 Bitcoin Developers
-* Copyright (c) 2011-2013 Litecoin Developers
-* Copyright (c) 2013-2014 Dogecoin Developers
-* Copyright (c) 2018 Artiqox Developers
-
+Artiqox Core 1.10
+==================
 
 Setup
 ---------------------
-[Artiqox Core](http://github.com/artiqox/artiqox/releases) is the original Artiqox client and it builds the backbone of the network. However, it downloads and stores the entire history of Artiqox transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once. If you would like the process to go faster you can [download the blockchain directly](bootstrap.md)
+[Artiqox Core](http://artiqox.com/ is the reference Artiqox client and it builds the backbone of the network. However, it downloads and stores the entire history of Artiqox transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Artiqox on your native platform. 
+The following are some helpful notes on how to run Artiqox on your native platform.
 
 ### Unix
 
@@ -38,10 +32,10 @@ Drag Artiqox-Qt to your applications folder, and then run Artiqox-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Artiqox Wiki](http://artiqox.com/)
+* See the documentation at the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
 for help and more information.
 * Ask for help on [#artiqox](http://webchat.freenode.net?channels=artiqox) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=artiqox).
-* Ask for help on the [/r/indoducation subreddit](http://reddit.com/r/indoducation).
+* Ask for help on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Technical Support board](https://bitcointalk.org/index.php?board=4.0).
 
 Building
 ---------------------
@@ -49,31 +43,36 @@ The following are developer notes on how to build Artiqox on your native platfor
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
-- [Windows Build Notes](build-msw.md)
+- [Gitian Building Guide](gitian-building.md)
 
 Development
 ---------------------
 The Artiqox repo's [root README](https://github.com/artiqox/artiqox/blob/master/README.md) contains relevant information on the development process and automated testing.
 
-- [Coding Guidelines](coding.md)
+- [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/bitcoin/doxygen/)
 - [Translation Process](translation_process.md)
+- [Translation Strings Policy](translation_strings_policy.md)
 - [Unit Tests](unit-tests.md)
+- [Unauthenticated REST Interface](REST-interface.md)
+- [BIPS](bips.md)
+- [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [/r/artiqoxdev](http://www.reddit.com/r/artiqoxdev) subreddit.
-* Discuss on [#artiqox-dev](http://webchat.freenode.net/?channels=artiqox-dev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=artiqox-dev).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Development & Technical Discussion board](https://bitcointalk.org/index.php?board=6.0).
+* Discuss on [#artiqox-dev](http://webchat.freenode.net/?channels=artiqox) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=artiqox-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
 - [Files](files.md)
 - [Tor Support](tor.md)
+- [Init Scripts (systemd/upstart/openrc)](init.md)
 
 License
 ---------------------
-Distributed under the [MIT/X11 software license](http://www.opensource.org/licenses/mit-license.php).
-This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](http://www.openssl.org/). This product includes
+Distributed under the [MIT software license](http://www.opensource.org/licenses/mit-license.php).
+This product includes software developed by the Bitcoin developers for use in [Bitcoin Core](https://www.bitcoin.org/). 
+This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](https://www.openssl.org/). This product includes
 cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), and UPnP software written by Thomas Bernard.

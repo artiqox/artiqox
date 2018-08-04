@@ -75,7 +75,7 @@
     <string notr="true"/>
    </property>
    <property name="pixmap">
-    <pixmap resource="../bitcoin.qrc">:/images/paper_wallet</pixmap>
+    <pixmap resource="../bitcoin.qrc">:/icons/paper_wallet</pixmap>
    </property>
   </widget>
   <widget class="VerticalLabel" name="addressText">
