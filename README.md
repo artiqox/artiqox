@@ -21,11 +21,9 @@ Version numbers are following ```major.minor.patch``` semantics.
 #### Branches
 There are 3 types of branches in this repository:
 
-- **master:** Stable, contains the latest version of the latest *major.minor* release.
+- **master:** Unstable, contains new code for planned releases.  We DO NOT recommend anyone run this code on a production machine or in a production environment.  If your wallet breaks, you get to keep all the pieces.  We have done this, to show code additions and removal as this is how most sites monitor development.
 - **maintenance:** Stable, contains the latest version of previous releases, which are still under active maintenance. Format: ```<version>-maint```
-- **development:** Unstable, contains new code for planned releases. Format: ```<version>-dev```
-
-*Master and maintenance branches are exclusively mutable by release. Planned releases will always have a development branch and pull requests should be submitted against those. Maintenance branches are there for* ***bug fixes only,*** *please submit new features against the development branch with the highest version.*
+- **archive:** Stable, contains obsolete and redundant code.  Kept in archive for historic reasons.  These versions will generally run but will not connect to the AIQ Network Format: ```<version>-archive```
 
 ## Frequently Asked Questions
 
