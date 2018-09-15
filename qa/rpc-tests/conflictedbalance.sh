@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # Copyright (c) 2014 The Bitcoin Core developers
-# Copyright (c) 2014 The Dogecoin Core developers
-# Copyright (c) 2018 The Artiqox Core developers
-# Distributed under the MIT/X11 software license, see the accompanying
+# Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 # Test marking of spent outputs
@@ -20,13 +18,14 @@
 if [ $# -lt 1 ]; then
         echo "Usage: $0 path_to_binaries"
         echo "e.g. $0 ../../src"
+        echo "Env vars ARTIQOXD and ARTIQOXCLI may be used to specify the exact binaries used"
         exit 1
 fi
 
 set -f
 
-BITCOIND=${1}/artiqoxd
-CLI=${1}/artiqox-cli
+BITCOIND=${ARTIQOXD:-${1}/artiqoxd}
+CLI=${ARTIQOXCLI:-${1}/artiqox-cli}
 
 DIR="${BASH_SOURCE%/*}"
 SENDANDWAIT="${DIR}/send.sh"
@@ -50,7 +49,7 @@ B2ARGS="-datadir=$D2 -debug=mempool"
 $BITCOIND $B2ARGS &
 B2PID=$!
 
-# Wait until all four nodes are at the same block number
+# Wait until both nodes are at the same block number
 function WaitBlocks {
     while :
     do
@@ -83,16 +82,16 @@ echo "Generating test blockchain..."
 $CLI $B2ARGS addnode 127.0.0.1:11000 onetry
 WaitPeers "$B1ARGS" 1
 
-# 2 block, 500000 XDG each == 1000000 XDG
+# 2 block, 50 XBT each == 100 XBT
 # These will be transactions "A" and "B"
-$CLI $B1ARGS setgenerate true 2
+$CLI $B1ARGS generate 2
 
 WaitBlocks
-# 49 blocks, 0 mature == 0 XDG
-$CLI $B2ARGS setgenerate true 49
+# 100 blocks, 0 mature == 0 XBT
+$CLI $B2ARGS generate 100
 WaitBlocks
 
-CheckBalance "$B1ARGS" 1000000
+CheckBalance "$B1ARGS" 100
 CheckBalance "$B2ARGS" 0
 
 # restart B2 with no connection
@@ -105,10 +104,10 @@ B1ADDRESS=$( $CLI $B1ARGS getnewaddress )
 B2ADDRESS=$( $CLI $B2ARGS getnewaddress )
 
 # Transaction C: send-to-self, spend A
-TXID_C=$( $CLI $B1ARGS sendtoaddress $B1ADDRESS 500000.0)
+TXID_C=$( $CLI $B1ARGS sendtoaddress $B1ADDRESS 50.0)
 
 # Transaction D: spends B and C
-TXID_D=$( $CLI $B1ARGS sendtoaddress $B2ADDRESS 999998.0)
+TXID_D=$( $CLI $B1ARGS sendtoaddress $B2ADDRESS 100.0)
 
 CheckBalance "$B1ARGS" 0
 
@@ -131,12 +130,12 @@ WaitPeers "$B1ARGS" 1
 
 # Having B2 mine the next block puts the mutated
 # transaction C in the chain:
-$CLI $B2ARGS setgenerate true 1
+$CLI $B2ARGS generate 1
 WaitBlocks
 
-# B1 should still be able to spend 1000000 (-1 AIQ fee for the successful transaction), because D is conflicted
+# B1 should still be able to spend 100, because D is conflicted
 # so does not count as a spend of B
-CheckBalance "$B1ARGS" "1000000-1"
+CheckBalance "$B1ARGS" 100
 
 $CLI $B2ARGS stop > /dev/null 2>&1
 wait $B2PID

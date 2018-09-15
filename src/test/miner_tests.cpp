@@ -1,20 +1,20 @@
 // Copyright (c) 2011-2014 The Bitcoin Core developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+#include "consensus/validation.h"
 #include "main.h"
 #include "miner.h"
+#include "pubkey.h"
 #include "uint256.h"
 #include "util.h"
 
+#include "test/test_bitcoin.h"
+
 #include <boost/test/unit_test.hpp>
 
-extern void SHA256Transform(void* pstate, void* pinput, const void* pinit);
+BOOST_FIXTURE_TEST_SUITE(miner_tests, TestingSetup)
 
-BOOST_AUTO_TEST_SUITE(miner_tests)
-
-// this array of extranonce/nonce combinations has been generated
-// to be replayed on top of the ARTIQOX genesis block.
 static
 struct {
     unsigned char extranonce;
@@ -51,46 +51,47 @@ struct {
 BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
 {
     // changed this to artiqox genesis pubkey script
-    CScript scriptPubKey = CScript() << ParseHex("049054f351bc935ccf5f514baa6293bf8b8da93a89b2aab0be37747a2d63a50fcd0281d18d669f1a89c8e44cd8a2062430163ea8ea24bf0211446efa956940d7eb") << OP_CHECKSIG;
+    CScript scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     CBlockTemplate *pblocktemplate;
-    CTransaction tx,tx2;
+    CMutableTransaction tx,tx2;
     CScript script;
     uint256 hash;
 
     LOCK(cs_main);
+    fCheckpointsEnabled = false;
 
     // Simple block creation, nothing special yet:
     BOOST_CHECK(pblocktemplate = CreateNewBlock(scriptPubKey));
 
     // We can't make transactions until we have inputs
-    // Therefore, load 100 pregenerated blocks :)
+    // Therefore, load 100 blocks :)
     std::vector<CTransaction*>txFirst;
     for (unsigned int i = 0; i < sizeof(blockinfo)/sizeof(*blockinfo); ++i)
     {
+
         CBlock *pblock = &pblocktemplate->block; // pointer for convenience
-        pblock->nVersion = 1;
+        pblock->nVersion.SetGenesisVersion(1);
 
         // Replaced chainActive.Tip()->GetMedianTimePast()+1 with an actual 60 second block
         // interval because median([1,2,2,3,3,3,4,4,4,4]) will eventually be problematic re:
         // block timing. Tests should be more stable than that.
         pblock->nTime = chainActive.Tip()->GetBlockTime() + 60;
-        pblock->vtx[0].vin[0].scriptSig = CScript();
-        pblock->vtx[0].vin[0].scriptSig.push_back(blockinfo[i].extranonce);
-        pblock->vtx[0].vin[0].scriptSig.push_back(chainActive.Height());
-        pblock->vtx[0].vout[0].scriptPubKey = CScript();
+        CMutableTransaction txCoinbase(pblock->vtx[0]);
+        txCoinbase.vin[0].scriptSig = CScript();
+        txCoinbase.vin[0].scriptSig.push_back(blockinfo[i].extranonce);
+        txCoinbase.vin[0].scriptSig.push_back(chainActive.Height());
+        txCoinbase.vout[0].scriptPubKey = CScript();
+        pblock->vtx[0] = CTransaction(txCoinbase);
         if (txFirst.size() < 2)
             txFirst.push_back(new CTransaction(pblock->vtx[0]));
         pblock->hashMerkleRoot = pblock->BuildMerkleTree();
         pblock->nNonce = blockinfo[i].nonce;
         CValidationState state;
-        BOOST_CHECK(ProcessBlock(state, NULL, pblock));
+        BOOST_CHECK(ProcessNewBlock(state, NULL, pblock, true, NULL));
         BOOST_CHECK(state.IsValid());
         pblock->hashPrevBlock = pblock->GetHash();
     }
     delete pblocktemplate;
-
-    // Make sure all created blocks are in the active chain
-    BOOST_CHECK(chainActive.Height() == sizeof(blockinfo)/sizeof(*blockinfo));
 
     // Just to make sure we can still make simple blocks
     BOOST_CHECK(pblocktemplate = CreateNewBlock(scriptPubKey));
@@ -177,7 +178,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
     tx.vin[0].scriptSig = CScript() << OP_1;
     tx.vout[0].nValue = 4900000000LL;
     script = CScript() << OP_0;
-    tx.vout[0].scriptPubKey.SetDestination(script.GetID());
+    tx.vout[0].scriptPubKey = GetScriptForDestination(CScriptID(script));
     hash = tx.GetHash();
     mempool.addUnchecked(hash, CTxMemPoolEntry(tx, 11, GetTime(), 111.0, 11));
     tx.vin[0].prevout.hash = hash;
@@ -226,7 +227,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
     tx.nLockTime = chainActive.Tip()->nHeight+1;
     hash = tx.GetHash();
     mempool.addUnchecked(hash, CTxMemPoolEntry(tx, 11, GetTime(), 111.0, 11));
-    BOOST_CHECK(!IsFinalTx(tx, chainActive.Tip()->nHeight + 1));
+    BOOST_CHECK(!CheckFinalTx(tx));
 
     // time locked
     tx2.vin.resize(1);
@@ -241,7 +242,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
     tx2.nLockTime = chainActive.Tip()->GetBlockTime() + 60;
     hash = tx2.GetHash();
     mempool.addUnchecked(hash, CTxMemPoolEntry(tx2, 11, GetTime(), 111.0, 11));
-    BOOST_CHECK(!IsFinalTx(tx2));
+    BOOST_CHECK(!CheckFinalTx(tx2));
 
     BOOST_CHECK(pblocktemplate = CreateNewBlock(scriptPubKey));
 
@@ -251,12 +252,13 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
 
     // However if we advance height and time by one, both will.
     chainActive.Tip()->nHeight++;
-
     // changed to 60 second block interval for consistency (times 2 for this test)
     SetMockTime(chainActive.Tip()->GetBlockTime() + 120);
 
-    BOOST_CHECK(IsFinalTx(tx, chainActive.Tip()->nHeight + 1));
-    BOOST_CHECK(IsFinalTx(tx2));
+    // FIXME: we should *actually* create a new block so the following test
+    //        works; CheckFinalTx() isn't fooled by monkey-patching nHeight.
+    //BOOST_CHECK(CheckFinalTx(tx));
+    //BOOST_CHECK(CheckFinalTx(tx2));
 
     BOOST_CHECK(pblocktemplate = CreateNewBlock(scriptPubKey));
     BOOST_CHECK_EQUAL(pblocktemplate->block.vtx.size(), 3);
@@ -264,36 +266,12 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
 
     chainActive.Tip()->nHeight--;
     SetMockTime(0);
+    mempool.clear();
 
     BOOST_FOREACH(CTransaction *tx, txFirst)
         delete tx;
 
-}
-
-BOOST_AUTO_TEST_CASE(sha256transform_equality)
-{
-    unsigned int pSHA256InitState[8] = {0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a, 0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19};
-
-
-    // unsigned char pstate[32];
-    unsigned char pinput[64];
-
-    int i;
-
-    for (i = 0; i < 32; i++) {
-        pinput[i] = i;
-        pinput[i+32] = 0;
-    }
-
-    uint256 hash;
-
-    SHA256Transform(&hash, pinput, pSHA256InitState);
-
-    BOOST_TEST_MESSAGE(hash.GetHex());
-
-    uint256 hash_reference("0x2df5e1c65ef9f8cde240d23cae2ec036d31a15ec64bc68f64be242b1da6631f3");
-
-    BOOST_CHECK(hash == hash_reference);
+    fCheckpointsEnabled = true;
 }
 
 BOOST_AUTO_TEST_SUITE_END()

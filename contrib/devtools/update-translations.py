@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # Copyright (c) 2014 Wladimir J. van der Laan
-# Distributed under the MIT/X11 software license, see the accompanying
+# Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
 Run this script from the root of the repository to update all translations from
@@ -163,9 +163,8 @@ def postprocess_translations(reduce_diff_hacks=False):
                     message.remove(location)
 
                 # Remove entire message if it is an unfinished translation
-                # disable this for dogecoin because we do manual translations
-                # if translation_node.get('type') == 'unfinished':
-                #    context.remove(message)
+                if translation_node.get('type') == 'unfinished':
+                    context.remove(message)
 
         # write fixed-up tree
         # if diff reduction requested, replace some XML to 'sanitize' to qt formatting
@@ -182,6 +181,6 @@ def postprocess_translations(reduce_diff_hacks=False):
 
 if __name__ == '__main__':
     check_at_repository_root()
-    # disable the transifex process as long as we sync with bitcoin, but keep postprocessing
-    # fetch_all_translations()
+    fetch_all_translations()
     postprocess_translations()
+

@@ -6,7 +6,7 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION @CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@
-!define COMPANY "Artiqox project"
+!define COMPANY "Artiqox Core project"
 !define URL http://www.artiqox.com/
 
 # MUI Symbol Definitions
@@ -84,7 +84,7 @@ Section -Main SEC0000
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
-    # Remove old wxwidgets-based-artiqox executable and locales:
+    # Remove old wxwidgets-based-bitcoin executable and locales:
     Delete /REBOOTOK $INSTDIR\artiqox.exe
     RMDir /r /REBOOTOK $INSTDIR\locale
 SectionEnd

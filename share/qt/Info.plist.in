@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
   <key>LSMinimumSystemVersion</key>
-  <string>10.6.0</string>
+  <string>10.7.0</string>
 
   <key>LSArchitecturePriority</key>
   <array>
@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © @COPYRIGHT_YEAR@ Artiqox Core developers, Copyright © 2013-@COPYRIGHT_YEAR@ Dogecoin Core developers, 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, Copyright © 2013-@COPYRIGHT_YEAR@ The Dogecoin Core developers, Copyright © 2018 The Artiqox Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -30,6 +30,12 @@
 
   <key>CFBundleExecutable</key>
   <string>Artiqox-Qt</string>
+  
+  <key>CFBundleName</key>
+  <string>Artiqox-Qt</string>
+
+  <key>LSHasLocalizedDisplayName</key>
+  <true/>
 
   <key>CFBundleIdentifier</key>
   <string>com.artiqox.wallet-qt</string>
@@ -62,7 +68,7 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-artiqox-payment-request</string>
+        <string>application/artiqox-paymentrequest</string>
         <key>public.filename-extension</key>
         <array>
           <string>artiqoxpaymentrequest</string>
@@ -90,7 +96,10 @@
 
   <key>NSHighResolutionCapable</key>
     <string>True</string>
-    
+
+  <key>LSAppNapIsDisabled</key>
+    <string>True</string>
+  
   <key>LSApplicationCategoryType</key>
     <string>public.app-category.finance</string>
 </dict>
