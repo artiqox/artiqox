@@ -553,14 +553,15 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
         nPayFee = CWallet::GetMinimumFee(txDummy, nBytes, nTxConfirmTarget, mempool);
 
         // Allow free?
-        double dPriorityNeeded = mempoolEstimatePriority;
-        if (dPriorityNeeded <= 0)
-            dPriorityNeeded = AllowFreeThreshold(); // not enough data, back to hard-coded
-        fAllowFree = (dPriority >= dPriorityNeeded);
+        // Artiqox: No free transactions
+        // double dPriorityNeeded = mempoolEstimatePriority;
+        // if (dPriorityNeeded <= 0)
+        //     dPriorityNeeded = AllowFreeThreshold(); // not enough data, back to hard-coded
+        // fAllowFree = (dPriority >= dPriorityNeeded);
 
-        if (fSendFreeTransactions)
-            if (fAllowFree && nBytes <= MAX_FREE_TRANSACTION_CREATE_SIZE)
-                nPayFee = 0;
+        // if (fSendFreeTransactions)
+        //     if (fAllowFree && nBytes <= MAX_FREE_TRANSACTION_CREATE_SIZE)
+        //         nPayFee = 0;
 
         if (nPayAmount > 0)
         {
@@ -572,8 +573,9 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
             if (nChange > 0 && nChange < CENT)
             {
                 CTxOut txout(nChange, (CScript)vector<unsigned char>(24, 0));
-                if (txout.IsDust(::minRelayTxFee))
-                {
+                // Artiqox: Anything below 1 DOGE is considered dust
+                // if (txout.IsDust(::minRelayTxFee))
+                // {
                     if (CoinControlDialog::fSubtractFeeFromAmount) // dust-change will be raised until no dust
                         nChange = txout.GetDustThreshold(::minRelayTxFee);
                     else
@@ -581,7 +583,7 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
                         nPayFee += nChange;
                         nChange = 0;
                     }
-                }
+                //}
             }
 
             if (nChange == 0 && !CoinControlDialog::fSubtractFeeFromAmount)

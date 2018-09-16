@@ -873,8 +873,7 @@ CAmount GetMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowF
     CAmount nMinFee = ::minRelayTxFee.GetFee(nBytes);
     nMinFee += GetArtiqoxDustFee(tx.vout, ::minRelayTxFee);
 
-    // Artiqox: Disable free transactions
-    /* if (fAllowFree)
+    if (fAllowFree)
     {
         // There is a free transaction area in blocks created by most miners,
         // * If we are relaying we allow transactions up to DEFAULT_BLOCK_PRIORITY_SIZE - 1000
@@ -882,7 +881,7 @@ CAmount GetMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowF
         //   multiple transactions instead of one big transaction to avoid fees.
         if (nBytes < (DEFAULT_BLOCK_PRIORITY_SIZE - 1000))
             nMinFee = 0;
-    } */
+    }
 
     if (!MoneyRange(nMinFee))
         nMinFee = MAX_MONEY;
