@@ -36,6 +36,7 @@ struct Params {
 
     /** Auxpow parameters */
     int16_t nAuxpowChainId;
+    bool fAllowAuxPow;
     bool fStrictChainId;
     bool fAllowLegacyBlocks;
 
