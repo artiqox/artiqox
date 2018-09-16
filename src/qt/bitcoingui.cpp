@@ -39,7 +39,6 @@
 #include <QDateTime>
 #include <QDesktopWidget>
 #include <QDragEnterEvent>
-#include <QFontDatabase>
 #include <QListWidget>
 #include <QMenuBar>
 #include <QMessageBox>
