@@ -174,8 +174,8 @@ Value validateaddress(const Array& params, bool fHelp)
             "  \"account\" : \"account\"         (string) DEPRECATED. The account associated with the address, \"\" is the default account\n"
             "}\n"
             "\nExamples:\n"
-            + HelpExampleCli("validateaddress", "\"DTaXouBvXCDfViRZzSCaVNQBAyt1D9zThT\"")
-            + HelpExampleRpc("validateaddress", "\"DTaXouBvXCDfViRZzSCaVNQBAyt1D9zThT\"")
+            + HelpExampleCli("validateaddress", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\"")
+            + HelpExampleRpc("validateaddress", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\"")
         );
 
 #ifdef ENABLE_WALLET
@@ -301,9 +301,9 @@ Value createmultisig(const Array& params, bool fHelp)
 
             "\nExamples:\n"
             "\nCreate a multisig address from 2 addresses\n"
-            + HelpExampleCli("createmultisig", "2 \"[\\\"DB1Y8APJPE9K1kfYeuGPcbtyK7uruTNFa9\\\",\\\"DB9yDzihrJJBZ7mEUuGRAz7bJbh5jQJexj\\\"]\"") +
+            + HelpExampleCli("createmultisig", "2 \"[\\\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\\\",\\\"AU9yDzihrJJBZ7mEUuGRAz7bJbh5jQJexj\\\"]\"") +
             "\nAs a json rpc call\n"
-            + HelpExampleRpc("createmultisig", "2, \"[\\\"DB1Y8APJPE9K1kfYeuGPcbtyK7uruTNFa9\\\",\\\"DB9yDzihrJJBZ7mEUuGRAz7bJbh5jQJexj\\\"]\"")
+            + HelpExampleRpc("createmultisig", "2, \"[\\\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\\\",\\\"AU9yDzihrJJBZ7mEUuGRAz7bJbh5jQJexj\\\"]\"")
         ;
         throw runtime_error(msg);
     }
@@ -336,11 +336,11 @@ Value verifymessage(const Array& params, bool fHelp)
             "\nUnlock the wallet for 30 seconds\n"
             + HelpExampleCli("walletpassphrase", "\"mypassphrase\" 30") +
             "\nCreate the signature\n"
-            + HelpExampleCli("signmessage", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\" \"my message\"") +
+            + HelpExampleCli("signmessage", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\" \"my message\"") +
             "\nVerify the signature\n"
-            + HelpExampleCli("verifymessage", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\" \"signature\" \"my message\"") +
+            + HelpExampleCli("verifymessage", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\" \"signature\" \"my message\"") +
             "\nAs json rpc\n"
-            + HelpExampleRpc("verifymessage", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\", \"signature\", \"my message\"")
+            + HelpExampleRpc("verifymessage", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\", \"signature\", \"my message\"")
         );
 
     LOCK(cs_main);

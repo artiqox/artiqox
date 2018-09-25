@@ -246,8 +246,8 @@ Value setaccount(const Array& params, bool fHelp)
             "1. \"artiqoxaddress\" (string, required) The artiqox address to be associated with an account.\n"
             "2. \"account\"         (string, required) The account to assign the address to.\n"
             "\nExamples:\n"
-            + HelpExampleCli("setaccount", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\" \"tabby\"")
-            + HelpExampleRpc("setaccount", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\", \"tabby\"")
+            + HelpExampleCli("setaccount", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\" \"tabby\"")
+            + HelpExampleRpc("setaccount", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\", \"tabby\"")
         );
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
@@ -293,8 +293,8 @@ Value getaccount(const Array& params, bool fHelp)
             "\nResult:\n"
             "\"accountname\"        (string) the account address\n"
             "\nExamples:\n"
-            + HelpExampleCli("getaccount", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\"")
-            + HelpExampleRpc("getaccount", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\"")
+            + HelpExampleCli("getaccount", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\"")
+            + HelpExampleRpc("getaccount", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\"")
         );
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
@@ -402,10 +402,10 @@ Value sendtoaddress(const Array& params, bool fHelp)
             "\nResult:\n"
             "\"transactionid\"  (string) The transaction id.\n"
             "\nExamples:\n"
-            + HelpExampleCli("sendtoaddress", "\"DRF7yvmFHR5gMXRtijkbkPzmLYnMfTYMGZ\" 0.1")
-            + HelpExampleCli("sendtoaddress", "\"DRF7yvmFHR5gMXRtijkbkPzmLYnMfTYMGZ\" 0.1 \"donation\" \"seans outpost\"")
-            + HelpExampleCli("sendtoaddress", "\"DRF7yvmFHR5gMXRtijkbkPzmLYnMfTYMGZ\" 0.1 \"\" \"\" true")
-            + HelpExampleRpc("sendtoaddress", "\"DRF7yvmFHR5gMXRtijkbkPzmLYnMfTYMGZ\", 0.1, \"donation\", \"seans outpost\"")
+            + HelpExampleCli("sendtoaddress", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\" 0.1")
+            + HelpExampleCli("sendtoaddress", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\" 0.1 \"donation\" \"seans outpost\"")
+            + HelpExampleCli("sendtoaddress", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\" 0.1 \"\" \"\" true")
+            + HelpExampleRpc("sendtoaddress", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\", 0.1, \"donation\", \"seans outpost\"")
         );
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
@@ -506,11 +506,11 @@ Value signmessage(const Array& params, bool fHelp)
             "\nUnlock the wallet for 30 seconds\n"
             + HelpExampleCli("walletpassphrase", "\"mypassphrase\" 30") +
             "\nCreate the signature\n"
-            + HelpExampleCli("signmessage", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\" \"my message\"") +
+            + HelpExampleCli("signmessage", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\" \"my message\"") +
             "\nVerify the signature\n"
-            + HelpExampleCli("verifymessage", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\" \"signature\" \"my message\"") +
+            + HelpExampleCli("verifymessage", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\" \"signature\" \"my message\"") +
             "\nAs json rpc\n"
-            + HelpExampleRpc("signmessage", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\", \"my message\"")
+            + HelpExampleRpc("signmessage", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\", \"my message\"")
         );
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
@@ -559,13 +559,13 @@ Value getreceivedbyaddress(const Array& params, bool fHelp)
             "amount   (numeric) The total amount in aiq received at this address.\n"
             "\nExamples:\n"
             "\nThe amount from transactions with at least 1 confirmation\n"
-            + HelpExampleCli("getreceivedbyaddress", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\"") +
+            + HelpExampleCli("getreceivedbyaddress", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\"") +
             "\nThe amount including unconfirmed transactions, zero confirmations\n"
-            + HelpExampleCli("getreceivedbyaddress", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\" 0") +
+            + HelpExampleCli("getreceivedbyaddress", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\" 0") +
             "\nThe amount with at least 6 confirmation, very safe\n"
-            + HelpExampleCli("getreceivedbyaddress", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\" 6") +
+            + HelpExampleCli("getreceivedbyaddress", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\" 6") +
             "\nAs a json rpc call\n"
-            + HelpExampleRpc("getreceivedbyaddress", "\"DH9fPpKHLiP5eaAD3pXxxUZmPktGNGTFp6\", 6")
+            + HelpExampleRpc("getreceivedbyaddress", "\"AU4vf6nATjW73KV5rcqP154kn5XTP7rwku\", 6")
        );
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
