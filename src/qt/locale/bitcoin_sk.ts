@@ -160,7 +160,7 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOXS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARTIQOX&lt;/b&gt;!</source>
         <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE ARTIQOXY&lt;/b&gt;!⏎</translation>
     </message>
     <message>
@@ -300,7 +300,7 @@
     </message>
     <message>
         <source>Send coins to a Artiqox address</source>
-        <translation>Poslať artiqoxs na adresu</translation>
+        <translation>Poslať artiqox na adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -1554,7 +1554,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Artiqoxs</translation>
+        <translation>Poslať </translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1702,7 +1702,7 @@
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Potvrdiť odoslanie artiqoxs</translation>
+        <translation>Potvrdiť odoslanie artiqox</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2394,7 +2394,7 @@
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Artiqoxs</translation>
+        <translation>Poslať Artiqox</translation>
     </message>
 </context>
 <context>

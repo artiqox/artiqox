@@ -110,7 +110,7 @@ to see it.
 
 **testnet and regtest modes**
 
-Run with the -testnet option to run with "play artiqoxs" on the test network, if you
+Run with the -testnet option to run with "play artiqox" on the test network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 If you are testing something that can run on one machine, run with the -regtest option.
@@ -168,7 +168,7 @@ Threads
 
 - ThreadRPCServer : Remote procedure call handler, listens on port 19421 for connections and services them.
 
-- ArtiqoxMiner : Generates artiqoxs (if wallet is enabled).
+- ArtiqoxMiner : Generates Artiqox (if wallet is enabled).
 
 - Shutdown : Does an orderly shutdown of everything.
 

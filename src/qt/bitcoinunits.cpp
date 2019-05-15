@@ -51,9 +51,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Artiqoxs");
-    case mBTC: return QString("Milli-Artiqoxs (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Artiqoxs (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case BTC: return QString("Artiqox");
+    case mBTC: return QString("Milli-Artiqox (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("Micro-Artiqox (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
