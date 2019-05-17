@@ -1,5 +1,5 @@
 /* XPM */
-static char * C:\Users\Makrochain\Documents\GitHub\artiqox\share\pixmaps\bitcoin128_xpm[] = {
+static char *artiqox128[] = {
 "128 128 4638 2",
 "  	c None",
 ". 	c #1A1913",

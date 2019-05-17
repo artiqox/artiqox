@@ -1,5 +1,5 @@
 /* XPM */
-static char * C:\Users\Makrochain\Documents\GitHub\artiqox\share\pixmaps\bitcoin256_xpm[] = {
+static char *artiqox256[] = {
 "256 256 8657 3",
 "   	c None",
 ".  	c #1F1E1D",
