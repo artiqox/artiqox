@@ -313,7 +313,7 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# bitcoind binary #
+# artiqoxd binary #
 artiqoxd_SOURCES = bitcoind.cpp
 artiqoxd_CPPFLAGS = $(BITCOIN_INCLUDES)
 artiqoxd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
@@ -339,7 +339,7 @@ endif
 artiqoxd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
 #
 
-# bitcoin-cli binary #
+# artiqox-cli binary #
 artiqox_cli_SOURCES = bitcoin-cli.cpp
 artiqox_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 artiqox_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
@@ -356,7 +356,7 @@ artiqox_cli_LDADD = \
 artiqox_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS)
 #
 
-# bitcoin-tx binary #
+# artiqox-tx binary #
 artiqox_tx_SOURCES = bitcoin-tx.cpp
 artiqox_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 artiqox_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)

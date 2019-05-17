@@ -62,7 +62,7 @@ void OptionsModel::Init()
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
-        settings.setValue("strThirdPartyTxUrls", "https://aiqchain.info/tx/%s|https://chain.so/tx/AIQ/%s");
+        settings.setValue("strThirdPartyTxUrls", "https://explorer.artiqox.com/tx/%s|https://chainmapper.com/aiq/tx/%s");
     strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
 
     if (!settings.contains("fCoinControlFeatures"))
