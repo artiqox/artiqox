@@ -1,4 +1,4 @@
-TOR SUPPORT IN BITCOIN
+TOR SUPPORT IN ARTIQOX
 ======================
 
 It is possible to run Artiqox as a Tor hidden service, and connect to such services.

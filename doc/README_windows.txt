@@ -18,6 +18,6 @@ However, it downloads and stores the entire history of Artiqox transactions;
 depending on the speed of your computer and network connection, the synchronization
 process can take anywhere from a few hours to a day or more.
 
-See the bitcoin wiki at:
-  https://en.bitcoin.it/wiki/Main_Page
+See the Artiqox wiki at:
+  https://wiki.artiqox.com/Main_Page
 for more help and information.
