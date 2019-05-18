@@ -42,7 +42,7 @@ QString BitcoinUnits::name(int unit)
     {
     case BTC: return QString("AIQ");
     case mBTC: return QString("mAIQ");
-    case uBTC: return QString::fromUtf8("μAIQ");
+    case uBTC: return QChar(0x03BC) + QString("AIQ");
     default: return QString("???");
     }
 }
@@ -51,9 +51,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Artiqox");
-    case mBTC: return QString("Milli-Artiqox (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Artiqox (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case BTC: return tr("Artiqox");
+    case mBTC: return tr("Milli-Artiqox (1 / 1,000)");
+    case uBTC: return tr("Micro-Artiqox (1 / 1,000,000)");
     default: return QString("???");
     }
 }
