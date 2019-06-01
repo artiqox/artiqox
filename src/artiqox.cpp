@@ -127,7 +127,7 @@ CAmount GetArtiqoxBlockSubsidy(int nHeight, const Consensus::Params& consensusPa
 {
     int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
 
-    if (nHeight < (8 * consensusParams.nSubsidyHalvingInterval)) {
+    if (nHeight < (5 * consensusParams.nSubsidyHalvingInterval)) {
         // Artiqox constant rewards for each halving interval
         return (2000 * COIN) >> halvings;
     } else {
