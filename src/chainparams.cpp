@@ -38,7 +38,7 @@ public:
         strNetworkID = "main";
 
         // Blocks 0 - 60 are conventional difficulty calculation
-        consensus.nSubsidyHalvingInterval = 210000;
+        consensus.nSubsidyHalvingInterval = 200000;
         consensus.nMajorityEnforceBlockUpgrade = 1500;
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
