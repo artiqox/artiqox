@@ -279,11 +279,11 @@
         <translation>Promjena &amp;lozinke...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>Adrese za &amp;slanje</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>Adrese za &amp;primanje</translation>
     </message>
     <message>

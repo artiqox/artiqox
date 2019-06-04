@@ -255,11 +255,11 @@
         <translation>&amp;Ubah Kata Kunci...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>Alamat-alamat &amp;Mengirim</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>Alamat-alamat &amp;Menerima</translation>
     </message>
     <message>

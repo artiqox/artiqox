@@ -263,11 +263,11 @@
         <translation>Ŝanĝi &amp;Pasfrazon...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>&amp;Sendaj adresoj...</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>&amp;Ricevaj adresoj...</translation>
     </message>
     <message>

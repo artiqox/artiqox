@@ -276,11 +276,11 @@
         <translation>&amp;Άλλαξε κωδικο πρόσβασης</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>Διευθύνσεις αποστολής</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>Διευθύνσεις λήψης</translation>
     </message>
     <message>

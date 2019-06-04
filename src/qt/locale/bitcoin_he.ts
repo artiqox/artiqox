@@ -271,11 +271,11 @@
         <translation>ה&amp;חלפת מילת הצופן…</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>כתובת ה&amp;שליחה…</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>כתובות ה&amp;קבלה…</translation>
     </message>
     <message>

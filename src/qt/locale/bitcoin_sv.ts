@@ -284,11 +284,11 @@ Var vänlig och försök igen.</translation>
         <translation>&amp;Byt Lösenord...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>Av&amp;sändaradresser...</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>Mottaga&amp;radresser...</translation>
     </message>
     <message>

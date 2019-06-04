@@ -283,11 +283,11 @@
         <translation>&amp;Changer la phrase de passe...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>Adresses d'&amp;envoi...</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>Adresses de &amp;réception...</translation>
     </message>
     <message>

@@ -283,11 +283,11 @@
         <translation>更改密码(&amp;C)...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>正在发送地址(&amp;S)...</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>正在接收地址(&amp;R)...</translation>
     </message>
     <message>

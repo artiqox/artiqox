@@ -263,11 +263,11 @@
         <translation>ფრაზა-პაროლის შე&amp;ცვლა</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>გაგზავნის მი&amp;სამართი</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>მიღების მისამა&amp;რთი</translation>
     </message>
     <message>

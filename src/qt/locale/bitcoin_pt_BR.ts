@@ -283,11 +283,11 @@
         <translation>&amp;Mudar frase de segurança...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>Endereço&amp;s de envio...</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>Endereços de &amp;recebimento...</translation>
     </message>
     <message>

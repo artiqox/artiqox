@@ -263,11 +263,11 @@
         <translation>암호문 변경&amp;...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>&amp;주소 보내는 중</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>&amp; 주소 받는 중</translation>
     </message>
     <message>

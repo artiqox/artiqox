@@ -283,11 +283,11 @@
         <translation>Змінити парол&amp;ь...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>Адреси для &amp;відправлення...</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>Адреси для &amp;отримання...</translation>
     </message>
     <message>

@@ -275,11 +275,11 @@
         <translation>Změň &amp;heslo...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>Od&amp;esílací adresy...</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>Př&amp;ijímací adresy...</translation>
     </message>
     <message>

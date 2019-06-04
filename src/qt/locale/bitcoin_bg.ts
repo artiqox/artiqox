@@ -271,11 +271,11 @@
         <translation>&amp;Смяна на паролата...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>&amp;Изпращане на адресите...</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>&amp;Получаване на адресите...</translation>
     </message>
     <message>

@@ -283,11 +283,11 @@
         <translation>S&amp;chimbă parola...</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>Adrese de trimitere...</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>Adrese de p&amp;rimire...</translation>
     </message>
     <message>

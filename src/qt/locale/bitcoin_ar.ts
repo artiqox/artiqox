@@ -271,11 +271,11 @@
         <translation>&amp;تغيير كلمة المرور</translation>
     </message>
     <message>
-        <source>Such &amp;sending addresses...</source>
+        <source>&amp;Sending addresses...</source>
         <translation>ارسال العناوين.</translation>
     </message>
     <message>
-        <source>Much &amp;receiving addresses...</source>
+        <source>&amp;Receiving addresses...</source>
         <translation>استقبال العناوين</translation>
     </message>
     <message>
