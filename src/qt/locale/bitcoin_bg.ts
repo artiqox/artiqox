@@ -2388,7 +2388,15 @@
     </message>
     <message>
         <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>Всички права запазени (C) 2009-%i Доставчиците на Биткойн</translation>
+        <translation>Всички права запазени (C) 2009-%i Разработчиците на Bitcoin Core</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2013-%i The Dogecoin Core Developers</source>
+        <translation>Всички права запазени (C) 2013-%i Разработчиците на Dogecoin Core</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2018-%i The Artiqox Core Developers</source>
+        <translation>Всички права запазени (C) 2018-%i Разработчиците на Artiqox Core</translation>
     </message>
     <message>
         <source>Information</source>

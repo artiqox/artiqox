@@ -2688,7 +2688,15 @@
     </message>
     <message>
         <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>כל הזכויות שמורות (C)‏ 2009‏-%i מתכנתי ליבת ביטקוין</translation>
+        <translation>כל הזכויות שמורות (C)‏ 2009‏-%i מפתחי Bitcoin Core</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2013-%i The Dogecoin Core Developers</source>
+        <translation>כל הזכויות שמורות (C)‏ 2013-%i מפתחי Dogecoin Core</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2018-%i The Artiqox Core Developers</source>
+        <translation>כל הזכויות שמורות (C)‏ 2018‏-%i מפתחי Artiqox Core</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>

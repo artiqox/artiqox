@@ -2711,6 +2711,14 @@
         <translation>Copyright (C) 2009-%i The Bitcoin Core Developers</translation>
     </message>
     <message>
+        <source>Copyright (C) 2013-%i The Dogecoin Core Developers</source>
+        <translation>Copyright (C) 2013-%i The Dogecoin Core Developers</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2018-%i The Artiqox Core Developers</source>
+        <translation>Copyright (C) 2018-%i The Artiqox Core Developers</translation>
+    </message>
+    <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Artiqox Core</source>
         <translation>Błąd ładowania wallet.dat: Portfel wymaga nowszej wersji Artiqox Core</translation>
     </message>

@@ -3025,6 +3025,14 @@ por exemplo: alertnotify=echo %%s | mail -s "Alerta do Artiqox" admin@foo.com.br
         <translation>Copyright (C) 2009-%i Desenvolvedores Bitcoin Core</translation>
     </message>
     <message>
+        <source>Copyright (C) 2013-%i The Dogecoin Core Developers</source>
+        <translation>Copyright (C) 2013-%i Desenvolvedores Dogecoin Core</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2018-%i The Artiqox Core Developers</source>
+        <translation>Copyright (C) 2018-%i Desenvolvedores Artiqox Core</translation>
+    </message>
+    <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>Impossível interpretar o valor -rpcbind %s como um endereço da rede</translation>
     </message>

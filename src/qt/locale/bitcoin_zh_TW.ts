@@ -3174,6 +3174,14 @@ rpcpassword=%s
         <translation>版權為位元幣核心開發人員自西元 2009 至 %i 年起所有</translation>
     </message>
     <message>
+        <source>Copyright (C) 2013-%i The Dogecoin Core Developers</source>
+        <translation>版权所有（C）2013-％i Dogecoin核心开发人员</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2018-%i The Artiqox Core Developers</source>
+        <translation>版权所有（C）2018-％i Artiqox核心开发人员</translation>
+    </message>
+    <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>沒辦法解析 -rpcbind 參數值 %s 為網路位址</translation>
     </message>

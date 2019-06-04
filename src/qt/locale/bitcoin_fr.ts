@@ -3173,6 +3173,14 @@ par exemple : alertnotify=echo %%s | mail -s "Alerte Artiqox" admin@foo.com
         <translation>Copyright © 2009-%i Les développeurs de Bitcoin Core</translation>
     </message>
     <message>
+        <source>Copyright (C) 2013-%i The Dogecoin Core Developers</source>
+        <translation>Copyright © 2013-%i Les développeurs de Dogecoin Core</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2018-%i The Artiqox Core Developers</source>
+        <translation>Copyright © 2018-%i Les développeurs de Artiqox Core</translation>
+    </message>
+    <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>Impossible d'analyser la valeur -rpcbind %s comme adresse réseau</translation>
     </message>

@@ -2823,6 +2823,14 @@
         <translation>Copyright (C) 2009-%i  Bitcoin kehittäjät</translation>
     </message>
     <message>
+        <source>Copyright (C) 2013-%i The Dogecoin Core Developers</source>
+        <translation>Copyright (C) 2013-%i  Dogecoin kehittäjät</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2018-%i The Artiqox Core Developers</source>
+        <translation>Copyright (C) 2018-%i  Artiqox kehittäjät</translation>
+    </message>
+    <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Artiqox Core</source>
         <translation>Virhe ladattaessa wallet.dat-tiedostoa: Tarvitset uudemman version Artiqoxista</translation>
     </message>

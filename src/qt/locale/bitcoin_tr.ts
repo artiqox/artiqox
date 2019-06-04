@@ -3169,6 +3169,14 @@ mesela: alertnotify=echo %%s | mail -s "Artiqox Alert" admin@foo.com
         <translation>Telif hakkı 2009-%i Bitcoin Çekirdeği Geliştiricileri</translation>
     </message>
     <message>
+        <source>Copyright (C) 2013-%i The Dogecoin Core Developers</source>
+        <translation>Telif hakkı 2013-%i Dogecoin Çekirdeği Geliştiricileri</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2018-%i The Artiqox Core Developers</source>
+        <translation>Telif hakkı 2018-%i Artiqox Çekirdeği Geliştiricileri</translation>
+    </message>
+    <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>-rpcbind değeri %s şebeke adresi olarak ayrıştırılamadı</translation>
     </message>
