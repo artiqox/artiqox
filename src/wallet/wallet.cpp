@@ -41,7 +41,7 @@ bool fPayAtLeastCustomFee = true;
  * Fees smaller than this (in satoshi) are considered zero fee (for transaction creation)
  * Override with -mintxfee
  */
-CFeeRate CWallet::minTxFee = CFeeRate(COIN);
+CFeeRate CWallet::minTxFee = CFeeRate(COIN / 2);
 
 /** @defgroup mapWallet
  *

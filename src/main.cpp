@@ -69,7 +69,7 @@ uint64_t nPruneTarget = 0;
 bool fAlerts = DEFAULT_ALERTS;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
-CFeeRate minRelayTxFee = CFeeRate(COIN);
+CFeeRate minRelayTxFee = CFeeRate(COIN / 2);
 
 CTxMemPool mempool(::minRelayTxFee);
 
