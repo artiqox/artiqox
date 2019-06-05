@@ -125,12 +125,32 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
 
 CAmount GetArtiqoxBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash)
 {
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-
-    if (nHeight < (5 * consensusParams.nSubsidyHalvingInterval)) {
-        // Artiqox constant rewards for each halving interval
-        return (2000 * COIN) >> halvings;
-    } else {
+    if(nHeight < 200000)
+    {
+        return 2000 * COIN;
+    }
+    else if(nHeight < 400000)
+    {
+        return = 1000 * COIN;
+    }
+    else if(nHeight < 600000)
+    {
+        return = 500 * COIN;
+    }
+	else if(nHeight < 800000)
+    {
+        return = 250 * COIN;
+    }
+	else if(nHeight < 900000)
+    {
+        return = 125 * COIN;
+    }
+	else if(nHeight < 1000000)
+    {
+        return = 75 * COIN;
+    }
+    else
+    {
         // Constant inflation
         return 42 * COIN;
     }
