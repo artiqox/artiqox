@@ -131,23 +131,23 @@ CAmount GetArtiqoxBlockSubsidy(int nHeight, const Consensus::Params& consensusPa
     }
     else if(nHeight < 400000)
     {
-        return = 1000 * COIN;
+        return 1000 * COIN;
     }
     else if(nHeight < 600000)
     {
-        return = 500 * COIN;
+        return 500 * COIN;
     }
 	else if(nHeight < 800000)
     {
-        return = 250 * COIN;
+        return 250 * COIN;
     }
 	else if(nHeight < 900000)
     {
-        return = 125 * COIN;
+        return 125 * COIN;
     }
 	else if(nHeight < 1000000)
     {
-        return = 75 * COIN;
+        return 75 * COIN;
     }
     else
     {
