@@ -17,7 +17,7 @@ static const CAmount COIN = 100000000;
 static const CAmount CENT = 1000000;
 
 /** No amount larger than this (in satoshi) is valid */
-static const CAmount MAX_MONEY = 10000000000 * COIN; // Artiqox: maximum of 100B coins (given some randomness), max transaction 10,000,000,000
+static const CAmount MAX_MONEY = 900000000 * COIN; // Artiqox
 inline bool MoneyRange(const CAmount& nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
 /** Type-safe wrapper class to for fee rates

@@ -38,7 +38,7 @@ public:
         strNetworkID = "main";
 
         // Blocks 0 - 60 are conventional difficulty calculation
-        consensus.nSubsidyHalvingInterval = 200000;
+        consensus.nSubsidyHalvingInterval = 210000;
         consensus.nMajorityEnforceBlockUpgrade = 1500;
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
@@ -199,15 +199,15 @@ public:
         digishieldConsensus.nCoinbaseMaturity = 240;
         
 
-        // Blocks 60 - 41999 are Digishield with minimum difficulty on all blocks
+        // Blocks 60 - 99 are Digishield with minimum difficulty on all blocks
         minDifficultyConsensus = digishieldConsensus;
         minDifficultyConsensus.nHeightEffective = 60;
         minDifficultyConsensus.fPowAllowDigishieldMinDifficultyBlocks = true;
         minDifficultyConsensus.fPowAllowMinDifficultyBlocks = true;
 
-        // Enable AuxPoW at 42000
+        // Enable AuxPoW at 100
         auxpowConsensus = minDifficultyConsensus;
-        auxpowConsensus.nHeightEffective = 42000;
+        auxpowConsensus.nHeightEffective = 100;
         auxpowConsensus.fPowAllowDigishieldMinDifficultyBlocks = true;
         auxpowConsensus.fAllowLegacyBlocks = false;
         auxpowConsensus.fAllowAuxPow = true;
