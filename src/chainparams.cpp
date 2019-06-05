@@ -74,11 +74,13 @@ public:
         auxpow2Consensus = auxpowConsensus;
         auxpow2Consensus.nHeightEffective = 145000;
         auxpow2Consensus.nCoinbaseMaturity = 240;
+        auxpow2Consensus.fAllowLegacyBlocks = false;
+        auxpow2Consensus.fAllowAuxPow = true;
 
         // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
         digishieldConsensus.pLeft = &consensus;
-        digishieldConsensus.pRight = &auxpow2Consensus;
+        digishieldConsensus.pRight = &auxpowConsensus;
 
         /** 
          * The message start string is designed to be unlikely to occur in normal data.
