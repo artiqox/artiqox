@@ -33,6 +33,7 @@ class CMainParams : public CChainParams {
 protected:
     Consensus::Params digishieldConsensus;
     Consensus::Params auxpowConsensus;
+    Consensus::Params auxpow2Consensus;
 public:
     CMainParams() {
         strNetworkID = "main";
@@ -62,7 +63,6 @@ public:
         digishieldConsensus.fSimplifiedRewards = true;
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
         digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
-        digishieldConsensus.nCoinbaseMaturity = 240;
 
         // Blocks 42000+ are AuxPoW
         auxpowConsensus = digishieldConsensus;
@@ -70,10 +70,15 @@ public:
         auxpowConsensus.fAllowLegacyBlocks = false;
         auxpowConsensus.fAllowAuxPow = true;
 
+        // Changeup to CoinbaseMaturity 240
+        auxpow2Consensus = auxpowConsensus;
+        auxpow2Consensus.nHeightEffective = 145000;
+        auxpow2Consensus.nCoinbaseMaturity = 240;
+
         // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
         digishieldConsensus.pLeft = &consensus;
-        digishieldConsensus.pRight = &auxpowConsensus;
+        digishieldConsensus.pRight = &auxpow2Consensus;
 
         /** 
          * The message start string is designed to be unlikely to occur in normal data.
