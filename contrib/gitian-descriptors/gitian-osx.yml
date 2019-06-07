@@ -1,5 +1,5 @@
 ---
-name: "artiqox-osx-1.10"
+name: "artiqox-osx-1.11"
 enable_cache: true
 suites:
 - "precise"

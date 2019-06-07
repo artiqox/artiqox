@@ -1,4 +1,4 @@
-Artiqox Core 1.10
+Artiqox Core 1.11
 ==================
 
 Intro
