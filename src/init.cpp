@@ -553,14 +553,14 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
         InitBlockIndex();
     }
 
-    // hardcoded $DATADIR/bootstrap.dat
-    boost::filesystem::path pathBootstrap = GetDataDir() / "bootstrap.dat";
+    // hardcoded $DATADIR/aiqstrap.dat
+    boost::filesystem::path pathBootstrap = GetDataDir() / "aiqstrap.dat";
     if (boost::filesystem::exists(pathBootstrap)) {
         FILE *file = fopen(pathBootstrap.string().c_str(), "rb");
         if (file) {
             CImportingNow imp;
-            boost::filesystem::path pathBootstrapOld = GetDataDir() / "bootstrap.dat.old";
-            LogPrintf("Importing bootstrap.dat...\n");
+            boost::filesystem::path pathBootstrapOld = GetDataDir() / "aiqstrap.dat.old";
+            LogPrintf("Importing aiqstrap.dat...\n");
             LoadExternalBlockFile(file);
             RenameOver(pathBootstrap, pathBootstrapOld);
         } else {
