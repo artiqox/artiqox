@@ -38,7 +38,7 @@ AC_DEFUN([BITCOIN_FIND_BDB51],[
   done
   if test "x$bdbpath" = "xX"; then
     AC_MSG_RESULT([no])
-    AC_MSG_ERROR([libdb_cxx headers missing, Artiqox Core requires this library for wallet functionality (--disable-wallet to disable wallet functionality)])
+    AC_MSG_ERROR([libdb_cxx headers missing, Dogecoin Core requires this library for wallet functionality (--disable-wallet to disable wallet functionality)])
   elif test "x$bdb51path" = "xX"; then
     BITCOIN_SUBDIR_TO_INCLUDE(BDB_CPPFLAGS,[${bdbpath}],db_cxx)
     AC_ARG_WITH([incompatible-bdb],[AS_HELP_STRING([--with-incompatible-bdb], [allow using a bdb version other than 4.8])],[
@@ -47,7 +47,7 @@ AC_DEFUN([BITCOIN_FIND_BDB51],[
       AC_MSG_ERROR([Found Berkeley DB other than 5.1, required for portable wallets (--with-incompatible-bdb to ignore or --disable-wallet to disable wallet functionality)])
     ])
   else
-    BITCOIN_SUBDIR_TO_INCLUDE(BDB_CPPFLAGS,[${bdb48path}],db_cxx)
+    BITCOIN_SUBDIR_TO_INCLUDE(BDB_CPPFLAGS,[${bdb51path}],db_cxx)
     bdbpath="${bdb51path}"
   fi
   AC_SUBST(BDB_CPPFLAGS)
@@ -60,7 +60,7 @@ AC_DEFUN([BITCOIN_FIND_BDB51],[
     ])
   done
   if test "x$BDB_LIBS" = "x"; then
-      AC_MSG_ERROR([libdb_cxx missing, Artiqox Core requires this library for wallet functionality (--disable-wallet to disable wallet functionality)])
+      AC_MSG_ERROR([libdb_cxx missing, Dogecoin Core requires this library for wallet functionality (--disable-wallet to disable wallet functionality)])
   fi
   AC_SUBST(BDB_LIBS)
 ])
