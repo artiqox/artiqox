@@ -765,9 +765,6 @@ Value getauxblockbip22(const Array& params, bool fHelp)
     if (pwalletMain == NULL)
         throw JSONRPCError(RPC_METHOD_NOT_FOUND, "Method not found (disabled)");
 
-    if (1) // Disable until release candidate
-        throw JSONRPCError(RPC_METHOD_NOT_FOUND, "Method not found (AuxPoW mining disabled in beta)");
-
     if (vNodes.empty() && !Params().MineBlocksOnDemand())
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED,
                            "Artiqox is not connected!");
@@ -907,13 +904,16 @@ Value getauxblockbip22(const Array& params, bool fHelp)
     }
     return BIP22ValidationResult(state);
 }
-	Value getauxblock(const Array& params, bool fHelp)
+
+Value getauxblock(const Array& params, bool fHelp)
 {
     Value response = getauxblockbip22(params, fHelp);
-     // this is a request for a new blocktemplate: return response
+
+    // this is a request for a new blocktemplate: return response
     if (params.size() == 0)
         return response;
-     // this is a new block submission: return bool
+
+    // this is a new block submission: return bool
     return (response == Value::null);
 }
 #endif // ENABLE_WALLET

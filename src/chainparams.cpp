@@ -81,6 +81,7 @@ public:
         pConsensusRoot = &digishieldConsensus;
         digishieldConsensus.pLeft = &consensus;
         digishieldConsensus.pRight = &auxpowConsensus;
+        auxpowConsensus.pRight = &auxpow2Consensus;
 
         /** 
          * The message start string is designed to be unlikely to occur in normal data.
