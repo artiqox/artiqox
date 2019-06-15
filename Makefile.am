@@ -23,7 +23,7 @@ BITCOIN_CLI_BIN=$(top_builddir)/src/artiqox-cli$(EXEEXT)
 BITCOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 
 OSX_APP=Artiqox-Qt.app
-OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
+OSX_VOLNAME =Artiqox-Core
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG=background.svg
 OSX_BACKGROUND_IMAGE=background.tiff
