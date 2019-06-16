@@ -14,7 +14,7 @@ export PYTHONPATH
 
 if BUILD_BITCOIN_LIBS
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = libbitcoinconsensus.pc
+pkgconfig_DATA = libartiqoxconsensus.pc
 endif
 
 BITCOIND_BIN=$(top_builddir)/src/artiqoxd$(EXEEXT)
