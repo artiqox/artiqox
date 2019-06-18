@@ -1,5 +1,5 @@
 ---
-name: "artiqox-win-1.11"
+name: "artiqox-win-1.14"
 enable_cache: true
 suites:
 - "trusty"
