@@ -1,7 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Artiqox
-Comment=Artiqox P2P Cryptocurrency
+Name=Artiqox Core
+Comment=Connect to the Artiqox P2P Network
+Comment[de]=Verbinde mit dem Artiqox peer-to-peer Netzwerk
 Comment[fr]=Artiqox, monnaie virtuelle cryptographique pair à pair
 Comment[tr]=Artiqox, eşten eşe kriptografik sanal para birimi
 Exec=artiqox-qt %u

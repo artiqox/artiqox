@@ -1,3 +1,2 @@
-debian/manpages/artiqoxd.1
-debian/manpages/artiqox.conf.5
-debian/manpages/artiqox-cli.1
+doc/man/artiqoxd.1
+doc/man/artiqox-cli.1
