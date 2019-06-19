@@ -1,4 +1,4 @@
-Artiqox Core 1.11
+Artiqox Core 1.14
 ==================
 
 Setup
@@ -11,24 +11,18 @@ The following are some helpful notes on how to run Artiqox on your native platfo
 
 ### Unix
 
-You need the Qt4 run-time libraries to run Artiqox-Qt. On Debian or Ubuntu:
-
-	sudo apt-get install libqtgui4
-
 Unpack the files into a directory and run:
 
-- bin/32/artiqox-qt (GUI, 32-bit) or bin/32/artiqoxd (headless, 32-bit)
-- bin/64/artiqox-qt (GUI, 64-bit) or bin/64/artiqoxd (headless, 64-bit)
-
-
+- `bin/artiqox-qt` (GUI) or
+- `bin/artiqoxd` (headless)
 
 ### Windows
 
 Unpack the files into a directory, and then run artiqox-qt.exe.
 
-### OSX
+### OS X
 
-Drag Artiqox-Qt to your applications folder, and then run Artiqox-Qt.
+Drag Artiqox-Core to your applications folder, and then run Artiqox-Core.
 
 ### Need Help?
 
@@ -41,24 +35,27 @@ Building
 ---------------------
 The following are developer notes on how to build Artiqox on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
-- [OSX Build Notes](build-osx.md)
+- [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
+- [Windows Build Notes](build-windows.md)
+- [OpenBSD Build Notes](build-openbsd.md)
 - [Gitian Building Guide](gitian-building.md)
 
 Development
 ---------------------
-The Artiqox repo's [root README](https://github.com/artiqox/artiqox/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Artiqox repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
-- [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
-- [Unit Tests](unit-tests.md)
+- [Travis CI](travis-ci.md)
 - [Unauthenticated REST Interface](REST-interface.md)
+- [Shared Libraries](shared-libraries.md)
 - [BIPS](bips.md)
 - [Dnsseed Policy](dnsseed-policy.md)
+- [Benchmarking](benchmarking.md)
 
 ### Resources
 * Discuss on the official Telegram Channel (https://t.me/Artiqox).
@@ -67,8 +64,11 @@ The Artiqox repo's [root README](https://github.com/artiqox/artiqox/blob/master/
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
 - [Files](files.md)
+- [Fuzz-testing](fuzzing.md)
+- [Reduce Traffic](reduce-traffic.md)
 - [Tor Support](tor.md)
 - [Init Scripts (systemd/upstart/openrc)](init.md)
+- [ZMQ](zmq.md)
 
 License
 ---------------------

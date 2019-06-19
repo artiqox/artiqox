@@ -40,7 +40,6 @@ Other
 
 ### Info
 * Designer: Jonas Schnelli, Bitboy, Stephen Hutchings, Marco Falke
-* Artiqox Icon: Based on the original Artiqox logo from Christine Ricks
 * Network connection icon: Inspired by flow-merge.svg from Stephen Hutchings
 * Some icons are based on Stephan Hutchings Typicons
 * License: MIT
