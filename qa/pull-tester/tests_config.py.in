@@ -1,8 +1,9 @@
-#!/bin/bash
-# Copyright (c) 2013-2014 The Bitcoin Core developers
+#!/usr/bin/env python3
+# Copyright (c) 2013-2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+SRCDIR="@abs_top_srcdir@"
 BUILDDIR="@abs_top_builddir@"
 EXEEXT="@EXEEXT@"
 
@@ -10,7 +11,4 @@ EXEEXT="@EXEEXT@"
 @ENABLE_WALLET_TRUE@ENABLE_WALLET=1
 @BUILD_BITCOIN_UTILS_TRUE@ENABLE_UTILS=1
 @BUILD_BITCOIND_TRUE@ENABLE_BITCOIND=1
-
-REAL_BITCOIND="$BUILDDIR/src/artiqoxd${EXEEXT}"
-REAL_BITCOINCLI="$BUILDDIR/src/artiqox-cli${EXEEXT}"
-
+@ENABLE_ZMQ_TRUE@ENABLE_ZMQ=1
