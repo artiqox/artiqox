@@ -7,8 +7,10 @@ src/artiqoxd
 src/artiqox-cli
 src/artiqox-tx
 src/test/test_artiqox
+src/test/test_artiqox_fuzzy
 src/qt/test/test_artiqox-qt
 
+# autoreconf
 Makefile.in
 aclocal.m4
 autom4te.cache/
@@ -29,9 +31,9 @@ config.log
 config.status
 configure
 libtool
-src/bitcoin-config.h
-src/bitcoin-config.h.in
-src/stamp-h1
+src/config/bitcoin-config.h
+src/config/bitcoin-config.h.in
+src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
 
@@ -85,15 +87,13 @@ src/test/buildenv.py
 # Resources cpp
 qrc_*.cpp
 
-# Qt creator
-*.pro.user
-
 # Mac specific
 .DS_Store
 build
 
 #lcov
 *.gcno
+*.gcda
 /*.info
 test_artiqox.coverage/
 total.coverage/
@@ -103,13 +103,12 @@ coverage_percent.txt
 linux-coverage-build
 linux-build
 win32-build
-qa/pull-tester/run-bitcoind-for-test.sh
-qa/pull-tester/tests-config.sh
-qa/pull-tester/cache/*
-qa/pull-tester/test.*/*
+qa/pull-tester/tests_config.py
+qa/cache/*
 
 !src/leveldb*/Makefile
 
 /doc/doxygen/
 
 libartiqoxconsensus.pc
+contrib/devtools/split-debug.sh
