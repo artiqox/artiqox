@@ -40,9 +40,6 @@ Description: peer-to-peer network based digital currency - daemon
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- Full transaction history is stored locally at each client.  This
- requires 20+ GB of space, slowly growing.
- .
  This package provides the daemon, artiqoxd, and the CLI tool
  artiqox-cli to interact with the daemon.
 
@@ -62,7 +59,7 @@ Package: artiqox-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- Dogecoin is a free open source peer-to-peer electronic cash system that
+ Artiqox is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
