@@ -12,13 +12,6 @@
 #include "util.h"
 #include "validation.h"
 
-int static generateMTRandom(unsigned int s, int range)
-{
-    boost::mt19937 gen(s);
-    boost::uniform_int<> dist(1, range);
-    return dist(gen);
-}
-
 // Artiqox: Normally minimum difficulty blocks can only occur in between
 // retarget blocks. However, once we introduce Digishield every block is
 // a retarget, so we need to handle minimum difficulty on all blocks.
@@ -124,25 +117,34 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
 
 CAmount GetArtiqoxBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash)
 {
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-
-    if (!consensusParams.fSimplifiedRewards)
+    if(nHeight < 200000)
     {
-        // Old-style rewards derived from the previous block hash
-        const std::string cseed_str = prevHash.ToString().substr(7, 7);
-        const char* cseed = cseed_str.c_str();
-        char* endp = NULL;
-        long seed = strtol(cseed, &endp, 16);
-        CAmount maxReward = (1000000 >> halvings) - 1;
-        int rand = generateMTRandom(seed, maxReward);
-
-        return (1 + rand) * COIN;
-    } else if (nHeight < (6 * consensusParams.nSubsidyHalvingInterval)) {
-        // New-style constant rewards for each halving interval
-        return (500000 * COIN) >> halvings;
-    } else {
+        return 2000 * COIN;
+    }
+    else if(nHeight < 400000)
+    {
+        return 1000 * COIN;
+    }
+    else if(nHeight < 600000)
+    {
+        return 500 * COIN;
+    }
+	else if(nHeight < 800000)
+    {
+        return 250 * COIN;
+    }
+	else if(nHeight < 900000)
+    {
+        return 125 * COIN;
+    }
+	else if(nHeight < 1000000)
+    {
+        return 75 * COIN;
+    }
+    else
+    {
         // Constant inflation
-        return 10000 * COIN;
+        return 42 * COIN;
     }
 }
 

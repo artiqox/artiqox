@@ -81,10 +81,10 @@ public:
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
         // BIP34 is never enforced in Artiqox v2 blocks, so we enforce from v3
-        // consensus.BIP34Height = 1034383;
-        // consensus.BIP34Hash = uint256S("0x80d1364201e5df97e696c03bdd24dc885e8617b9de51e453c10a4f629b1e797a");
+        consensus.BIP34Height = 30024;
+        consensus.BIP34Hash = uint256S("0xcbe594e58305f903bc9c081602ea6caef4204f92c51993ef757d33d98c72a26a");
         // consensus.BIP65Height = 1032483; // Not enabled in Artiqox yet
-        // consensus.BIP66Height = 1034383; // 80d1364201e5df97e696c03bdd24dc885e8617b9de51e453c10a4f629b1e797a - this is the last block that could be v2, 1900 blocks past the last v2 block
+        consensus.BIP66Height = 30024; // 80d1364201e5df97e696c03bdd24dc885e8617b9de51e453c10a4f629b1e797a - this is the last block that could be v2, 1900 blocks past the last v2 block
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
         consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
         consensus.nPowTargetSpacing = 60; // 1 minute
@@ -116,13 +116,13 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0xfe09912b2551e3257cac5a3df3b6f1075684142582632bc194badefa52025163"); // 588,337
 
-	// AuxPoW parameters
-	consensus.nAuxpowChainId = 0x002A; // 42
-	consensus.fStrictChainId = true;
+        // AuxPoW parameters
+        consensus.nAuxpowChainId = 0x002A; // 42
+        consensus.fStrictChainId = true;
         consensus.fAllowLegacyBlocks = true;
         consensus.nHeightEffective = 0;
 
-	// Blocks 60 - 41999 are Digishield without AuxPoW
+        // Blocks 60 - 41999 are Digishield without AuxPoW
         digishieldConsensus = consensus;
         digishieldConsensus.nHeightEffective = 60;
         digishieldConsensus.fSimplifiedRewards = true;
