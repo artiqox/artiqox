@@ -1,15 +1,23 @@
-// Copyright (c) 2015 The Dogecoin Core developers
-// Copyright (c) 2018 The Artiqox Core developers
+// Copyright (c) 2015 The Artiqox Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <boost/random/uniform_int.hpp>
 #include <boost/random/mersenne_twister.hpp>
 
+#include "policy/policy.h"
 #include "arith_uint256.h"
 #include "artiqox.h"
-#include "main.h"
+#include "txmempool.h"
 #include "util.h"
+#include "validation.h"
+
+int static generateMTRandom(unsigned int s, int range)
+{
+    boost::mt19937 gen(s);
+    boost::uniform_int<> dist(1, range);
+    return dist(gen);
+}
 
 // Artiqox: Normally minimum difficulty blocks can only occur in between
 // retarget blocks. However, once we introduce Digishield every block is
@@ -83,17 +91,15 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
        the chain ID is correct.  Legacy blocks are not allowed since
        the merge-mining start, which is checked in AcceptBlockHeader
        where the height is known.  */
-    if (!block.nVersion.IsLegacy() && params.fStrictChainId && block.nVersion.GetChainId() != params.nAuxpowChainId)
+    if (!block.IsLegacy() && params.fStrictChainId && block.GetChainId() != params.nAuxpowChainId)
         return error("%s : block does not have our chain ID"
                      " (got %d, expected %d, full nVersion %d)",
-                     __func__,
-                     block.nVersion.GetChainId(),
-                     params.nAuxpowChainId,
-                     block.nVersion.GetFullVersion());
+                     __func__, block.GetChainId(),
+                     params.nAuxpowChainId, block.nVersion);
 
     /* If there is no auxpow, just check the block hash.  */
     if (!block.auxpow) {
-        if (block.nVersion.IsAuxpow())
+        if (block.IsAuxpow())
             return error("%s : no auxpow on block with auxpow version",
                          __func__);
 
@@ -105,10 +111,10 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
 
     /* We have auxpow.  Check it.  */
 
-    if (!block.nVersion.IsAuxpow())
+    if (!block.IsAuxpow())
         return error("%s : auxpow on block with non-auxpow version", __func__);
 
-    if (!block.auxpow->check(block.GetHash(), block.nVersion.GetChainId(), params))
+    if (!block.auxpow->check(block.GetHash(), block.GetChainId(), params))
         return error("%s : AUX POW is not valid", __func__);
     if (!CheckProofOfWork(block.auxpow->getParentBlockPoWHash(), block.nBits, params))
         return error("%s : AUX proof of work failed", __func__);
@@ -118,42 +124,62 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
 
 CAmount GetArtiqoxBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash)
 {
-    if(nHeight < 200000)
+    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
+
+    if (!consensusParams.fSimplifiedRewards)
     {
-        return 2000 * COIN;
-    }
-    else if(nHeight < 400000)
-    {
-        return 1000 * COIN;
-    }
-    else if(nHeight < 600000)
-    {
-        return 500 * COIN;
-    }
-	else if(nHeight < 800000)
-    {
-        return 250 * COIN;
-    }
-	else if(nHeight < 900000)
-    {
-        return 125 * COIN;
-    }
-	else if(nHeight < 1000000)
-    {
-        return 75 * COIN;
-    }
-    else
-    {
+        // Old-style rewards derived from the previous block hash
+        const std::string cseed_str = prevHash.ToString().substr(7, 7);
+        const char* cseed = cseed_str.c_str();
+        char* endp = NULL;
+        long seed = strtol(cseed, &endp, 16);
+        CAmount maxReward = (1000000 >> halvings) - 1;
+        int rand = generateMTRandom(seed, maxReward);
+
+        return (1 + rand) * COIN;
+    } else if (nHeight < (6 * consensusParams.nSubsidyHalvingInterval)) {
+        // New-style constant rewards for each halving interval
+        return (500000 * COIN) >> halvings;
+    } else {
         // Constant inflation
-        return 42 * COIN;
+        return 10000 * COIN;
     }
 }
 
+CAmount GetArtiqoxMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree)
+{
+    {
+        LOCK(mempool.cs);
+        uint256 hash = tx.GetHash();
+        double dPriorityDelta = 0;
+        CAmount nFeeDelta = 0;
+        mempool.ApplyDeltas(hash, dPriorityDelta, nFeeDelta);
+        if (dPriorityDelta > 0 || nFeeDelta > 0)
+            return 0;
+    }
 
-int64_t GetArtiqoxDustFee(const std::vector<CTxOut> &vout, CFeeRate &baseFeeRate) {
-    int64_t nFee = 0;
+    CAmount nMinFee = ::minRelayTxFee.GetFee(nBytes);
+    nMinFee += GetArtiqoxDustFee(tx.vout, ::minRelayTxFee);
 
-    // To limit dust spam, add base fee for each dust output
+    if (fAllowFree)
+    {
+        // There is a free transaction area in blocks created by most miners,
+        // * If we are relaying we allow transactions up to DEFAULT_BLOCK_PRIORITY_SIZE - 1000
+        //   to be considered to fall into this category. We don't want to encourage sending
+        //   multiple transactions instead of one big transaction to avoid fees.
+        if (nBytes < (DEFAULT_BLOCK_PRIORITY_SIZE - 1000))
+            nMinFee = 0;
+    }
+
+    if (!MoneyRange(nMinFee))
+        nMinFee = MAX_MONEY;
+    return nMinFee;
+}
+
+CAmount GetArtiqoxDustFee(const std::vector<CTxOut> &vout, CFeeRate &baseFeeRate) {
+    CAmount nFee = 0;
+
+    // To limit dust spam, add base fee for each output less than a COIN
     BOOST_FOREACH(const CTxOut& txout, vout)
         // if (txout.IsDust(::minRelayTxFee))
         if (txout.nValue < COIN)

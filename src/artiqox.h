@@ -1,5 +1,4 @@
-// Copyright (c) 2015 The Dogecoin Core developers
-// Copyright (c) 2018 The Artiqox Core developers
+// Copyright (c) 2015 The Artiqox Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,4 +18,5 @@ unsigned int CalculateArtiqoxNextWorkRequired(const CBlockIndex* pindexLast, int
  */
 bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& params);
 
-int64_t GetArtiqoxDustFee(const std::vector<CTxOut> &vout, CFeeRate &baseFeeRate);
+CAmount GetArtiqoxMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree);
+CAmount GetArtiqoxDustFee(const std::vector<CTxOut> &vout, CFeeRate &baseFeeRate);
