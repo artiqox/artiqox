@@ -5,6 +5,8 @@ Setup
 ---------------------
 [Artiqox Core](http://artiqox.com/) is the reference Artiqox client and it builds the backbone of the network. However, it downloads and stores the entire history of Artiqox transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
+To download Artiqox Core, visit [artiqox.com](https://artiqox.com/releases/).
+
 Running
 ---------------------
 The following are some helpful notes on how to run Artiqox on your native platform.
@@ -48,6 +50,7 @@ The Artiqox repo's [root README](/README.md) contains relevant information on th
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/bitcoin/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)

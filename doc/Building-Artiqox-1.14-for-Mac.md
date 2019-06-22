@@ -82,7 +82,7 @@ Build BDB 5.1.29
     $cd /usr/local/include 
     $ln -s ../opt/openssl/include/openssl 
 
-### Go back to your Dogecoin repo ###
+### Go back to your Artiqox repo ###
 
     $cd ~/artiqox
     $./autogen.sh

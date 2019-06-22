@@ -1,6 +1,8 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build Artiqox in Unix. 
+Some notes on how to build Artiqox Core in Unix.
+
+(for OpenBSD specific instructions, see [build-openbsd.md](build-openbsd.md))
 
 Note
 ---------------------
@@ -31,8 +33,9 @@ These dependencies are required:
 
  Library     | Purpose          | Description
  ------------|------------------|----------------------
- libssl      | SSL Support      | Secure communications
- libboost    | Boost            | C++ Library
+ libssl      | Crypto           | Random Number Generation, Elliptic Curve Cryptography
+ libboost    | Utility          | Library for threading, data structures, etc
+ libevent    | Networking       | OS independent asynchronous networking
 
 Optional dependencies:
 
@@ -43,36 +46,60 @@ Optional dependencies:
  qt          | GUI              | GUI toolkit (only needed when GUI enabled)
  protobuf    | Payments in GUI  | Data interchange format used for payment protocol (only needed when GUI enabled)
  libqrencode | QR codes in GUI  | Optional for generating QR codes (only needed when GUI enabled)
+ univalue    | Utility          | JSON parsing and encoding (bundled version will be used unless --with-system-univalue passed to configure)
+ libzmq3     | ZMQ notification | Optional, allows generating ZMQ notifications (requires ZMQ version >= 4.x)
 
 For the versions used in the release, see [release-process.md](release-process.md) under *Fetch and build inputs*.
 
-System requirements
+Memory Requirements
 --------------------
 
-C++ compilers are memory-hungry. It is recommended to have at least 1 GB of
-memory available when compiling Artiqox Core. With 512MB of memory or less,
-compilation will take much longer due to swap thrashing.
+C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
+memory available when compiling Artiqox Core. On systems with less, gcc can be
+tuned to conserve memory with additional CXXFLAGS:
+
+
+    ./configure CXXFLAGS="--param ggc-min-expand=1 --param ggc-min-heapsize=32768"
 
 Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
 Build requirements:
 
-	sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
-	
-for Ubuntu 12.04 and later or Debian 7 and later, libboost-all-dev has to be installed:
+    sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
 
-	sudo apt-get install libboost-all-dev libdb5.1-dev libdb5.1++-dev
+Options when installing required Boost library files:
 
-	Note that if you have Berkeley DB 4.8 packages installed (i.e. for other
-	wallet software), they are incompatible with the packages for 5.1. You
-	will have to manually download 5.1 from
-	http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz and compile
-	it, install it to /usr/local where the configure script should locate it
-	automatically.
+1. On at least Ubuntu 14.04+ and Debian 7+ there are generic names for the
+individual boost development packages, so the following can be used to only
+install necessary parts of boost:
 
-Optional:
+        sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
 
-	sudo apt-get install libminiupnpc-dev (see --with-miniupnpc and --enable-upnp-default)
+2. If that doesn't work, you can install all boost development packages with:
+
+        sudo apt-get install libboost-all-dev
+
+BerkeleyDB is required for the wallet.
+
+    sudo apt-get install libdb5.1-dev libdb5.1++-dev
+
+       Note that if you have Berkeley DB 4.8 packages installed (i.e. for other
+       wallet software), they are incompatible with the packages for 5.1. You
+       will have to manually download 5.1 from
+       http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz and compile
+       it, install it to /usr/local where the configure script should locate it
+       automatically.
+
+
+See the section "Disable-wallet mode" to build Artiqox Core without wallet.
+
+Optional (see --with-miniupnpc and --enable-upnp-default):
+
+    sudo apt-get install libminiupnpc-dev
+
+ZMQ dependencies (provides ZMQ API 4.x):
+
+    sudo apt-get install libzmq3-dev
 
 Dependencies for the GUI: Ubuntu & Debian
 -----------------------------------------
@@ -82,13 +109,13 @@ are installed. Either Qt 4 or Qt 5 are necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 4 will be used. Pass `--with-gui=qt5` to configure to choose Qt5.
 To build without GUI pass `--without-gui`.
 
-To build with Qt 4, you need the following:
-
-    sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler
-
-For Qt 5, you need the following:
+To build with Qt 5 (recommended) you need the following:
 
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
+
+Alternatively, to build with Qt 4 you need the following:
+
+    sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler
 
 libqrencode (optional) can be installed with:
 
@@ -96,6 +123,24 @@ libqrencode (optional) can be installed with:
 
 Once these are installed, they will be found by configure and a artiqox-qt executable will be
 built by default.
+
+Dependency Build Instructions: Fedora
+-------------------------------------
+Build requirements:
+
+    sudo dnf install gcc-c++ libtool make autoconf automake openssl-devel libevent-devel boost-devel libdb4-devel libdb4-cxx-devel
+
+Optional:
+
+    sudo dnf install miniupnpc-devel
+
+To build with Qt 5 (recommended) you need the following:
+
+    sudo dnf install qt5-qttools-devel qt5-qtbase-devel protobuf-devel
+
+libqrencode (optional) can be installed with:
+
+    sudo dnf install qrencode-devel
 
 Notes
 -----
@@ -113,14 +158,6 @@ turned off by default.  See the configure options for upnp behavior desired:
 	--without-miniupnpc      No UPnP support miniupnp not required
 	--disable-upnp-default   (the default) UPnP support turned off by default at runtime
 	--enable-upnp-default    UPnP support turned on by default at runtime
-
-To build:
-
-	tar -xzvf miniupnpc-1.6.tar.gz
-	cd miniupnpc-1.6
-	make
-	sudo su
-	make install
 
 
 Berkeley DB
@@ -148,7 +185,8 @@ make install
 
 # Configure Artiqox Core to use our own-built instance of BDB
 cd $BITCOIN_ROOT
-./configure (other args...) LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
+./autogen.sh
+./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/" # (other args...)
 ```
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
@@ -191,6 +229,7 @@ Hardening enables the following features:
     	scanelf -e ./artiqox
 
     The output should contain:
+
      TYPE
     ET_DYN
 
