@@ -283,7 +283,7 @@ if __name__ == '__main__':
 	settings['rev_hash_bytes'] = settings['rev_hash_bytes'].lower()
 
 	if 'netmagic' not in settings:
-		settings['netmagic'] = 'c0c0c0c0'
+		settings['netmagic'] = 'dfc0b648'
 	if 'genesis' not in settings:
 		settings['genesis'] = 'fb0f6b30ccc9852b01c153a6b95d65f22f9b2f46d6874453e70d27671d5cd6c3'
 	if 'input' not in settings:
@@ -295,7 +295,7 @@ if __name__ == '__main__':
 	if 'split_timestamp' not in settings:
 		settings['split_timestamp'] = 0
 	if 'max_out_sz' not in settings:
-		settings['max_out_sz'] = 1000L * 1000 * 1000
+		settings['max_out_sz'] = 1000 * 1000 * 1000
 	if 'out_of_order_cache_sz' not in settings:
 		settings['out_of_order_cache_sz'] = 100 * 1000 * 1000
 	if 'debug_output' not in settings:

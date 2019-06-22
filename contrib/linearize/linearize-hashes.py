@@ -133,3 +133,4 @@ if __name__ == '__main__':
 	# Force hash byte format setting to be lowercase to make comparisons easier.
 	settings['rev_hash_bytes'] = settings['rev_hash_bytes'].lower()
 
+	get_block_hashes(settings)
