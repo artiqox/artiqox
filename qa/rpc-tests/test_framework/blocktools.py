@@ -90,3 +90,18 @@ def create_transaction(prevtx, n, sig, value, scriptPubKey=CScript()):
     tx.vout.append(CTxOut(value, scriptPubKey))
     tx.calc_sha256()
     return tx
+
+def get_legacy_sigopcount_block(block, fAccurate=True):
+    count = 0
+    for tx in block.vtx:
+        count += get_legacy_sigopcount_tx(tx, fAccurate)
+    return count
+
+def get_legacy_sigopcount_tx(tx, fAccurate=True):
+    count = 0
+    for i in tx.vout:
+        count += i.scriptPubKey.GetSigOpCount(fAccurate)
+    for j in tx.vin:
+        # scriptSig might be of type bytes, so convert to CScript for the moment
+        count += CScript(j.scriptSig).GetSigOpCount(fAccurate)
+    return count
