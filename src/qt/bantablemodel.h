@@ -2,34 +2,28 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_PEERTABLEMODEL_H
-#define BITCOIN_QT_PEERTABLEMODEL_H
+#ifndef BITCOIN_QT_BANTABLEMODEL_H
+#define BITCOIN_QT_BANTABLEMODEL_H
 
-#include "net_processing.h" // For CNodeStateStats
 #include "net.h"
 
 #include <QAbstractTableModel>
 #include <QStringList>
 
 class ClientModel;
-class PeerTablePriv;
+class BanTablePriv;
 
-QT_BEGIN_NAMESPACE
-class QTimer;
-QT_END_NAMESPACE
-
-struct CNodeCombinedStats {
-    CNodeStats nodeStats;
-    CNodeStateStats nodeStateStats;
-    bool fNodeStateStatsAvailable;
+struct CCombinedBan {
+    CSubNet subnet;
+    CBanEntry banEntry;
 };
 
-class NodeLessThan
+class BannedNodeLessThan
 {
 public:
-    NodeLessThan(int nColumn, Qt::SortOrder fOrder) :
+    BannedNodeLessThan(int nColumn, Qt::SortOrder fOrder) :
         column(nColumn), order(fOrder) {}
-    bool operator()(const CNodeCombinedStats &left, const CNodeCombinedStats &right) const;
+    bool operator()(const CCombinedBan& left, const CCombinedBan& right) const;
 
 private:
     int column;
@@ -40,23 +34,19 @@ private:
    Qt model providing information about connected peers, similar to the
    "getpeerinfo" RPC call. Used by the rpc console UI.
  */
-class PeerTableModel : public QAbstractTableModel
+class BanTableModel : public QAbstractTableModel
 {
     Q_OBJECT
 
 public:
-    explicit PeerTableModel(ClientModel *parent = 0);
-    ~PeerTableModel();
-    const CNodeCombinedStats *getNodeStats(int idx);
-    int getRowByNodeId(NodeId nodeid);
+    explicit BanTableModel(ClientModel *parent = 0);
+    ~BanTableModel();
     void startAutoRefresh();
     void stopAutoRefresh();
 
     enum ColumnIndex {
-        NetNodeId = 0,
-        Address = 1,
-        Subversion = 2,
-        Ping = 3
+        Address = 0,
+        Bantime = 1
     };
 
     /** @name Methods overridden from QAbstractTableModel
@@ -68,6 +58,7 @@ public:
     QModelIndex index(int row, int column, const QModelIndex &parent) const;
     Qt::ItemFlags flags(const QModelIndex &index) const;
     void sort(int column, Qt::SortOrder order);
+    bool shouldShow();
     /*@}*/
 
 public Q_SLOTS:
@@ -76,8 +67,7 @@ public Q_SLOTS:
 private:
     ClientModel *clientModel;
     QStringList columns;
-    std::unique_ptr<PeerTablePriv> priv;
-    QTimer *timer;
+    std::unique_ptr<BanTablePriv> priv;
 };
 
-#endif // BITCOIN_QT_PEERTABLEMODEL_H
+#endif // BITCOIN_QT_BANTABLEMODEL_H

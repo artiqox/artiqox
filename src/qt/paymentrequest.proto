@@ -1,11 +1,13 @@
 //
 // Simple Artiqox Payment Protocol messages
-// Derived fromthe Bitcoin Payment Protocol
+// Derived from the Bitcoin Payment Protocol
 //
 // Use fields 100+ for extensions;
 // to avoid conflicts, register extensions via pull-req at:
 // https://github.com/artiqox/dips
 //
+
+syntax = "proto2";
 
 package payments;
 option java_package = "com.artiqox.protocols.payments";
@@ -17,7 +19,7 @@ message Output {
         required bytes script = 2; // usually one of the standard Script forms
 }
 message PaymentDetails {
-        optional string genesis = 1 [default = "1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691"]; // Hash of the network genesis block
+        optional string genesis = 1 [default = "fb0f6b30ccc9852b01c153a6b95d65f22f9b2f46d6874453e70d27671d5cd6c3"]; // Hash of the network genesis block
         repeated Output outputs = 2;        // Where payment should be sent
         required uint64 time = 3;           // Timestamp; when payment request created
         optional uint64 expires = 4;        // Timestamp; when this request should be considered invalid
