@@ -81,10 +81,10 @@ public:
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
         // BIP34 is never enforced in Artiqox v2 blocks, so we enforce from v3
-        consensus.BIP34Height = 30024;
-        consensus.BIP34Hash = uint256S("0xcbe594e58305f903bc9c081602ea6caef4204f92c51993ef757d33d98c72a26a");
+        consensus.BIP34Height = 97000;
+        consensus.BIP34Hash = uint256S("0xedb1fc387b2fb33365bb257bdec1f5d858b65a55638fd961329036a87971a89");
         // consensus.BIP65Height = 1032483; // Not enabled in Artiqox yet
-        consensus.BIP66Height = 30024; // 80d1364201e5df97e696c03bdd24dc885e8617b9de51e453c10a4f629b1e797a - this is the last block that could be v2, 1900 blocks past the last v2 block
+        consensus.BIP66Height = 97000; // edb1fc387b2fb33365bb257bdec1f5d858b65a55638fd961329036a87971a89 - this is the last block that could be v2, 1900 blocks past the last v2 block
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
         consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
         consensus.nPowTargetSpacing = 60; // 1 minute
