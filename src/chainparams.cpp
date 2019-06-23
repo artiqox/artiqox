@@ -81,10 +81,10 @@ public:
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
         // BIP34 is never enforced in Artiqox v2 blocks, so we enforce from v3
-        consensus.BIP34Height = 97000;
-        consensus.BIP34Hash = uint256S("0xedb1fc387b2fb33365bb257bdec1f5d858b65a55638fd961329036a87971a89");
+        consensus.BIP34Height = 98030;
+        consensus.BIP34Hash = uint256S("0xe5a66197325ee8bb702b0a891bd369c552afba5c16b38662ca539833f8f2bd56");
         // consensus.BIP65Height = 1032483; // Not enabled in Artiqox yet
-        consensus.BIP66Height = 97000; // edb1fc387b2fb33365bb257bdec1f5d858b65a55638fd961329036a87971a89 - this is the last block that could be v2, 1900 blocks past the last v2 block
+        consensus.BIP66Height = 98030; // e5a66197325ee8bb702b0a891bd369c552afba5c16b38662ca539833f8f2bd56 - this is the last block that could be v2, 1900 blocks past the last v2 block
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
         consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
         consensus.nPowTargetSpacing = 60; // 1 minute
@@ -175,9 +175,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0x2A)(0x2E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xE1)(0xF7).convert_to_container<std::vector<unsigned char> >();
 
-        //TODO: fix this for artiqox -- plddr
-        //vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
-        vFixedSeeds.clear();
+        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
@@ -261,10 +259,10 @@ public:
         consensus.defaultAssumeValid = uint256S("0x6943eaeaba98dc7d09f7e73398daccb4abcabb18b66c8c875e52b07638d93951"); // 900,000
 
         // AuxPoW parameters
-	consensus.nAuxpowChainId = 0x002A; // 42
-	consensus.fStrictChainId = false;
+	    consensus.nAuxpowChainId = 0x002A; // 42
+	    consensus.fStrictChainId = false;
         consensus.nHeightEffective = 0;
-	consensus.fAllowLegacyBlocks = true;
+	    consensus.fAllowLegacyBlocks = true;
         
         // Blocks 60 - 99 are Digishield with minimum difficulty on all blocks
         digishieldConsensus = consensus;
@@ -295,7 +293,7 @@ public:
         nDefaultPort = 19459;
         nPruneAfterHeight = 1000;
 
-	genesis = CreateGenesisBlock(1520806619, 1651712, 0x1e0ffff0, 1, 88 * COIN);
+	    genesis = CreateGenesisBlock(1520806619, 1651712, 0x1e0ffff0, 1, 88 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
@@ -313,8 +311,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0xD1)(0xDF).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x75)(0xA4).convert_to_container<std::vector<unsigned char> >();
 
-        //TODO: fix this for artiqox -- plddr
-        //vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
+        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
         fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
