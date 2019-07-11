@@ -81,10 +81,10 @@ public:
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
         // BIP34 is never enforced in Artiqox v2 blocks, so we enforce from v3
-        consensus.BIP34Height = 98030;
-        consensus.BIP34Hash = uint256S("0xe5a66197325ee8bb702b0a891bd369c552afba5c16b38662ca539833f8f2bd56");
-        // consensus.BIP65Height = 1032483; // Not enabled in Artiqox yet
-        consensus.BIP66Height = 98030; // e5a66197325ee8bb702b0a891bd369c552afba5c16b38662ca539833f8f2bd56 - this is the last block that could be v2, 1900 blocks past the last v2 block
+        consensus.BIP34Height = 455445;
+        consensus.BIP34Hash = uint256S("0x54475fd914ce79bd6d789e6a1fe943bc7393da1f4ce5d83b02094b35a9951d4f");
+        //consensus.BIP65Height = 453545; // Not enabled in Artiqox yet
+        consensus.BIP66Height = 455445; // 448fcdcfad95fdfbd05c902a012f44ed4d86d4b408f14dbcf090eb98598d8b44 - this is the last block that could be v2, 1900 blocks past the last v2 block
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
         consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
         consensus.nPowTargetSpacing = 60; // 1 minute
@@ -103,7 +103,7 @@ public:
         // XXX: BIP heights and hashes all need to be updated to Artiqox values
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1462060800; // May 1st, 2016
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1493596800; // May 1st, 2017
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 0; // Disabled
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
@@ -111,10 +111,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000003934be76828e03ea4");
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000397f4fe6621915623");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xfe09912b2551e3257cac5a3df3b6f1075684142582632bc194badefa52025163"); // 588,337
+        consensus.defaultAssumeValid = uint256S("0xbb7f9cf5cc3f44efd0adc0e929c4d30804ac6bbad9be7d4c66e4741ec2f44f82"); // 624,319
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x002A; // 42
@@ -189,15 +189,15 @@ public:
             (  18276, uint256S("0x98baf57606163cfe5f7939c7b60d4f3301d4d96fec551879c3ac4c8ea096c56c"))
             (  42000, uint256S("0xa5b41587b45c0aae1b524f6431907a793ab4b4972666aab4bdaf786423bddb2b"))
             ( 420000, uint256S("0x116b19f2269df05cd8087eff284269d7ab0ad16b766f8e1f25b3ca97c5832f06"))
-            ( 588337, uint256S("0xfe09912b2551e3257cac5a3df3b6f1075684142582632bc194badefa52025163"))
+            ( 624378, uint256S("0xe57e6c3afee309c28a5e29fc22b74cbbc91a9c47e249d352f1fa552ab8cd8260"))
         };
 
         chainTxData = ChainTxData{
-            // Data as of block fe09912b2551e3257cac5a3df3b6f1075684142582632bc194badefa52025163 (height 588337).
-            1559531992, // * UNIX timestamp of last checkpoint block
-            609007,     // * total number of transactions between genesis and last checkpoint
+            // Data as of block e57e6c3afee309c28a5e29fc22b74cbbc91a9c47e249d352f1fa552ab8cd8260 (height 624378).
+            1561817523, // * UNIX timestamp of last checkpoint block
+            645189,     // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            0.3125      // * estimated number of transactions per second after checkpoint
+            0.0174      // * estimated number of transactions per second after checkpoint
         };
     }
 };
@@ -259,10 +259,10 @@ public:
         consensus.defaultAssumeValid = uint256S("0x6943eaeaba98dc7d09f7e73398daccb4abcabb18b66c8c875e52b07638d93951"); // 900,000
 
         // AuxPoW parameters
-	    consensus.nAuxpowChainId = 0x002A; // 42
-	    consensus.fStrictChainId = false;
+    	consensus.nAuxpowChainId = 0x002A; // 42
+    	consensus.fStrictChainId = false;
         consensus.nHeightEffective = 0;
-	    consensus.fAllowLegacyBlocks = true;
+    	consensus.fAllowLegacyBlocks = true;
         
         // Blocks 60 - 99 are Digishield with minimum difficulty on all blocks
         digishieldConsensus = consensus;
@@ -293,7 +293,7 @@ public:
         nDefaultPort = 19459;
         nPruneAfterHeight = 1000;
 
-	    genesis = CreateGenesisBlock(1520806619, 1651712, 0x1e0ffff0, 1, 88 * COIN);
+    	genesis = CreateGenesisBlock(1520806619, 1651712, 0x1e0ffff0, 1, 88 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
