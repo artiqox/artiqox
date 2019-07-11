@@ -376,6 +376,7 @@ void PaperWalletDialog::on_printButton_clicked()
 
     QRegion walletRegion = QRegion(ui->paperTemplate->x(), ui->paperTemplate->y(), ui->paperTemplate->width(), ui->paperTemplate->height());
     painter.scale(scale, scale);
+    painter.setPen(Qt::white);
 
     for (int i = 0; i < walletCount; i++) {
         QPoint point = QPoint(PAPER_WALLET_PAGE_MARGIN, (PAPER_WALLET_PAGE_MARGIN / 2) + (i % walletsPerPage) * (walletHeight + walletPadding));
